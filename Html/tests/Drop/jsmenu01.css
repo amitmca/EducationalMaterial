@@ -1,0 +1,97 @@
+/*
+JavaScript Menu Builder Titanium Ex 1.3
+(C)1999-2007 Usingit.com, All rights reserved!
+http://www.usingit.com/products/webtoolkit
+http://www.usingit.com/support
+*/
+
+table.uimenutable, table.uimenutable tr, table.uimenutable th, table.uimenutable td{
+	padding: 0px;
+	font-family:verdana,ms sans serif,georgia,helvetica,arial;
+	font-size:10px;
+}
+
+.menu1743876096itemn1{
+FONT-FAMILY:Verdana,Ms Sans Serif,Georgia,Helvetica,Arial;
+FONT-SIZE:35px;
+FONT-WEIGHT:bold;
+FONT-STYLE:normal;
+BORDER-TOP:#C0C0C0 1px solid;
+BORDER-RIGHT:#C0C0C0 1px solid;
+BORDER-BOTTOM:#C0C0C0 1px solid;
+BORDER-LEFT:#C0C0C0 1px solid;
+CURSOR:hand;
+COLOR:#598BFF;
+BACKGROUND-COLOR:#FFFFFF;
+BACKGROUND-IMAGE:none;
+}
+.menu1743876096itemo2{
+FONT-FAMILY:Verdana,Ms Sans Serif,Georgia,Helvetica,Arial;
+FONT-SIZE:10px;
+FONT-WEIGHT:bold;
+FONT-STYLE:normal;
+BORDER-TOP:#598BFF 3px solid;
+BORDER-RIGHT:#598BFF 3px solid;
+BORDER-BOTTOM:#598BFF 3px solid;
+BORDER-LEFT:#598BFF 3px solid;
+CURSOR:hand;
+COLOR:#0651FF;
+BACKGROUND-COLOR:#FFFFFF;
+BACKGROUND-IMAGE:none;
+}
+.menu1743876096itemc3{
+FONT-FAMILY:Verdana,Ms Sans Serif,Georgia,Helvetica,Arial;
+FONT-SIZE:10px;
+FONT-WEIGHT:bold;
+FONT-STYLE:normal;
+BORDER-TOP:#FF0000 1px solid;
+BORDER-RIGHT:#FF0000 1px solid;
+BORDER-BOTTOM:#FF0000 1px solid;
+BORDER-LEFT:#FF0000 1px solid;
+CURSOR:hand;
+COLOR:#FF0000;
+BACKGROUND-COLOR:#FFFFFF;
+BACKGROUND-IMAGE:none;
+}
+.menu1743876096itemn4{
+FONT-FAMILY:Verdana,Ms Sans Serif,Georgia,Helvetica,Arial;
+FONT-SIZE:10px;
+FONT-WEIGHT:normal;
+FONT-STYLE:normal;
+BORDER-TOP:#C0C0C0 1px solid;
+BORDER-RIGHT:#C0C0C0 1px solid;
+BORDER-BOTTOM:#C0C0C0 1px solid;
+BORDER-LEFT:#C0C0C0 1px solid;
+CURSOR:hand;
+COLOR:#598BFF;
+BACKGROUND-COLOR:#FFFFFF;
+BACKGROUND-IMAGE:none;
+}
+.menu1743876096itemo5{
+FONT-FAMILY:Verdana,Ms Sans Serif,Georgia,Helvetica,Arial;
+FONT-SIZE:10px;
+FONT-WEIGHT:bold;
+FONT-STYLE:normal;
+BORDER-TOP:#598BFF 1px solid;
+BORDER-RIGHT:#598BFF 1px solid;
+BORDER-BOTTOM:#598BFF 1px solid;
+BORDER-LEFT:#598BFF 1px solid;
+CURSOR:hand;
+COLOR:#0651FF;
+BACKGROUND-COLOR:#FFFFFF;
+BACKGROUND-IMAGE:none;
+}
+.menu1743876096itemo6{
+FONT-FAMILY:Verdana,Ms Sans Serif,Georgia,Helvetica,Arial;
+FONT-SIZE:10px;
+FONT-WEIGHT:bold;
+FONT-STYLE:normal;
+BORDER-TOP:#598BFF 1px solid;
+BORDER-RIGHT:#598BFF 1px solid;
+BORDER-BOTTOM:#598BFF 1px solid;
+BORDER-LEFT:#598BFF 1px solid;
+CURSOR:help;
+COLOR:#0651FF;
+BACKGROUND-COLOR:#FFFFFF;
+BACKGROUND-IMAGE:none;
+}

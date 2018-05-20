@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CustomizedDataGrid", "http://localhost/CustomizedDataGrid/CustomizedDataGrid.vbproj", "{6E88DA8E-B514-4555-BC88-4AF314ECE68D}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{6E88DA8E-B514-4555-BC88-4AF314ECE68D}.Debug.ActiveCfg = Debug|.NET
+		{6E88DA8E-B514-4555-BC88-4AF314ECE68D}.Debug.Build.0 = Debug|.NET
+		{6E88DA8E-B514-4555-BC88-4AF314ECE68D}.Release.ActiveCfg = Release|.NET
+		{6E88DA8E-B514-4555-BC88-4AF314ECE68D}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

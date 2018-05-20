@@ -1,0 +1,35 @@
+Returning TOP N Records
+APRIL 19, 2003
+databases
+Returning only the first N records in a SQL query differs quite a bit between database platforms. Here's some samples:
+
+Microsoft SQL Server
+
+SELECT TOP 10 column FROM table
+PostgreSQL and MySQL
+
+SELECT column FROM table
+LIMIT 10
+Oracle
+
+SELECT column FROM table
+WHERE ROWNUM <= 10
+Sybase
+
+SET rowcount 10
+SELECT column FROM table
+Firebird
+
+SELECT FIRST 10 column 
+FROM table
+Due to these differences if you want to keep your code database independent you should use the maxrows attribute in the cfquery tag in ColdFusion. The tradeoffs to database independance is performance, I would expect maxrows to be slower than specifying the rows in the SQL.
+
+<cfquery datasource="#ds#" maxrows="10">
+SELECT column FROM table
+</cfquery>
+PostgreSQL and MySQL have a cool feature that will let you return an arbitrary range of rows (eg return rows 10-20). This is very handy for displaying pages of records:
+
+SELECT column FROM table
+LIMIT 10 OFFSET 20
+The above query will return rows 20-30
+

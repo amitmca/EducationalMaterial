@@ -1,0 +1,18 @@
+	CREATE FUNCTION display(text) RETURNS text AS'
+	DECLARE 
+	MYCURSOR CURSOR FOR
+	select ename from emp where eno=$1;
+	ename emp.ename%type;
+	BEGIN
+	OPEN MYCURSOR;
+	LOOP
+	FETCH MYCURSOR INTO ename;
+	EXIT WHEN NOT FOUND;
+	RAISE NOTICE ''%  '',ename;
+	END LOOP;
+	CLOSE MYCURSOR;
+	RETURN true;
+	END;
+	'LANGUAGE 'plpgsql';
+ 
+	

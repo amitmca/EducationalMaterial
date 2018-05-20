@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "RegularExpressionValidator", "http://localhost/RegularExpressionValidator/RegularExpressionValidator.vbproj", "{030892BD-E556-4C92-B094-0E2C39FF089D}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{030892BD-E556-4C92-B094-0E2C39FF089D}.Debug.ActiveCfg = Debug|.NET
+		{030892BD-E556-4C92-B094-0E2C39FF089D}.Debug.Build.0 = Debug|.NET
+		{030892BD-E556-4C92-B094-0E2C39FF089D}.Release.ActiveCfg = Release|.NET
+		{030892BD-E556-4C92-B094-0E2C39FF089D}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

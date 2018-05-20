@@ -1,0 +1,49 @@
+[Main]
+SizeX=7110
+SizeY=7005
+[1]
+Name=l1
+Type=JLabel
+Value=Select Database Name :
+X= 2040
+Y= 120
+SizeX= 2640
+SizeY= 240
+[2]
+Name=dbcombo
+Type=JComboBox
+X= 2040
+Y= 480
+SizeX= 2640
+SizeY= 360
+[3]
+Name=txttrigger
+Type=JTextArea
+X= 480
+Y= 1200
+SizeX= 6240
+SizeY= 4920
+[4]
+Name=btncreate
+Type=JButton
+Value=Create
+X= 480
+Y= 6360
+SizeX= 1680
+SizeY= 360
+[5]
+Name=btncel
+Type=JButton
+Value=Cancel
+X= 4920
+Y= 6360
+SizeX= 1800
+SizeY= 360
+[6]
+Name=btnclr
+Type=JButton
+Value=Clear
+X= 2640
+Y= 6360
+SizeX= 1800
+SizeY= 360

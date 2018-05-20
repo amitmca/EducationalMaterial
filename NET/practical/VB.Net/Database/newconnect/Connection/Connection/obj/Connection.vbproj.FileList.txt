@@ -1,0 +1,13 @@
+bin\Debug\amit.mdf
+bin\Debug\amit_log.ldf
+bin\Debug\Connection.exe.config
+bin\Debug\Connection.exe
+bin\Debug\Connection.pdb
+bin\Debug\Connection.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Connection.Form1.resources
+obj\Debug\Connection.Resources.resources
+obj\Debug\Connection.vbproj.GenerateResource.Cache
+obj\Debug\Connection.exe
+obj\Debug\Connection.xml
+obj\Debug\Connection.pdb

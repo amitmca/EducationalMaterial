@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Starting Java Script</title>
+</head>
+<body>
+<script language="JavaScript">
+var q="What Is value Of 50+50";
+var ans=100;
+var c='<img src="D:\Pictures\Tamil & Telgu Movies\poonam singar\poonam-singar-59.jpg">';
+var w='<img src="D:\Pictures\Tamil & Telgu Movies\Archana gupta\actress-archana-61.jpg ">';
+var r=prompt(q,"0");
+for(var i=0;i<3;i++)
+	{
+	if(r!=ans)
+		{
+		if(confirm("Do U want to take Another Chance ?"))
+			{
+			r=prompt(q,"0");
+			}	
+		else
+			{
+			alert(" Better Luck next time");
+			i=3;
+			}
+		}
+	else
+		{
+		alert("Congragulation !!!!");
+		i=3;
+		}		
+	}
+	var z=(r==ans)?c:w;
+document.write(z);
+</script>
+</body>
+</html>

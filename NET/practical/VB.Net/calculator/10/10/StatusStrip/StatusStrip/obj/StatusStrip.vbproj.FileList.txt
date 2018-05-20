@@ -1,0 +1,11 @@
+bin\Debug\StatusStrip.exe
+bin\Debug\StatusStrip.pdb
+bin\Debug\StatusStrip.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\StatusStrip.Form1.resources
+obj\Debug\StatusStrip.Resources.resources
+obj\Debug\StatusStrip.vbproj.GenerateResource.Cache
+obj\Debug\StatusStrip.exe
+obj\Debug\StatusStrip.xml
+obj\Debug\StatusStrip.pdb
+obj\Debug\StatusStrip.Folder_Control.resources

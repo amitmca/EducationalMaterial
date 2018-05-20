@@ -1,0 +1,39 @@
+                           Java Programming Question
+Q.Short-Notes
+
+**1)What is URL?
+**2)Whatt is UDP?
+
+*3)What is servlet life cycle?
+**4)What are implicit objects of Servlet?
+**5)What are different way by which session can be tracked?
+
+*6)What is thread life cycle?
+*7)What is thread synchronization?
+
+*8)What is applet life cycle?
+*9)What is applet tag?
+
+*10)What are different types of drivers used in JDBC?
+*11)What are different interfaces used in JDBC?
+*12)What is connection pooling?
+
+Q.Program
+
+*1)Given table VOTE: constituency no,constituency name,city,number of voters. Write JDBC application to display city wise total number of voters.
+
+*2)Write HTML to accept division name and pass to servlet. Servlet will display standard wise list of student in given division(Student:rollno,name,division,standard)
+
+**3)What is Jar file? How it is created?
+
+4)Write code for encrypting file. Accept file name from user.
+
+*5)Accept a string encrypt and append to file.
+
+*6)Write AWT application to accept student data using different controls. Add “SHOW” button, onclicking of this display accepted details in text area.
+
+*7)Write servlet application to accept student details from html page and insert a record in student table(Assume suitable data).
+
+*8)Write client-server networking program to greet user. Client will send user name to server.
+
+*9)What client-server chat application. 

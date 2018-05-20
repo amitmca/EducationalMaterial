@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="emp.xsl"?>
+<hrdept>
+	<employee>
+		<name>
+			<fname>Amit</fname>
+			<lname>Bhalerao</lname>
+		</name>
+		<address>
+			<address1>Morgoan Road</address1>
+			<city>Baramati</city>
+			<state>Maharashtra</state>
+			<pin>413102</pin>
+		</address>
+		<contact>
+			<email>once_amit1@rediffmail.com</email>
+			<residence>225209</residence>
+			<mobile>9730163853</mobile>
+		</contact>
+	</employee>	
+</hrdept>

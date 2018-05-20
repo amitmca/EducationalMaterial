@@ -1,0 +1,46 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>New Page 1</title>
+<script language="javascript">
+var a=document.form.no1.value;
+var b=document.form.no2.value;
+function add()
+	{
+	var ans=a+b;
+	document.form.op.value=document.form.no1.value+document.form.no2.value;
+	}
+	
+</script>
+</head>
+
+<body>
+<form name="form">
+<table border="0" width="509" height="119" align="center"> 
+<tr>
+		<td height="23" width="159" colspan="2"><font color="red"><b>&nbsp; First Number Here</b></font></td>
+		<td height="23" width="157" colspan="2"><font color="red"><b>&nbsp; Second Number Here</b></font></td>
+		<td height="23" width="179"><font color="red"><b>&nbsp; Output Number Here</b></font></td>
+	</tr>
+	<tr>
+		<td height="23" width="159" colspan="2" align="center"><input type="text" name="no1"></td>
+		<td height="23" width="157" colspan="2" align="center"><input type="text" name="no2"></td>
+		<td height="23" width="179" align="center"><input type="text" name="op"></td>
+	</tr>
+	<tr>
+		<td height="30" width="43" align=center><input type="button" name="b" value="+" style="color:red" size="10" onclick="add();"></td>
+		<td height="30" width="81" align=center><input type="button" name="b" value="-" style="color:red" size="10"></td>
+		<td height="30" width="42" align=center><input type="button" name="b" value="*" style="color:red" size="10"></td>
+		<td height="30" width="91" align=center><input type="button" name="b" value="/" style="color:red" size="10"></td>
+		<td height="30" width="179" align=center><input type="button" name="b" value="=" style="color:red" size="10"></td>
+	</tr>
+	<tr>
+		<td height="52" width="503" colspan="5" align="center"><input type="button" name="cancel" value="Cancel" style="color:red" size="10" onclick="window.close();"></td>
+	</tr>
+		
+</table>
+</form>
+</body>
+
+</html>

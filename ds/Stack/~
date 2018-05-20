@@ -1,0 +1,43 @@
+#include<stdio.h>
+#include<conio.h>
+#define MAX 100
+
+int stack[MAX];
+int top=-1,c=0;
+
+void push(int n)
+	{
+		if(top==MAX-1)
+			printf("Stack Is Full");
+		else	
+			stack[top++]=n;			
+			c++;
+	}
+int pop()
+	{
+		int t;
+		if(top==-1)
+			printf("Stack Is Empty");
+		else	
+			t=stack[top];
+			top--;
+			c--;
+			return(t);			
+	}
+	int main()
+	{
+		int value,i;
+		
+		char ch='y';
+		do
+			{
+			printf("\nEnter the number to pushed:");
+			scanf("%d",&value);
+			push(value);
+			printf("\n\n Do you want to add another element :");
+			ch=getche();
+			}while(ch=='y');
+		for(i=0;i<c;i++)
+			printf("%d\t",stack[i]);			
+		return 0;
+	}

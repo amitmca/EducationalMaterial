@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Images", "http://localhost/Images/Images.vbproj", "{60E72EDA-E0B3-4346-89D9-4AD5A7BBFF02}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{60E72EDA-E0B3-4346-89D9-4AD5A7BBFF02}.Debug.ActiveCfg = Debug|.NET
+		{60E72EDA-E0B3-4346-89D9-4AD5A7BBFF02}.Debug.Build.0 = Debug|.NET
+		{60E72EDA-E0B3-4346-89D9-4AD5A7BBFF02}.Release.ActiveCfg = Release|.NET
+		{60E72EDA-E0B3-4346-89D9-4AD5A7BBFF02}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

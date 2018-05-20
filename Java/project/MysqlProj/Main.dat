@@ -1,0 +1,106 @@
+[Main]
+SizeX=11010
+SizeY=9405
+[1]
+Name=query
+Type=JLabel
+Value=
+X= 1320
+Y= 960
+SizeX= 1800
+SizeY= 600
+[2]
+Name=hand
+Type=JLabel
+Value=
+X= 3240
+Y= 960
+SizeX= 720
+SizeY= 600
+[3]
+Name=taquery
+Type=JTextArea
+Value=
+X= 3960
+Y= 960
+SizeX= 5640
+SizeY= 1320
+[4]
+Name=btnexe
+Type=JButton
+Value=EXECUTE
+X= 3960
+Y= 2400
+SizeX= 1440
+SizeY= 480
+[5]
+Name=resultset
+Type=JTextArea
+Value=
+X= 1320
+Y= 3240
+SizeX= 8400
+SizeY= 4920
+[6]
+Name=top
+Type=JLabel
+Value=
+X= 120
+Y= 0
+SizeX= 10800
+SizeY= 600
+[7]
+Name=bottom
+Type=JLabel
+Value=
+X= 120
+Y= 8640
+SizeX= 10800
+SizeY= 720
+[8]
+Name=left
+Type=JLabel
+Value=
+X= 120
+Y= 600
+SizeX= 960
+SizeY= 8160
+[9]
+Name=right
+Type=JLabel
+Value=
+X= 10080
+Y= 600
+SizeX= 840
+SizeY= 8160
+[10]
+Name=btnclr
+Type=JButton
+Value=Clear
+X= 5760
+Y= 2400
+SizeX= 1560
+SizeY= 480
+[11]
+Name=txtcmd
+Type=JTextField
+X= 1320
+Y= 1800
+SizeX= 2520
+SizeY= 360
+[12]
+Name=cmd
+Type=JLabel
+Value=First Specify Command Here
+X= 1320
+Y= 2400
+SizeX= 2520
+SizeY= 240
+[13]
+Name=button_1
+Type=JButton
+Value=button_1
+X= 7680
+Y= 2400
+SizeX= 1440
+SizeY= 480

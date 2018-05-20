@@ -1,0 +1,26 @@
+[Main]
+SizeX=5895
+SizeY=4920
+[1]
+Name=textfield_1
+Type=JTextField
+X= 2760
+Y= 240
+SizeX= 2040
+SizeY= 360
+[2]
+Name=label_1
+Type=JLabel
+Value=Enter A Number
+X= 240
+Y= 240
+SizeX= 2280
+SizeY= 360
+[3]
+Name=button_1
+Type=JButton
+Value=Generate
+X= 2040
+Y= 4200
+SizeX= 2280
+SizeY= 360

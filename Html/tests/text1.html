@@ -1,0 +1,59 @@
+<HTML><HEAD>
+<meta http-equiv="Content-Language" content="en-us">
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="Microsoft FrontPage 6.0" name=GENERATOR></HEAD>
+<BODY><SPAN id=pochenderText style="WIDTH: 100%">
+<H1 align="center"><font color="#FF0000">www.javascriptfreecode.com</font></H1></SPAN>
+<SCRIPT>
+<!--
+// (C) 2002 Christian Heidler [ All rights reserved ].
+// e-mail: privat@christianheidler.de
+
+var from = 4;             	// minimalgr??e(pochen)
+var to = 12;              	// maximalgr??e(pochen)
+var speed = 1;            	// Geschwindigkeit (je kleiner der Wert, umso schneller pocht es)
+var textcolor = "#aabbdd";      // Farbe ausw?hlen (hexadezimalen code  od. Html-Farbname)
+var i = to;
+var j = 0;
+ 
+pd();
+ 
+function pu()
+   {
+   if (!document.all)
+      return
+   if (i < to)
+      {
+      pochenderText.style.filter = "Glow(Color=" + textcolor + ", Strength=" + i + ")";
+      i++;
+      theTimeout = setTimeout('pu()',speed);
+      return 0;
+      }
+ 
+   if (i = to)
+      {
+      theTimeout = setTimeout('pd()',speed);
+      return 0;
+      }
+   }
+ 
+function pd()
+   {
+   if (!document.all)
+      return
+   if (i > from)
+      {
+      pochenderText.style.filter = "Glow(Color=" + textcolor + ", Strength=" + i + ")";
+      i--;
+      theTimeout = setTimeout('pd()',speed);
+      return 0;
+      }
+   if (i = from)
+      {
+      theTimeout = setTimeout('pu()',speed);
+      return 0;
+      }
+   }
+// -->
+</SCRIPT>
+</BODY></HTML>

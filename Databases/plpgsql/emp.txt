@@ -1,0 +1,23 @@
+	create or replace function emp_insert(int,text) returns text as '
+
+	declare
+
+	cur cursor for
+
+		update emp set ename=$2 where eno=$1;
+
+	eno emp.eno%type;
+	ename emp.ename%type;
+
+	begin
+		open cur;
+		loop
+		fetch cur into eno,ename;
+		exit when not found;
+		raise notice '' % '',ename,eno;
+		end loop;
+		close cur;
+		return true;
+	end;
+
+	'language 'plpgsql';		

@@ -1,0 +1,677 @@
+
+
+
+		RELATIONS USED ==== salespeople,orders,customer
+
+
+
+					 EXERCISE NO:-1
+
+	
+  create table salespeople(snum number(5) primary key,sname varchar(20),city varchar(20),comm number(3));
+
+
+  create table orders(onum number(3) primary key,odate date,snum number(5) references salespeople(snum),amt number(6));
+
+  create table customer(cnum number(3) primary key,cname varchar(20),city varchar(20),rating number(4),snum references salespeople(snum));
+
+
+
+
+
+insert into salespeople values(1001,'Ganapati','pune',10);
+insert into salespeople values(1002,'Naveen','pune',12);
+insert into salespeople values(1003,'Abhijit','mangalwedha',15);
+insert into salespeople values(1004,'Raghunadan','Indapur',13);
+insert into salespeople values(1005,'Pravin','Satara',21);
+insert into salespeople values(1006,'Gajanan','pune',10);
+insert into salespeople values(1007,'Deepak','pune',18);
+
+
+	 select * from salespeople;
+
+      SNUM SNAME                CITY                       COMM
+---------- -------------------- -------------------- ----------
+      1001 Ganapati             pune                         11
+      1002 Naveen               pune                         13
+      1003 Abhijit              mangalwedha                  17
+      1004 Raghunadan           Indapur                      15
+      1005 Pravin               Satara                       24
+      1006 Gajanan              pune                         11
+      1007 Deepak               pune                         20
+
+insert into orders values(100,'10 mar 2005',1001,1200);
+insert into orders values(200,'12 mar 2005',1002,1300);
+insert into orders values(300,'17 mar 2005',1004,1400);
+insert into orders values(400,'21 mar 2005',1003,1500);
+insert into orders values(500,'1 april 2005',1005,1600);
+insert into orders values(600,'3 may 2005',1001,900);
+insert into orders values(525,'3 may 2005',1001,7800);
+insert into orders values(700,'2 feb 2005',1003,4500);
+insert into orders values(800,'15 feb 2005',1004,4300);
+insert into orders values(900,'25 feb 2005',1003,4500);
+insert into orders values(425,'25 feb 2005',1004,5000);
+
+	 select * from orders;
+
+      ONUM ODATE           SNUM        AMT
+---------- --------- ---------- ----------
+       100 10-MAR-05       1001       1200
+       200 12-MAR-05       1002       1300
+       300 17-MAR-05       1004       1400
+       400 21-MAR-05       1003       1500
+       500 01-APR-05       1005       1600
+       600 03-MAY-05       1001        900
+       700 02-FEB-05       1003       4500
+       800 15-FEB-05       1004       4300
+       900 25-FEB-05       1003       4500
+       425 25-FEB-05       1004       5000
+       525 03-MAY-05       1001       7800
+
+
+insert into customer values(225,'Amit','Mumbai',150,1001);
+insert into customer values(235,'Ajit','Pune',140,1003);
+insert into customer values(245,'Ajay','Nagar',130,1002);
+insert into customer values(255,'Parag','Karjat',120,1004);
+insert into customer values(265,'Vikram','Pune',90,1005);
+insert into customer values(275,'Satish','Pune',100,1004);
+insert into customer values(285,'Abhay','Phaltan',100,1001);
+insert into customer values(295,'Nikhil','Pune',250,1004);
+insert into customer values(305,'Sarang','Phaltan',230,1001);
+insert into customer values(315,'Bhushan','Dhule',50,1001);
+insert into customer values(325,'Prateek',' ',50,1001);
+insert into customer values(335,'Somnath',' ',20,1002);
+insert into customer values(345,'Pravin',' ',24,1005);
+
+	 select * from customer;
+
+      CNUM CNAME                CITY                     RATING       SNUM
+---------- -------------------- -------------------- ---------- ----------
+       225 Amit                 Mumbai                      150       1001
+       235 Ajit                 Pune                        140       1003
+       245 Ajay                 Nagar                       130       1002
+       255 Parag                Karjat                      120       1004
+       265 Vikram               Pune                         90       1005
+       275 Satish               Pune                        100       1004
+       285 Abhay                Phaltan                     100       1001
+       295 Nikhil               Pune                        250       1004
+       305 Sarang               Phaltan                     230       1001
+       315 Bhushan              Dhule                        50       1001
+       325 Prateek                                           50       1001
+       335 Somnath                                           20       1002
+       345 Pravin               satara                       24       1005
+
+					 EXERCISE NO:-2
+
+3) select sname,comm from salespeople;
+
+	Ganapati	 10
+	Naveen		 12
+	Abhijit		 15
+	Raghunadan	 13
+	Pravin		 21
+	Gajanan 	 10
+	Deepak		 18
+
+4)  select distinct snum from orders;
+
+	1001
+	1002
+	1004
+	1003
+	1005
+
+5)  select sname,city from salespeople where city='Pune' or city='pune';
+
+	Ganapati|pune
+	Naveen|pune
+	Gajanan|pune
+	Deepak|pune
+
+6)  select cnum,cname,city,rating,snum from customer where rating=100;
+
+	275|Satish|Pune|100|1004
+	285|Abhay|Phaltan|100|1001
+
+7)	select distinct snum,onum from orders;
+
+	1001|100
+	1002|200
+	1004|300
+	1003|400
+	1005|500
+	1001|600
+
+8)	select cnum,cname,city,rating,snum from customer where rating>200;
+	
+	295|Nikhil|Pune|250|1004
+	305|Sarang|Phaltan|230|1001
+
+10)    select cnum,cname,city,rating,snum from customer where city='Mumbai' and  rating>100;
+
+     CNUM CNAME                CITY                    RATING      SNUM
+--------- -------------------- -------------------- --------- ---------
+      225 Amit                 Mumbai                     150      1001
+
+SQL>                                
+
+10)	 select cnum,cname,city,rating,snum from customer where city='Mumbai' or city='Pune';	
+
+	225|Amit|Mumbai|150|1001
+	235|Ajit|Pune|140|1003
+	265|Vikram|Pune|90|1005
+	275|Satish|Pune|100|1004
+	295|Nikhil|Pune|250|1004
+
+11)	select cnum,cname,city,rating,snum from customer where city!='Pune' union select cnum,cname,city,rating
+,snum from customer where rating<100;
+
+     CNUM CNAME                CITY                    RATING      SNUM
+--------- -------------------- -------------------- --------- ---------
+      225 Amit                 Mumbai                     150      1001
+      245 Ajay                 Nagar                      130      1002
+      255 Parag                Karjat                     120      1004
+      265 Vikram               Pune                        90      1005
+      285 Abhay                Phaltan                    100      1001
+      305 Sarang               Phaltan                    230      1001
+      315 Bhushan              Dhule                       50      1001
+      325 Prateek                                          50      1001
+      335 Somnath                                          20      1002
+      345 Pravin   
+
+12)	 select cnum,cname,city,rating,snum from customer where rating<=100 and city!='Nagar';
+
+	265 Vikram               Pune                         90       1005
+	275 Satish               Pune                        100       1004
+	285 Abhay                Phaltan                     100       1001
+	315 Bhushan              Dhule                        50       1001
+	325 Prateek                                           50       1001
+
+13) select onum,snum,amt from orders where odate>='10 mar 2005' and odate<='30 mar 2005';
+
+
+     ONUM      SNUM       AMT
+--------- --------- ---------
+      100      1001      1200
+      200      1002      1300
+      300      1004      1400
+      400      1003      1500
+
+
+14)  select onum,odate,snum,amt from orders where amt>1000;
+
+     ONUM ODATE          SNUM       AMT
+--------- --------- --------- ---------
+      100 10-MAR-05      1001      1200
+      200 12-MAR-05      1002      1300
+      300 17-MAR-05      1004      1400
+      400 21-MAR-05      1003      1500
+      500 01-APR-05      1005      1600
+      525 03-MAY-05      1001      7800
+      700 02-FEB-05      1003      4500
+      800 15-FEB-05      1004      4300
+      900 25-FEB-05      1003      4500
+      425 25-FEB-05      1004      5000
+
+
+15)  select cnum,cname,city,rating,snum from customer where rating<=100 and city!='Nagar';
+
+	265|Vikram|Pune|90|1005
+	275|Satish|Pune|100|1004
+	285|Abhay|Phaltan|100|1001
+	315|Bhushan|Dhule|50|1001
+
+
+16) select sname,city from salespeople where city='pune' and comm>10;
+
+	Naveen|pune
+	Deepak|pune
+
+18) select sname from salespeople where sname like 'G__a%';
+
+	Ganapati
+	Gajanan
+
+19) select cnum,cname,city,rating,snum from customer where city=NULL;
+
+	325|Prateek| |50|1001
+
+20) select sname from salespeople where sname like 'A%' or sname like 'B%' or sname like 'C%' or sname like 'D%' or sname like 'E%' or sname like 'F%' or sname like 'G%';
+
+	Ganapati
+	Abhijit
+	Gajanan
+	Deepak 
+
+21) update comm set comm=comm+comm*0.12 from salespeople;
+
+
+						 EXERCISE NO:-3
+
+
+
+1)  select * from customer order by cname;
+
+      CNUM CNAME                CITY                     RATING       SNUM
+---------- -------------------- -------------------- ---------- ----------
+       285 Abhay                Phaltan                     100       1001
+       245 Ajay                 Nagar                       130       1002
+       235 Ajit                 Pune                        140       1003
+       225 Amit                 Mumbai                      150       1001
+       315 Bhushan              Dhule                        50       1001
+       295 Nikhil               Pune                        250       1004
+       255 Parag                Karjat                      120       1004
+       325 Prateek                                           50       1001
+       305 Sarang               Phaltan                     230       1001
+       275 Satish               Pune                        100       1004
+       265 Vikram               Pune                         90       1005
+
+2) select * from customer order by rating desc;
+
+      CNUM CNAME                CITY                     RATING       SNUM
+---------- -------------------- -------------------- ---------- ----------
+       295 Nikhil               Pune                        250       1004
+       305 Sarang               Phaltan                     230       1001
+       225 Amit                 Mumbai                      150       1001
+       235 Ajit                 Pune                        140       1003
+       245 Ajay                 Nagar                       130       1002
+       255 Parag                Karjat                      120       1004
+       275 Satish               Pune                        100       1004
+       285 Abhay                Phaltan                     100       1001
+       265 Vikram               Pune                         90       1005
+       315 Bhushan              Dhule                        50       1001
+       325 Prateek                                           50       1001
+
+3) select * from salespeople order by snum asc;
+
+      SNUM SNAME                CITY                       COMM
+---------- -------------------- -------------------- ----------
+      1001 Ganapati             pune                         11
+      1002 Naveen               pune                         13
+      1003 Abhijit              mangalwedha                  17
+      1004 Raghunadan           Indapur                      15
+      1005 Pravin               Satara                       24
+      1006 Gajanan              pune                         11
+      1007 Deepak               pune                         20
+
+
+4) select count(*) from customer;
+
+  COUNT(*)
+----------
+        11
+
+5) select  count(distinct(snum)) from orders;
+
+COUNT(DISTINCT(SNUM))
+---------------------
+
+          5
+
+6)  select count(onum) from orders where odate>='1 feb 2005' and odate<='28 feb 2005';
+
+
+COUNT(ONUM)
+-----------
+          2
+
+7) select count(cnum) from customer where city!=' ';
+
+COUNT(CNUM)
+-----------
+         10
+
+
+8) select max(blnc+amt) from orders;
+	12000
+
+
+
+9) select min(rating) from customer;
+
+MIN(RATING)
+-----------
+         50
+
+10) select avg(amt) from orders;
+
+  AVG(AMT)
+----------
+    2087.5
+
+11) select max(amt) from orders group by snum;
+
+  MAX(AMT)
+----------
+      1200
+      1300
+      4500
+      4300
+      1600
+
+12) select odate,max(amt) from orders  group by odate;
+
+select snum,odate,max(amt) from orders  group by snum,odate;
+
+ODATE       MAX(AMT)
+--------- ----------
+02-FEB-05       4500
+15-FEB-05       4300
+25-FEB-05       5000
+10-MAR-05       1200
+12-MAR-05       1300
+17-MAR-05       1400
+21-MAR-05       1500
+01-APR-05       1600
+03-MAY-05       7800
+
+
+
+13) select * from orders where amt>3000;
+
+      ONUM ODATE           SNUM        AMT
+---------- --------- ---------- ----------
+       700 02-FEB-05       1003       4500
+       800 15-FEB-05       1004       4300
+
+
+14) select onum,odate from orders group by onum,odate order by odate;
+
+      ONUM ODATE
+---------- ---------
+       700 02-FEB-05
+       800 15-FEB-05
+       100 10-MAR-05
+       200 12-MAR-05
+       300 17-MAR-05
+       400 21-MAR-05
+       500 01-APR-05
+       600 03-MAY-05
+
+
+
+15) select max(rating),city from customer group by city;
+
+MAX(RATING) CITY
+----------- --------------------
+         50
+         50 Dhule
+        120 Karjat
+        150 Mumbai
+        130 Nagar
+        230 Phaltan
+        250 Pune
+
+
+16) select count(onum) from orders group by odate order by count(onum) desc;
+
+COUNT(ONUM)
+-----------
+          2
+          2
+          1
+          1
+          1
+          1
+          1
+          1
+          1
+
+					EXERCISE NO:-4	
+
+
+
+1) alter table orders add(blnc number(5));
+
+	Table altered.
+
+update orders set blnc=2500 where onum=100;
+update orders set blnc=3500 where onum=200;
+update orders set blnc=4500 where onum=300;
+update orders set blnc=3200 where onum=400;
+update orders set blnc=4700 where onum=500;
+update orders set blnc=4800 where onum=600;
+update orders set blnc=4200 where onum=525;
+update orders set blnc=4300 where onum=800;
+update orders set blnc=4400 where onum=900;
+update orders set blnc=4900 where onum=425;
+update orders set blnc=5800 where onum=700;
+
+
+SQL> select * from orders;
+
+      ONUM ODATE           SNUM        AMT       BLNC
+---------- --------- ---------- ---------- ----------
+       100 10-MAR-05       1001       1200       2500
+       200 12-MAR-05       1002       1300       3500
+       300 17-MAR-05       1004       1400       4500
+       400 21-MAR-05       1003       1500       3200
+       500 01-APR-05       1005       1600       4700
+       600 03-MAY-05       1001        900       4800
+       525 03-MAY-05       1001       7800       4200
+       800 15-FEB-05       1004       4300       4300
+       900 25-FEB-05       1003       4500       4400
+       425 25-FEB-05       1004       5000       4900
+
+
+
+2) update salespeople set comm=comm+200;
+
+			Before Updating........................
+
+SQL> select * from salespeople;
+
+      SNUM SNAME                CITY                       COMM
+---------- -------------------- -------------------- ----------
+      1001 Ganapati             pune                        211
+      1002 Naveen               pune                        213
+      1003 Abhijit              mangalwedha                 217
+      1004 Raghunadan           Indapur                     215
+      1005 Pravin               Satara                      224
+      1006 Gajanan              pune                        211
+      1007 Deepak               pune                        220
+
+
+SQL> update salespeople set comm=comm+200;
+
+
+			After updating.............................
+
+SQL> select * from salespeople;
+
+      SNUM SNAME                CITY                       COMM
+---------- -------------------- -------------------- ----------
+      1001 Ganapati             pune                        411
+      1002 Naveen               pune                        413
+      1003 Abhijit              mangalwedha                 417
+      1004 Raghunadan           Indapur                     415
+      1005 Pravin               Satara                      424
+      1006 Gajanan              pune                        411
+      1007 Deepak               pune                        420
+
+
+3) delete from orders where odate<'5 feb 2005';
+
+
+			Before Deleting............................
+	
+SQL> select * from orders;
+
+      ONUM ODATE           SNUM        AMT       BLNC
+---------- --------- ---------- ---------- ----------
+       100 10-MAR-05       1001       1200
+       200 12-MAR-05       1002       1300
+       300 17-MAR-05       1004       1400
+       400 21-MAR-05       1003       1500
+       500 01-APR-05       1005       1600
+       600 03-MAY-05       1001        900
+       525 03-MAY-05       1001       7800
+       700 02-FEB-05       1003       4500
+       800 15-FEB-05       1004       4300
+       900 25-FEB-05       1003       4500
+       425 25-FEB-05       1004       5000
+
+			After Deleting............................
+
+
+SQL> select * from orders;
+
+      ONUM ODATE           SNUM        AMT       BLNC
+---------- --------- ---------- ---------- ----------
+       100 10-MAR-05       1001       1200
+       200 12-MAR-05       1002       1300
+       300 17-MAR-05       1004       1400
+       400 21-MAR-05       1003       1500
+       500 01-APR-05       1005       1600
+       600 03-MAY-05       1001        900
+       525 03-MAY-05       1001       7800
+       800 15-FEB-05       1004       4300
+       900 25-FEB-05       1003       4500
+       425 25-FEB-05       1004       5000
+
+
+					EXERCISE NO:-5
+
+1) select cname from salespeople s,customer c where s.snum=c.snum and cname=sname;
+
+CNAME
+--------------------
+Pravin
+
+
+2) select distinct onum,odate,o.snum,amt from orders o,salespeople s,customer c where s.snum=o.snum and s.snum=c.snum and s.city!=c.city;
+
+      ONUM ODATE           SNUM        AMT
+---------- --------- ---------- ----------
+       100 10-MAR-05       1001       1200
+       525 03-MAY-05       1001       7800
+       600 03-MAY-05       1001        900
+       200 12-MAR-05       1002       1300
+       900 25-FEB-05       1003       4500
+       400 21-MAR-05       1003       1500
+       800 15-FEB-05       1004       4300
+       425 25-FEB-05       1004       5000
+       300 17-MAR-05       1004       1400
+       500 01-APR-05       1005       1600
+
+
+3) select distinct onum,cname from orders o,salespeople s,customer c where s.snum=o.snum and s.snu
+m=c.snum;
+
+      ONUM CNAME
+---------- --------------------
+       100 Abhay
+       100 Amit
+       100 Bhushan
+       100 Prateek
+       100 Sarang
+       200 Ajay
+       200 Somnath
+       300 Nikhil
+       300 Parag
+       300 Satish
+       400 Ajit
+
+      ONUM CNAME
+---------- --------------------
+       425 Nikhil
+       425 Parag
+       425 Satish
+       500 Pravin
+       500 Vikram
+       525 Abhay
+       525 Amit
+       525 Bhushan
+       525 Prateek
+       525 Sarang
+       600 Abhay
+
+      ONUM CNAME
+---------- --------------------
+       600 Amit
+       600 Bhushan
+       600 Prateek
+       600 Sarang
+       700 Ajit
+
+4) select sum(comm) from salespeople s,orders o,customer c where s.snum=o.snum and c.snum=s.snum a
+nd rating>100;
+
+ SUM(COMM)
+----------
+      3420
+
+
+6) select cname,city from customer group by rating,cname,city;
+
+  cname  |  city
+---------+---------
+ Abhay   | Phaltan
+ Ajit    | Pune
+ Sarang  | Phaltan
+ Amit    | Mumbai
+ Pravin  |
+ Satish  | Pune
+ Parag   | Karjat
+ Ajay    | Nagar
+ Vikram  | Pune
+ Prateek |
+ Nikhil  | Pune
+ Bhushan | Dhule
+ Somnath |
+
+
+					EXERCISE NO:-6
+
+
+1) select o.onum,odate,amt from orders o where exists (select cname from customer c,orders  o where o.snum=c.snum and cname='Amit');
+
+ onum |   odate    | amt
+------+------------+------
+  100 | 2005-03-10 | 1200
+  600 | 2005-05-03 |  900
+  525 | 2005-05-03 | 7800
+
+3) select sname,city,sum(amt) from salespeople s,orders o where s.snum=o.snum group by sname,city having sum(amt)>max(amt);
+
+	Raghunadan|Indapur|10700
+	Abhijit|mangalwedha|10500
+	Ganapati|pune|9900
+
+
+					EXERCISE NO:-7
+
+
+2) select distinct s.snum,s.sname,c.cnum from salespeople  s,orders  o,customer  c where s.snum=o.snum and s.snum=c.snum and odate>='1 april 2005' and odate<='30 april 2005' order by s.sname asc;
+
+ snum | sname  | cnum
+------+--------+------
+ 1005 | Pravin |  265
+ 1005 | Pravin |  345
+
+
+
+
+
+
+
+					EXERCISE NO:-8
+
+
+2) create view view3 as select max(rating) m from customer;
+
+   select * from view3;
+
+   250
+
+
+3) create view view2 as select count(snum) c from salespeople group by city;
+
+  select * from view2;
+
+	1
+	1	
+	1
+	4
+
+

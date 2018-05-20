@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FileAccessLib", "FileAccessLib.vbproj", "{36CA7169-5335-43ED-A255-BA13447A9803}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{36CA7169-5335-43ED-A255-BA13447A9803}.Debug.ActiveCfg = Debug|.NET
+		{36CA7169-5335-43ED-A255-BA13447A9803}.Debug.Build.0 = Debug|.NET
+		{36CA7169-5335-43ED-A255-BA13447A9803}.Release.ActiveCfg = Release|.NET
+		{36CA7169-5335-43ED-A255-BA13447A9803}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

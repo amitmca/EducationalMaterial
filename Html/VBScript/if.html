@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Slockum Enterprises - User Account</title>
+<SCRIPT LANGUAGE="VBScript">
+<!--
+Sub CheckPassword()
+  Dim Password, ConfPassword, Result
+  Password = Document.frmRegistration.txtPassword.Value
+  ConfPassword = Document.frmRegistration.txtConfirmPass.Value
+
+  If Password <> ConfPassword Then
+    Document.frmRegistration.txtResult.Value = "Your Passwords Do Not Match"
+  else   
+      Document.frmRegistration.txtResult.Value = "Your Passwords are Matching"
+  End If
+End Sub
+-->
+</SCRIPT>
+</head>
+<body>
+<h1>Slockum Enterprises</h1>
+<p>In order to access this site, you must be a member. Please create an acount.</p>
+
+<form name="frmRegistration">
+  <blockquote>
+    Full Name:<input type="text" name="txtFullName" size="32"><br>
+    Username: <input type="text" name="txtUsername" size="15"><br>
+    Password: <input type="password" name="txtPassword" size="15"><br>
+    Confirm:  <input type="password" name="txtConfirmPass" size="15"><br>
+    Result: <input type="text" name="txtResult" size="40">
+    <blockquote><blockquote>
+      <input type="button" value="Send It" onClick="CheckPassword">
+    </blockquote></blockquote>
+  </blockquote>
+</form>
+
+</body>
+</html>
+ 
+

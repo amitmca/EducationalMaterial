@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>Event Demo</title>
+<script language="javascript" type="text/javascript">
+<!-- // Hide Javascript from old browsers
+
+function changetext() {
+        var vchangethis = document.getElementById("changeme");
+        var vevent = window.event.type;
+        if (vevent =="load")
+                document.forma.testfield.value = "Hello";
+        if (vevent =="click")
+                document.forma.testfield.value = "That Hurt!";
+        if (vevent =="mouseover")
+                document.forma.testfield.value = "Keep Away";
+        if (vevent =="mouseout")
+                document.forma.testfield.value = "Good You've Gone";
+        vchangethis.innerHTML = vevent;
+}
+
+// End -->
+</script>
+</head>
+<body onload="changetext()">
+
+Demonstration of event handling in Javascript -
+courtesy Keith Lovern<br /><br />
+In this example, a Javascript function changes the text within
+a text area as the user of the browser moves his mouse in and
+out of that text area, and clicks on the area.<br /><br />
+
+<form action="#" method="get" name="forma">
+<textarea name="testfield" cols="10" rows="10"
+        onmouseover="changetext()"
+        onmouseout="changetext()"
+        onkeypress="changetext()"
+        onchange="changetext()"
+        onclick="changetext()"></textarea>
+
+</form>
+last event:
+<div id="changeme"
+        style="background-color: #ababab; font-weight:bold">
+<br />
+</div>
+Read <a href=http://www.wellho.net/mouth/522_.html>
+about this example</a><br />
+View <a href=http://www.wellho.net/resources/ex.php4?item=w602/jskl.html>
+source code</a><br />
+Go to our <a href=/>Home Page</a><br />
+<?php if ($_SERVER[HTTP_REFERER]) {
+print ("Return to <a href=$_SERVER[HTTP_REFERER]>previous</a>");
+} ?>
+</body>
+</html> 

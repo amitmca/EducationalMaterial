@@ -1,0 +1,11 @@
+$cmd=$_POST['cmd']; 
+Require_once('DB.php');
+$dsn="pgsql://postgres@localhost/test";
+$db=DB::connect($dsn);
+if(DB::isError($db))
+	{
+	die($db->getMessage());
+	}
+
+if($cmd=="create")
+	{?>

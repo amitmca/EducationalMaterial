@@ -1,0 +1,83 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Checking Availability</title>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+
+function setColor(el, bg) 
+{
+  if (el.style) el.style.backgroundColor = bg;
+}
+
+function checkInput(form) 
+{
+  var bgBad = "lightyellow";
+  var bgGood = "white";
+  var valid = true;
+  
+  if (form.txtpid.value == "")
+   {
+    valid = false;
+    setColor(form.txtpid, bgBad);
+  
+   }
+   else
+   {
+    setColor(form.txtpid, bgGood);
+   }
+
+  if (!valid) alert("Please enter the project Id that you want");
+  return valid;
+}
+// -->
+</SCRIPT>
+
+
+</head>
+<body background="images/stylusstudio_02.gif">
+
+<form name=form id=form method="post" action="http://localhost/project/availabel.php" onSubmit="return checkInput(this)">
+
+<table border="0" width="39%" height="159" background="images/stylusstudio_02.gif">
+	<tr>
+		<td height="155" width="384" valign="top">
+		<fieldset>
+		<table border="0" cellpadding="0" cellspacing="0" width="349" height="151" background="images/HDR_WIZ_RIGHT.PNG">
+			<!-- MSTableType="layout" -->
+			<tr>
+			<td height="41" align="center">
+			<FONT face="Verdana, Arial, Helvetica" color=#FF6699 size=2>
+			<h3>*** Checking Availability ***</h3>
+			</FONT>
+			</td>
+			</tr>
+			<tr>
+			<td height="41" align="left">
+			<FONT face="Verdana, Arial, Helvetica" color=red size=2>
+			<h5>Please enter the Project Id that you want here  :</h5></FONT>
+			</td>
+			</tr>
+			<tr>
+			<td height="37" align="center">
+			<input type="text" name="txtpid" size="30">
+			</td>
+			</tr>
+			<tr>
+			<td width="349" height="32" align="center" align="center">
+
+			<input type="image" src="images/submit1.gif">
+			</td>
+			</tr>
+			
+		</table>
+		</fieldset>
+		</td>
+	</tr>
+</table>
+
+</form>
+</body>
+
+</html>

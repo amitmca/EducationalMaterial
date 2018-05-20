@@ -1,0 +1,53 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FillGraphics", "FillGraphics.vbproj", "{59DF7091-0836-4360-A41D-5C0450F047E8}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "BinaryWriterReader", "..\BinaryWriterReader\BinaryWriterReader.vbproj", "{2A0002B4-1454-4754-89C6-BD6C9744B5E9}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Copier", "..\Copier\Copier.vbproj", "{ED8D105E-7658-48C3-B45E-0FDAE5667A26}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Painter", "..\Painter\Painter.vbproj", "{EAE476D1-4593-4DF2-B4EA-CEB15BFAA245}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "StreamWriterReader", "..\StreamWriterReader\StreamWriterReader.vbproj", "{2268A8E9-3D0A-4E86-984E-80A3BD76EFC8}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{59DF7091-0836-4360-A41D-5C0450F047E8}.Debug.ActiveCfg = Debug|.NET
+		{59DF7091-0836-4360-A41D-5C0450F047E8}.Debug.Build.0 = Debug|.NET
+		{59DF7091-0836-4360-A41D-5C0450F047E8}.Release.ActiveCfg = Release|.NET
+		{59DF7091-0836-4360-A41D-5C0450F047E8}.Release.Build.0 = Release|.NET
+		{2A0002B4-1454-4754-89C6-BD6C9744B5E9}.Debug.ActiveCfg = Debug|.NET
+		{2A0002B4-1454-4754-89C6-BD6C9744B5E9}.Debug.Build.0 = Debug|.NET
+		{2A0002B4-1454-4754-89C6-BD6C9744B5E9}.Release.ActiveCfg = Release|.NET
+		{2A0002B4-1454-4754-89C6-BD6C9744B5E9}.Release.Build.0 = Release|.NET
+		{ED8D105E-7658-48C3-B45E-0FDAE5667A26}.Debug.ActiveCfg = Debug|.NET
+		{ED8D105E-7658-48C3-B45E-0FDAE5667A26}.Debug.Build.0 = Debug|.NET
+		{ED8D105E-7658-48C3-B45E-0FDAE5667A26}.Release.ActiveCfg = Release|.NET
+		{ED8D105E-7658-48C3-B45E-0FDAE5667A26}.Release.Build.0 = Release|.NET
+		{EAE476D1-4593-4DF2-B4EA-CEB15BFAA245}.Debug.ActiveCfg = Debug|.NET
+		{EAE476D1-4593-4DF2-B4EA-CEB15BFAA245}.Debug.Build.0 = Debug|.NET
+		{EAE476D1-4593-4DF2-B4EA-CEB15BFAA245}.Release.ActiveCfg = Release|.NET
+		{EAE476D1-4593-4DF2-B4EA-CEB15BFAA245}.Release.Build.0 = Release|.NET
+		{2268A8E9-3D0A-4E86-984E-80A3BD76EFC8}.Debug.ActiveCfg = Debug|.NET
+		{2268A8E9-3D0A-4E86-984E-80A3BD76EFC8}.Debug.Build.0 = Debug|.NET
+		{2268A8E9-3D0A-4E86-984E-80A3BD76EFC8}.Release.ActiveCfg = Release|.NET
+		{2268A8E9-3D0A-4E86-984E-80A3BD76EFC8}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

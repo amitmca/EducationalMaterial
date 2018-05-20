@@ -1,0 +1,17 @@
+ul.one{list-style-type:disc;}
+
+ul.two{list-style-type:circle;}
+
+ul.three{list-style-type:square;}
+
+ul.four{list-style-type:none;}
+
+ol.one{list-style-type:decimal;}
+
+ol.two2{list-style-type:upper-alpha;}
+
+ol.three{list-style-type:lower-alpha;}
+
+ol.four{list-style-type:upper-roman;}
+
+ol.five{list-style-type:lower-roman;}

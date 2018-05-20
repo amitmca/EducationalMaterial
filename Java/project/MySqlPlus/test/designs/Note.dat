@@ -1,0 +1,35 @@
+[Main]
+SizeX=9090
+SizeY=600
+[1]
+Name=label_1
+Type=JLabel
+Value=Note :
+X= 120
+Y= 0
+SizeX= 720
+SizeY= 360
+[2]
+Name=label_2
+Type=JLabel
+Value=label_2
+X= 840
+Y= 0
+SizeX= 720
+SizeY= 480
+[3]
+Name=label_3
+Type=JLabel
+Value=Use Database.Table Syntax
+X= 1680
+Y= 0
+SizeX= 6960
+SizeY= 240
+[4]
+Name=label_4
+Type=JLabel
+Value=Example : select * from mysql.user;
+X= 1680
+Y= 360
+SizeX= 6960
+SizeY= 240

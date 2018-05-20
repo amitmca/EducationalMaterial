@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Loader</title>
+</head>
+<body>
+<SCRIPT src="preloader.js" type=text/javascript></SCRIPT>
+<DIV id=waitDiv 
+style="LEFT: 39%; VISIBILITY: hidden; WIDTH: 178px; POSITION: absolute; TOP: 132px; HEIGHT: 99px; BACKGROUND-COLOR: #ffffff; TEXT-ALIGN: center">
+<TABLE style="BORDER-COLLAPSE: collapse" borderColor=#4269c0 height="101%" 
+cellSpacing=0 cellPadding=0 width="100%" border=2>
+  <TBODY>
+  <TR>
+    <TD width="99%" bgColor=#ffffff>
+      <TABLE cellPadding=6 width=216 border=0>
+        <TBODY>
+        <TR>
+          <TD dir=ltr vAlign=top align=middle width=200><FONT 
+            style="FONT-SIZE: 8pt" face=Tahoma><IMG height=16 
+            src="loading22.gif" width=16 border=0> 
+            <FONT color="red" ><b>Welcome To Plan Projects</b>
+            <P><IMG height=15 src="loading5.gif" 
+            width=200 border=0> <BR>&nbsp;</P>
+            <P><FONT style="FONT-WEIGHT: 700; FONT-SIZE: 8pt" face=Tahoma color="#77c805
+">An Online Project Management World
+  </FONT></P></FONT></FONT></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV>
+<SCRIPT>ap_showWaitMessage('waitDiv', 1); </SCRIPT>
+<SCRIPT type=text/javascript>
+
+var t=setTimeout("ap_showWaitMessage('waitDiv', 0);",2500)
+
+</SCRIPT>
+</body>
+</html>

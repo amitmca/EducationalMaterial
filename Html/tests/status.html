@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Status Bar Messages</title>
+<script language="JavaScript" type="text/javascript"> 
+<!-- 
+//Visit http://ww.firethrottle.tk for this script and more 
+// You may edit the message below. 
+var startMsg = "Visit FireThrottle.tk for great tutorials and downloads"; 
+var str = ""; 
+var msg = ""; 
+var leftMsg = ""; 
+
+function setMessage() 
+{ 
+if (msg == "") 
+{ 
+str = " "; 
+msg = startMsg; 
+leftMsg = ""; 
+} 
+if (str.length == 1) 
+{ 
+while (msg.substring(0, 1) == " ") 
+{ 
+leftMsg = leftMsg + str; 
+str = msg.substring(0, 1); 
+msg = msg.substring(1, msg.length); 
+} 
+leftMsg = leftMsg + str; 
+str = msg.substring(0, 1); 
+msg = msg.substring(1, msg.length); 
+for (var ii = 0; ii < 120; ii++) 
+{ 
+str = " " + str; 
+} 
+} 
+else 
+str = str.substring(10, str.length); 
+window.status = leftMsg + str; 
+// This editable value (1000 = 1 second) 
+// corresponds to the speed of the shooting 
+// message. 
+timeout = window.setTimeout('setMessage()',100); 
+} 
+// --> 
+</script> 
+</head>
+<BODY bgcolor="ffffff" onload="timeout = window.setTimeout('setMessage()',500);"> 
+sdf
+</body>
+</html>

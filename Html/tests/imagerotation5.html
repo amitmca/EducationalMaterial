@@ -1,0 +1,108 @@
+
+/*
+JavaScript Bible, Fourth Edition
+by Danny Goodman 
+
+Publisher: John Wiley & Sons CopyRight 2001
+ISBN: 0764533428
+*/
+
+
+<HTML>
+<HEAD>
+<TITLE>Image Object</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+// global declaration for 'desk' images array
+var imageDB
+// pre-cache the 'desk' images
+if (document.images) {
+    // list array index names for convenience
+    var deskImages = new Array("desk1", "desk2", "desk3", "desk4")
+    // build image array and pre-cache them
+    imageDB = new Array(4)
+    for (var i = 0; i < imageDB.length ; i++) {
+        imageDB[deskImages[i]] = new Image(120,90)
+        imageDB[deskImages[i]].src = deskImages[i] + ".gif"
+    }
+}
+// change image of 'individual' image
+function loadIndividual(form) {
+    if (document.images) {
+        var gifName = form.individual.options[form.individual.selectedIndex].value
+        document.thumbnail1.src = gifName + ".gif"
+    }
+}
+// change image of 'cached' image
+function loadCached(form) {
+    if (document.images) {
+        var gifIndex = form.cached.options[form.cached.selectedIndex].value
+        document.thumbnail2.src = imageDB[gifIndex].src
+    }
+}
+// if switched on, cycle 'cached' image to next in queue
+function checkTimer() {
+    if (document.images && document.Timer.timerBox.checked) {
+        var gifIndex = document.selections.cached.selectedIndex
+        if (++gifIndex > imageDB.length - 1) {
+            gifIndex = 0
+
+}
+        document.selections.cached.selectedIndex = gifIndex
+        loadCached(document.selections)
+        var timeoutID = setTimeout("checkTimer()",5000)
+    }
+}
+// reset form controls to defaults on unload
+function resetSelects() {
+    for (var i = 0; i < document.forms.length; i++) {
+        for (var j = 0; j < document.forms[i].elements.length; j++) {
+            if (document.forms[i].elements[j].type == "select-one") {
+                document.forms[i].elements[j].selectedIndex = 0    
+            }
+        }
+    }
+}
+// get things rolling
+function init() {
+    loadIndividual(document.selections)
+    loadCached(document.selections)
+    setTimeout("checkTimer()",5000)
+}
+</SCRIPT>
+</HEAD>
+<BODY onLoad="init()" onUnload="resetSelects ()">
+<H1>Image Object</H1>
+<HR>
+<CENTER>
+<TABLE BORDER=3 CELLPADDING=3>
+<TR><TH></TH><TH>Individually Loaded</TH><TH>Pre-cached</TH></TR>
+<TR><TD ALIGN=RIGHT><B>Image:</B></TD>
+<TD><IMG SRC="images/cancel.gif" NAME="thumbnail1" HEIGHT=90 WIDTH=120></TD>
+<TD><IMG SRC="images/continue.gif" NAME="thumbnail2" HEIGHT=90 WIDTH=120></TD>
+</TR>
+<TR><TD ALIGN=RIGHT><B>Select image:</B></TD>
+<FORM NAME="selections">
+<TD>
+<SELECT NAME="individual" onChange="loadIndividual(this.form)">
+<OPTION VALUE="cpu1">Wires
+<OPTION VALUE="cpu2">Keyboard
+<OPTION VALUE="cpu3">Desks
+<OPTION VALUE="cpu4">Cables
+</SELECT>
+</TD>
+<TD>
+<SELECT NAME="cached" onChange="loadCached(this.form)">
+<OPTION VALUE="desk1">Bands
+<OPTION VALUE="desk2">Clips
+<OPTION VALUE="desk3">Lamp
+<OPTION VALUE="desk4">Erasers
+</SELECT></TD>
+</FORM>
+</TR></TABLE>
+<FORM NAME="Timer">
+<INPUT TYPE="checkbox" NAME="timerBox" onClick="checkTimer()">Auto-cycle through
+ pre-cached images
+</FORM>
+</CENTER>
+</BODY>
+</HTML> 

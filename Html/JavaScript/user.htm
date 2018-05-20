@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>User Defined Functions</title>
+</head>
+<script language="JavaScript">
+var name=" ";
+function hello()
+	{
+	name=prompt("Enter your name:","name");
+	alert(" WELCOME TO THE USER DEFINED FUNCTIONS "+name);
+	}
+
+function goodbye()
+	{
+	alert("See you again " +name);	
+	}
+
+function square(form)
+	{
+	var sqr=form.num.value*form.num.value;
+	form.result.value=sqr;
+	}
+
+function cube(form)
+	{
+	var cub=form.num.value*form.num.value*form.num.value;
+	form.result.value=cub;				
+	}
+
+function factorial(number)
+	{
+	if(number>1)
+		{
+		return(number*factorial(number-1));
+		}
+	else
+		{
+		return(number);
+		}
+	}
+</script>
+</head>
+<body onLoad="hello();" onUnload="goodbye();" background="../images/title_2_1.jpg">
+<form>
+
+<table border="1" width="333" height="172" bgcolor="lightyellow" bordercolor="red" align="center">
+	<tr>
+		<td height="35" width="323" align="center" colspan="2"><h2><FONT face="Verdana, Arial, Helvetica" color=#000000>User Defined Functions</FONT></h2></td>
+	</tr>
+	<tr>
+		<td height="38" width="166" align="center">
+		<label><FONT face="Verdana, Arial, Helvetica" color=#000000 size=2>Enter Any Number:</FONT></label>
+		</td>
+		<td height="38" width="151" align="center">
+		<input type="text" name="num">
+		</td>
+	</tr>
+	<tr>
+		<td height="38" width="323" colspan="2" align="center">
+		<FONT face="Verdana, Arial, Helvetica" color=#000000 size=2>
+		Square : </FONT><input type="radio" name="cal" value="square" onClick="square(this.form);">
+		<FONT face="Verdana, Arial, Helvetica" color=#000000 size=2>
+		Cube :</FONT> <input type="radio" name="cal" value="cube" onClick="cube(this.form);">
+		<FONT face="Verdana, Arial, Helvetica" color=#000000 size=2>
+		Factorial : </FONT><input type="radio" name="cal" value="fact" onClick="result.value=factorial(num.value);">
+		</td>
+	</tr>
+	<tr>
+		<td height="27" width="323" colspan="2" align="center">
+		<FONT face="Verdana, Arial, Helvetica" color=#000000 size=2>Result</FONT>
+		<input type="text" name="result">
+		</td>
+	</tr>
+
+</table>
+</form>
+</body>
+</html>

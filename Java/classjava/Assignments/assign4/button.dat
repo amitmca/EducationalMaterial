@@ -1,0 +1,35 @@
+[Main]
+SizeX=4800
+SizeY=3600
+[1]
+Name=scrollpane_1
+Type=JTextArea
+Value=scrollpane_1
+X= 840
+Y= 1800
+SizeX= 3360
+SizeY= 1080
+[2]
+Name=button_1
+Type=JButton
+Value=RED
+X= 480
+Y= 840
+SizeX= 1080
+SizeY= 360
+[3]
+Name=green
+Type=JButton
+Value=GREEN
+X= 1800
+Y= 840
+SizeX= 1080
+SizeY= 360
+[4]
+Name=blue
+Type=JButton
+Value=BLUE
+X= 3240
+Y= 840
+SizeX= 1080
+SizeY= 360

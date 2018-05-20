@@ -1,0 +1,39 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Finding Maximum</title>
+<script language="vbscript">
+Sub chk_onclick()
+	dim a,b,c
+	a=Eval(document.form.txt1.value)
+	b=Eval(document.form.txt2.value)
+	c=Eval(document.form.txt3.value)
+	If(a>b and a>c) Then
+		document.write("<font color='red' size='15'>"&a&" is maximum")
+	ElseIf(b>a and b>c) Then		
+			document.write("<font color='red' size='15'>"&b&" is maximum")
+	ElseIf(c>a and c>b) Then		
+			document.write("<font color='red' size='15'>"&c&" is maximum")
+			
+	End If			
+End Sub
+
+
+</script>
+</head>
+
+<body>
+<form name="form" method="post">
+<center>
+<label><font color="red">First Number</font></label>
+<input type="text" name="txt1">
+<label><font color="red">Second Number</font></label>
+<input type="text" name="txt2">
+<label><font color="red">Third Number</font></label>
+<input type="text" name="txt3"></center>
+<br><center><input type="button" name="chk" value="Get Maximum"></center>
+</form>
+</body>
+
+</html>

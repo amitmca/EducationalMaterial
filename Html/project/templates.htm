@@ -1,0 +1,238 @@
+<html>
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<title>Standard Website Templates</title>
+<LINK href="./WinStyle_NavBar.css" type="text/css" rel="stylesheet" />
+<LINK href="./Blue_NavBar.css" type="text/css" rel="stylesheet" />
+     <STYLE>
+     BODY {
+SCROLLBAR-FACE-COLOR: red; SCROLLBAR-HIGHLIGHT-COLOR: gray; 
+
+SCROLLBAR-SHADOW-COLOR: black; SCROLLBAR-ARROW-COLOR: gray; 
+
+SCROLLBAR-TRACK-COLOR: black; SCROLLBAR-DARKSHADOW-COLOR: red
+}
+font{text-decoration:None;}
+</STYLE>
+</head>
+<BODY> 
+<form name="form1" method="post" action="http://localhost/project/login.php">
+<table border="0" width="977" height="89">
+	<tr>
+		<td height="83" width="971" valign="middle" background="images/stylusstudio_02.gif">
+		<img border="0" src="images/logosmall_free.gif" width="271" height="59">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<img border="0" src="images/employee.jpg" width="275" height="75"></td>
+	</tr>
+
+</table>
+
+<table border="0" width="976" height="23">
+	<tr>
+		<td height="23" width="125" align="center" bgcolor="red"><a href="index.htm"><font color="white"><b><FONT face="Verdana, Arial, Helvetica" size=-1>Home</FONT></b></font></a></td>
+		<td height="23" width="125" align="center" bgcolor="red"><a href="aboutus.htm"><font color="white"><b><FONT face="Verdana, Arial, Helvetica" size=-1>About Us</FONT></b></font></a></td>
+		<td height="23" width="125" align="center" bgcolor="red"><a href="search.htm"><font color="white"><b><FONT face="Verdana, Arial, Helvetica" size=-1>Search</FONT></b></font></a></td>
+		<td height="23" width="125" align="center" bgcolor="red"><a href="features.htm"><font color="white"><b><FONT face="Verdana, Arial, Helvetica" size=-1>Features</FONT></b></font></a></td>
+		<td height="23" width="125" align="center" bgcolor="red"><a href="contactus.htm"><font color="white"><b><FONT face="Verdana, Arial, Helvetica" size=-1>Contact Us</FONT></b></font></a></td>
+		<td height="23" width="125" align="center" bgcolor="red"><a href="feedback.htm"><font color="white"><b><FONT face="Verdana, Arial, Helvetica" size=-1>Feedback</FONT></b></font></a></td>
+		<td height="23" width="125" align="center" bgcolor="red"><a href="help.htm"><font color="white"><b><FONT face="Verdana, Arial, Helvetica" size=-1>Help</FONT></b></font></a></td>
+	</tr>
+</table>
+</form>
+<table border="0" width="978" height="78" >
+	<tr>
+		<td height="24" width="125" valign="top">
+		
+		<a href="index.htm"><img border="0" src="images/login.gif" width="82" height="27" border="0"></a></td>
+		
+		<td height="24" width="682" valign="top" align="center">
+		
+		<script language="JavaScript1.2">
+//configure message
+message="Free Online Project Management"
+//animate text in NS6? (0 will turn it off)
+ns6switch=1
+
+var ns6=document.getElementById&&!document.all
+mes=new Array();
+mes[0]=-1;
+mes[1]=-4;
+mes[2]=-7;mes[3]=-10;
+mes[4]=-7;
+mes[5]=-4;
+mes[6]=-1;
+num=0;
+num2=0;
+txt="";
+function jump0(){
+if (ns6&&!ns6switch){
+jump.innerHTML=message
+return
+}
+if(message.length > 6){
+for(i=0; i != message.length;i++){
+txt=txt+"<span style='position:relative;' id='n"+i+"'>"+message.charAt(i)+"</span>"};
+jump.innerHTML=txt;
+txt="";
+jump1a()
+}
+else{
+alert("Your message is to short")
+}
+}
+
+function jump1a(){
+nfinal=(document.getElementById)? document.getElementById("n0") : document.all.n0
+nfinal.style.left=-num2;
+if(num2 != 9){
+num2=num2+3;
+setTimeout("jump1a()",50)
+}
+else{
+jump1b()
+}
+}
+
+function jump1b(){
+nfinal.style.left=-num2;
+if(num2 != 0){num2=num2-3;
+setTimeout("jump1b()",50)
+}
+else{
+jump2()
+}
+}
+
+function jump2(){
+txt="";
+for(i=0;i != message.length;i++){
+if(i+num > -1 && i+num < 7){
+txt=txt+"<span style='position:relative;top:"+mes[i+num]+"'>"+message.charAt(i)+"</span>"
+}
+else{txt=txt+"<span>"+message.charAt(i)+"</span>"}
+}
+jump.innerHTML=txt;
+txt="";
+if(num != (-message.length)){
+num--;
+setTimeout("jump2()",50)}
+else{num=0;
+setTimeout("jump0()",50)}}
+</script>
+
+</head>
+<body>
+
+<h2><div id="jumpx" style="color:green"></div></h2>
+<script>
+if (document.all||document.getElementById){
+jump=(document.getElementById)? document.getElementById("jumpx") : document.all.jumpx
+jump0()
+}
+else
+document.write(message)
+</script>
+		</td>
+		<td height="24" width="157" valign="top">
+		
+		<a href="register.htm">
+		<img border="0" src="images/register_now.gif" width="129" height="27" border="0" align="right"></a></td>
+	</tr>
+	<tr>
+		<td height="41" width="978" valign="top" colspan="3">
+		<center><img src="images/free_prices.gif"></center>
+		
+ 		</td>
+	</tr>
+</table>
+	
+
+
+	<table border="0" width="968" height="341">
+		<tr>
+		<td width="200" height="116" valign="top" align="center">
+		<SCRIPT language="javascript" type="text/javascript" src="./navbar0.js"></SCRIPT>
+		<SCRIPT language="javascript" type="text/javascript" src="./Blue_NavBarcfg.js"></SCRIPT>		
+		<DIV class="Blue_NavBarPlaceHolder" id="Blue_NavBarDiv" style="width: 162px; height: 106px; ">&nbsp;</DIV>
+		
+		</td>
+	
+			<td height="337" width="780" valign="top" rowspan="3">
+			<fieldset>
+			<table cellpadding="0" cellspacing="0" width="776" height="404" background="images/HDR_WIZ_RIGHT1.PNG">
+				<!-- MSTableType="layout" -->
+				<tr>
+					<td valign="middle"><center>
+					<a href="templates/colorus/index.html"><h3><font color="red">Colorus</font></h3></a></center>
+					</td>
+					<td>
+					<center>
+					<a href="templates/green_mile/index.html"><h3><font color="red">Green Mile</font></h3></a></center>
+					</td>
+					<td>
+					<center>
+					<a href="templates/clicker/index.html"><h3><font color="red">Clicker</font></h3></a></center>
+					</td>
+					<td height="126">
+					<center>
+					<a href="templates/darkit/index.html"><h3><font color="red">Darkit</font></h3></a></center>
+					</td>
+				</tr>
+				<tr>
+					<td><center>
+					<a href="templates/travelagency/index.html"><h3><font color="red">Travel Agency</font></h3></a></center>
+					</td>
+					<td><center>
+					<a href="templates/innovation/index.html"><h3><font color="red">Innovation</font></h3></a></center>
+					</td>
+					<td><center>
+					<a href="templates/6/index.html"><h3><font color="red">Nature</font></h3></a></center>
+					</td>
+					<td height="141"><center>
+					<a href="templates/hardwarestore/index.htm"><h3><font color="red">Hardware Store</font></h3></a></center>
+					</td>
+				</tr>
+				<tr>
+					<td width="196"><center>
+					<a href="templates/architecture/index.html"><h3><font color="red">Architecture</font></h3></a></center>
+					</td>
+					<td width="189"><center>
+					<a href="templates/booksonline/index.htm"><h3><font color="red">Books Online</font></h3></a></center>
+					</td>
+					<td width="209"><center>
+					<a href="templates/onlinemoviestore/index.html"><h3><font color="red">Online Movie Store</font></h3></a></center>
+					</td>
+					<td width="182" height="137"><center>
+					<a href="templates/shopping/index.htm"><h3><font color="red">Shopping</font></h3></a></center>
+					</td>
+				</tr>
+				
+			</table>
+			
+			</fieldset>
+			</td>
+		</tr>
+		
+		<tr>
+		<td width="200" height="219" valign="top" align="center">
+		<object classid="clsid:D27CDB6E-AE6D-11CF-96B8-444553540000" id="obj1" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" border="0" width="188" height="211">
+			<param name="movie" value="bigtv_SVOD&amp;PPV_USP's_185x260.swf">
+			<param name="quality" value="High">
+			<embed src="bigtv_SVOD&PPV_USP's_185x260.swf" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" name="obj1" width="188" height="211"></object>
+		
+		</td>
+	
+			</tr>
+		
+	</table>
+	<table border="0" width="974" height="30">
+		<tr>
+			<td height="30" width="974">
+			<center><img src="images/logo-banner.gif" width="352" height="40"></center>
+			</td>
+		</tr>
+	</table>
+	
+
+
+</body>
+</html>

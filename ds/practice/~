@@ -1,0 +1,45 @@
+#include<stdio.h>
+#define MAX 100
+
+int queue[MAX];
+int front,rear,c=0;
+front=rear=-1;
+
+void Add(int n)
+	{
+		if(rear==MAX-1)
+			printf("\n Queue is full");
+		else	
+			{
+			queue[rear++]=n;
+			front++;
+			c++;			
+			}
+	}
+	
+int Delete()
+	{
+		int t;
+		if(front==-1)
+			printf("\n Queue is empty");
+		else	
+			t=queue[front--];
+			return(t);			
+	}
+int main()
+	{
+		char ch='y';
+		int value,i;
+		do
+			{
+				printf("\n Enter the element to add:");
+				scanf("%d",&value);
+				Add(value);
+				printf("\n Another(y/n):");
+				ch=getche();
+			}while(ch=='y');
+			
+		for(i=0;i<c;i++)
+			printf("\n%d\n",queue[i]);	
+		return 0;
+	}

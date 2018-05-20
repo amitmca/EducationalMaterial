@@ -1,0 +1,21 @@
+BODY {
+	FONT-FAMILY: Tahoma, "Tahoma", Tahoma, serif
+}
+.componentheading {
+	FONT-FAMILY: Tahoma, Tahoma, times-roman, Tahoma, serif
+}
+TABLE.blog TD.contentheading {
+	FONT-FAMILY: Tahoma, "Tahoma", Times, serif
+}
+TD.contentheading {
+	FONT-FAMILY: Tahoma, Tahoma, Tahoma, Tahoma, serif
+}
+P.quote {
+	FONT-FAMILY: Tahoma, "Tahoma", Tahoma, Tahoma, serif
+}
+#nav LI {
+	FONT-FAMILY: "Tahoma", Tahoma, Tahoma, Tahoma, sans-serif
+}
+#nav {
+	FONT-FAMILY: "Tahoma", Tahoma, Tahoma, Tahoma, sans-serif
+}

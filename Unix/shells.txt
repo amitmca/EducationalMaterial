@@ -1,0 +1,3 @@
+bash ==> Bourne Shell
+ksh  ==> Korn Shell
+sh   ==> Shell	

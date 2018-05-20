@@ -1,0 +1,422 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Registeration</title>
+
+<SCRIPT type=text/javascript>
+
+var su =
+{
+    "Validate":function()
+    {
+
+        var bStatus = true;
+        this.ResetStatus();
+        if(!this.IsValid("txtFirstName", "textbox"))
+            {
+            this.Backto("First Name", "required field", "txtFirstName");
+            bStatus = false;
+            }
+         if(!this.IsValid("txtLastName", "textbox"))
+            {
+            this.Backto("Last Name", "required field", "txtLastName");
+            bStatus = false;
+            }
+        if(!this.IsValid("txtSiteName", "textbox"))
+            {
+            this.Backto("Site Name", "required field", "txtSiteName");
+            bStatus = false;
+            }
+       if(!this.IsValid("txtSiteUrl", "url"))
+            {
+            this.Backto("Site URL", "required field", "txtSiteUrl");
+            bStatus = false;
+            }
+        if(!this.IsValid("txtVideoUrl", "textbox"))
+            {
+            this.Backto("Sample Video URL", "required field", "txtVideoUrl");
+            bStatus = false;
+            }
+        if(!this.IsValid("txtEmail", "email"))
+            {
+            this.Backto("Email", "required field", "txtEmail");
+            bStatus = false;
+            }
+         if(!this.IsValid("txtConfEmail", "textbox"))
+            {
+            this.Backto("Confirmation Email", "required field", "txtConfEmail");
+            bStatus = false;
+            }
+        if (!this.IsValid("chkTOS", "checkbox"))
+            {                        
+            this.Backto("Terms of Service", "required field", "chkTOS");
+            bStatus = false;
+            }
+        if (this.IsDiff("txtEmail","txtConfEmail"))
+            {
+            this.SetStatus("Email and confirmation fields don't match.");
+            this.Backto(null, null, "txtConfEmail");
+            bStatus = false;
+            }
+         if (!bStatus){
+            window.location = "#top";
+           }
+           return bStatus;
+        },
+    "Exists":function(id)
+    {
+        var el = document.getElementById(id);
+        return (el);
+    },
+    "Backto":function(field,note,id)
+    {
+        var el = document.getElementById(id);
+        if (el)
+        {
+            if (field)
+            {
+                if (field == "Email")
+                {
+                    this.SetStatus("Email either missing or formatted incorrectly.");
+                }
+                else if (field == "Site URL")
+                {
+                    this.SetStatus("Site URL either missing or formatted incorrectly.");
+                }
+                else if (field == "Terms of Service")
+                {                    
+                    this.SetStatus("You must agree to the Terms of Service");
+                }
+                else
+                {
+                    this.SetStatus(field + " is a " + note);
+                }
+            }
+            el.focus();
+        }
+    },
+    "IsValid":function(id,type)
+    {
+        if (type=="textbox")
+        {
+            var el=this.Exists(id);
+            if (el)
+            {
+                if (!el.value || el.value.length<1) return false;
+            }
+            return true;
+        }
+        if (type=="email")
+        {
+            var el=this.Exists(id);
+            if (el)
+            {
+                if (!el.value || el.value.length<1) return false;
+            }
+            var at = el.value.indexOf("@");
+            var len = el.value.length;
+
+            if (at == -1 || dot == -1 || (el.value.charAt(len-4)!="." && el.value.charAt(len-3)!=".")) return false;
+
+            return true;
+        }
+        if (type=="url")
+        {
+            var el=this.Exists(id);
+            if (el)
+            {
+                if (!el.value || el.value.length<1) return false;
+            }
+            var dot = el.value.indexOf(".");
+            var len = el.value.length;
+
+            if (dot == -1) return false;
+            //if (dot == -1 || (el.value.charAt(len-4)!="." && el.value.charAt(len-3)!=".") ) return false;
+
+            return true;
+        }
+        if (type == "checkbox")
+        {
+            var el=this.Exists(id);
+            if (el)
+            {
+                if (!el.checked) return false;
+            }
+            return true;
+        }
+        if (type == "listbox")
+        {
+            var el=this.Exists(id);
+            if (el)
+            {
+                for (var i=0; i < el.options.length; i++)
+                {
+                    if (el.options[i].selected)
+                    {
+                        if (i==0)return false;
+                    }
+                }
+            }
+            return true;
+        }
+    },
+    "ResetStatus":function()
+    {
+        var stat = document.getElementById("ChannelStatus");
+        if (stat) stat.style.display == "none";
+    },
+    "SetStatus":function(msg)
+    {
+        var stat = document.getElementById("ChannelStatus");
+        if (stat)
+        {
+            stat.style.display = "inline";
+            stat.style.color = "#FF0000";
+            stat.style.fontSize = "14px";
+            stat.style.fontFamily = "Verdana, Arial";
+            stat.style.fontStyle = "italic";
+            stat.innerHTML = msg;
+        }
+    },
+    "IsDiff":function(oneID, twoID)
+    {
+        var id1 = document.getElementById(oneID);
+        var id2 = document.getElementById(twoID);
+
+        if (id1.value != id2.value) return true;
+    }
+}
+
+function playerReady(obj) {}
+    </SCRIPT>
+
+
+</head>
+
+<body>
+<form name="form" >
+ <DIV><INPUT id=__VIEWSTATE type=hidden 
+                  value=/wEPDwUKLTM0MDczNjAxOA8WAh4SSW50ZWdyYXRpb25TdXBwb3J0aBYCAgUPZBYIAgQPEGRkFgFmZAIGDxAPFgYeDURhdGFUZXh0RmllbGQFC1BhcnRuZXJOYW1lHg5EYXRhVmFsdWVGaWVsZAUJUGFydG5lcklEHgtfIURhdGFCb3VuZGdkEBUIDE5vbmUgLyBPdGhlcg9CaXRzIG9uIHRoZSBSdW4JQ2xpcFNoYXJlBkRydXBhbAZKb29tbGEJUEhQbW90aW9uDVBIUG1vdGlvbiAyLjEFUmF5enoVCAACMjEBOAE5AjEwAjExAjE0AjEyFCsDCGdnZ2dnZ2dnZGQCCg8QZA8WBmYCAQICAgMCBAIFFgYQBQpTZWxlY3QgT25lBQpTZWxlY3QgT25lZxAFA0FJTQUDQUlNZxAFA0lDUQUDSUNRZxAFA01TTgUDTVNOZxAFBVNreXBlBQVTa3lwZWcQBQVZYWhvbwUFWWFob29nZGQCDQ8QZA8WCWYCAQICAgMCBAIFAgYCBwIIFgkQBQpTZWxlY3QgT25lBQpTZWxlY3QgT25lZxAFGkFncml5YS5jb20gKEFncml5YSBQbGF5ZXIpBRpBZ3JpeWEuY29tIChBZ3JpeWEgUGxheWVyKWcQBQ5DcmF5b25Ib3N0Lm5ldAUOQ3JheW9uSG9zdC5uZXRnEAUGR29vZ2xlBQZHb29nbGVnEAUiSmVyb2Vud2lqZXJpbmcuY29tIChKVyBGTFYgUGxheWVyKQUiSmVyb2Vud2lqZXJpbmcuY29tIChKVyBGTFYgUGxheWVyKWcQBRtKb29tbGFob2xpYyAoU2V5cmV0IFBsdWdpbikFG0pvb21sYWhvbGljIChTZXlyZXQgUGx1Z2luKWcQBQ9waHBWaWRlbyBFbmdpbmUFD3BocFZpZGVvIEVuZ2luZWcQBSdTaW1wbGUgVGhvdWdodCBQcm9kdWN0aW9ucyAoU0ZWIFBsdWdpbikFJ1NpbXBsZSBUaG91Z2h0IFByb2R1Y3Rpb25zIChTRlYgUGx1Z2luKWcQBQVPdGhlcgUFT3RoZXJnZGQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgIFBmNoa1RPUwUJYnRuU3VibWl0LovP1fFt7PZq1OFAATKyLnPqsHE= 
+                  name=__VIEWSTATE> </DIV>
+                  <DIV><INPUT id=__EVENTVALIDATION type=hidden 
+                  value=/wEWfQK5y72xBAK5h62pDwKdlcWpAgK4lODzCwKK67yfDgLhlcngAQLe+tuPDQKs+q+PDQLe+v+PDQLe+quPDQKp+s+QDQLe+suQDQLa+p+PDQLf+t+PDQLf+vuPDQLf+oOPDQLf+sePDQKi+s+QDQLc+u+PDQKspv33BAK3+oOPDQLO6Ma4DwL36PJPAqn6q48NAtz6l48NAt36748NAt36m48NAqP6848NAtr6+48NAtr6548NAtr6k48NAq36848NAtv6j48NAtv6q48NAtj6848NAqT6748NAt36348NAtr6848NAtj6+48NAtj6n48NAqb6h48NAqn6j48NAqn6n48NAqb6l48NAqb6048NAqb6n48NAqb6k48NAqf6748NAqT6+48NAqT6948NAqT6/48NAqT6548NAqT6n48NAqT6z5ANAqX6548NAqX6m48NAqX6k48NAqL6948NAqL6l48NAqL6848NAqL6k48NAqL6q48NAqL6+48NAqP6348NAqP6548NAqD6q48NArH6l48NAtv6748NArH6848NAorp0sAFArH6748NAq/6548NAq/6n48NAqz6748NAqz6q48NAqz6048NAqz6j48NAqz6948NAqz6848NAtr6l48NAqz6h48NAqz6m48NAq36x48NAq36748NAq36848NAq36348NAq36g48NAt/6548NAq36q48NAqr6948NAqr6q48NAqr6y5ANAqr6x48NAqv6j48NAvTRuPUIAvq+3pgEAuy+kpsEAuO+kpsEAvu+0pgEAvu+3pgEAvu+4pgEAvu+2pgEAumdxeEIAoTz/boMAp2xjaACAoz6h54NAon/4IUBAs3O7oQLAuaWrbAHApSQ6OMJArfG7MIDAv/Bx94HAtykhdQLAo36kO0HAuGTp+QBAsOwi8wGApT98E8CqJG0kgcCr5LL2Q8Cq5OV6QoCtpeykgEC//eBzAwC75nRvQUC8dfHtAICwova3gNkrI/03ZwcuCmHBFPb1WQQsuK+RQ== name=__EVENTVALIDATION> </DIV>
+<TABLE cellSpacing=0 cellPadding=0 border=0 align="center">
+                    <TBODY>
+                    <TR>
+                      <TD style="WIDTH: 470px">
+                        <TABLE cellSpacing=0 cellPadding=5 border=0>
+                          <TBODY>
+                          <TR>
+                            <TD style="WIDTH: 40%; TEXT-ALIGN: left"><SPAN 
+                              class=text><B>First Name *</B></SPAN> </TD>
+                            <TD 
+                            style="MARGIN-LEFT: 50px; WIDTH: 60%; TEXT-ALIGN: left" 
+                            width=160><INPUT id=txtFirstName 
+                              style="WIDTH: 150px" name=txtFirstName> </TD></TR>
+                          <TR>
+                            <TD style="TEXT-ALIGN: left"><SPAN 
+                              class=text><B>Last Name *</B></SPAN> </TD>
+                            <TD style="TEXT-ALIGN: left"><INPUT id=txtLastName 
+                              style="WIDTH: 150px" name=txtLastName> </TD></TR>
+                          <TR>
+                            <TD style="TEXT-ALIGN: left"><SPAN 
+                              class=text><B>Site URL *</B></SPAN></TD>
+                            <TD 
+                            style="FONT-SIZE: 12px; FONT-FAMILY: Arial; TEXT-ALIGN: left"><INPUT id=txtSiteUrl 
+                              style="WIDTH: 150px" name=txtSiteUrl> </TD></TR>
+                          <TR>
+                            <TD style="TEXT-ALIGN: left"><SPAN 
+                              class=text><B>Site Name *</B></SPAN></TD>
+                            <TD style="TEXT-ALIGN: left"><INPUT id=txtSiteName 
+                              style="WIDTH: 150px" name=txtSiteName> </TD></TR>
+                          <TR>
+                            <TD style="TEXT-ALIGN: left"><SPAN 
+                              class=text><B>Site Language *</B></SPAN></TD>
+                            <TD style="TEXT-ALIGN: left"><SELECT 
+                              id=ddlSiteLanguage name=ddlSiteLanguage> <OPTION 
+                                value="" selected>Choose a language</OPTION> 
+                                <OPTION value=af>Afrikaans</OPTION> <OPTION 
+                                value=sq>Albanian</OPTION> <OPTION 
+                                value=am>Amharic</OPTION> <OPTION 
+                                value=ar>Arabic</OPTION> <OPTION 
+                                value=hy>Armenian</OPTION> <OPTION 
+                                value=az>Azebraijani</OPTION> <OPTION 
+                                value=eu>Basque</OPTION> <OPTION 
+                                value=be>Belarusian</OPTION> <OPTION 
+                                value=bn>Bengali</OPTION> <OPTION 
+                                value=bh>Bihari</OPTION> <OPTION 
+                                value=bg>Bulgarian</OPTION> <OPTION 
+                                value=my>Burmese</OPTION> <OPTION 
+                                value=ca>Catalan</OPTION> <OPTION 
+                                value=chr>Cherokee</OPTION> <OPTION 
+                                value=zh>Chinese</OPTION> <OPTION 
+                                value=zh-CN>Chinese (Simplified)</OPTION> 
+                                <OPTION value=zh-TW>Chinese 
+                                (Traditional)</OPTION> <OPTION 
+                                value=hr>Croatian</OPTION> <OPTION 
+                                value=cs>Czech</OPTION> <OPTION 
+                                value=da>Danish</OPTION> <OPTION 
+                                value=dv>Dhivehi</OPTION> <OPTION 
+                                value=nl>Dutch</OPTION> <OPTION 
+                                value=en>English</OPTION> <OPTION 
+                                value=eo>Esperanto</OPTION> <OPTION 
+                                value=et>Estonian</OPTION> <OPTION 
+                                value=tl>Filipino</OPTION> <OPTION 
+                                value=fi>Finnish</OPTION> <OPTION 
+                                value=fr>French</OPTION> <OPTION 
+                                value=gl>Galician</OPTION> <OPTION 
+                                value=ka>Georgian</OPTION> <OPTION 
+                                value=de>German</OPTION> <OPTION 
+                                value=el>Greek</OPTION> <OPTION 
+                                value=gn>Guarani</OPTION> <OPTION 
+                                value=gu>Gujarati</OPTION> <OPTION 
+                                value=iw>Hebrew</OPTION> <OPTION 
+                                value=hi>Hindi</OPTION> <OPTION 
+                                value=hu>Hungarian</OPTION> <OPTION 
+                                value=is>Icelandic</OPTION> <OPTION 
+                                value=id>Indonesian</OPTION> <OPTION 
+                                value=iu>Inuktitut</OPTION> <OPTION 
+                                value=it>Italian</OPTION> <OPTION 
+                                value=ja>Japanese</OPTION> <OPTION 
+                                value=kn>Kannada</OPTION> <OPTION 
+                                value=kk>Kazakh</OPTION> <OPTION 
+                                value=km>Khmer</OPTION> <OPTION 
+                                value=ko>Korean</OPTION> <OPTION 
+                                value=ku>Kurdish</OPTION> <OPTION 
+                                value=ky>Kyrgyz</OPTION> <OPTION 
+                                value=lo>Laothian</OPTION> <OPTION 
+                                value=lv>Latvian</OPTION> <OPTION 
+                                value=lt>Lithuanian</OPTION> <OPTION 
+                                value=mk>Macedonian</OPTION> <OPTION 
+                                value=ms>Malay</OPTION> <OPTION 
+                                value=ml>Malayalam</OPTION> <OPTION 
+                                value=mt>Maltese</OPTION> <OPTION 
+                                value=mr>Marathi</OPTION> <OPTION 
+                                value=mn>Mongolian</OPTION> <OPTION 
+                                value=ne>Nepali</OPTION> <OPTION 
+                                value=no>Norwegian</OPTION> <OPTION 
+                                value=or>Oriya</OPTION> <OPTION 
+                                value=ps>Pashto</OPTION> <OPTION 
+                                value=fa>Persian</OPTION> <OPTION 
+                                value=pl>Polish</OPTION> <OPTION 
+                                value=pt-PT>Portuguese</OPTION> <OPTION 
+                                value=pa>Punjabi</OPTION> <OPTION 
+                                value=ro>Romanian</OPTION> <OPTION 
+                                value=ru>Russian</OPTION> <OPTION 
+                                value=sa>Sanskrit</OPTION> <OPTION 
+                                value=sr>Serbian</OPTION> <OPTION 
+                                value=sd>Sindhi</OPTION> <OPTION 
+                                value=si>Sinhalese</OPTION> <OPTION 
+                                value=sk>Slovak</OPTION> <OPTION 
+                                value=sl>Slovenian</OPTION> <OPTION 
+                                value=es>Spanish</OPTION> <OPTION 
+                                value=sw>Swahili</OPTION> <OPTION 
+                                value=sv>Swedish</OPTION> <OPTION 
+                                value=tg>Tajik</OPTION> <OPTION 
+                                value=ta>Tamil</OPTION> <OPTION 
+                                value=tl>Tagalog</OPTION> <OPTION 
+                                value=te>Telugu</OPTION> <OPTION 
+                                value=th>Thai</OPTION> <OPTION 
+                                value=bo>Tibetan</OPTION> <OPTION 
+                                value=tr>Turkish</OPTION> <OPTION 
+                                value=uk>Ukrainian</OPTION> <OPTION 
+                                value=ur>Urdu</OPTION> <OPTION 
+                                value=uz>Uzbek</OPTION> <OPTION 
+                                value=ug>Uighur</OPTION> <OPTION 
+                                value=vi>Vietnamese</OPTION></SELECT> </TD></TR>
+                          <TR>
+                            <TD style="TEXT-ALIGN: left"><B><SPAN class=text 
+                              id=lblCMSPartner>Select your CMS:</SPAN> </B></TD>
+                            <TD style="TEXT-ALIGN: left"><SELECT 
+                              id=lbCMSPartnerID style="WIDTH: 150px" 
+                              name=lbCMSPartnerID> <OPTION value="" 
+                                selected>None / Other</OPTION> <OPTION 
+                                value=21>Bits on the Run</OPTION> <OPTION 
+                                value=8>ClipShare</OPTION> <OPTION 
+                                value=9>Drupal</OPTION> <OPTION 
+                                value=10>Joomla</OPTION> <OPTION 
+                                value=11>PHPmotion</OPTION> <OPTION 
+                                value=14>PHPmotion 2.1</OPTION> <OPTION 
+                                value=12>Rayzz</OPTION></SELECT> </TD></TR>
+                          <TR>
+                            <TD style="TEXT-ALIGN: left"><SPAN 
+                              class=text><B>Sample Video (URL on your site with 
+                              a video) *</B></SPAN> </TD>
+                            <TD 
+                            style="FONT-SIZE: 12px; FONT-FAMILY: Arial; TEXT-ALIGN: left"><INPUT id=txtVideoUrl 
+                              style="WIDTH: 150px" name=txtVideoUrl> </TD></TR>
+                          <TR>
+                            <TD style="TEXT-ALIGN: left"><SPAN 
+                              class=text><B>Email *</B></SPAN> </TD>
+                            <TD style="TEXT-ALIGN: left"><INPUT id=txtEmail 
+                              style="WIDTH: 150px" name=txtEmail> </TD></TR>
+                          <TR>
+                            <TD style="TEXT-ALIGN: left"><SPAN 
+                              class=text><B>Confirm Email *</B></SPAN> </TD>
+                            <TD style="TEXT-ALIGN: left"><INPUT 
+                              id=txtConfEmail style="WIDTH: 150px" 
+                              name=txtConfEmail> </TD></TR>
+                          <TR>
+                            <TD style="TEXT-ALIGN: left"><SPAN 
+                              class=text><B>IM Client</B></SPAN> </TD>
+                            <TD style="TEXT-ALIGN: left"><SELECT id=lbIM 
+                              style="WIDTH: 150px" name=lbIM> <OPTION 
+                                value="Select One" selected>Select One</OPTION> 
+                                <OPTION value=AIM>AIM</OPTION> <OPTION 
+                                value=ICQ>ICQ</OPTION> <OPTION 
+                                value=MSN>MSN</OPTION> <OPTION 
+                                value=Skype>Skype</OPTION> <OPTION 
+                                value=Yahoo>Yahoo</OPTION></SELECT> </TD></TR>
+                          <TR>
+                            <TD style="TEXT-ALIGN: left"><SPAN 
+                              class=text><B>IM Screenname</B></SPAN></TD>
+                            <TD style="TEXT-ALIGN: left"><INPUT id=txtIMName 
+                              style="WIDTH: 150px" name=txtIMName> </TD></TR>
+                          <TR>
+                            <TD style="TEXT-ALIGN: left"><SPAN 
+                              class=text><B><SPAN id=lblHeardAbout>How you 
+                              heard<BR>about us *</SPAN></B></SPAN> </TD>
+                            <TD style="TEXT-ALIGN: left"><SELECT id=lbSource 
+                              style="WIDTH: 100%" name=lbSource> <OPTION 
+                                value="Select One" selected>Select One</OPTION> 
+                                <OPTION 
+                                value="Agriya.com (Agriya Player)">Agriya.com 
+                                (Agriya Player)</OPTION> <OPTION 
+                                value=CrayonHost.net>CrayonHost.net</OPTION> 
+                                <OPTION value=Google>Google</OPTION> <OPTION 
+                                value="Jeroenwijering.com (JW FLV Player)">Jeroenwijering.com 
+                                (JW FLV Player)</OPTION> <OPTION 
+                                value="Joomlaholic (Seyret Plugin)">Joomlaholic 
+                                (Seyret Plugin)</OPTION> <OPTION 
+                                value="phpVideo Engine">phpVideo Engine</OPTION> 
+                                <OPTION 
+                                value="Simple Thought Productions (SFV Plugin)">Simple 
+                                Thought Productions (SFV Plugin)</OPTION> 
+                                <OPTION value=Other>Other</OPTION></SELECT> </TD></TR>
+                                   <TR>
+                            <TD style="TEXT-ALIGN: left" colSpan=2><SPAN 
+                              class=text><B>Questions / Comments </B></SPAN><BR><TEXTAREA id=txtComments style="WIDTH: 300px; HEIGHT: 75px" name=txtComments></TEXTAREA> 
+                            </TD></TR>
+                          <TR>
+                            <TD colSpan=2><DIV"><SPAN class=text style="FONT-WEIGHT: bold">Type the characters you see in the picture below</SPAN><DIV></DIV>
+                              <DIV style="MARGIN: 10px"><IMG 
+                              style="TEXT-ALIGN: right" 
+                              src="LongTail Video - Signup_files/CaptchaHandler.gif"></DIV>
+                              <DIV><INPUT id=txtCaptcha style="WIDTH: 150px" 
+                              name=txtCaptcha></DIV></TD></TR>
+                          <TR>
+                            <TD colSpan=2><SPAN class=text><INPUT id=chkTOS 
+                              type=checkbox name=chkTOS></SPAN> <LABEL 
+                              class=text for=chkTOS>I have read and agree to the 
+                              </LABEL><A class=text style="COLOR: #0000cc" 
+                              href="javascript:showPartnerAgreement(0);">Partner 
+                              Agreement</A> </TD></TR>
+                          </TBODY></TABLE>
+						<p align="center">
+                          <INPUT id=btnSubmit  style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+                        onclick="return su.Validate();" type=image src="btn_Submit.gif" name=btnSubmit> 
+                        </TD>
+</body>
+</FORM>
+</html>

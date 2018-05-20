@@ -1,0 +1,30 @@
+                                        	0000	T	SE11                                                                                                                                	BS AA X   F
+SAPMSRD0                                	0102	X	                                                                                                                                    	
+                                        	0000	 	BDC_CURSOR                                                                                                                          	RSRD1-TBMA_VAL
+                                        	0000	 	BDC_OKCODE                                                                                                                          	=EDIT
+                                        	0000	 	RSRD1-TBMA                                                                                                                          	X
+                                        	0000	 	RSRD1-TBMA_VAL                                                                                                                      	ZFACTORY
+SAPLSD41                                	2200	X	                                                                                                                                    	
+                                        	0000	 	BDC_CURSOR                                                                                                                          	DD02D-DDTEXT
+                                        	0000	 	BDC_OKCODE                                                                                                                          	=TDED
+                                        	0000	 	DD02D-DDTEXT                                                                                                                        	TABLE FOR FACTORY DETAILS
+                                        	0000	 	BDC_SUBSCR                                                                                                                          	SAPLSD41                                2201TS_SCREEN
+/1BCDWB/DBZFACTORY                      	0101	X	                                                                                                                                    	
+                                        	0000	 	BDC_CURSOR                                                                                                                          	ZFACTORY-FACTORYLOCATION
+                                        	0000	 	BDC_OKCODE                                                                                                                          	=SAVE
+                                        	0000	 	ZFACTORY-FACTORYID                                                                                                                  	22
+                                        	0000	 	ZFACTORY-FACTORYNAME                                                                                                                	AMOL ENTERPRISES
+                                        	0000	 	ZFACTORY-FACTORYLOCATION                                                                                                            	PUNE
+/1BCDWB/DBZFACTORY                      	0101	X	                                                                                                                                    	
+                                        	0000	 	BDC_OKCODE                                                                                                                          	/EBACK
+                                        	0000	 	BDC_CURSOR                                                                                                                          	ZFACTORY-FACTORYID
+SAPLSD41                                	2200	X	                                                                                                                                    	
+                                        	0000	 	BDC_CURSOR                                                                                                                          	DD02D-DDTEXT
+                                        	0000	 	BDC_OKCODE                                                                                                                          	=WB_BACK
+                                        	0000	 	DD02D-DDTEXT                                                                                                                        	TABLE FOR FACTORY DETAILS
+                                        	0000	 	BDC_SUBSCR                                                                                                                          	SAPLSD41                                2201TS_SCREEN
+SAPMSRD0                                	0102	X	                                                                                                                                    	
+                                        	0000	 	BDC_CURSOR                                                                                                                          	RSRD1-TBMA_VAL
+                                        	0000	 	BDC_OKCODE                                                                                                                          	=BACK
+                                        	0000	 	RSRD1-TBMA                                                                                                                          	X
+                                        	0000	 	RSRD1-TBMA_VAL                                                                                                                      	ZFACTORY

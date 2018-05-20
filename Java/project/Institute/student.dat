@@ -1,0 +1,105 @@
+[Main]
+SizeX=7695
+SizeY=4890
+[1]
+Name=lname
+Type=JLabel
+Value=Name
+X= 1320
+Y= 840
+SizeX= 1080
+SizeY= 360
+[2]
+Name=laddr
+Type=JLabel
+Value=Adress
+X= 1320
+Y= 1440
+SizeX= 1080
+SizeY= 360
+[3]
+Name=lcontact
+Type=JLabel
+Value=Contact
+X= 1320
+Y= 2040
+SizeX= 1080
+SizeY= 360
+[4]
+Name=lgender
+Type=JLabel
+Value=Gender
+X= 1320
+Y= 2640
+SizeX= 1080
+SizeY= 360
+[5]
+Name=tname
+Type=JTextField
+Value=
+X= 3240
+Y= 840
+SizeX= 3480
+SizeY= 360
+[6]
+Name=taddr
+Type=JTextArea
+Value=
+X= 3240
+Y= 1320
+SizeX= 3480
+SizeY= 480
+[7]
+Name=tcontact
+Type=JTextField
+X= 3240
+Y= 2040
+SizeX= 1320
+SizeY= 360
+[8]
+Name=rmale
+Type=JRadioButton
+Value=Male
+X= 3240
+Y= 2640
+SizeX= 1080
+SizeY= 360
+[9]
+Name=rfemale
+Type=JRadioButton
+Value=Female
+X= 4560
+Y= 2640
+SizeX= 1080
+SizeY= 360
+[10]
+Name=bsubmit
+Type=JButton
+Value=SUBMIT
+X= 2160
+Y= 3240
+SizeX= 1560
+SizeY= 360
+[11]
+Name=breset
+Type=JButton
+Value=RESET
+X= 4080
+Y= 3240
+SizeX= 1080
+SizeY= 360
+[12]
+Name=mess
+Type=JLabel
+X= 2280
+Y= 120
+SizeX= 3240
+SizeY= 360
+[13]
+Name=bclose
+Type=JButton
+Value=CLOSE
+X= 5400
+Y= 3240
+SizeX= 1440
+SizeY= 360

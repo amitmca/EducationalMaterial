@@ -1,0 +1,19 @@
+[Main]
+SizeX=4500
+SizeY=2895
+[1]
+Name=txt
+Type=JTextArea
+Value=A R Rahman Is Great
+X= 720
+Y= 360
+SizeX= 3120
+SizeY= 1440
+[2]
+Name=btnselect
+Type=JButton
+Value=Select All
+X= 1680
+Y= 2160
+SizeX= 1080
+SizeY= 360

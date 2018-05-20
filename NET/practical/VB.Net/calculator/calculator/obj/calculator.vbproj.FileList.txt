@@ -1,0 +1,11 @@
+bin\Debug\calculator.exe
+bin\Debug\calculator.pdb
+bin\Debug\calculator.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\calculator.Form1.resources
+obj\Debug\calculator.Resources.resources
+obj\Debug\calculator.vbproj.GenerateResource.Cache
+obj\Debug\calculator.exe
+obj\Debug\calculator.xml
+obj\Debug\calculator.pdb
+obj\Debug\calculator.Form2.resources

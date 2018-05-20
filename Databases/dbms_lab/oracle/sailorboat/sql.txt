@@ -1,0 +1,10 @@
+
+
+
+select sname from sailor,boat,reserve where sailor.sid=reserve.sid and boat.bid=reserve.bid and	boat.color='red' intersect select sname from sailor,boat,reserve where sailor.sid=reserve.sid and
+boat.bid=reserve.bid and boat.color='black';
+
+
+
+
+

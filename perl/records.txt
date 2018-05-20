@@ -1,0 +1,4 @@
+10	amit	23	pune
+20	ajit	20	pune
+30	rohit	24	pune
+40	sachin	24	Baramati

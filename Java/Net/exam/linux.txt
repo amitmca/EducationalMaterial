@@ -1,0 +1,51 @@
+export CLASSPATH=CLASSPATH:/home/Files/jdbc.jar 
+	
+	
+	
+			CHANGES REQUIRED TO CONNECT POSTGRESQL TO PHP IN LINUX
+
+
+	1) 	Open the file /var/lib/pgsql/data/postgresql.conf and make following changes
+	
+			In Connection Settings section
+
+		a) Change the tcpip_socket = true and remove #
+		b) max_connections = 32
+
+			In Memory section
+
+		c) shared_buffers = 64
+
+		save the file.
+
+	2)	Open the file /var/lib/pgsql/data/pg_hba.conf and make following changes
+
+		find the following line 
+
+		#host    all         all         127.0.0.1         255.255.255.255   trust
+
+		only remove #
+
+		save the file.
+
+	3)	Restart the computer.
+
+	4) 	Start httpd service from services in System Settings=>Server Settings=>Services
+
+	5)	Make Sure that the Database exists and the postgresql service is running. 
+
+	6) 	start Mozilla Firefox Browser and type
+			
+			http://localhost/path_to_program/conn.php
+
+
+#include<stdlib.h>
+#include<stdio.h>
+main()
+	{
+	setenv("JAVA_HOME","/usr/java/jdk1.5.0_01",1);
+	system("/opt/tomcat/bin/startup.sh");	
+	}
+
+
+	

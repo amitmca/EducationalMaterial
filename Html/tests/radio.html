@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Radio</title>
+<SCRIPT LANGUAGE="JavaScript">
+function check(form)
+	{
+	if(document.form.a.checked==false)
+		{
+		alert("You Must be agree upon the terms and conditions");
+		}
+	}
+	
+</SCRIPT>
+</head>
+<body>
+<form name="form" method="post" action="radio.html">
+<input type="radio" name="a" onchange="check(this.form)">I accept
+<br><input type="submit" name="submit" value="Submit">
+</form>
+</body>
+</html>

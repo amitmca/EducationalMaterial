@@ -1,0 +1,11 @@
+<html>
+<head>
+<title>Help About test</title>
+</head>
+<body bgcolor="pink">
+<br>
+<h1><center>Welcome to Online Help</center>
+<br><center><a href="htr.html"><font color="black" size=03>How to Register</font></center>
+</body>
+<a href="login.php"><img src="prev.gif"></a>
+</html>

@@ -1,0 +1,53 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Email Address</title>
+<script language="javascript">
+function isEmpty(form)
+	{
+	var valid=true;
+	var valid1=true;
+	var i=1;
+
+	if(form.email.value=="")
+		{
+		valid=false;
+		}
+			
+	var i=1;
+	var len=form.email.length;
+	while(i<=len)
+		{
+		if(!((email.indexOf('@') && (email.indexOf('.')))
+			{
+			valid1=false;
+			} 
+			i++;	
+		}
+		
+	if(!valid1)
+		alert("Please enter valid E-mail Address");		
+		 return valid1;
+		
+	if(!valid)
+		alert("Please fill the fields");		
+		 return valid;
+	}
+</script>
+</head>
+
+<body>
+<form method="post" name="form" onsubmit="return isEmpty(this)">
+<center>
+<label><font color="red"><b>Email Address:</b></font></label>
+<input type="text" name="email" style="border:thin solid blue" size="30">
+
+<br><br><input type="submit" name="submit" value="Submit"></center>
+
+
+
+</form>
+</body>
+
+</html>

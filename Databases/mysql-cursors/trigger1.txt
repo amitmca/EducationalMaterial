@@ -1,0 +1,1 @@
+CREATE TRIGGER amit.comm_inc BEFORE INSERT ON salespeople FOR EACH ROW SET @sum = @sum + NEW.comm;

@@ -1,0 +1,59 @@
+[Main]
+SizeX=9105
+SizeY=6855
+[1]
+Name=query
+Type=JTextArea
+Value=
+X= 480
+Y= 600
+SizeX= 8040
+SizeY= 2520
+[2]
+Name=limage
+Type=JLabel
+Value=
+X= 480
+Y= 120
+SizeX= 2520
+SizeY= 360
+[3]
+Name=limage1
+Type=JLabel
+Value=
+X= 480
+Y= 3720
+SizeX= 2760
+SizeY= 360
+[4]
+Name=result
+Type=JTextArea
+Value=
+X= 480
+Y= 4200
+SizeX= 8040
+SizeY= 2520
+[5]
+Name=btnclr
+Type=JButton
+Value=Clear
+X= 3480
+Y= 3240
+SizeX= 2040
+SizeY= 360
+[6]
+Name=btnexe
+Type=JButton
+Value=Execute
+X= 1080
+Y= 3240
+SizeX= 1920
+SizeY= 360
+[7]
+Name=btncel
+Type=JButton
+Value=Cancel
+X= 6000
+Y= 3240
+SizeX= 1920
+SizeY= 360

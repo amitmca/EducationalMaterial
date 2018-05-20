@@ -1,0 +1,33 @@
+<HTML>
+<HEAD><TITLE>Credit Card Information Form</TITLE></HEAD>
+<BODY>
+<FORM ACTION="creditCardForm.jsp" METHOD="POST">
+Credit Card Information
+<P> Name: <INPUT TYPE="TEXT" NAME="name" SIZE="25">
+<P> Credit Card Number: <INPUT TYPE="TEXT" NAME="number" SIZE="25">
+<P> Credit Card Type:
+    <SELECT NAME="type">
+      <OPTION>Visa</OPTION>
+      <OPTION>Master Card</OPTION>
+      <OPTION SELECTED>Amex</OPTION>
+    </SELECT>
+<P> Expiration Date:
+    <SELECT NAME="month">
+      <OPTION SELECTED>01</OPTION>  <OPTION>02</OPTION>
+      <OPTION>03</OPTION> <OPTION>04</OPTION>
+      <OPTION>05</OPTION> <OPTION>06</OPTION>
+      <OPTION>07</OPTION> <OPTION>08</OPTION>
+      <OPTION>09</OPTION> <OPTION>10</OPTION>
+      <OPTION>11</OPTION> <OPTION>12</OPTION>
+    </SELECT>
+    <SELECT NAME="year">
+      <OPTION>2000</OPTION> <OPTION SELECTED>2001</OPTION>
+      <OPTION>2002</OPTION> <OPTION>2003</OPTION>
+      <OPTION>2004</OPTION> <OPTION>2005</OPTION>
+    </SELECT>
+<P>
+    <INPUT TYPE="RESET" NAME="Reset" VALUE="Reset">
+    <INPUT TYPE="SUBMIT" NAME="Submit" VALUE="Submit"></TD>
+</FORM>
+</BODY>
+</HTML>

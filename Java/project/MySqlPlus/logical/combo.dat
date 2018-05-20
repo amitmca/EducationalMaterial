@@ -1,0 +1,27 @@
+[Main]
+SizeX=4800
+SizeY=3600
+[1]
+Name=combobox_1
+Type=JComboBox
+Value=item1|item2
+X= 840
+Y= 1080
+SizeX= 1080
+SizeY= 360
+[2]
+Name=textfield_1
+Type=JTextField
+Value=
+X= 840
+Y= 2040
+SizeX= 2640
+SizeY= 360
+[3]
+Name=combobox_2
+Type=JComboBox
+Value=item1|item2
+X= 2400
+Y= 1080
+SizeX= 1080
+SizeY= 360

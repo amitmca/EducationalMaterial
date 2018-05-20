@@ -1,0 +1,82 @@
+[Main]
+SizeX=6810
+SizeY=3345
+[1]
+Name=l1
+Type=JLabel
+Value=Select Database Name :
+X= 120
+Y= 120
+SizeX= 2640
+SizeY= 240
+[2]
+Name=l2
+Type=JLabel
+Value=Select Table Name :
+X= 3960
+Y= 120
+SizeX= 2760
+SizeY= 240
+[3]
+Name=dbcombo
+Type=JComboBox
+Value=
+X= 120
+Y= 480
+SizeX= 2400
+SizeY= 360
+[4]
+Name=tablecombo
+Type=JComboBox
+Value=
+X= 3960
+Y= 480
+SizeX= 2280
+SizeY= 360
+[5]
+Name=l3
+Type=JLabel
+Value=Columns ==>
+X= 720
+Y= 1200
+SizeX= 1320
+SizeY= 360
+[6]
+Name=l5
+Type=JLabel
+Value=Query ==>
+X= 240
+Y= 1920
+SizeX= 1080
+SizeY= 360
+[7]
+Name=textarea_1
+Type=JTextArea
+X= 1560
+Y= 1920
+SizeX= 5160
+SizeY= 480
+[8]
+Name=btnalt
+Type=JButton
+Value=Alter
+X= 1080
+Y= 2760
+SizeX= 1680
+SizeY= 360
+[9]
+Name=btncel
+Type=JButton
+Value=Cancel
+X= 3360
+Y= 2760
+SizeX= 1800
+SizeY= 360
+[10]
+Name=colcombo
+Type=JComboBox
+Value=
+X= 2880
+Y= 1200
+SizeX= 2040
+SizeY= 360

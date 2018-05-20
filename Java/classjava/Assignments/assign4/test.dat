@@ -1,0 +1,81 @@
+[Main]
+SizeX=5355
+SizeY=3825
+[1]
+Name=lname
+Type=JLabel
+Value=Name
+X= 360
+Y= 480
+SizeX= 1080
+SizeY= 360
+[2]
+Name=lage
+Type=JLabel
+Value=Age
+X= 360
+Y= 1200
+SizeX= 1080
+SizeY= 360
+[3]
+Name=bsave
+Type=JButton
+Value=SAVE
+X= 360
+Y= 2880
+SizeX= 1080
+SizeY= 360
+[4]
+Name=lquali
+Type=JLabel
+Value=Qualification
+X= 360
+Y= 1920
+SizeX= 1080
+SizeY= 360
+[5]
+Name=tname
+Type=JTextField
+X= 2640
+Y= 480
+SizeX= 2280
+SizeY= 360
+[6]
+Name=tage
+Type=JTextField
+X= 2640
+Y= 1200
+SizeX= 2280
+SizeY= 360
+[7]
+Name=rmale
+Type=JRadioButton
+Value=Male
+X= 2640
+Y= 1920
+SizeX= 1080
+SizeY= 360
+[8]
+Name=rfemale
+Type=JRadioButton
+Value=Female
+X= 3960
+Y= 1920
+SizeX= 1320
+SizeY= 360
+[9]
+Name=breset
+Type=JButton
+Value=RESET
+X= 2040
+Y= 2880
+SizeX= 1080
+SizeY= 360
+[10]
+Name=bexit
+Type=JButton
+Value=EXIT
+X= 3720
+Y= 2880
+SizeX= 1080
+SizeY= 360

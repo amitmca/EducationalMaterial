@@ -1,0 +1,64 @@
+[Main]
+SizeX=8970
+SizeY=6150
+[1]
+Name=login
+Type=JLabel
+X= 2880
+Y= 0
+SizeX= 3240
+SizeY= 2760
+[2]
+Name=luname
+Type=JLabel
+Value=User Name
+X= 2160
+Y= 3480
+SizeX= 1800
+SizeY= 360
+[3]
+Name=lpass
+Type=JLabel
+Value=Password
+X= 2160
+Y= 4320
+SizeX= 1800
+SizeY= 360
+[4]
+Name=login1
+Type=JLabel
+Value=LOGIN
+X= 3840
+Y= 2760
+SizeX= 1560
+SizeY= 360
+[5]
+Name=tname
+Type=JTextField
+X= 5040
+Y= 3480
+SizeX= 2280
+SizeY= 360
+[6]
+Name=tpass
+Type=JTextField
+X= 5040
+Y= 4200
+SizeX= 2280
+SizeY= 360
+[7]
+Name=blogin
+Type=JButton
+Value=Login
+X= 3120
+Y= 5040
+SizeX= 1080
+SizeY= 360
+[8]
+Name=breset
+Type=JButton
+Value=Reset
+X= 4920
+Y= 5040
+SizeX= 1080
+SizeY= 360

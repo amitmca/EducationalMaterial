@@ -1,0 +1,30 @@
+<HTML>
+<HEAD>
+<TITLE>Validating Large Radio Fields</TITLE>
+<SCRIPT>
+function validate() {
+ICOK=false;
+for (ic=0;ic<5;ic++) {
+if (mainform.IceCream[ic].checked) ICOK=true;
+}
+if (!ICOK) {
+alert('Your favorite Ice Cream flavor is a required field. Please try again.');
+event.returnValue=false;
+}
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM NAME="mainform" ACTION="http://yourdomainhere/cgi-bin/post-query" METHOD="post" onsubmit="validate();">
+<BR>
+<INPUT TYPE="RADIO" NAME="IceCream" VALUE="Vanilla">Vanilla
+<INPUT TYPE="RADIO" NAME="IceCream" VALUE="Choc">Chocolate
+<INPUT TYPE="RADIO" NAME="IceCream" VALUE="Straw">Strawberry
+<INPUT TYPE="RADIO" NAME="IceCream" VALUE="RaspR">Raspberry Ripple
+<INPUT TYPE="RADIO" NAME="IceCream" VALUE="Mint">Mint
+<BR>
+<INPUT TYPE="SUBMIT">
+</FORM>
+</BODY>
+</HTML>
+

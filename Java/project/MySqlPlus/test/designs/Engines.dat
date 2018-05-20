@@ -1,0 +1,27 @@
+[Main]
+SizeX=9645
+SizeY=7695
+[1]
+Name=txtengines
+Type=JTextArea
+Value=
+X= 120
+Y= 600
+SizeX= 9480
+SizeY= 6480
+[2]
+Name=label_1
+Type=JLabel
+Value=Mysql Engines
+X= 120
+Y= 120
+SizeX= 2520
+SizeY= 360
+[3]
+Name=btnok
+Type=JButton
+Value=OK
+X= 3600
+Y= 7200
+SizeX= 1680
+SizeY= 360

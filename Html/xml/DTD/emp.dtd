@@ -1,0 +1,14 @@
+<!ELEMENT hrdept (employee) >
+<!ELEMENT employee (name,address,contact)>
+<!ELEMENT name (fname,lname)>
+<!ELEMENT fname (#PCDATA)>
+<!ELEMENT lname (#PCDATA)>
+<!ELEMENT address (address1,city,state,pin)>
+<!ELEMENT address1 (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT state (#PCDATA)>
+<!ELEMENT pin (#PCDATA)>
+<!ELEMENT contact (email,residence,mobile)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT residence (#PCDATA)>
+<!ELEMENT mobile (#PCDATA)>

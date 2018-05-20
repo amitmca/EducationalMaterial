@@ -1,0 +1,32 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>New Page 1</title>
+<script language="javascript">
+function myfun()
+	{
+	var n=document.form.txt.value;
+	var k=1;
+	for(i=0;i<n;i++)
+		{
+		for(j=0;j<k;j--)
+			{
+			document.write("*");
+			}
+		document.write("<br>");			
+		}
+	}
+</script>
+</head>
+
+<body>
+<form name="form" method="post">
+<label><font color="red">How Many Lines </font></label>
+<input type="text" name="txt">
+<input type="button" value="Get Output" onclick="myfun()">
+
+</form>
+</body>
+
+</html>

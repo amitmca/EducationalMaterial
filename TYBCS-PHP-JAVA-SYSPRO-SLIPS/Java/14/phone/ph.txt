@@ -1,0 +1,6 @@
+abc	111
+vbp	222
+kiran	555
+vijay	666
+patil	777
+name	888

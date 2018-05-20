@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE attributes PUBLIC "-//NetBeans//DTD DefaultAttributes 1.0//EN" "http://www.netbeans.org/dtds/attributes-1_0.dtd">
+<attributes version="1.0">
+    <fileobject name="DataBaseLogin.java">
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="DataBaseLogin"/>
+    </fileobject>
+    <fileobject name="RDBMSTreeRenderer.java">
+        <attr name="class_dependency_javax.swing.tree.DefaultTreeCellRenderer" stringvalue="RDBMSTreeRenderer"/>
+    </fileobject>
+    <fileobject name="Tables.java">
+        <attr name="class_dependency_javax.swing.JList" stringvalue="Tables"/>
+    </fileobject>
+    <fileobject name="StackTracer.java">
+        <attr name="class_dependency_javax.swing.JDialog" stringvalue="StackTracer"/>
+    </fileobject>
+    <fileobject name="Toolbar.java">
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="Toolbar"/>
+    </fileobject>
+    <fileobject name="LoginDialog.java">
+        <attr name="class_dependency_javax.swing.JDialog" stringvalue="LoginDialog"/>
+    </fileobject>
+    <fileobject name="DBTreeView.java">
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="DBTreeView"/>
+    </fileobject>
+    <fileobject name="TableComboBox.java">
+        <attr name="class_dependency_javax.swing.JComboBox" stringvalue="TableComboBox"/>
+    </fileobject>
+    <fileobject name="TableCopyGUI.java">
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="TableCopyGUI"/>
+    </fileobject>
+    <fileobject name="DashBoard.java">
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="DashBoard"/>
+    </fileobject>
+    <fileobject name="MySQLconnections.java">
+        <attr name="class_dependency_javax.swing.JFrame" stringvalue="MySQLconnections"/>
+    </fileobject>
+    <fileobject name="ImageButton.java">
+        <attr name="class_dependency_javax.swing.JButton" stringvalue="ImageButton"/>
+        <attr name="class_dependency_java.awt.image.RGBImageFilter" stringvalue="GrayFilter"/>
+    </fileobject>
+    <fileobject name="DBcomboBox.java">
+        <attr name="class_dependency_javax.swing.JComboBox" stringvalue="DBcomboBox"/>
+    </fileobject>
+    <fileobject name="ImageLabel.java">
+        <attr name="class_dependency_javax.swing.JLabel" stringvalue="ImageLabel"/>
+    </fileobject>
+    <fileobject name="DbTypeBox.java">
+        <attr name="class_dependency_javax.swing.JComboBox" stringvalue="DbTypeBox"/>
+    </fileobject>
+    <fileobject name="CloseableFrame.java">
+        <attr name="class_dependency_javax.swing.JFrame" stringvalue="CloseableFrame"/>
+    </fileobject>
+    <fileobject name="FfAlignerLayoutPanel.java">
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="FfAlignerLayoutPanel"/>
+    </fileobject>
+    <fileobject name="SplashScreen.java">
+        <attr name="class_dependency_java.awt.Window" stringvalue="SplashScreen"/>
+        <attr name="class_dependency_java.lang.Runnable" stringvalue="SplashScreen.UpdateStatus;SplashScreen.CloseSplashScreen"/>
+    </fileobject>
+    <fileobject name="JTextFieldFilter.java">
+        <attr name="class_dependency_javax.swing.text.PlainDocument" stringvalue="JTextFieldFilter"/>
+    </fileobject>
+    <fileobject name="ChooseColor.java">
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="ChooseColor"/>
+    </fileobject>
+</attributes>

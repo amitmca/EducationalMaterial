@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WindowsService", "WindowsService.vbproj", "{7497FC78-C31D-4868-907A-51F96F76F0C9}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{7497FC78-C31D-4868-907A-51F96F76F0C9}.Debug.ActiveCfg = Debug|.NET
+		{7497FC78-C31D-4868-907A-51F96F76F0C9}.Debug.Build.0 = Debug|.NET
+		{7497FC78-C31D-4868-907A-51F96F76F0C9}.Release.ActiveCfg = Release|.NET
+		{7497FC78-C31D-4868-907A-51F96F76F0C9}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

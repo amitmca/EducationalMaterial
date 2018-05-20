@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Factorial</title>
+<script language="JavaScript">
+	function fact(num)
+	{
+	if(num==0)
+		{
+		return 1;
+		}
+	else if(num>1)
+		{
+		return num*fact(num-1);
+		}
+		else
+		{
+		return num;
+		}
+	}
+</script>
+</head>
+<body>
+<script language="JavaScript">
+
+document.write("<table width=\"50%\" border=\"2\" cellpadding=\"1\" cellspacing=\"0\" align=\"center\">");
+document.write("<caption><u><h3>Factorial Of Numbers</h3></u></caption>");
+document.write("<tr><th><b>Number</b></th><th><b>Factorial</b></th></tr>");
+
+for(i=0;i<10;i++)
+	{
+	var a=fact(i);
+	document.write("<tr><td>" +i "</td><td>" +fact(parseInt(i)) +"</td>");
+	}
+document.write("</table>");
+</script>
+</body>
+</html>
+

@@ -1,0 +1,41 @@
+function validate_form ( )
+{
+	valid = true;
+
+    if ( document.regform.txtname.value == "" )
+    	{
+        alert ( "Please fill in the 'Name' box." );
+        valid = false;
+    	}
+    else if ( document.regform.txtpid.value == "")
+    	{
+        alert ( "Please fill in the 'Choose your Project ID' box." );
+        valid = false;
+    	}
+	else if ( document.regform.txtpass.value == "")
+    	{
+        alert ( "Please fill in the 'Choose Password' box.");
+        valid = false;
+    	}
+    else if ( document.regform.txtvpass.value == "" )
+    	{
+        alert ( "Please fill in the 'Confirm your Password' box." );
+        valid = false;
+    	}
+	else if ( ( document.regform.gender[0].checked == false )&& ( document.regform.gender[1].checked == false ) )
+	    {
+        alert ( "Please choose your Gender: Male or Female" );
+        valid = false;
+	    }	
+	else if(document.regform.txtans.value=" ")
+		{
+		alert ( "Please fill in the 'Your Answer' box." );
+        valid = false;
+		}   
+	else if(document.regform.verify.value=" ")
+		{
+		alert ( "Please fill in the 'Verify your Registeration' box." );
+        valid = false;
+		}    			 	
+    	return valid;    
+}

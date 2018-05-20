@@ -1,0 +1,401 @@
+<html>
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<title>Manage Your Projects Online</title>
+
+
+
+<font color="#77c805" face="Verdana, Arial, Helvetica" >
+<style type="text/css">
+
+#informationbar{
+position: fixed;
+left: 0;
+width: 100%;
+text-indent: 5px;
+padding: 5px 0;
+background-color: lightyellow;
+border-bottom: 1px solid black;
+font: bold 12px Verdana;
+}
+
+* html #informationbar{ /*IE6 hack*/
+position: absolute;
+width: expression(document.compatMode=="CSS1Compat"? document.documentElement.clientWidth+"px" : body.clientWidth+"px");
+}
+
+</style>
+
+<script type="text/javascript">
+
+/***********************************************
+
+* Animated Information Bar- by JavaScript Kit (www.javascriptkit.com)
+* This notice must stay intact for usage
+* Visit JavaScript Kit at http://www.javascriptkit.com/ for this script and 100s more
+
+***********************************************/
+
+function informationbar(){
+	this.displayfreq="always"
+	this.content='<a href="javascript:informationbar.close()"><img src="images/close.gif" style="width: 14px; height: 14px; float: right; border: 0; margin-right: 5px" /></a>'
+}
+
+informationbar.prototype.setContent=function(data){
+	this.content=this.content+data
+	document.write('<div id="informationbar" style="top: -500px">'+this.content+'</div>')
+}
+
+informationbar.prototype.animatetoview=function(){
+	var barinstance=this
+	if (parseInt(this.barref.style.top)<0){
+		this.barref.style.top=parseInt(this.barref.style.top)+5+"px"
+		setTimeout(function(){barinstance.animatetoview()}, 50)
+	}
+	else{
+		if (document.all && !window.XMLHttpRequest)
+		this.barref.style.setExpression("top", 'document.compatMode=="CSS1Compat"? document.documentElement.scrollTop+"px" : body.scrollTop+"px"')
+	else
+		this.barref.style.top=0
+	}
+}
+
+informationbar.close=function(){
+	document.getElementById("informationbar").style.display="none"
+	if (this.displayfreq=="session")
+		document.cookie="infobarshown=1;path=/"
+}
+
+informationbar.prototype.setfrequency=function(type){
+	this.displayfreq=type
+}
+
+informationbar.prototype.initialize=function(){
+	if (this.displayfreq=="session" && document.cookie.indexOf("infobarshown")==-1 || this.displayfreq=="always"){
+		this.barref=document.getElementById("informationbar")
+		this.barheight=parseInt(this.barref.offsetHeight)
+		this.barref.style.top=this.barheight*(-1)+"px"
+		this.animatetoview()
+	}
+}
+
+window.onunload=function(){
+	this.barref=null
+}
+
+</script>
+
+
+<script type="text/javascript">
+<!--Invocation code-->
+
+var infobar=new informationbar()
+infobar.setContent('Welcome to Plan Projects ! It appears you are not registered yet on our site. Why wait ? <a href="http://localhost/project/register.htm">Register here</a>')
+//infobar.setfrequency('session') //Uncomment this line to set information bar to only display once per browser session!
+infobar.initialize()
+
+</script>
+</font>
+<STYLE>
+  
+
+BODY 
+{
+SCROLLBAR-FACE-COLOR: red; SCROLLBAR-HIGHLIGHT-COLOR: gray; 
+
+SCROLLBAR-SHADOW-COLOR: black; SCROLLBAR-ARROW-COLOR: gray; 
+
+SCROLLBAR-TRACK-COLOR: black; SCROLLBAR-DARKSHADOW-COLOR: red
+}
+font{text-decoration:None;}
+</STYLE>
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+
+function setColor(el, bg) 
+{
+  if (el.style) el.style.backgroundColor = bg;
+}
+
+function checkInput(form) 
+{
+  var bgBad = "lightyellow";
+  var bgGood = "white";
+  var valid = true;
+  if (form.txtusr.value == "") {
+    valid = false;
+    setColor(form.txtusr, bgBad);
+  
+  } else {
+    setColor(form.txtusr, bgGood);
+  }
+  if (form.txtpass.value == "") {
+    valid = false;
+    setColor(form.txtpass, bgBad);
+  
+  } else {
+    setColor(form.txtpass, bgGood);
+  }
+  if (!valid) alert("Please fill out both the fields.");
+  return valid;
+}
+// -->
+</SCRIPT>
+
+
+
+<SCRIPT TYPE="text/javascript">
+<!--
+function popup(mylink, windowname)
+{
+if (! window.focus)return true;
+var href;
+if (typeof(mylink) == 'string')
+   href=mylink;
+else
+   href=mylink.href;
+window.open(href, windowname, 'width=400,height=200,scrollbars=yes');
+return false;
+}
+//-->
+
+</SCRIPT>
+
+
+	
+</head>
+
+<BODY>
+<SCRIPT src="preloader.js" type=text/javascript></SCRIPT>
+<DIV id=waitDiv 
+style="LEFT: 39%; VISIBILITY: hidden; WIDTH: 178px; POSITION: absolute; TOP: 132px; HEIGHT: 99px; BACKGROUND-COLOR: #ffffff; TEXT-ALIGN: center">
+<TABLE style="BORDER-COLLAPSE: collapse" borderColor=#4269c0 height="101%" 
+cellSpacing=0 cellPadding=0 width="100%" border=2 >
+  <TBODY>
+  <TR>
+    <TD width="99%" bgColor=#ffffff>
+      <TABLE cellPadding=6 width=216 border=0>
+        <TBODY>
+        <TR>
+          <TD dir=ltr vAlign=top align=middle width=200><FONT 
+            style="FONT-SIZE: 8pt" face=Tahoma><IMG height=16 
+            src="images/loading22.gif" width=16 border=0> 
+            <FONT color="#0055bb" face="Verdana, Arial, Helvetica">&nbsp;<b>Welcome To Plan Projects</b>
+            <P><IMG height=15 src="images/loading5.gif" 
+            width=200 border=0> 
+            <P><FONT style="FONT-WEIGHT: 700; FONT-SIZE: 8pt" face="Verdana, Arial, Helvetica" color="red">Loading......
+  </FONT></P></FONT></FONT></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV>
+<SCRIPT>ap_showWaitMessage('waitDiv', 3); </SCRIPT>
+
+<FORM  name=form onSubmit="return checkInput(this)" action="http://localhost/project/signin.php" method="post">
+
+<table border="0" width="985" height="89">
+	<tr>
+		<td height="83" width="979" valign="middle" background="images/stylusstudio_02.gif">
+		<img border="0" src="images/logosmall_free.gif" width="271" height="60">
+		<object classid="clsid:D27CDB6E-AE6D-11CF-96B8-444553540000" id="obj2" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" border="0" width="419" height="85">
+			<param name="movie" value="Movie2.swf">
+			<param name="quality" value="High">
+			<embed src="Movie2.swf" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" name="obj2" width="419" height="85"></object>
+			&nbsp;&nbsp;
+		<img border="0" src="images/employee.jpg" width="275" height="82"></td>
+	</tr>
+
+</table>
+
+<table border="0" width="976" height="23">
+	<tr>
+		<td height="23" width="125" align="center" bgcolor="red"><a href="index.htm"><font color="white"><b><FONT face="Verdana, Arial, Helvetica" size=-1>Home</FONT></b></font></a></td>
+		<td height="23" width="125" align="center" bgcolor="red"><a href="aboutus.htm"><font color="white"><b><FONT face="Verdana, Arial, Helvetica" size=-1>About Us</FONT></b></font></a></td>
+		<td height="23" width="125" align="center" bgcolor="red"><a href="search.htm"><font color="white"><b><FONT face="Verdana, Arial, Helvetica" size=-1>Search</FONT></b></font></a></td>
+		<td height="23" width="125" align="center" bgcolor="red"><a href="features.htm"><font color="white"><b><FONT face="Verdana, Arial, Helvetica" size=-1>Features</FONT></b></font></a></td>
+		<td height="23" width="125" align="center" bgcolor="red"><a href="contactus.htm"><font color="white"><b><FONT face="Verdana, Arial, Helvetica" size=-1>Contact Us</FONT></b></font></a></td>
+		<td height="23" width="125" align="center" bgcolor="red"><a href="feedback.htm"><font color="white"><b><FONT face="Verdana, Arial, Helvetica" size=-1>Feedback</FONT></b></font></a></td>
+		<td height="23" width="125" align="center" bgcolor="red"><a href="help.htm"><font color="white"><b><FONT face="Verdana, Arial, Helvetica" size=-1>Help</FONT></b></font></a></td>
+	</tr>
+</table>
+
+
+
+
+
+	<table border="0" width="994" height="416">
+		<tr>
+			
+			<td height="412" width="233" valign="top" rowspan="8" valign="top">
+			<br><br>
+			<center><a href="echeck.html" onClick="return popup(this, 'echeck')"><img src="images/employerstab.png" border="0" align="middle" ></a></center>
+
+			<br>
+			<fieldset>			
+			<img src="images/1-t3_usefree.jpg">
+			<DIV class=padding><STRONG>You can use the FREE software on your own 
+				Windows server. You can get affordable hosting and purchase 
+				Enterprise back-office modules if you want.
+			<BR>
+			<UL>
+			 <LI>Unlimited projects 
+			  <LI>Unlimited users 
+			  <LI>No obligation 
+			  <LI>No credit card required 
+			  <LI>Fully functional software </LI>
+			  </UL>
+			  </STRONG>
+
+			</fieldset><p>
+		<center>
+		<font color="red" face="Verdana, Arial, Helvetica" size=2><b>
+
+				<script language="JavaScript">
+
+/*
+Drop Down World Clock- By Learn iran (http://www.webloger.5u.com)
+Portions of code by Kurt @ http://www.webloger.5u.com/
+This credit notice must stay intact
+*/
+
+if (document.all||document.getElementById)
+document.write('<span id="worldclock" style="font:bold 16px Arial;"></span><br>')
+
+zone=0;
+isitlocal=true;
+ampm='';
+
+function updateclock(z){
+zone=z.options[z.selectedIndex].value;
+isitlocal=(z.options[0].selected)?true:false;
+}
+
+function WorldClock(){
+now=new Date();
+ofst=now.getTimezoneOffset()/60;
+secs=now.getSeconds();
+sec=-1.57+Math.PI*secs/30;
+mins=now.getMinutes();
+min=-1.57+Math.PI*mins/30;
+hr=(isitlocal)?now.getHours():(now.getHours() + parseInt(ofst)) + parseInt(zone);
+hrs=-1.575+Math.PI*hr/6+Math.PI*parseInt(now.getMinutes())/360;
+if (hr < 0) hr+=24;
+if (hr > 23) hr-=24;
+ampm = (hr > 11)?"PM":"AM";
+statusampm = ampm.toLowerCase();
+
+hr2 = hr;
+if (hr2 == 0) hr2=12;
+(hr2 < 13)?hr2:hr2 %= 12;
+if (hr2<10) hr2="0"+hr2
+
+var finaltime=hr2+':'+((mins < 10)?"0"+mins:mins)+':'+((secs < 10)?"0"+secs:secs)+' '+statusampm;
+if (document.all)
+worldclock.innerHTML=finaltime
+else if (document.getElementById)
+document.getElementById("worldclock").innerHTML=finaltime
+else if (document.layers){
+document.worldclockns.document.worldclockns2.document.write(finaltime)
+document.worldclockns.document.worldclockns2.document.close()
+}
+
+
+setTimeout('WorldClock()',1000);
+}
+
+window.onload=WorldClock
+//-->
+</script>
+</b></font></center></p>	
+			</td>
+			<td height="77" width="543" rowspan="2" align="center">
+			<h3><FONT face="Verdana, Arial, Helvetica">
+			<SCRIPT language=JavaScript1.2 src="usingitJSNeonLightsTextEffect10.js"></SCRIPT>
+			</FONT>
+			<br>
+			      <center><img src="images/bar2.gif" width="392" height="1"></center>
+			</h3>
+		
+			</td>
+			<td height="24" width="204" align="center">
+			<img src="images/branch_bg1.gif" width="198" height="23">
+			<img border="0" src="images/already_registered.gif" width="189" height="48" align="center">
+			</td>
+		</tr>
+		
+		<tr>
+			<td height="25" width="204">
+			<label for=username><b>
+			<FONT face="Verdana, Arial, Helvetica" size=-1>Username :</FONT></b></label>
+			<input type="text" name="txtusr" id="txtusr" size="14">
+			</td>
+		</tr>
+		
+		<tr>
+			
+			<td height="333" width="543" rowspan="6">
+			<object classid="clsid:D27CDB6E-AE6D-11CF-96B8-444553540000" id="obj1" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" border="0" width="543" height="356">
+				<param name="movie" value="flash.swf">
+				<param name="quality" value="High">
+				<embed src="flash.swf" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" name="obj1" width="543" height="356"></object>
+			</td>
+			
+			<td height="38" width="204">
+			<label for=password><b>
+			<FONT face="Verdana, Arial, Helvetica" size=-1>Password &nbsp;:</FONT></b></label>
+		    <input type="password" name="txtpass" id="txtpass" size="14" style="color: #FF0000"></td>
+		</tr>
+		
+		<tr>
+			
+			<td height="24" width="204" valign="middle" align="center">
+			<input type="image" src="images/login.gif">
+			<img src="images/branch_bg.gif" width="194" height="23">
+			</td>
+		</tr>
+	
+		<tr>
+			<td height="21" width="204" valign="middle" align="center"> 
+						
+			<a href="forget.htm"><FONT face="Verdana, Arial, Helvetica" color="#77c805" size="-1"><b>Forget Password</b></FONT></a>
+			
+			</td>
+		</tr>
+		
+		<tr>
+			<td height="28" width="204"  valign="middle" align="center">
+			
+			&nbsp;</td>
+		</tr>
+		
+		<tr>
+			<td height="86" width="204" valign="top" align="center">
+			<img border="0" src="images/new_user1.gif" width="106" height="26"><p>
+			<a href="register.htm"><img src="images/register_now.gif" width="129" height="27" border="0"></a>
+			</td>
+		</tr>
+		
+		<tr>
+			<td height="138" width="204" valign="middle">
+			
+			<a href="../Job_portal/index.htm"><img src="images/79781.gif" width="197" height="60" border="0"></a></td>
+		</tr>
+		
+	</table>
+
+<table border="0" width="987" height="31">
+	<tr>
+		<td height="31" width="987">
+		
+		<center> <img src="images/logo-banner.gif" width="352" height="40" border="0"></center>
+		</td>
+	</tr>
+</table>
+<SCRIPT type=text/javascript>
+
+var t=setTimeout("ap_showWaitMessage('waitDiv', 0);",5000)
+
+</SCRIPT>
+</form>
+</form>
+</body>
+</html>

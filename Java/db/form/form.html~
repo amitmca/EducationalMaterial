@@ -1,0 +1,76 @@
+<html>
+<head>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+
+function setColor(el, bg) 
+{
+  if (el.style) el.style.backgroundColor = bg;
+}
+
+function checkInput(form) 
+{
+  var bgBad = "white";
+  var bgGood = "white";
+  var valid = true;
+  if (form.txtusr.value == "") {
+    valid = false;
+    setColor(form.txtusr, bgBad);
+  
+  } else {
+    setColor(form.txtusr, bgGood);
+  }
+  if (form.txtpass.value == "") {
+    valid = false;
+    setColor(form.txtpass, bgBad);
+  
+  } else {
+    setColor(form.txtpass, bgGood);
+  }
+  if (!valid) alert("Please fill out both the fields.");
+  return valid;
+}
+// -->
+</SCRIPT>
+</head>
+<body>
+
+
+<form method="post" action="http://localhost:8080/servlets-examples/servlet/piodbc" name=form onSubmit="return checkInput(this)">
+
+
+<table border="0" width="326" height="166" background="HDR_WIZ_RIGHT1.PNG" align="center">
+	<tr>
+		<td height="17" width="320" align="center" colspan="2">
+		<font color="red" face="Verdana, Arial, Helvetica" ><b>Login Form</b></font>		
+		</td>
+	</tr>
+	<tr>
+		<td height="27" width="167" align="center">
+		<font color="green" face="Verdana, Arial, Helvetica" ><b>User Id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</b></font>		
+		
+		
+		</td>
+		<td height="27" width="149" align="center">
+		<input type="text" name="txtusr"></td>
+	</tr>
+	<tr>
+		<td height="26" width="167" align="center">
+		<font color="green" face="Verdana, Arial, Helvetica" ><b>Password&nbsp; :</b></font>		
+		
+		
+		</td>
+		<td height="26" width="149" align="center">
+		<input type="password" name="txtpass"></td>
+	</tr>
+	<tr>
+		<td height="23" width="320" align="center" colspan="2">
+		<input type="image" src="submit.gif">		
+		</td>
+	</tr>
+	
+</table>
+
+
+</body>
+</html>

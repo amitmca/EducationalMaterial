@@ -1,0 +1,31 @@
+
+CREATE TABLE ADMGT_TIME_SLOT_TB(PK_TID VARCHAR(10) PRIMARY KEY,FK_TIME_SLOT_CH VARCHAR(10)REFERENCES ADMGT_CHANNEL_TB(PK_CH_ID),TIME_SLOT VARCHAR(15),DISCOUNT VARCHAR(5))
+insert into ADMGT_TIME_SLOT_TB values('t001','ch001','6am-10am','20')
+insert into ADMGT_TIME_SLOT_TB values('t002','ch001','10am-2pm','25')
+insert into ADMGT_TIME_SLOT_TB values('t003','ch001','2pm-5pm','30')
+insert into ADMGT_TIME_SLOT_TB values('t004','ch001','5pm-8pm','20')
+insert into ADMGT_TIME_SLOT_TB values('t005','ch001','8pm-11pm','10')
+insert into ADMGT_TIME_SLOT_TB values('t006','ch002','6am-12pm','25')
+insert into ADMGT_TIME_SLOT_TB values('t007','ch002','12pm-3pm','15')
+insert into ADMGT_TIME_SLOT_TB values('t008','ch002','3pm-6pm','20')
+insert into ADMGT_TIME_SLOT_TB values('t009','ch002','6pm-9pm','10')
+insert into ADMGT_TIME_SLOT_TB values('t010','ch002','9pm-12pm','15')
+insert into ADMGT_TIME_SLOT_TB values('t011','ch003','7am-10pm','20')
+insert into ADMGT_TIME_SLOT_TB values('t012','ch003','10am-2pm','15')
+insert into ADMGT_TIME_SLOT_TB values('t013','ch003','2pm-6pm','20')
+insert into ADMGT_TIME_SLOT_TB values('t014','ch003','6pm-10pm','10')
+insert into ADMGT_TIME_SLOT_TB values('t015','ch004','8am-12am','20')
+insert into ADMGT_TIME_SLOT_TB values('t016','ch004','12pm-4pm','10')
+insert into ADMGT_TIME_SLOT_TB values('t017','ch004','4pm-8pm','15')
+insert into ADMGT_TIME_SLOT_TB values('t018','ch004','8pm-11pm','10')
+insert into ADMGT_TIME_SLOT_TB values('t019','ch005','7am-12am','20')
+insert into ADMGT_TIME_SLOT_TB values('t020','ch005','12am-5pm','10')
+insert into ADMGT_TIME_SLOT_TB values('t021','ch005','5pm-8pm','15')
+insert into ADMGT_TIME_SLOT_TB values('t022','ch005','8pm-11pm','10')
+insert into ADMGT_TIME_SLOT_TB values('t023','ch006','9am-12pm','15')
+insert into ADMGT_TIME_SLOT_TB values('t024','ch006','12pm-6pm','10')
+insert into ADMGT_TIME_SLOT_TB values('t025','ch006','6pm-12pm','10')
+
+
+
+

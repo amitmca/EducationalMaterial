@@ -1,0 +1,8 @@
+[ODBC]
+DRIVER=SQLite ODBC Driver
+LongNames=0
+NoWCHAR=0
+Timeout=
+NoTXN=0
+StepAPI=0
+Database=D:\Programs\Databases\dbms_lab\oracle\oracle.db

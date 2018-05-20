@@ -1,0 +1,53 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Inheritance", "Inheritance.vbproj", "{4A56BF7D-B1AE-48CA-95EF-A39FF796E4D6}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Interfaces", "..\Interfaces\Interfaces.vbproj", "{309B9B0A-2673-4B49-A6A6-B9D7DE106007}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Polymorphism", "..\Polymorphism\Polymorphism.vbproj", "{D7F45B8E-CE4D-456F-B701-35CAE055386D}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "LateBinding", "..\LateBinding\LateBinding.vbproj", "{1EBC12A9-7E49-4BFA-A14C-2997CA7D32A9}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MyClass", "..\MyClass\MyClass.vbproj", "{C58A1BDD-4A7A-49DB-A5F9-E5707F291674}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{4A56BF7D-B1AE-48CA-95EF-A39FF796E4D6}.Debug.ActiveCfg = Debug|.NET
+		{4A56BF7D-B1AE-48CA-95EF-A39FF796E4D6}.Debug.Build.0 = Debug|.NET
+		{4A56BF7D-B1AE-48CA-95EF-A39FF796E4D6}.Release.ActiveCfg = Release|.NET
+		{4A56BF7D-B1AE-48CA-95EF-A39FF796E4D6}.Release.Build.0 = Release|.NET
+		{309B9B0A-2673-4B49-A6A6-B9D7DE106007}.Debug.ActiveCfg = Debug|.NET
+		{309B9B0A-2673-4B49-A6A6-B9D7DE106007}.Debug.Build.0 = Debug|.NET
+		{309B9B0A-2673-4B49-A6A6-B9D7DE106007}.Release.ActiveCfg = Release|.NET
+		{309B9B0A-2673-4B49-A6A6-B9D7DE106007}.Release.Build.0 = Release|.NET
+		{D7F45B8E-CE4D-456F-B701-35CAE055386D}.Debug.ActiveCfg = Debug|.NET
+		{D7F45B8E-CE4D-456F-B701-35CAE055386D}.Debug.Build.0 = Debug|.NET
+		{D7F45B8E-CE4D-456F-B701-35CAE055386D}.Release.ActiveCfg = Release|.NET
+		{D7F45B8E-CE4D-456F-B701-35CAE055386D}.Release.Build.0 = Release|.NET
+		{1EBC12A9-7E49-4BFA-A14C-2997CA7D32A9}.Debug.ActiveCfg = Debug|.NET
+		{1EBC12A9-7E49-4BFA-A14C-2997CA7D32A9}.Debug.Build.0 = Debug|.NET
+		{1EBC12A9-7E49-4BFA-A14C-2997CA7D32A9}.Release.ActiveCfg = Release|.NET
+		{1EBC12A9-7E49-4BFA-A14C-2997CA7D32A9}.Release.Build.0 = Release|.NET
+		{C58A1BDD-4A7A-49DB-A5F9-E5707F291674}.Debug.ActiveCfg = Debug|.NET
+		{C58A1BDD-4A7A-49DB-A5F9-E5707F291674}.Debug.Build.0 = Debug|.NET
+		{C58A1BDD-4A7A-49DB-A5F9-E5707F291674}.Release.ActiveCfg = Release|.NET
+		{C58A1BDD-4A7A-49DB-A5F9-E5707F291674}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

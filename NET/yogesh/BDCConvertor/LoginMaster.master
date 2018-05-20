@@ -1,0 +1,134 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="LoginMaster.master.cs" Inherits="LoginMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+
+<head id="Head1" runat="server">
+   <title>Resource Management</title>
+<link href="style.css" type="text/css" rel="stylesheet" />
+ <script language="javascript" type="text/javascript" src="Validation.js"></script>
+     <LINK href="copy\style.css" type=text/css rel=stylesheet>
+     <LINK href="style.css" type=text/css rel=stylesheet>
+      <style type="text/css">
+<!--
+A.ssmItems:link		{color:black;text-decoration:none;}
+A.ssmItems:hover	{color:black;text-decoration:none;}
+A.ssmItems:active	{color:black;text-decoration:none;}
+A.ssmItems:visited	{color:black;text-decoration:none;}
+//-->
+</style>
+
+<SCRIPT SRC="ssm.js" language="JavaScript1.2"></SCRIPT>
+<SCRIPT SRC="ssmItems.js" language="JavaScript1.2"></SCRIPT>
+</head>
+
+
+<body leftmargin="0" topmargin="0" bottommargin="0" style="background-color: #edeff0" scroll="yes">
+    <form id="form1" runat="server">
+    <div style="text-align: right">  
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+        </asp:ScriptManager>
+        <asp:Button ID="btnLogOut" runat="server" BackColor="White" BorderColor="#1C84C5"
+            BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="10pt" OnClick="btnLogOut_Click"
+            Text="LogOut" /><table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+                <td colspan="1" style="height: 90px">
+                </td>
+                <td colspan="6" style="text-align: center; height: 90px;" >
+                    <asp:Panel ID="Panel1" runat="server" Height="70px" Style="border-right: #1c84c5 1px solid;
+                        border-top: #1c84c5 1px solid; vertical-align: middle; border-left: #1c84c5 1px solid;
+                        border-bottom: #1c84c5 1px solid; background-color: white" Width="500px" BackImageUrl="~/SETUP1.jpg">
+                        </asp:Panel>
+                    </td>
+            </tr>
+            <tr>
+                <td style="height: 32px" align="left" colspan="8" valign="top">
+               <div id="styletwo" style="font-family: Verdana; left: 0px; font-size: 8pt; top: 0px;">
+	<ul>
+		
+	</ul>
+</div>
+               
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 100px; height: 31px;">
+                </td>
+                <td style="width: 109px; height: 31px;">
+                </td>
+                <td style="width: 154px; height: 31px;">
+                </td>
+                <td style="width: 127px; height: 31px; text-align: center;">
+                </td>
+                <td style="width: 100px; height: 31px;">
+                </td>
+                <td style="width: 92px; height: 31px;">
+                </td>
+                <td style="width: 100px; height: 31px;">
+                </td>
+                <td style="width: 100px; height: 31px;">
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 100px; height: 26px">
+                </td>
+                <td align="center" colspan="6" style="height: 26px" valign="top">
+                </td>
+                <td style="width: 100px; height: 26px">
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 100px; height: 30px">
+                </td>
+                <td align="center" colspan="6" style="height: 30px" valign="top">
+                </td>
+                <td style="width: 100px; height: 30px">
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 100px">
+                </td>
+                <td colspan="6" align="center" valign="top">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                    </asp:ContentPlaceHolder>
+                </td>
+                <td style="width: 100px">
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 100px">
+                </td>
+                <td style="width: 109px">
+                </td>
+                <td style="width: 154px">
+                </td>
+                <td style="width: 127px">
+                </td>
+                <td style="width: 100px">
+                </td>
+                <td style="width: 92px">
+                </td>
+                <td style="width: 100px">
+                </td>
+                <td style="width: 100px">
+                </td>
+            </tr>
+        </table>
+        </div>
+    </form>
+</body>
+</html>

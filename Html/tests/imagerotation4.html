@@ -1,0 +1,36 @@
+<html> 
+<head> 
+<title>----</title>
+<script TYPE="text/javascript" LANGUAGE="JavaScript"><!--
+function Href(dest,image,text) {
+  this.dest = dest; this.image = image; this.text = text; }
+
+function setHref(dest,image,text) {
+  myHref"hrefItems++" = new Href(dest,image,text); }
+
+function replace() {
+  var now = new Date();
+  random = now.getSeconds()%hrefItems;
+  if (random == lastrandom) {
+    if (random == hrefItems-1) random--; else random++; }
+  document "'banner'".src = myHref"random".image;
+  document.links"0".href = myHref"random".dest;
+  setTimeout('replace()',60000);
+  lastrandom = random; }
+
+function Test() {
+  if (navigator.appName == "Netscape") {
+    var now = new Date();
+    random = now.getSeconds()%hrefItems; lastrandom = random;
+    document.write('<A HREF="' + myHref"random".dest + '">');
+    document.write('<IMG NAME="banner" WIDTH=468 HEIGHT=60 ');
+    document.write('BORDER=0 ALT="Caption for image here" ');
+    document.write('SRC="' + myHref"random".image + '">');}
+  if (navigator.appName == "Netscape"
+      && parseInt(navigator.appVersion) >= 3) {
+    setTimeout('replace()',60000);}}
+//-->
+</head>
+<body>
+</body>
+</html>

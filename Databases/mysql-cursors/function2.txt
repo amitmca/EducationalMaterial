@@ -1,0 +1,77 @@
+****************Function Without Including Database Table***************
+
+DELIMITER |
+
+ CREATE FUNCTION WEIGHTED_AVERAGE (n1 INT, n2 INT, n3 INT, n4 INT)
+  RETURNS INT
+   DETERMINISTIC
+    BEGIN
+     DECLARE avg INT;
+     SET avg = (n1+n2+n3*2+n4*4)/8;
+     RETURN avg;
+
+    END|
+
+SELECT WEIGHTED_AVERAGE(70,65,65,60);
+
+calling function :- WEIGHTED_AVERAGE(70,65,65,60): 63
+
+
+****************Function With Including Database Table******************
+
+
+CREATE TABLE sfdata(mark1 INT,mark2 INT,mark3 INT,mark4 INT,name VARCHAR(50));
+
+DELIMITER |
+
+CREATE FUNCTION WEIGHTED_AVERAGE2 (v1 VARCHAR(50))
+  RETURNS INT
+  DETERMINISTIC
+   BEGIN
+    DECLARE i1,i2,i3,i4,avg INT;
+    SELECT mark1,mark2,mark3,mark4 INTO i1,i2,i3,i4 FROM sfdata WHERE name=v1;
+    SET avg = (i1+i2+i3*2+i4*4)/8; 
+    RETURN avg;
+   END |
+
+calling function :- SELECT WEIGHTED_AVERAGE2('amit') AS Pavlov, WEIGHTED_AVERAGE2('Mark') AS Mark;
+
+Pavlov: 67
+  Mark: 63
+
+
+
+*******************Manipulating tables Using Functions **********************
+
+
+			****** Inserting A record Using Function ******
+
+DELIMITER |
+
+CREATE FUNCTION WEIGHTED_AVERAGE3 (n1 INT,n2 INT,n3 INT,n4 INT,v1 VARCHAR(50))
+  RETURNS INT
+  DETERMINISTIC
+   BEGIN
+    DECLARE i1,i2,i3,i4,avg INT;
+    INSERT INTO sfdata VALUES(n1,n2,n3,n4,v1);
+    RETURN 1;
+   END|
+
+
+calling function :- SELECT WEIGHTED_AVERAGE3(50,60,60,50,'Thoko');
+
+
+			****** Upting A record Using Function ******
+
+DELIMITER |
+
+CREATE FUNCTION WEIGHTED_AVERAGE_UPDATE (n1 INT,n2 INT,n3 INT,n4 INT,v1 VARCHAR(50))
+  RETURNS INT
+  DETERMINISTIC
+   BEGIN
+    DECLARE i1,i2,i3,i4,avg INT;
+    UPDATE sfdata SET mark1=n1,mark2=n2,mark3=n3,mark4=n4 WHERE name=v1;
+    RETURN 1;
+   END|
+
+calling function :- SELECT WEIGHTED_AVERAGE_UPDATE(60,60,60,50,'Thoko');

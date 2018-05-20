@@ -1,0 +1,277 @@
+<!-- this script got from www.javascriptfreecode.com-Coded by: Krishna Eydatoula -->
+<!-- START OF Watermark Navigation Menu DHTML --><!-- START OF Watermark Navigation Menu DHTML -->
+
+
+<!-- SUMMARY BRIEF
+
+	This DHTML script will make a navigation menu
+	that will follow your screen as you scroll,
+	kind of like the old Geocities™ watermark.
+
+	Look through the code for comments that will
+	tell you where to change the code to configure
+	it how you want in order to display the links
+	that you want.
+
+-->
+
+
+<!-- Put this code inside of your <HEAD> tag. -->
+
+
+<STYLE TYPE="text/css">
+<!--
+
+.menuheader {
+	BORDER-COLOR : #000000 ;
+	cursor : hand ;
+	Border-Left : #000000 ;
+	Border-Top : #000000 ;
+	Padding-Left : 1px ;
+	Padding-Top : 1px ;
+	Background-Color : #000000 ;
+}
+
+.menu {
+	Background-Color : white ;
+}
+
+.home {
+	cursor : hand ;
+}
+
+.menulinks {
+	text-decoration:none;
+}
+
+//-->
+</STYLE>
+
+
+<!-- Put this code inside of your <BODY> tag on your page, but OUTSIDE of any other tags. This can NOT be inside of any other tags on your page. -->
+
+
+<SCRIPT Language="Javascript1.2">
+<!--
+
+///////////////////////////////////////////////////////////////
+// Change the width and placement of the menu on the page below.
+///////////////////////////////////////////////////////////////
+
+var menuwidth=110
+var offsetleft=10
+var offsettop=10
+
+var ns4=document.layers?1:0
+var ie4=document.all?1:0
+var ns6=document.getElementById&&!document.all?1:0
+
+function makeStatic() {
+if (ie4) {object1.style.pixelTop=document.body.scrollTop+offsettop}
+else if (ns6) {document.getElementById("object1").style.top=window.pageYOffset+offsettop}
+else if (ns4) {eval(document.object1.top=eval(window.pageYOffset+offsettop));}
+setTimeout("makeStatic()",0);
+}
+
+if (ie4||ns6) {document.write('<span ALIGN="CENTER" ID="object1" STYLE="Position:absolute; Top:20; Left:'+offsetleft+'; Z-Index:5;cursor:hand;background-color:black;"><TABLE BORDER="1" width="'+menuwidth+'" CELLPADDING="0" CELLSPACING="0" BORDERCOLOR="black" bgcolor="white">')}
+else if (ns4){ document.write('<LAYER top="20" name="object1" left="'+offsetleft+'" BGCOLOR=black><TABLE BORDER="0" CELLPADDING="0" CELLSPACING="1"><TR><TD><TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" width="'+menuwidth+'">')}
+
+///////////////////////////////////////////////////////////////
+// Change the name of the menu (the text at the top) below.
+// You can also shange the font face, size and border colors.
+///////////////////////////////////////////////////////////////
+
+if (ie4||ns6||ns4)
+document.write('<TR><TD BGCOLOR="#3399FF" BORDERCOLORDARK="#99CCFF" BORDERCOLORLIGHT="#003399"><P ALIGN=CENTER><FONT SIZE="4" FACE=ARIAL>Navigation</FONT></TD></TR>')
+
+var menui = new Array();
+var menul = new Array();
+
+///////////////////////////////////////////////////////////////
+// Edit menus listing here. You can make as many as you need,
+// just make sure that the numbers go up in order correctly.
+// The "menui" variables are the actual link text that will
+// show up in the menu. The "menul" variables are the URLs
+// that match the text displayed there.
+///////////////////////////////////////////////////////////////
+
+menui[0]="CoffeeCup Software";
+menui[1]="CoffeeCup HTML Editor";
+menui[2]="CoffeeCup Help Site";
+menui[3]="CoffeeCup Site Map";
+menui[4]="Other CoffeeCup Products";
+menui[5]="Bob & Larry\'s Free Stuff";
+menui[6]="About CoffeeCup Software";
+menui[7]="Bluedomino Webhosting";
+
+menul[0]="http://www.webloger.5u.com";
+menul[1]="http://www.webloger.5u.com";
+menul[2]="http://www.webloger.5u.com";
+menul[3]="http://www.webloger.5u.com";
+menul[4]="http://www.webloger.5u.com";
+menul[5]="http://www.webloger.5u.com";
+menul[6]="http://www.webloger.5u.com";
+menul[7]="http://www.webloger.5u.com";
+
+for (i=0;i<=menui.length-1;i++)
+
+///////////////////////////////////////////////////////////////
+// You can change table cell background colors below.
+// Just change the color names to whatever you want,
+// but do NOT change any other code.
+///////////////////////////////////////////////////////////////
+
+if (ie4||ns6) {document.write('<TR><TD BORDERCOLOR="white" ONCLICK="location=\''+menul[i]+'\'" onmouseover="className=\'menuheader\'" onMouseout="className=\'menu\'"><CENTER><FONT>'+menui[i]+'</FONT></TD></TR>')}
+else if (ns4){document.write('<TR><TD BGCOLOR="white"><ILAYER><LAYER width="'+menuwidth+'" onmouseover="bgColor=\'yellow\'" onmouseout="bgColor=\'white\'"><CENTER><A HREF="'+menul[i]+'" class=menulinks>'+menui[i]+'</A></CENTER></LAYER></ILAYER></TD></TR>')}
+
+if (ie4||ns6) {document.write('</TABLE></span>')}
+else if (ns4){document.write('</TABLE></TD></TR></TABLE></LAYER>')}
+
+function menu3(){
+if (ns6||ie4||ns4)
+makeStatic()
+}
+
+window.onload=menu3
+
+//-->
+</SCRIPT>
+
+
+<!-- END OF Watermark Navigation Menu DHTML -->
+
+
+<!-- SUMMARY BRIEF
+
+	This DHTML script will make a navigation menu
+	that will follow your screen as you scroll,
+	kind of like the old Geocities™ watermark.
+
+	Look through the code for comments that will
+	tell you where to change the code to configure
+	it how you want in order to display the links
+	that you want.
+
+-->
+
+
+<!-- Put this code inside of your <HEAD> tag. -->
+
+
+<STYLE TYPE="text/css">
+<!--
+
+.menuheader {
+	BORDER-COLOR : #000000 ;
+	cursor : hand ;
+	Border-Left : #000000 ;
+	Border-Top : #000000 ;
+	Padding-Left : 1px ;
+	Padding-Top : 1px ;
+	Background-Color : #000000 ;
+}
+
+.menu {
+	Background-Color : white ;
+}
+
+.home {
+	cursor : hand ;
+}
+
+.menulinks {
+	text-decoration:none;
+}
+
+//-->
+</STYLE>
+
+
+<!-- Put this code inside of your <BODY> tag on your page, but OUTSIDE of any other tags. This can NOT be inside of any other tags on your page. -->
+
+
+<SCRIPT Language="Javascript1.2">
+<!--
+
+///////////////////////////////////////////////////////////////
+// Change the width and placement of the menu on the page below.
+///////////////////////////////////////////////////////////////
+
+var menuwidth=110
+var offsetleft=10
+var offsettop=10
+
+var ns4=document.layers?1:0
+var ie4=document.all?1:0
+var ns6=document.getElementById&&!document.all?1:0
+
+function makeStatic() {
+if (ie4) {object1.style.pixelTop=document.body.scrollTop+offsettop}
+else if (ns6) {document.getElementById("object1").style.top=window.pageYOffset+offsettop}
+else if (ns4) {eval(document.object1.top=eval(window.pageYOffset+offsettop));}
+setTimeout("makeStatic()",0);
+}
+
+if (ie4||ns6) {document.write('<span ALIGN="CENTER" ID="object1" STYLE="Position:absolute; Top:20; Left:'+offsetleft+'; Z-Index:5;cursor:hand;background-color:black;"><TABLE BORDER="1" width="'+menuwidth+'" CELLPADDING="0" CELLSPACING="0" BORDERCOLOR="black" bgcolor="white">')}
+else if (ns4){ document.write('<LAYER top="20" name="object1" left="'+offsetleft+'" BGCOLOR=black><TABLE BORDER="0" CELLPADDING="0" CELLSPACING="1"><TR><TD><TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" width="'+menuwidth+'">')}
+
+///////////////////////////////////////////////////////////////
+// Change the name of the menu (the text at the top) below.
+// You can also shange the font face, size and border colors.
+///////////////////////////////////////////////////////////////
+
+if (ie4||ns6||ns4)
+document.write('<TR><TD BGCOLOR="#3399FF" BORDERCOLORDARK="#99CCFF" BORDERCOLORLIGHT="#003399"><P ALIGN=CENTER><FONT SIZE="4" FACE=ARIAL>Navigation</FONT></TD></TR>')
+
+var menui = new Array();
+var menul = new Array();
+
+///////////////////////////////////////////////////////////////
+// Edit menus listing here. You can make as many as you need,
+// just make sure that the numbers go up in order correctly.
+// The "menui" variables are the actual link text that will
+// show up in the menu. The "menul" variables are the URLs
+// that match the text displayed there.
+///////////////////////////////////////////////////////////////
+
+menui[0]="CoffeeCup Software";
+menui[1]="CoffeeCup HTML Editor";
+menui[2]="CoffeeCup Help Site";
+menui[3]="CoffeeCup Site Map";
+menui[4]="Other CoffeeCup Products";
+menui[5]="Bob & Larry\'s Free Stuff";
+menui[6]="About CoffeeCup Software";
+menui[7]="Bluedomino Webhosting";
+
+menul[0]="http://www.javakhafan.9f.com";
+menul[1]="http://www.javakhafan.9f.com";
+menul[2]="http://www.javakhafan.9f.com";
+menul[3]="http://www.javakhafan.9f.com";
+menul[4]="http://www.javakhafan.9f.com";
+menul[5]="http://www.javakhafan.9f.com";
+menul[6]="http://www.javakhafan.9f.com";
+menul[7]="http://www.javakhafan.9f.com";
+
+for (i=0;i<=menui.length-1;i++)
+
+///////////////////////////////////////////////////////////////
+// You can change table cell background colors below.
+// Just change the color names to whatever you want,
+// but do NOT change any other code.
+///////////////////////////////////////////////////////////////
+
+if (ie4||ns6) {document.write('<TR><TD BORDERCOLOR="white" ONCLICK="location=\''+menul[i]+'\'" onmouseover="className=\'menuheader\'" onMouseout="className=\'menu\'"><CENTER><FONT>'+menui[i]+'</FONT></TD></TR>')}
+else if (ns4){document.write('<TR><TD BGCOLOR="white"><ILAYER><LAYER width="'+menuwidth+'" onmouseover="bgColor=\'yellow\'" onmouseout="bgColor=\'white\'"><CENTER><A HREF="'+menul[i]+'" class=menulinks>'+menui[i]+'</A></CENTER></LAYER></ILAYER></TD></TR>')}
+
+if (ie4||ns6) {document.write('</TABLE></span>')}
+else if (ns4){document.write('</TABLE></TD></TR></TABLE></LAYER>')}
+
+function menu3(){
+if (ns6||ie4||ns4)
+makeStatic()
+}
+
+window.onload=menu3
+
+//-->
+</SCRIPT>s

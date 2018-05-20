@@ -1,0 +1,99 @@
+A IMG {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none
+}
+FORM#form-login FIELDSET {
+	BORDER-RIGHT: medium none; PADDING-RIGHT: 0px; BORDER-TOP: medium none; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: medium none; PADDING-TOP: 0px; BORDER-BOTTOM: medium none
+}
+#form-login UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+DIV.banneritem A {
+	FONT: bold 11px/16px Tahoma, Tahoma, Tahoma, sans-serif
+}
+DIV.banneritemS1 A {
+	FONT: bold 11px/16px Tahoma, Tahoma, Tahoma, sans-serif
+}
+DIV.banneritemS2 A {
+	FONT: bold 11px/16px Tahoma, Tahoma, Tahoma, sans-serif
+}
+DIV.banneritemS3 A {
+	FONT: bold 11px/16px Tahoma, Tahoma, Tahoma, sans-serif
+}
+DIV.banneritemS4 A {
+	FONT: bold 11px/16px Tahoma, Tahoma, Tahoma, sans-serif
+}
+DIV.banneritemS5 A {
+	FONT: bold 11px/16px Tahoma, Tahoma, Tahoma, sans-serif
+}
+DIV.banneritem_text A {
+	FONT: bold 11px/16px Tahoma, Tahoma, Tahoma, sans-serif
+}
+DIV.banneritem {
+	FONT: 11px/12px Tahoma, Tahoma, Tahoma, sans-serif
+}
+DIV.banneritemS1 {
+	FONT: 11px/12px Tahoma, Tahoma, Tahoma, sans-serif
+}
+DIV.banneritemS2 {
+	FONT: 11px/12px Tahoma, Tahoma, Tahoma, sans-serif
+}
+DIV.banneritemS3 {
+	FONT: 11px/12px Tahoma, Tahoma, Tahoma, sans-serif
+}
+DIV.banneritemS4 {
+	FONT: 11px/12px Tahoma, Tahoma, Tahoma, sans-serif
+}
+DIV.banneritemS5 {
+	FONT: 11px/12px Tahoma, Tahoma, Tahoma, sans-serif
+}
+DIV.banneritem_text {
+	FONT: 11px/12px Tahoma, Tahoma, Tahoma, sans-serif
+}
+#form-login UL LI {
+	LIST-STYLE-TYPE: none
+}
+TD.buttonheading {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px; BORDER-COLLAPSE: collapse
+}
+TD.buttonheading IMG {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 1px; PADDING-TOP: 0px
+}
+TD.article_column {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; PADDING-TOP: 4px
+}
+FIELDSET {
+	PADDING-RIGHT: 5px; MARGIN-TOP: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px
+}
+LEGEND {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+TD.key {
+	COLOR: #666; BORDER-BOTTOM: #eee 1px solid
+}
+.tool-tip {
+	BORDER-RIGHT: #d4d5aa 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #d4d5aa 1px solid; PADDING-LEFT: 5px; BACKGROUND: #ffc; FLOAT: left; PADDING-BOTTOM: 5px; BORDER-LEFT: #d4d5aa 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #d4d5aa 1px solid; max-width: 200px
+}
+.tool-title {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: 100%; BACKGROUND: url(images/selector-arrow.png) no-repeat; PADDING-BOTTOM: 5px; MARGIN: -15px 0px 0px; PADDING-TOP: 15px
+}
+.tool-text {
+	FONT-SIZE: 100%; MARGIN: 0px
+}
+#system-message {
+	MARGIN-BOTTOM: 20px
+}
+#system-message DD.message UL {
+	BACKGROUND: url(images/notice-info.png) #c3d2e5 no-repeat 4px center
+}
+#system-message DD.error UL {
+	BORDER-TOP: #de7a7b 3px solid; PADDING-LEFT: 40px; BACKGROUND: url(images/notice-alert.png) #e6c0c0 no-repeat 4px center; MARGIN: 0px; COLOR: #c00; TEXT-INDENT: 0px; BORDER-BOTTOM: #de7a7b 3px solid
+}
+#system-message DD.notice UL {
+	BORDER-TOP: #f0dc7e 3px solid; BACKGROUND: url(images/notice-note.png) #efe7b8 no-repeat 4px center; COLOR: #c00; BORDER-BOTTOM: #f0dc7e 3px solid
+}
+TD.sectiontableheader A {
+	COLOR: #fff; TEXT-DECORATION: none
+}
+#content TABLE.contentpane {
+	WIDTH: 100%
+}

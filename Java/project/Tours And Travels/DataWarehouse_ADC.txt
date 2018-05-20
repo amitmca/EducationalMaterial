@@ -1,0 +1,32 @@
+Name of the project :  DATA WAREHOUSING
+
+Project Partners :
+	1. Priyadarshini  R. Kolwalkar (34)
+	 email : kpriya0109@rediffmail.com
+	 Phone# (020) 4007898
+
+	2.Richa D. Kulkarni (36)
+	 email : richk@rediffmail.com
+	 Phone# (020) 4225764
+
+	3. Ipsita S. Sen (67)
+	 email : ipsitasen@yahoo.com
+	 Phone# (020) 2951090 
+
+Project Description :
+		The project facilitates data access and storage from 
+		Heterogeneous databases like Access & Oracle. The user
+		can access data from all the databases connected to the 
+	      	 warehouse. 
+		The user can explicitly state the mapping
+		constraints and the aggregate functions while creating the 
+		Fact data. The Fact data created by each user is segregated 
+		and is exclusive for each user. The user can fire queries on
+		fact data and store frequently used queries. 
+		The data in the warehouse can be refreshed and archived as 
+		and when needed. There is also a facility to delete the fact data.
+		The Meta data is allocated a separate storage area in the warehouse
+		 and only	the Administrator has access to it.
+		
+
+	

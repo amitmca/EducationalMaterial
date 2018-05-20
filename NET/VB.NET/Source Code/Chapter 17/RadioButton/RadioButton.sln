@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "RadioButton", "http://localhost/RadioButton/RadioButton.vbproj", "{FC895C94-C70C-47B8-A3DA-B3628F90356D}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{FC895C94-C70C-47B8-A3DA-B3628F90356D}.Debug.ActiveCfg = Debug|.NET
+		{FC895C94-C70C-47B8-A3DA-B3628F90356D}.Debug.Build.0 = Debug|.NET
+		{FC895C94-C70C-47B8-A3DA-B3628F90356D}.Release.ActiveCfg = Release|.NET
+		{FC895C94-C70C-47B8-A3DA-B3628F90356D}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

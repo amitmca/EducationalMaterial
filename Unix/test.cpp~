@@ -1,0 +1,12 @@
+#include<iostream.h>
+main()
+	{
+	int a,b,c;
+	cout<<"\nHello from C++ language\n";
+	cout<<"\nEnter first number:\n";
+	cin>>a;
+	cout<<"\nEnter second number:\n";
+	cin>>b;
+	c=a+b;
+	cout<<"\nThe Output is:"<<c<<"\n";
+	}

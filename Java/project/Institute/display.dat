@@ -1,0 +1,65 @@
+[Main]
+SizeX=5310
+SizeY=2670
+[1]
+Name=label_1
+Type=JLabel
+Value=Emp No
+X= 360
+Y= 480
+SizeX= 1440
+SizeY= 360
+[2]
+Name=ename
+Type=JLabel
+Value=Emp Name
+X= 360
+Y= 1080
+SizeX= 1440
+SizeY= 360
+[3]
+Name=teno
+Type=JTextField
+X= 2880
+Y= 480
+SizeX= 2160
+SizeY= 360
+[4]
+Name=tename
+Type=JTextField
+X= 2880
+Y= 1080
+SizeX= 2160
+SizeY= 360
+[5]
+Name=bfirst
+Type=JButton
+Value=FIRST
+X= 360
+Y= 1920
+SizeX= 1080
+SizeY= 360
+[6]
+Name=bnext
+Type=JButton
+Value=NEXT
+X= 1560
+Y= 1920
+SizeX= 1080
+SizeY= 360
+[7]
+Name=bprev
+Type=JButton
+Value=PREV
+X= 2760
+Y= 1920
+SizeX= 1080
+SizeY= 360
+[8]
+Name=blast
+Type=JButton
+Value=LAST
+X= 3960
+Y= 1920
+SizeX= 1080
+SizeY= 360

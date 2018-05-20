@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>login</title>
+</head>
+<body bgcolor="yellow">
+<form action="valid.php" method="POST" name="frmLogin">
+<u><b><br><center><img src="gahooyoogle2.jpg"></center> 
+<br><br><br><br><br><center>
+<table align="center">
+<tr>
+	<td align="center">
+	     <img src="security.jpg" width="64" height="64" border="0">
+	<br><font color="green">
+ 	    <b>Welcome To GaHooYoogle!<br>
+	     <b>Use a valid username and password<br>
+	     <b>to gain access to the administration console</font>
+	</td>
+
+	
+ <td bordercolor="#DEEFF9">
+	    <table width="25%" border="1" align="center" cellpadding="3" cellspacing="1"  BORDERCOLOR="#000000">	
+	     <tr bordercolor"#92CAEB" bgcolor="yellow">
+		<td colspan="2"><b><font color="red">Member Login</font></td>
+	     </tr>
+	     <tr bordercolor"#E6F3FB"> 
+ 		<td align="right"><b><img src="uname.png" width="35" height="35" border="0"><font color="magenta">Username:</font></td>
+		<td>
+<input name="usr" type="text" tabindex=2 value="<?php echo $_POST['usr']?>" size="35" maxlength="35">
+		</td>
+	     </tr>
+	     <tr bordercolor"#E6F3FB"> 
+ 		<td align="right"><b><img src="password.png" width="35" height="35" border="0"><font color="magenta">Password:</font></td>
+		<td>
+<input name="pass" type="password" tabindex=1 value="<?php echo $_POST['pass']?>" size="35" maxlength="15">
+		</td>
+	     </tr>
+	     <tr bordercolor="#E0EEF7">
+		<td>&nbsp;</td>
+		<td align="right">
+		  <b><input name="submit" type="submit" value="Sign In" tabindex=3>		 
+		</td>
+	     </tr>
+	</center>
+	</table>
+	</td>		
+	</table>
+	<table align="right">
+	<tr>
+	<td>
+	<a href="help.html"><font color="red" size=04>Help ?</font></a></center>
+	</td>
+	</tr>
+	</table>
+	</form>
+	<table align="left">
+	<tr>
+ 	<td>
+	<a href="register.html"><font color="red" size=04>Sign here</font></a></td>
+	</tr>
+	</body>
+	</html>

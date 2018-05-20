@@ -1,0 +1,34 @@
+! ** JCreator Workspace File (C)2000
+! ********** DO NOT EDIT *********
+
+VERSION := "1.00"
+LABEL := "hostelon"
+
+! Start Project Structure
+#[BeginProject]SOURCE := "\\hostelon.jcp" #[EndProject]
+
+! Start Last Document Structure
+#[BeginFile]SOURCE := "\\mdcourseframe.java" #[EndFile]
+#[BeginFile]SOURCE := "\\mdhostelframe.java" #[EndFile]
+#[BeginFile]SOURCE := "\\vcourseframe.java" #[EndFile]
+#[BeginFile]SOURCE := "\\vcomplaintframe.java" #[EndFile]
+#[BeginFile]SOURCE := "\\vhostelframe.java" #[EndFile]
+#[BeginFile]SOURCE := "\\vstudentframe.java" #[EndFile]
+#[BeginFile]SOURCE := "\\vfeeframe.java" #[EndFile]
+#[BeginFile]SOURCE := "\\feedetailframe.java" #[EndFile]
+#[BeginFile]SOURCE := "\\dfeedetailframe.java" #[EndFile]
+#[BeginFile]SOURCE := "\\totalfeeframe.java" #[EndFile]
+#[BeginFile]SOURCE := "\\treeview.java" #[EndFile]
+#[BeginFile]SOURCE := "\\repstudcourse.java" #[EndFile]
+#[BeginFile]SOURCE := "\\repstudcollege.java" #[EndFile]
+#[BeginFile]SOURCE := "\\repstudind.java" #[EndFile]
+#[BeginFile]SOURCE := "\\reprec.java" #[EndFile]
+#[BeginFile]SOURCE := "\\repdues.java" #[EndFile]
+#[BeginFile]SOURCE := "\\reptotfee.java" #[EndFile]
+#[BeginFile]SOURCE := "\\repcomp.java" #[EndFile]
+#[BeginFile]SOURCE := "\\mainframe.java" #[EndFile]
+#[BeginFile]SOURCE := "\\loginframe.java" #[EndFile]
+#[BeginFile]SOURCE := "\\servlet.java" #[EndFile]
+
+! Start Breakpoint Structure
+

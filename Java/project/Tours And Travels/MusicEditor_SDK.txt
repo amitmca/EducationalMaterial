@@ -1,0 +1,31 @@
+Name of the project :  MUSIC EDITOR
+
+Project Partners :
+	1. Priyadarshini  R. Kolwalkar (34)
+	 email : kpriya0109@rediffmail.com
+	 Phone# (020) 4007898
+
+	2.Richa D. Kulkarni (36)
+	 email : richk@rediffmail.com
+	 Phone# (020) 4225764
+
+	3. Ipsita S. Sen (67)
+	 email : ipsitasen@yahoo.com
+	 Phone# (020) 2951090 
+
+Project Description :
+		The project facilitates the following features:
+			 Opening a .wav/.mp3 file.
+			 Playing a .wav/.mp3 file.
+			 Forwarding a .wav/.mp3 file.
+			 Rewinding a .wav/.mp3 file.
+			 Pausing a .wav/.mp3 file.
+			 Muting a .wav/.mp3 file.
+			 Stopping a .wav/.mp3 file.
+			 Closing a .wav/.mp3 file.
+			 Recording a .wav file 
+		On selecting the "Begin Record" menu option , the position of the 
+		currently played song is stored. On selecting the "End Record" 
+		menu option , the current position of the song is stored and a new temp file is 		created, using the starting position. The user now has the option to save this 		newly created song. 
+
+	

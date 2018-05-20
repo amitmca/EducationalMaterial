@@ -1,0 +1,30 @@
+<html>
+<style type="text/css">
+.imgHolder {
+position:relative;
+}
+.imgText {
+position:absolute;
+left:0; top:0;
+width:100px;
+}
+</style>
+<script type="text/javascript">
+window.onload = function(){
+var span = document.getElementsByTagName('SPAN');
+for (var i = 0; i < span.length; ++i) {
+span[i].onmouseover = setText;
+}
+}
+function setText(){
+document.getElementById('txt1').innerHTML = this.innerHTML;
+}
+</script>
+<div class="imgHolder">
+<img src="tymca.jpg" width="100">
+<div id="txt1" class="imgText">Hello Friend</div>
+</div>
+<div>
+<span>I am Barbie</span>
+</div>
+</html>

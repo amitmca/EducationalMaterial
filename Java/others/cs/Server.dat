@@ -1,0 +1,19 @@
+[Main]
+SizeX=4860
+SizeY=4380
+[1]
+Name=textarea_1
+Type=JTextArea
+Value=ta
+X= 600
+Y= 960
+SizeX= 3720
+SizeY= 2760
+[2]
+Name=label_1
+Type=JLabel
+Value=FROM CLIENT
+X= 840
+Y= 360
+SizeX= 3240
+SizeY= 360

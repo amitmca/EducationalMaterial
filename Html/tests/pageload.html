@@ -1,0 +1,32 @@
+<html>
+<head>
+<style type="text/css">
+#loading {
+  font:bold 12px Verdana;
+  color:red;
+}
+</style>
+<script type="text/javascript">
+  function showContent(){
+     //hide loading status...
+     document.getElementById("loading").style.display='none';
+ 
+     //show content
+     document.getElementById("content").style.display='block';
+  }
+</script>
+</head>
+<body onload="showContent()">
+<script type="text/javascript">
+  document.write('<div id="loading">Loading...Please wait.</div>');
+</script>
+<div id="content">
+  <script type="text/javascript">
+     //hide content
+     document.getElementById("content").style.display='none';
+  </script>
+
+
+</div>
+</body>
+</html>

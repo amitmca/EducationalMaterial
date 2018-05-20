@@ -1,0 +1,116 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>New Page 1</title>
+<style type="text/css"> 
+
+.tblreg {
+	MARGIN: 0px
+}
+
+.tdheight {
+	HEIGHT: 20px
+}
+
+.field {
+	BORDER-RIGHT: #7f9db9 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #7f9db9 1px solid; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; FONT: 12px verdana; BORDER-LEFT: #7f9db9 1px solid; WIDTH: 200px; COLOR: #333333; PADDING-TOP: 4px; BORDER-BOTTOM: #7f9db9 1px solid; HEIGHT: 23px; BACKGROUND-COLOR: #ffffff
+}
+
+
+.hint {
+	PADDING-RIGHT: 0px; MARGIN-TOP: -20px; DISPLAY: none; PADDING-LEFT: 0px; Z-INDEX: 100; LEFT: 54%; PADDING-BOTTOM: 0px; WIDTH: 200px; PADDING-TOP: 0px; POSITION: absolute
+}
+
+.top_hint {
+	BACKGROUND: url(hint-top-curve.jpg) no-repeat; WIDTH: 204px; HEIGHT: 10px
+}
+.middle_hint {
+	BORDER-RIGHT: #b3ce5f 1px solid; PADDING-RIGHT: 5px; PADDING-LEFT: 8px; PADDING-BOTTOM: 0px; FONT: 11px arial; BORDER-LEFT: #b3ce5f 1px solid; WIDTH: 204px; COLOR: #000000; PADDING-TOP: 0px; BACKGROUND-COLOR: #d4ec89
+}
+.bottom_hint {
+	BACKGROUND: url(hint-bottom-curve.jpg) no-repeat; WIDTH: 204px; HEIGHT: 9px
+}
+.arrow_hint {
+	BACKGROUND: url(hint-arrow.jpg) no-repeat; LEFT: -21px; WIDTH: 22px; POSITION: absolute; TOP: 20px; HEIGHT: 18px
+}
+
+.hint {
+	PADDING-RIGHT: 0px; MARGIN-TOP: -20px; DISPLAY: none; PADDING-LEFT: 0px; Z-INDEX: 100; LEFT: 54%; PADDING-BOTTOM: 0px; WIDTH: 200px; PADDING-TOP: 0px; POSITION: absolute
+}
+.erro
+</style>
+<script language="javascript">
+
+function toggleHint_new (sMode, sElementName, sElement, sWidth)
+{
+	sLeftPos = 0;
+	while(sElement)
+	{
+		sLeftPos += sElement.offsetLeft;
+		sElement = sElement.offsetParent;
+	}
+	//alert(sLeftPos);
+	//alert(sWidth);
+	sLeftPos = sLeftPos + sWidth + 25 + "px";
+	sDisplay = (sMode == "show") ? "inline" : "none";
+
+	if(oElement = eval(document.getElementById('hint_' + sElementName)))
+	{
+		oElement.style.left = sLeftPos;
+		oElement.style.display = sDisplay;
+	}
+}
+
+</script>
+</head>
+
+<body>
+  <FORM name=login>
+ <TABLE class=tblreg cellSpacing=0 cellPadding=0 width=400 
+              border=0><TBODY>
+              <TR>
+                <TD class=tdheight style="PADDING-LEFT: 10px; HEIGHT: 28px" 
+                noWrap width=155><LABEL for=login>User Name</LABEL></TD>
+                <TD class=smallgrey width=313><INPUT class=field id=login 
+                  onkeydown="this.className='field'"  
+                  onfocus="toggleHint_new('show', this.name, this, this.offsetWidth)" 
+                  tabIndex=1 maxLength=20 name=login> 
+                  <!-- HINT STARTS HERE --><SPAN class=hint id=hint_login>
+                  <DIV>
+                  <DIV class=top_hint></DIV>
+                  <DIV class=middle_hint>Please enter a valid user name.<BR>Example amitp1</DIV>
+                  <DIV class=bottom_hint></DIV></DIV>
+                  <DIV 
+                  class=arrow_hint></DIV></SPAN><!-- HINT ENDS HERE --><BR><SPAN 
+                  class=error id=errmsg_login></SPAN>
+                  </TD>
+                  </TR>
+   	<TR>
+                <TD class=tdheight 
+                  style="PADDING-LEFT: 10px; HEIGHT: 28px"><LABEL 
+                  for=email>Email</LABEL></TD>
+                <TD class=smallgrey><INPUT class=field id=email 
+                  onkeydown="this.className='field'"  
+                  onfocus="toggleHint_new('show', this.name, this, this.offsetWidth)" 
+                  tabIndex=3 name=email> <!-- HINT STARTS HERE --><SPAN 
+                  class=hint id=hint_email>
+                  <DIV>
+                  <DIV class=top_hint></DIV>
+                  <DIV class=middle_hint>Example raj_doctor@yahoo.com <BR>Email 
+                  address will not be shared with anyone. You will receive 
+                  matches on this email address.</DIV>
+                  <DIV class=bottom_hint></DIV></DIV>
+                  <DIV 
+                  class=arrow_hint></DIV></SPAN><!-- HINT ENDS HERE --><BR><SPAN 
+                  class=error id=errmsg_email></SPAN></TD></TR>
+              <TR>
+                  
+	</TBODY>
+	</TABLE>                  
+
+</form>
+</body>
+
+</html>
+

@@ -1,0 +1,65 @@
+//PROGRAM FOR THE MULTILEVEL INHERITANCE
+
+#include<stdio.h>
+#include<conio.h>
+#include<iostream.h>
+class stud
+{
+		protected:
+				char name[20];
+		public:
+				void get_name();
+};
+class test:public stud
+{
+		protected:
+				int m1,m2;
+		public:
+				void get_mark(int,int);
+};
+class result:public test
+{
+		public:
+				void display_result();
+};
+void stud::get_name()
+{
+	cout<<"\n\nEnter the name of the student:";
+	cin>>name;
+}
+void test::get_mark(int a,int b)
+{
+		m1=a;
+		m2=b;
+}
+void result::display_result()
+{
+		cout<<"\n\n\t"<<name<<"\t"<<m1<<"\t"<<m2<<"\t"<<m1+m2<<"\n\n";
+
+}
+
+int main()
+{
+	int a,b,i=0;
+	char ch='y';
+	clrscr();
+	textcolor(10);
+	result r[10];
+	while(ch=='y')
+	{
+		r[i].get_name();
+		cout<<"\n\nEnter the mark's of the two subject :";
+		cin>>a>>b;
+		r[i].get_mark(a,b);
+		cout<<"\n\nDo you insert more student information(y/n):";
+		ch=getche();
+		i++;
+	}
+			cout<<"\n\nThe Student mark's information is:";
+		cout<<"\n\n\tName\tmark1\tmark2\ttotal";
+
+	for(int j=0;j<i;j++)
+	r[j].display_result();
+	getch();
+	return 0;
+}

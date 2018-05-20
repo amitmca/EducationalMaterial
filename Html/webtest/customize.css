@@ -1,0 +1,15 @@
+.web {
+	PADDING-LEFT: 25px; FONT-SIZE: 13px; PADDING-BOTTOM: 5px; COLOR: #25587e; LINE-HEIGHT: 18px; FONT-FAMILY: Arial, Tahoma, Tahoma, sans-serif
+}
+.web_left1 {
+	FLOAT: left; WIDTH: 190px; MARGIN-RIGHT: 10px; POSITION: relative
+}
+.web_left2 {
+	FLOAT: left; WIDTH: 190px; MARGIN-RIGHT: 10px; POSITION: relative
+}
+.web_left3 {
+	FLOAT: left; WIDTH: 190px; POSITION: relative; TEXT-ALIGN: justify
+}
+.web H1 {
+	PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; FONT-SIZE: 110%; BACKGROUND: #25587e; PADDING-BOTTOM: 0.5em; MARGIN: 0px; COLOR: white; PADDING-TOP: 0.5em; HEIGHT: 10px
+}

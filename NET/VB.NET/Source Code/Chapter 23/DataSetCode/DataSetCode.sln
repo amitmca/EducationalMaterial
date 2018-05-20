@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DataSetCode", "DataSetCode.vbproj", "{A4EE1885-8435-4159-A5DB-CC398135C942}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{A4EE1885-8435-4159-A5DB-CC398135C942}.Debug.ActiveCfg = Debug|.NET
+		{A4EE1885-8435-4159-A5DB-CC398135C942}.Debug.Build.0 = Debug|.NET
+		{A4EE1885-8435-4159-A5DB-CC398135C942}.Release.ActiveCfg = Release|.NET
+		{A4EE1885-8435-4159-A5DB-CC398135C942}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

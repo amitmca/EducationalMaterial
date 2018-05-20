@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="DataSet1" targetNamespace="http://www.tempuri.org/DataSet1.xsd" xmlns:mstns="http://www.tempuri.org/DataSet1.xsd" xmlns="http://www.tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="DataSet1" msdata:IsDataSet="true">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="authors">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="au_id" type="xs:string" />
+              <xs:element name="au_lname" type="xs:string" />
+              <xs:element name="au_fname" type="xs:string" />
+              <xs:element name="phone" type="xs:string" />
+              <xs:element name="Expr1" type="xs:string" />
+              <xs:element name="title_id" type="xs:string" />
+              <xs:element name="au_ord" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="royaltyper" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:authors" />
+      <xs:field xpath="mstns:au_id" />
+      <xs:field xpath="mstns:Expr1" />
+      <xs:field xpath="mstns:title_id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

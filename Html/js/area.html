@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Area</title>
+<script language="JavaScript">
+	function area()
+	{
+	var r=document.forms[0].radius.value;
+	var A=3.14*r*r;
+	document.forms[0].ar.value=A;
+	}
+</script>
+</head>
+<body>
+<form name="form1">
+	<table width="75%" height="25%" align="center">
+	<tr>
+		<td align="center">
+		<h2>CALCULATING AREA OF CIRCLE</h2>
+		</td>
+	</tr>
+	<tr>
+		<td>
+		<label><b>Enter Radius</b></label>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>:</b>
+		<input type="text" name="radius">
+		</td>
+	</tr>
+	<tr>
+		<td>
+		<label><b>Area of Circle is </b></label>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>:</b>
+		<input type="text" name="ar">
+		</td>
+	</tr>
+	<tr>
+		<td>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="button" name="b" value="Calculate" onClick="area();">
+		</td>
+	</tr>
+	</table>
+</form>
+</body>
+</title>

@@ -1,0 +1,95 @@
+ty05=# create table movie(mno integer primary key,mname varchar(20) not null,ryear integer);
+NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "movie_pkey" for table "movie"
+CREATE TABLE
+
+amit=# select * from movie;
+ mno |   mname    | ryear
+-----+------------+-------
+   1 | swades     |  2004
+   2 | lagaan     |  2001
+   3 | fanaa      |  2006
+   4 | krrish     |  2006
+   5 | aksar      |  2005
+   6 | killer     |  2006
+   7 | veer zaara |  2004
+(7 rows)
+
+ty05=# create table actor(ano integer primary key,aname varchar(20) not null);
+NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "actor_pkey" for table "actor"
+CREATE TABLE
+
+amit=# select * from actor;
+ ano |  aname
+-----+----------
+  10 | shahrukh
+  20 | aamir
+  30 | imran
+  40 | hrithik
+(4 rows)
+
+ty05=# create table MA(mno integer references movie(mno),ano integer references actor(ano),rate integer);
+CREATE TABLE
+
+amit=# select * from MA;
+ mno | ano |   rate
+-----+-----+----------
+   1 |  10 |  2100000
+   7 |  10 |  2000000
+   2 |  20 | 14000000
+   3 |  20 | 14500000
+   4 |  40 |  1500000
+   5 |  30 |  1200000
+   6 |  30 |  1300000
+(7 rows)
+
+amit=# select aname,mname from actor as a,movie as m,MA as r where(m.mno=r.mno and a.ano=r.ano) and rate>200000;
+  aname   |   mname
+----------+------------
+ shahrukh | swades
+ shahrukh | veer zaara
+ aamir    | lagaan
+ aamir    | fanaa
+ imran    | aksar
+ imran    | killer
+ hrithik  | krrish
+(7 rows)
+
+amit=# CREATE OR REPLACE FUNCTION ACTOR_MOVIE() RETURNS BOOLEAN AS '
+amit'# DECLARE
+amit'# CUR_NAME CURSOR FOR
+amit'# SELECT MNAME,ANAME,RATE FROM ACTOR AS A,MOVIE AS M,MA AS R WHERE M.MNO=R.MNO AND A.ANO=R.ANO
+
+amit'# SELECT MNAME,ANAME,RATE FROM ACTOR AS A,MOVIE AS M,MA AS R WHERE M.MNO=R.MNO AND A.ANO=R.ANO AND RATE>2000000;
+amit'# ACT_NAME ACTOR.ANAME%TYPE;
+amit'# MOV_NAME MOVIE.MNAME%TYPE;
+amit'# BEGIN
+amit'# OPEN CUR_NAME;
+amit'# LOOP
+amit'# FETCH CUR_NAME INTO ACT_NAME,MOV_NAME;
+amit'# EXIT WHEN NOT FOUND;
+amit'# RAISE NOTICE ''%   %'',ACT_NAME,MOV_NAME;
+amit'# END LOOP;
+amit'# CLOSE CUR_NAME;
+amit'# RETURN TRUE;
+amit'# END;
+amit'# 'LANGUAGE 'plpgsql';
+CREATE FUNCTION
+amit=#
+amit=# select ACTOR_MOVIE() AS OUTPUT;
+NOTICE:  swades   shahrukh
+NOTICE:  lagaan   aamir
+NOTICE:  fanaa   aamir
+ output
+--------
+ t
+(1 row)
+
+
+
+
+
+
+
+
+
+

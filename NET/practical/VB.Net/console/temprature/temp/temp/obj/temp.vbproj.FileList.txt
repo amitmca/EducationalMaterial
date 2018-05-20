@@ -1,0 +1,9 @@
+bin\Debug\temp.exe
+bin\Debug\temp.pdb
+bin\Debug\temp.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\temp.Resources.resources
+obj\Debug\temp.vbproj.GenerateResource.Cache
+obj\Debug\temp.exe
+obj\Debug\temp.xml
+obj\Debug\temp.pdb

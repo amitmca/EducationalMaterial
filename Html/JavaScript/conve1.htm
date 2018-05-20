@@ -1,0 +1,48 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>New Page 1</title>
+<script language="javascript">
+function convert()
+	{
+	var dec=parseInt(document.form.dec.value);
+	var r=new Array(20);
+	var i;
+	var j;
+	i=0;
+	while(dec > 0 )
+		{
+		r[i]=dec%2;
+		i++;
+		dec=dec/2;
+		}
+	document.write(i);		
+/*	for(j=i-1;j>=0;j--)
+		document.write(r[j]);	*/
+	}
+</script>
+</head>
+<body>
+<form name="form">
+<table border="0" width="309" height="171" align="center">
+	<tr>
+		<td height="27" width="114"><label>Decimal Number</label></td>
+		<td height="27" width="24" align="center"><b>:</b></td>
+		<td height="27" width="148"><input type="text" name="dec"></td>
+	</tr>
+	<tr>
+		<td height="33" width="114">Binary Number</td>
+		<td height="33" width="24" align="center"><b>:</b></td>
+		<td height="33" width="148"><input type="text" name="bin"></td>
+	</tr>
+	<tr>
+		<td height="37" width="299" colspan="3" align="center">
+		<input type="button" name="b" value="Convert" onclick="convert()">
+		</td>
+	</tr>
+	
+</table>
+</form>
+</body>
+</html>

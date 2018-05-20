@@ -1,0 +1,29 @@
+<!-- Rotating Banner -->
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+var imgs = new Array ("C:\Documents and Settings\amjit.COMPUTER\My Documents\y\mysqllogo.gif","C:\Documents and Settings\amjit.COMPUTER\My Documents\y\b5_sdkdownload.gif")
+var lnks = new Array ("C:\Documents and Settings\amjit.COMPUTER\My Documents\y\mysqllogo.gif","C:\Documents and Settings\amjit.COMPUTER\My Documents\y\b5_sdkdownload.gif")
+var altimg = new Array ("")
+var currentAd = 0
+var imgCt = 2
+function cycle() {
+currentAd++
+if (currentAd == imgCt) {
+currentAd=0
+}
+document.adBanner.src=imgs[currentAd]
+document.adBanner.alt=altimg[currentAd]
+adLink.href=lnks[currentAd]
+setTimeout("cycle()",10 * 1000)
+}
+//-->
+</SCRIPT>
+
+<a href="C:\Documents and Settings\amjit.COMPUTER\My Documents\y\mysqllogo.gif" name="adLink" target="_top"><img src="C:\Documents and Settings\amjit.COMPUTER\My Documents\y\mysqllogo.gif" name="adBanner" border="0" width="468" height="60"></a>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+cycle()
+//-->
+</SCRIPT>

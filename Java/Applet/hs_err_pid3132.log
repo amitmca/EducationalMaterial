@@ -1,0 +1,169 @@
+#
+# An unexpected error has been detected by HotSpot Virtual Machine:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x77f75696, pid=3132, tid=3100
+#
+# Java VM: Java HotSpot(TM) Client VM (1.5.0-b64 mixed mode, sharing)
+# Problematic frame:
+# C  [ntdll.dll+0x25696]
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x009d2de8):  JavaThread "Finalizer" daemon [_thread_in_native, id=3100]
+
+siginfo: ExceptionCode=0xc0000005, writing address 0x030a98ac
+
+Registers:
+EAX=0x00000000, EBX=0x00000000, ECX=0x02b2f6e0, EDX=0x030a98a4
+ESP=0x02b2f6f0, EBP=0x02b2f728, ESI=0x030a9890, EDI=0x030a98a4
+EIP=0x77f75696, EFLAGS=0x00010246
+
+Top of Stack: (sp=0x02b2f6f0)
+0x02b2f6f0:   6d0d7768 030a98a4 030a9890 009d2ea4
+0x02b2f700:   6d0cf648 00a60125 22fbf120 009d2de8
+0x02b2f710:   0000000b 00000000 02b2f704 02b2f82c
+0x02b2f720:   6d0f33ac 00000000 02b2f740 00b47300
+0x02b2f730:   009d2ea4 02b2f748 02b2f924 02b2f8d0
+0x02b2f740:   02b2f760 00b4714a 22ae47b8 6d75b450
+0x02b2f750:   02b2f998 00b45e09 00b45c48 00b45e04
+0x02b2f760:   02b2f77c 00a60155 22ae47b8 009d2de8 
+
+Instructions: (pc=0x77f75696)
+0x77f75686:   0d 18 00 00 00 e9 5f ff ff ff 8b 54 24 04 33 c0
+0x77f75696:   ff 4a 08 75 17 89 42 0c f0 ff 4a 04 7d 03 c2 04 
+
+
+Stack: [0x02af0000,0x02b30000),  sp=0x02b2f6f0,  free space=253k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [ntdll.dll+0x25696]
+J  java.awt.Font.pDispose()V
+J  java.awt.Font.finalize()V
+v  ~StubRoutines::call_stub
+V  [jvm.dll+0x8168d]
+V  [jvm.dll+0xd4179]
+V  [jvm.dll+0x8155e]
+V  [jvm.dll+0x86845]
+C  [java.dll+0x1fd8]
+J  java.lang.ref.Finalizer.runFinalizer()V
+J  java.lang.ref.Finalizer.access$100(Ljava/lang/ref/Finalizer;)V
+v  ~RuntimeStub::alignment_frame_return Runtime1 stub
+j  java.lang.ref.Finalizer$FinalizerThread.run()V+11
+v  ~StubRoutines::call_stub
+V  [jvm.dll+0x8168d]
+V  [jvm.dll+0xd4179]
+V  [jvm.dll+0x8155e]
+V  [jvm.dll+0x812bb]
+V  [jvm.dll+0x9bbe9]
+V  [jvm.dll+0xfe77f]
+V  [jvm.dll+0xfe74d]
+C  [MSVCRT.dll+0x27fb8]
+C  [kernel32.dll+0x1d33b]
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+J  java.awt.Font.pDispose()V
+J  java.awt.Font.finalize()V
+v  ~StubRoutines::call_stub
+J  java.lang.ref.Finalizer.invokeFinalizeMethod(Ljava/lang/Object;)V
+J  java.lang.ref.Finalizer.runFinalizer()V
+J  java.lang.ref.Finalizer.access$100(Ljava/lang/ref/Finalizer;)V
+v  ~RuntimeStub::alignment_frame_return Runtime1 stub
+j  java.lang.ref.Finalizer$FinalizerThread.run()V+11
+v  ~StubRoutines::call_stub
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x03052310 JavaThread "AWT-EventQueue-1" [_thread_in_native, id=2980]
+  0x00265730 JavaThread "DestroyJavaVM" [_thread_blocked, id=3136]
+  0x030480e0 JavaThread "AWT-EventQueue-0" [_thread_blocked, id=3772]
+  0x02fac5a0 JavaThread "thread applet-appletctrls1" [_thread_blocked, id=3112]
+  0x00a4b630 JavaThread "AWT-Windows" daemon [_thread_in_native, id=3200]
+  0x00a4b200 JavaThread "AWT-Shutdown" [_thread_blocked, id=3724]
+  0x00a456e8 JavaThread "Java2D Disposer" daemon [_thread_blocked, id=3152]
+  0x009fbb58 JavaThread "Low Memory Detector" daemon [_thread_blocked, id=3172]
+  0x009fa730 JavaThread "CompilerThread0" daemon [_thread_blocked, id=3768]
+  0x009f9a30 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=2956]
+=>0x009d2de8 JavaThread "Finalizer" daemon [_thread_in_native, id=3100]
+  0x0026f960 JavaThread "Reference Handler" daemon [_thread_blocked, id=2960]
+
+Other Threads:
+  0x009f7058 VMThread [id=3124]
+  0x009fcd68 WatcherThread [id=3120]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ def new generation   total 576K, used 77K [0x22a60000, 0x22b00000, 0x22f40000)
+  eden space 512K,   4% used [0x22a60000, 0x22a65488, 0x22ae0000)
+  from space 64K,  88% used [0x22ae0000, 0x22aee2b0, 0x22af0000)
+  to   space 64K,   0% used [0x22af0000, 0x22af0000, 0x22b00000)
+ tenured generation   total 1408K, used 1238K [0x22f40000, 0x230a0000, 0x26a60000)
+   the space 1408K,  87% used [0x22f40000, 0x230759d8, 0x23075a00, 0x230a0000)
+ compacting perm gen  total 8192K, used 312K [0x26a60000, 0x27260000, 0x2aa60000)
+   the space 8192K,   3% used [0x26a60000, 0x26aae0b8, 0x26aae200, 0x27260000)
+    ro space 8192K,  66% used [0x2aa60000, 0x2afb7960, 0x2afb7a00, 0x2b260000)
+    rw space 12288K,  46% used [0x2b260000, 0x2b7f43a8, 0x2b7f4400, 0x2be60000)
+
+Dynamic libraries:
+0x00400000 - 0x0040c000 	C:\Program Files\Java\jdk1.5.0\bin\appletviewer.exe
+0x77f50000 - 0x77ff7000 	C:\WINDOWS\System32\ntdll.dll
+0x77e60000 - 0x77f46000 	C:\WINDOWS\system32\kernel32.dll
+0x77dd0000 - 0x77e5d000 	C:\WINDOWS\system32\ADVAPI32.dll
+0x78000000 - 0x78086000 	C:\WINDOWS\system32\RPCRT4.dll
+0x77c10000 - 0x77c63000 	C:\WINDOWS\system32\MSVCRT.dll
+0x6d640000 - 0x6d7c5000 	C:\Program Files\Java\jdk1.5.0\jre\bin\client\jvm.dll
+0x77d40000 - 0x77dcc000 	C:\WINDOWS\system32\USER32.dll
+0x77c70000 - 0x77cb0000 	C:\WINDOWS\system32\GDI32.dll
+0x76b40000 - 0x76b6c000 	C:\WINDOWS\System32\WINMM.dll
+0x6d280000 - 0x6d288000 	C:\Program Files\Java\jdk1.5.0\jre\bin\hpi.dll
+0x76bf0000 - 0x76bfb000 	C:\WINDOWS\System32\PSAPI.DLL
+0x6d610000 - 0x6d61c000 	C:\Program Files\Java\jdk1.5.0\jre\bin\verify.dll
+0x6d300000 - 0x6d31d000 	C:\Program Files\Java\jdk1.5.0\jre\bin\java.dll
+0x6d630000 - 0x6d63f000 	C:\Program Files\Java\jdk1.5.0\jre\bin\zip.dll
+0x6d000000 - 0x6d166000 	C:\Program Files\Java\jdk1.5.0\jre\bin\awt.dll
+0x73000000 - 0x73023000 	C:\WINDOWS\System32\WINSPOOL.DRV
+0x76390000 - 0x763ac000 	C:\WINDOWS\System32\IMM32.dll
+0x771b0000 - 0x772d1000 	C:\WINDOWS\system32\ole32.dll
+0x5ad70000 - 0x5ada4000 	C:\WINDOWS\System32\uxtheme.dll
+0x73760000 - 0x737a4000 	C:\WINDOWS\System32\ddraw.dll
+0x73bc0000 - 0x73bc6000 	C:\WINDOWS\System32\DCIMAN32.dll
+0x73940000 - 0x73a07000 	C:\WINDOWS\System32\D3DIM700.DLL
+0x6d240000 - 0x6d27d000 	C:\Program Files\Java\jdk1.5.0\jre\bin\fontmanager.dll
+0x74720000 - 0x74764000 	C:\WINDOWS\System32\MSCTF.dll
+0x6d4c0000 - 0x6d4d3000 	C:\Program Files\Java\jdk1.5.0\jre\bin\net.dll
+0x71ab0000 - 0x71ac5000 	C:\WINDOWS\System32\WS2_32.dll
+0x71aa0000 - 0x71aa8000 	C:\WINDOWS\System32\WS2HELP.dll
+0x6d4e0000 - 0x6d4e9000 	C:\Program Files\Java\jdk1.5.0\jre\bin\nio.dll
+0x605d0000 - 0x605d8000 	C:\WINDOWS\System32\mslbui.dll
+0x77120000 - 0x771ab000 	C:\WINDOWS\system32\OLEAUT32.DLL
+0x71a50000 - 0x71a8b000 	C:\WINDOWS\System32\mswsock.dll
+0x76f20000 - 0x76f45000 	C:\WINDOWS\System32\DNSAPI.dll
+0x76d60000 - 0x76d77000 	C:\WINDOWS\System32\iphlpapi.dll
+0x76fb0000 - 0x76fb7000 	C:\WINDOWS\System32\winrnr.dll
+0x76f60000 - 0x76f8c000 	C:\WINDOWS\system32\WLDAP32.dll
+0x76fc0000 - 0x76fc5000 	C:\WINDOWS\System32\rasadhlp.dll
+
+VM Arguments:
+jvm_args: -Dapplication.home=C:\Program Files\Java\jdk1.5.0
+java_command: sun.applet.Main appletctrls1.java
+
+Environment Variables:
+PATH=C:\Program Files\PC Connectivity Solution\;C:\Perl\bin\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\Java\jdk1.5.0\bin;C:\Program Files\C-Free 4\mingw32\Bin;C:\Python30;C:\Perl\bin;
+USERNAME=amjit
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 15 Model 4 Stepping 1, GenuineIntel
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows XP Build 2600 Service Pack 2
+
+CPU:total 1 family 15, cmov, cx8, fxsr, mmx, sse, sse2, ht
+
+Memory: 4k page, physical 253424k(79244k free), swap 621760k(253328k free)
+
+vm_info: Java HotSpot(TM) Client VM (1.5.0-b64) for windows-x86, built on Sep 15 2004 03:00:31 by "java_re" with MS VC++ 6.0
+

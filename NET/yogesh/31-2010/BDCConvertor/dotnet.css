@@ -1,0 +1,46 @@
+﻿.labelcolor
+{
+   color:#ff6600;
+   font-size:13px;
+   font-family:Arial;
+}
+.table
+{
+font-family:Arial;
+font-size:11px;
+BORDER-RIGHT: #99aabd 1px solid; BORDER-TOP: #99aabd 1px solid; BORDER-LEFT: #99aabd 1px solid; BORDER-BOTTOM: #99aabd 1px solid
+
+}
+
+.border
+{
+	BORDER-RIGHT: #99aabd 1px solid; BORDER-TOP: #99aabd 1px solid; BORDER-LEFT: #99aabd 1px solid; BORDER-BOTTOM: #99aabd 1px solid
+}
+
+.borderbot
+{
+ BORDER-BOTTOM: #99aabd 1px solid
+}
+
+.gridhead
+{
+background-color:#f6f6f6;
+}
+.gridrow
+{
+color:#0066cc;
+}
+
+.cell
+{
+	
+	background-color:#e2e2e2;
+}
+
+.tdback
+{
+	background-color:#e93850;
+}
+
+
+

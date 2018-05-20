@@ -1,0 +1,33 @@
+[Main]
+SizeX=7410
+SizeY=5370
+[1]
+Name=label_1
+Type=JLabel
+Value=Enter File Name
+X= 360
+Y= 240
+SizeX= 2400
+SizeY= 360
+[2]
+Name=contents
+Type=JTextArea
+X= 360
+Y= 1560
+SizeX= 6840
+SizeY= 3720
+[3]
+Name=fname
+Type=JTextField
+X= 4440
+Y= 240
+SizeX= 2520
+SizeY= 360
+[4]
+Name=button_1
+Type=JButton
+Value=SHOW
+X= 3000
+Y= 960
+SizeX= 1080
+SizeY= 360

@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>Date Functions</title>
+</head>
+<body>
+<cfset RightNow = Now()>
+<cfoutput>
+ #RightNow#<br />
+ #DateFormat(RightNow)#<br />
+ #DateFormat(RightNow,"mm/dd/yy")#<br />
+ #TimeFormat(RightNow)#<br />
+ #TimeFormat(RightNow,"hh:mm tt")#<br />
+ #IsDate(RightNow)#<br />
+ #IsDate("January 31, 2007")#<br />
+ #IsDate("foo")#<br />
+ #DaysInMonth(RightNow)#
+</cfoutput>
+</body>
+</html>

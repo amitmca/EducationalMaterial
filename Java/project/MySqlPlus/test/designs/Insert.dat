@@ -1,0 +1,59 @@
+[Main]
+SizeX=7830
+SizeY=8130
+[1]
+Name=l
+Type=JLabel
+Value=Select Database Name :
+X= 240
+Y= 360
+SizeX= 2400
+SizeY= 240
+[2]
+Name=l1
+Type=JLabel
+Value=Select Table Name :
+X= 5400
+Y= 360
+SizeX= 2400
+SizeY= 240
+[3]
+Name=dbcombo
+Type=JComboBox
+Value=
+X= 240
+Y= 720
+SizeX= 2400
+SizeY= 360
+[4]
+Name=tablecombo
+Type=JComboBox
+Value=
+X= 5400
+Y= 720
+SizeX= 2400
+SizeY= 360
+[5]
+Name=btnins
+Type=JButton
+Value=Insert
+X= 240
+Y= 7560
+SizeX= 1680
+SizeY= 360
+[6]
+Name=btnclr
+Type=JButton
+Value=Clear
+X= 3000
+Y= 7560
+SizeX= 1800
+SizeY= 360
+[7]
+Name=btncel
+Type=JButton
+Value=Cancel
+X= 6000
+Y= 7560
+SizeX= 1680
+SizeY= 360

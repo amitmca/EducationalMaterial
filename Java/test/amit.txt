@@ -1,0 +1,4 @@
+Amit     23     MCA
+Ajit     23     MCA
+Ajay     27     MCA
+Amjit     24     BTECH

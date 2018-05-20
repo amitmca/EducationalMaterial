@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DataReader", "DataReader.vbproj", "{A0783E3E-E12A-42B0-8EBB-A00900C65E4D}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{A0783E3E-E12A-42B0-8EBB-A00900C65E4D}.Debug.ActiveCfg = Debug|.NET
+		{A0783E3E-E12A-42B0-8EBB-A00900C65E4D}.Debug.Build.0 = Debug|.NET
+		{A0783E3E-E12A-42B0-8EBB-A00900C65E4D}.Release.ActiveCfg = Release|.NET
+		{A0783E3E-E12A-42B0-8EBB-A00900C65E4D}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

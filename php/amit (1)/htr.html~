@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Help About test</title>
+</head>
+<body bgcolor="pink">
+<h3><center>Follow the below steps to register.....</center>
+<br>
+<table align="center">
+<tr>
+<td>
+<font color="black" size=03>1) Click on Sign here</font>
+<br><font color="black" size=03>2) Fill Up the Registration Form</font>
+<br><font color="black" size=03>3) Get your id </font>
+<br><font color="black" size=03>4) Sign Up</font>
+</td>
+</tr>
+</table>
+
+<br><br><center><a href="help.html"><img src="prev.gif"></a></center>
+</body>
+</html>

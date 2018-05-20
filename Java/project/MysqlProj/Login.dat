@@ -1,0 +1,136 @@
+[Main]
+SizeX=6315
+SizeY=5010
+[1]
+Name=midlogo
+Type=JLabel
+X= 0
+Y= 0
+SizeX= 6360
+SizeY= 960
+[2]
+Name=lbserver
+Type=JLabel
+Value=Server  :
+X= 960
+Y= 1560
+SizeX= 1680
+SizeY= 360
+[3]
+Name=txtserver
+Type=JTextField
+Value=localhost
+X= 3120
+Y= 1560
+SizeX= 2160
+SizeY= 360
+[4]
+Name=lbport
+Type=JLabel
+Value=Port    : 
+X= 960
+Y= 2280
+SizeX= 1680
+SizeY= 360
+[5]
+Name=txtport
+Type=JTextField
+Value=3306
+X= 3120
+Y= 2280
+SizeX= 2160
+SizeY= 360
+[6]
+Name=lbuser
+Type=JLabel
+Value=Username:
+X= 960
+Y= 3000
+SizeX= 1680
+SizeY= 360
+[7]
+Name=txtusr
+Type=JTextField
+X= 3120
+Y= 3000
+SizeX= 2160
+SizeY= 360
+[8]
+Name=lbpass
+Type=JLabel
+Value=Password:
+X= 960
+Y= 3720
+SizeX= 1680
+SizeY= 360
+[9]
+Name=txtpass
+Type=JTextField
+X= 3120
+Y= 3720
+SizeX= 2160
+SizeY= 360
+[10]
+Name=btnOk
+Type=JButton
+Value=Ok
+X= 960
+Y= 4440
+SizeX= 1080
+SizeY= 360
+[11]
+Name=btnClr
+Type=JButton
+Value=Clear
+X= 2400
+Y= 4440
+SizeX= 1080
+SizeY= 360
+[12]
+Name=btnCel
+Type=JButton
+Value=Cancel
+X= 3720
+Y= 4440
+SizeX= 1440
+SizeY= 360
+[13]
+Name=l1
+Type=JLabel
+Value= :
+X= 2760
+Y= 1560
+SizeX= 240
+SizeY= 360
+[14]
+Name=l2
+Type=JLabel
+Value= :
+X= 2760
+Y= 2280
+SizeX= 240
+SizeY= 360
+[15]
+Name=l3
+Type=JLabel
+Value= :
+X= 2760
+Y= 3000
+SizeX= 240
+SizeY= 360
+[16]
+Name=l4
+Type=JLabel
+Value= :
+X= 2760
+Y= 3720
+SizeX= 240
+SizeY= 360
+[17]
+Name=header
+Type=JLabel
+Value=Connect To Mysql Server Instance
+X= 960
+Y= 1080
+SizeX= 4320
+SizeY= 240

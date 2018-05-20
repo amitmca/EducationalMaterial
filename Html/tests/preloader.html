@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Preloader</title>
+<script language="JavaScript">
+<!-- Begin
+
+function clearPreloadPage()
+ { 
+	if (document.getElementById)
+	{
+	document.getElementById('prepage').style.visibility='hidden';
+	}
+	else
+	{
+	if (document.layers)
+	  { 
+	  document.prepage.visibility = 'hidden';
+	 }
+	else
+	 { 
+	document.all.prepage.style.visibility = 'hidden';
+	}
+	}
+}
+// End -->
+</script>
+</head>
+<BODY onLoad="clearPreloadPage();">
+<div id="prepage" style="position:absolute; font-family:arial; font-size:16; left:0px; 
+
+top:0px; background-color:white; layer-background-color:white; height:100%; width:100%;"> 
+<table width=100%><tr><td>Loading ... ... Please wait!</td></tr></table>
+</div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<EmpDetails>
+  <Employee EmpNo="1" EmpName="Ram"/>
+  <Salary>4500</Salary>
+  <Designation>Clerk</Designation>
+</EmpDetails>

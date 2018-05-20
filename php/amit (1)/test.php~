@@ -1,0 +1,32 @@
+<?php
+$fname=$_POST['fname'];
+$lname=$_POST['lname'];
+$class=$_POST['class']; 
+$class1=$_POST['class1']; 
+$q=$_POST['q'];
+$rno=$_POST['rno'];
+$email=$_POST['email'];
+Require_once('DB.php');
+$dsn="pgsql://postgres@localhost/website";
+$db=DB::connect($dsn);
+if(DB::isError($db))
+	{
+	die($db->getMessage());
+	}
+$query="insert into stud_acc values('$fname','$lname','$class','$class1','$q','$rno','$email')";
+$q=$db->query($query);
+if(DB::isError($q))
+	{
+	echo "<b>Please check the query";
+	}
+else
+	{
+	echo "<b>Registred Sucessfully";
+	}
+$query1="insert into admin values('$class$class1$rno')";
+$q1=$db->query($query1);
+if(DB::isError($q))
+?>
+<br><center><a href="login.php"><img src="prev.gif"></a></center>
+
+

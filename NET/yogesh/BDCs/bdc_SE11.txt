@@ -1,0 +1,59 @@
+                                        	0000	T	SE11                                                                                                                                	BS AA X   F
+SAPMSRD0                                	0102	X	                                                                                                                                    	
+                                        	0000	 	BDC_CURSOR                                                                                                                          	RSRD1-TBMA_VAL
+                                        	0000	 	BDC_OKCODE                                                                                                                          	=ADD
+                                        	0000	 	RSRD1-TBMA                                                                                                                          	X
+                                        	0000	 	RSRD1-TBMA_VAL                                                                                                                      	YMAIL
+SAPMSRD0                                	0102	X	                                                                                                                                    	
+                                        	0000	 	BDC_CURSOR                                                                                                                          	RSRD1-TBMA_VAL
+                                        	0000	 	BDC_OKCODE                                                                                                                          	=SHOW
+                                        	0000	 	RSRD1-TBMA                                                                                                                          	X
+                                        	0000	 	RSRD1-TBMA_VAL                                                                                                                      	YMAIL
+SAPLSD41                                	2200	X	                                                                                                                                    	
+                                        	0000	 	BDC_CURSOR                                                                                                                          	DD02D-TABCLTEXT
+                                        	0000	 	BDC_OKCODE                                                                                                                          	=WB_BACK
+                                        	0000	 	BDC_SUBSCR                                                                                                                          	SAPLSD41                                2201TS_SCREEN
+SAPMSRD0                                	0102	X	                                                                                                                                    	
+                                        	0000	 	BDC_CURSOR                                                                                                                          	RSRD1-TBMA_VAL
+                                        	0000	 	BDC_OKCODE                                                                                                                          	=EDIT
+                                        	0000	 	RSRD1-TBMA                                                                                                                          	X
+                                        	0000	 	RSRD1-TBMA_VAL                                                                                                                      	YMAIL
+SAPLSD41                                	2200	X	                                                                                                                                    	
+                                        	0000	 	BDC_CURSOR                                                                                                                          	DD02D-DDTEXT
+                                        	0000	 	BDC_OKCODE                                                                                                                          	=WB_BACK
+                                        	0000	 	DD02D-DDTEXT                                                                                                                        	Mail Broadcast
+                                        	0000	 	BDC_SUBSCR                                                                                                                          	SAPLSD41                                2201TS_SCREEN
+SAPMSRD0                                	0102	X	                                                                                                                                    	
+                                        	0000	 	BDC_CURSOR                                                                                                                          	RSRD1-TBMA_VAL
+                                        	0000	 	BDC_OKCODE                                                                                                                          	=ADD
+                                        	0000	 	RSRD1-TBMA                                                                                                                          	X
+                                        	0000	 	RSRD1-TBMA_VAL                                                                                                                      	YMAIL
+SAPMSRD0                                	0102	X	                                                                                                                                    	
+                                        	0000	 	BDC_CURSOR                                                                                                                          	RSRD1-TBMA_VAL
+                                        	0000	 	BDC_OKCODE                                                                                                                          	=EDIT
+                                        	0000	 	RSRD1-TBMA                                                                                                                          	X
+                                        	0000	 	RSRD1-TBMA_VAL                                                                                                                      	YMAIL
+SAPLSD41                                	2200	X	                                                                                                                                    	
+                                        	0000	 	BDC_CURSOR                                                                                                                          	DD02D-DDTEXT
+                                        	0000	 	BDC_OKCODE                                                                                                                          	=TDED
+                                        	0000	 	DD02D-DDTEXT                                                                                                                        	Mail Broadcast
+                                        	0000	 	BDC_SUBSCR                                                                                                                          	SAPLSD41                                2201TS_SCREEN
+/1BCDWB/DBYMAIL                         	0101	X	                                                                                                                                    	
+                                        	0000	 	BDC_CURSOR                                                                                                                          	YMAIL-PLAYCODE
+                                        	0000	 	BDC_OKCODE                                                                                                                          	=SAVE
+                                        	0000	 	YMAIL-PLAYERNO                                                                                                                      	123
+                                        	0000	 	YMAIL-PLAYNAME                                                                                                                      	RAM
+                                        	0000	 	YMAIL-PLAYCODE                                                                                                                      	125
+/1BCDWB/DBYMAIL                         	0101	X	                                                                                                                                    	
+                                        	0000	 	BDC_OKCODE                                                                                                                          	/EBACK
+                                        	0000	 	BDC_CURSOR                                                                                                                          	YMAIL-PLAYERNO
+SAPLSD41                                	2200	X	                                                                                                                                    	
+                                        	0000	 	BDC_CURSOR                                                                                                                          	DD02D-DDTEXT
+                                        	0000	 	BDC_OKCODE                                                                                                                          	=WB_BACK
+                                        	0000	 	DD02D-DDTEXT                                                                                                                        	Mail Broadcast
+                                        	0000	 	BDC_SUBSCR                                                                                                                          	SAPLSD41                                2201TS_SCREEN
+SAPMSRD0                                	0102	X	                                                                                                                                    	
+                                        	0000	 	BDC_CURSOR                                                                                                                          	RSRD1-TBMA_VAL
+                                        	0000	 	BDC_OKCODE                                                                                                                          	=BACK
+                                        	0000	 	RSRD1-TBMA                                                                                                                          	X
+                                        	0000	 	RSRD1-TBMA_VAL                                                                                                                      	YMAIL

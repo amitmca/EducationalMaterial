@@ -1,0 +1,384 @@
+<html>
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<title>Activity Diagrams</title>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+startday = new Date();
+clockStart = startday.getTime();
+function initStopwatch() { 
+var myTime = new Date(); 
+return((myTime.getTime() - clockStart)/1000); 
+}
+function getSecs() { 
+var tSecs = Math.round(initStopwatch()); 
+var iSecs = tSecs % 60;
+var iMins = Math.round((tSecs-30)/60);   
+var sSecs ="" + ((iSecs > 9) ? iSecs : "0" + iSecs);
+var sMins ="" + ((iMins > 9) ? iMins : "0" + iMins);
+document.forms[0].timespent.value = sMins+":"+sSecs;
+window.setTimeout('getSecs()',1000); 
+}
+// End -->
+</script>
+
+     <STYLE>
+
+     BODY {
+SCROLLBAR-FACE-COLOR: red; SCROLLBAR-HIGHLIGHT-COLOR: gray; 
+
+SCROLLBAR-SHADOW-COLOR: black; SCROLLBAR-ARROW-COLOR: gray; 
+
+SCROLLBAR-TRACK-COLOR: black; SCROLLBAR-DARKSHADOW-COLOR: red
+}
+font{text-decoration:None;}
+</STYLE>
+</head>
+
+<BODY onLoad="window.setTimeout('getSecs()',1)">
+
+<table border="0" width="977" height="89">
+	<tr>
+		<td height="83" width="971" valign="middle" background="images/stylusstudio_02.gif">
+		<img border="0" src="images/logosmall_free.gif" width="271" height="59">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<img border="0" src="images/employee.jpg" width="275" height="75"></td>
+	</tr>
+
+</table>
+
+<table border="0" width="976" height="23">
+	<tr>
+		<td height="23" width="125" align="center" bgcolor="red"><a href="index.htm"><font color="white"><b><FONT face="Verdana, Arial, Helvetica" size=-1>Home</FONT></b></font></a></td>
+		<td height="23" width="125" align="center" bgcolor="red"><a href="aboutus.htm"><font color="white"><b><FONT face="Verdana, Arial, Helvetica" size=-1>About Us</FONT></b></font></a></td>
+		<td height="23" width="125" align="center" bgcolor="red"><a href="search.htm"><font color="white"><b><FONT face="Verdana, Arial, Helvetica" size=-1>Search</FONT></b></font></a></td>
+		<td height="23" width="125" align="center" bgcolor="red"><a href="features.htm"><font color="white"><b><FONT face="Verdana, Arial, Helvetica" size=-1>Features</FONT></b></font></a></td>
+		<td height="23" width="125" align="center" bgcolor="red"><a href="contactus.htm"><font color="white"><b><FONT face="Verdana, Arial, Helvetica" size=-1>Contact Us</FONT></b></font></a></td>
+		<td height="23" width="125" align="center" bgcolor="red"><a href="feedback.htm"><font color="white"><b><FONT face="Verdana, Arial, Helvetica" size=-1>Feedback</FONT></b></font></a></td>
+		<td height="23" width="125" align="center" bgcolor="red"><a href="help.htm"><font color="white"><b><FONT face="Verdana, Arial, Helvetica" size=-1>Help</FONT></b></font></a></td>
+	</tr>
+</table>
+<br>
+<table border="0" width="978" height="78" >
+	<tr>
+		<td height="24" width="125" valign="top">
+		
+		<a href="index.htm"><img border="0" src="images/login.gif" width="82" height="27" border="0"></a></td>
+		
+		<td height="24" width="682" valign="top" align="center">
+		
+		<script language="JavaScript1.2">
+//configure message
+message="Free Online Project Management"
+//animate text in NS6? (0 will turn it off)
+ns6switch=1
+
+var ns6=document.getElementById&&!document.all
+mes=new Array();
+mes[0]=-1;
+mes[1]=-4;
+mes[2]=-7;mes[3]=-10;
+mes[4]=-7;
+mes[5]=-4;
+mes[6]=-1;
+num=0;
+num2=0;
+txt="";
+function jump0(){
+if (ns6&&!ns6switch){
+jump.innerHTML=message
+return
+}
+if(message.length > 6){
+for(i=0; i != message.length;i++){
+txt=txt+"<span style='position:relative;' id='n"+i+"'>"+message.charAt(i)+"</span>"};
+jump.innerHTML=txt;
+txt="";
+jump1a()
+}
+else{
+alert("Your message is to short")
+}
+}
+
+function jump1a(){
+nfinal=(document.getElementById)? document.getElementById("n0") : document.all.n0
+nfinal.style.left=-num2;
+if(num2 != 9){
+num2=num2+3;
+setTimeout("jump1a()",50)
+}
+else{
+jump1b()
+}
+}
+
+function jump1b(){
+nfinal.style.left=-num2;
+if(num2 != 0){num2=num2-3;
+setTimeout("jump1b()",50)
+}
+else{
+jump2()
+}
+}
+
+function jump2(){
+txt="";
+for(i=0;i != message.length;i++){
+if(i+num > -1 && i+num < 7){
+txt=txt+"<span style='position:relative;top:"+mes[i+num]+"'>"+message.charAt(i)+"</span>"
+}
+else{txt=txt+"<span>"+message.charAt(i)+"</span>"}
+}
+jump.innerHTML=txt;
+txt="";
+if(num != (-message.length)){
+num--;
+setTimeout("jump2()",50)}
+else{num=0;
+setTimeout("jump0()",50)}}
+</script>
+
+</head>
+<body>
+
+<h2><div id="jumpx" style="color:green"></div></h2>
+<script>
+if (document.all||document.getElementById){
+jump=(document.getElementById)? document.getElementById("jumpx") : document.all.jumpx
+jump0()
+}
+else
+document.write(message)
+</script>
+		</td>
+		<td height="24" width="157" valign="top">
+		
+		<a href="register.htm">
+		<img border="0" src="images/register_now.gif" width="129" height="27" border="0" align="right"></a></td>
+	</tr>
+	<tr>
+		<td height="41" width="978" valign="top" colspan="3">
+		<center><img src="images/free_prices.gif"></center>
+		
+ 		</td>
+	</tr>
+</table>
+	
+
+
+	<table border="0" width="980" height="1511">
+		<tr>
+			<td height="231" width="185" valign="top" background="images/HDR_WIZ_RIGHT.PNG">
+			<center><a href="help.htm"><img src="images/prev.gif" border="0"></a>
+			<br><FONT face="Verdana, Arial, Helvetica" color=red size=2>
+			<b>Back To Help</b>
+			</FONT></center>
+			<br><br>
+						<script src="scmenujs.js" type="text/javascript"></script><noscript><OBJECT id="scmenuobj" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" WIDTH=190 HEIGHT=100> <PARAM NAME=movie VALUE="scmenu.swf"> <PARAM NAME=menu VALUE=false> <PARAM NAME=quality VALUE=high> <PARAM NAME=wmode VALUE=opaque> <PARAM NAME=bgcolor VALUE=#E0E0E0> <EMBED src="scmenu.swf" menu=false quality=high wmode=opaque bgcolor=#E0E0E0  WIDTH=190 HEIGHT=100 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></EMBED></OBJECT></noscript>
+
+			<FORM>
+			<FONT SIZE="2" FACE="Arial" color="red"><b>Time spent here: </b></FONT><input size=5 name=timespent>
+			</FORM>
+
+
+	
+			</td>
+			<td height="1507" width="785" valign="top" rowspan="2">
+			<fieldset>
+			<table cellpadding="0" cellspacing="0" width="781" height="1322">
+				<!-- MSTableType="layout" -->
+				<tr>
+					<td height="57" valign="top" align="center" colspan="2"><FONT face="Verdana, Arial, Helvetica" color=#003366 size=2>
+					<h3>Activity Diagrams</h3>
+					</FONT>
+					</td>
+				</tr>
+				<tr>
+					<td height="67" valign="top" colspan="2">
+					<FONT face="Verdana, Arial, Helvetica" color=#77c805
+ size=2>
+Activity diagrams describe the workflow behavior of a system.  Activity diagrams are similar to state diagrams because activities are the state of doing something.  The diagrams describe the state of activities by showing the sequence of activities performed.  Activity diagrams can show activities that are conditional or parallel.
+
+
+
+
+					</FONT>
+					</td>
+				</tr>
+				<tr>
+					<td align="center">
+					<FONT face="Verdana, Arial, Helvetica" color=#77c805
+					 size=2>
+					<h3>Elements of an Activity diagram</h3>
+					
+					</FONT>
+					</td>
+
+
+					<td height="41"></td>
+				
+				
+					
+
+					</tr>
+				<tr>
+					<td valign="top" background="images/add.jpg">
+					<fieldset>
+					 <TABLE cellSpacing=2 cellPadding=2 border=0 >
+              <TBODY>
+              <TR vAlign=top align=middle bgColor=#ffff99>
+                <TD><B><FONT face="Verdana, Arial, Helvetica" color=red>Element and its description</FONT></B></TD>
+                <TD><B><FONT face="Verdana, Arial, Helvetica" color=red>Symbol</FONT></B></TD></TR>
+              <TR vAlign=top>
+                <TD><br><B><FONT face="Verdana, Arial, Helvetica" color=magenta>Initial Activity:</FONT></B>
+                <FONT face="Verdana, Arial, Helvetica" color=#77c805 size=2>
+                   This shows the starting point or 
+                  first activity of the flow. Denoted by a solid circle. This is 
+                  similar to the notation used for Initial State.</FONT></TD>
+
+                <TD align=middle>                                <br><IMG 
+                  src="images/UML07T1.gif"></TD></TR>
+              <TR vAlign=top>
+                <TD><B><FONT face="Verdana, Arial, Helvetica" color=magenta>Activity:</FONT></B> 
+                 <FONT face="Verdana, Arial, Helvetica" color=#77c805 size=2>
+
+                Represented by a rectangle with rounded 
+                  (almost oval) edges.</FONT></TD>
+                <TD align=middle><IMG 
+                  src="images/UML07T2.gif"></TD></TR>
+              <TR vAlign=top>
+                <TD><B><FONT face="Verdana, Arial, Helvetica" color=magenta>Decisions:</FONT></B> 
+                 <FONT face="Verdana, Arial, Helvetica" color=#77c805 size=2>
+                Similar to flowcharts, a logic where a 
+                  decision is to be made is depicted by a diamond, with the 
+                  options written on either sides of the arrows emerging from 
+                  the diamond, within box brackets.</FONT></TD>
+                <TD align=middle><IMG 
+                  src="images/UML07T3.gif"></TD></TR>
+              <TR vAlign=top>
+                <TD><B><FONT face="Verdana, Arial, Helvetica" color=magenta>Signal:</FONT></B> 
+                 <FONT face="Verdana, Arial, Helvetica" color=#77c805 size=2>
+                When an activity sends or receives a 
+                  message, that activity is called a signal. Signals are of two 
+                  types: Input signal (Message receiving activity) shown by a 
+                  concave polygon and Output signal (Message sending activity) 
+                  shown by a convex polygon.</FONT>
+                  </TD>
+                <TD align=middle><IMG 
+                  src="images/UML07T4.gif"></TD></TR>
+              <TR vAlign=top>
+                <TD><B><FONT face="Verdana, Arial, Helvetica" color=magenta>Concurrent Activities:</FONT></B> 
+                 <FONT face="Verdana, Arial, Helvetica" color=#77c805 size=2>
+	                Some activities occur 
+                  simultaneously or in parallel. Such activities are called 
+                  concurrent activities. For example, listening to the lecturer 
+                  and looking at the blackboard is a parallel activity. This is 
+                  represented by a horizontal split (thick dark line) and the 
+                  two concurrent activities next to each other, and the 
+                  horizontal line again to show the end of the parallel 
+                activity.</FONT></TD>
+                <TD align=middle><IMG 
+                  src="images/UML07T5.gif"></TD></TR>
+              <TR vAlign=top>
+                <TD><B><FONT face="Verdana, Arial, Helvetica" color=magenta>Final Activity:</FONT></B>
+                 <FONT face="Verdana, Arial, Helvetica" color=#77c805 size=2>
+                 The end of the Activity diagram is 
+                  shown by a bull's eye symbol, also called as a final 
+                activity.</FONT></TD>
+                <TD align=middle><IMG 
+                  src="images/UML07T6.gif"></TD></TR></TBODY></TABLE>
+					</fieldset>
+					</td>
+					
+
+					
+					<td height="557"></td>
+				
+				
+					
+					</tr>
+				<tr>
+					<td valign="top" colspan="2" height="131">
+					<br>
+					<FONT face="Verdana, Arial, Helvetica" color=#77c805 size=2>
+
+					Activity diagrams show the flow of activities through the system.  Diagrams are read from top to bottom and have branches and forks to describe conditions and parallel activities.  A fork is used when multiple activities are occurring at the same time.  The diagram below shows a fork after activity1.  This indicates that both activity2 and activity3 are occurring at the same time.  After activity2 there is a branch.  The branch describes what activities will take place based on a set of conditions.  All branches at some point are followed by a merge to indicate the end of the conditional behavior started by that branch.   After the merge all of the parallel activities must be combined by a join before transitioning into the final activity state.   
+					</FONT>
+					</td>
+				
+
+					</tr>
+				<tr>
+					<td align="center" width="777" valign="top">
+					<br>
+					<img src="images/activity1.jpg">
+					<a href="D/Activity Diagram - UML 2 Diagrams - UML Modeling Tool4.htm">
+					<img src="images/top_center_block_btn.gif" border="0"</a>
+
+					</td>
+				
+				
+					
+					
+					</tr>
+			
+			</table>
+			</fieldset>
+			<p>
+		<object classid="clsid:D27CDB6E-AE6D-11CF-96B8-444553540000" id="obj1" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" border="0" width="748" height="81">
+			<param name="movie" value="pageid=48769.swf">
+			<param name="quality" value="High">
+			<embed src="pageid=48769.swf" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" name="obj1" width="748" height="81"></object>
+			</td>
+			
+		</tr>
+		<tr>
+			<td height="1262" width="185" valign="top" background="images/HDR_WIZ_RIGHT.PNG">
+			<fieldset style="width: 185px; height: 171px">
+			<marquee behavior="scroll" direction="up" scrolldelay="300">
+			<IMG src="images/UML07T1.gif"><br>
+			<center><FONT face="Verdana, Arial, Helvetica" color=red size=2>
+			 Initial Activity</FONT></center>
+
+			 <br><IMG src="images/UML07T2.gif"><br>
+			<center><FONT face="Verdana, Arial, Helvetica" color=red size=2>
+			 Activity</FONT></center>
+
+			 <br><IMG src="images/UML07T3.gif">
+			 <center><FONT face="Verdana, Arial, Helvetica" color=red size=2>
+			 Decisions</FONT></center>
+
+			<br><IMG src="images/UML07T4.gif">
+			<center><FONT face="Verdana, Arial, Helvetica" color=red size=2>
+			 Signal</FONT></center>
+
+			 <br><IMG src="images/UML07T5.gif">
+			<center><FONT face="Verdana, Arial, Helvetica" color=red size=2>
+			Concurrent Activities</FONT></center>
+
+			<br><IMG src="images/UML07T6.gif">
+			<center><FONT face="Verdana, Arial, Helvetica" color=red size=2>
+			Final Activity</FONT></center></marquee>
+			</fieldset>
+			
+			<center>
+			<img border="0" src="images/untitled01%20(1).gif" width="117" height="468" align="middle"><p>
+			<img border="0" src="images/imgad.jpg" width="160" height="578"></p>
+			</center>
+			</td>
+			</tr>
+	</table>
+
+	
+	<table border="0" width="974" height="5">
+		<tr>
+			<td height="30" width="974">
+			<center><img src="images/logo-banner.gif" width="352" height="40"></center>
+			</td>
+		</tr>
+	</table>
+
+</body>
+</html>

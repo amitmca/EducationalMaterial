@@ -1,0 +1,113 @@
+<HTML> 
+<HEAD> 
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- 
+
+ns4x = (navigator.appName == "Netscape") 
+ie4x = (navigator.appName == "Microsoft Internet Explorer") 
+LayerText = "See the color changing ..."; 
+
+function layerWrite(LayerId,LayerText) { 
+ if (ns4x) { 
+  var ColorLayer = document.layers[LayerId].document 
+  ColorLayer.open() 
+  ColorLayer.write(LayerText) 
+  ColorLayer.close() 
+ } 
+ else if (ie4x) document.all[LayerId].innerHTML = LayerText 
+} 
+var speed = 1000 
+
+var ColorIndex = 0 
+
+var ColorArray = Array("red", "blue", "green","yellow"); 
+
+function ChangeColor(){ 
+(ColorIndex < ColorArray.length-1) ? ColorIndex++  : ColorIndex=0; 
+layerWrite('ColorLayer','<font color="'+ColorArray[ColorIndex]+'"><h4>Notice the Color change 
+
+here ...Works only in IE4.x or Netscape 4.x </h4></font>') 
+
+} 
+
+//--> 
+</SCRIPT> 
+<STYLE TYPE="text/css"> 
+<!-- 
+#ColorLayer {position:absolute; left:50; top:100;} 
+--> 
+</STYLE> 
+</HEAD> 
+<BODY BGCOLOR="#FFFFFF" onLoad="setInterval('ChangeColor()',1000)"> 
+<DIV ID="ColorLayer"><h1>See Color of this layer getting changed ...</h1></DIV> 
+</BODY> 
+</HTML> 
+
+Top 
+
+
+
+--------------------------------------------------------------------------------
+
+
+Javascript- Changing text color on mouse over (works only in IE 4.x) Have you noticed changing link color on mouse over? Do you ever wonder how to change the text color on mouse over?. Well, Try the following piece of javascript. 
+ 
+Source Code for changing text color on mouse over: 
+
+<html> 
+<head> 
+<SCRIPT LANGUAGE="JavaScript"> 
+
+<!-- 
+
+ns4x = (document.layers)? true:false 
+ie4x = (document.all)? true:false 
+
+function ChangeLinkColor(Msg,LayerId) { 
+        if (ns4x) { 
+  var MsgLayer = document.layers[LayerId]Document 
+                MsgLayer.open() 
+                MsgLayer.write(MSG) 
+                MsgLayer.close() 
+        } 
+        else if (ie4x) {document.all[LayerId].innerHTML = MSG} 
+} 
+
+function TextMouseOver(LayerId,MSG,link) { 
+        ChangeLinkColor('<font color="red" 
+
+onMouseOut="TextMouseLeave(\''+LayerId+'\',\''+link+'\',\''+MSG+'\')">'+MSG+'</font>',LayerId) 
+} 
+
+function TextMouseLeave(LayerId,MSG,link) { 
+        ChangeLinkColor('<font color="blue" 
+
+onMouseOver="TextMouseOver(\''+LayerId+'\',\''+link+'\',\''+MSG+'\')">'+MSG+'</font>',LayerId) 
+} 
+
+//--> 
+
+</SCRIPT> 
+<STYLE TYPE="text/css"> 
+<!-- 
+A.red {color:red;} 
+A.blue {color:blue;} 
+#Layer1 {position:absolute; left:50; top:50;} 
+#Layer2 {position:absolute; left:50; top:100;} 
+--> 
+</STYLE> 
+</HEAD> 
+
+<BODY BGCOLOR="#FFFFFF"> 
+<b>Pass the mouse over the text (Works only for IE 4.x)</b> 
+<DIV ID="Layer1"><font color="blue"  onMouseOver="TextMouseLeave('Layer1','<h1>Text 
+
+1</h1>','<h1>Text 1</h1>')"><h1>Text 1</h1></font></DIV> 
+<DIV ID="Layer2"><font color="blue"  onMouseOver="TextMouseLeave('Layer2','<h1>Text 
+
+2</h1>','<h1>Text 2</h1>')"><h1>Text 2</h1></font></DIV> 
+
+</BODY> 
+</HTML> 
+  
+

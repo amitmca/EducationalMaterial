@@ -1,0 +1,26 @@
+DELIMITER //
+CREATE FUNCTION display() RETURNS VARCHAR(255)
+     BEGIN
+    
+             DECLARE finished INTEGER DEFAULT 0;
+             DECLARE city_name VARCHAR(50) DEFAULT "";
+             DECLARE list VARCHAR(255) DEFAULT "";
+             DECLARE city_cur CURSOR FOR SELECT ename FROM emp;
+             DECLARE CONTINUE HANDLER FOR NOT FOUND SET finished = 1;
+    
+             OPEN city_cur;
+    
+             get_city: LOOP
+                     FETCH city_cur INTO city_name;
+                     IF finished THEN
+                             LEAVE get_city;
+                     END IF;
+                     SET list = CONCAT(list,", ",city_name);
+             END LOOP get_city;
+    
+             CLOSE city_cur;
+    
+             RETURN SUBSTR(list,3);
+     END
+
+select display();

@@ -1,0 +1,5 @@
+Amit         23         Male
+Ajit         21         Male
+Abhijit         24         Male
+Rohit         23         Male
+Amjit         24         male

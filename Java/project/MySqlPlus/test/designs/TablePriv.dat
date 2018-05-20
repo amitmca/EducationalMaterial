@@ -1,0 +1,168 @@
+[Main]
+SizeX=5880
+SizeY=7335
+[1]
+Name=label_1
+Type=JLabel
+Value=
+X= 240
+Y= 240
+SizeX= 480
+SizeY= 480
+[2]
+Name=label_2
+Type=JLabel
+Value=Select User Name :
+X= 720
+Y= 360
+SizeX= 2280
+SizeY= 360
+[3]
+Name=usrcombo
+Type=JComboBox
+Value=
+X= 3480
+Y= 360
+SizeX= 2160
+SizeY= 360
+[4]
+Name=label_3
+Type=JLabel
+Value=
+X= 240
+Y= 1080
+SizeX= 480
+SizeY= 480
+[5]
+Name=label_4
+Type=JLabel
+Value=Select Database Name :
+X= 720
+Y= 1200
+SizeX= 2280
+SizeY= 360
+[6]
+Name=dbcombo
+Type=JComboBox
+Value=
+X= 3480
+Y= 1200
+SizeX= 2160
+SizeY= 360
+[7]
+Name=lpriv
+Type=JLabel
+Value=Privileges :
+X= 240
+Y= 2520
+SizeX= 2280
+SizeY= 360
+[8]
+Name=cselect
+Type=JCheckBox
+Value=Select
+X= 1440
+Y= 3120
+SizeX= 1080
+SizeY= 360
+[9]
+Name=cinsert
+Type=JCheckBox
+Value=Insert
+X= 1440
+Y= 3840
+SizeX= 1080
+SizeY= 360
+[10]
+Name=cdelete
+Type=JCheckBox
+Value=Delete
+X= 1440
+Y= 4560
+SizeX= 1080
+SizeY= 360
+[11]
+Name=cupdate
+Type=JCheckBox
+Value=Update
+X= 4080
+Y= 3120
+SizeX= 1080
+SizeY= 360
+[12]
+Name=cdrop
+Type=JCheckBox
+Value=Drop
+X= 4080
+Y= 3840
+SizeX= 1080
+SizeY= 360
+[13]
+Name=ccreate
+Type=JCheckBox
+Value=Create
+X= 4080
+Y= 4560
+SizeX= 1080
+SizeY= 360
+[14]
+Name=cwith
+Type=JCheckBox
+Value=With Grant Option
+X= 1440
+Y= 5160
+SizeX= 2160
+SizeY= 360
+[15]
+Name=label_7
+Type=JLabel
+Value=Privilege Statement :
+X= 360
+Y= 5880
+SizeX= 2040
+SizeY= 360
+[16]
+Name=priv
+Type=JTextArea
+X= 2640
+Y= 5760
+SizeX= 3000
+SizeY= 840
+[17]
+Name=btngrant
+Type=JButton
+Value=Grant
+X= 480
+Y= 6720
+SizeX= 1680
+SizeY= 360
+[18]
+Name=btncel
+Type=JButton
+Value=Cancel
+X= 3360
+Y= 6720
+SizeX= 1800
+SizeY= 360
+[19]
+Name=label_5
+Type=JLabel
+X= 240
+Y= 1920
+SizeX= 480
+SizeY= 480
+[20]
+Name=label_6
+Type=JLabel
+Value=Select Table Name :
+X= 720
+Y= 2040
+SizeX= 2280
+SizeY= 360
+[21]
+Name=tablecombo
+Type=JComboBox
+X= 3480
+Y= 2040
+SizeX= 2160
+SizeY= 360

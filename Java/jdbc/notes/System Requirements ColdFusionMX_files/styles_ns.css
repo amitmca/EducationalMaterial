@@ -1,0 +1,282 @@
+BODY {
+	FONT-SIZE: 8pt; FONT-FAMILY: Verdana, Arial; BACKGROUND-COLOR: #ffffff
+}
+H1 {
+	MARGIN-TOP: 8pt; FONT-WEIGHT: bold; FONT-SIZE: 15pt; MARGIN-BOTTOM: 8pt; COLOR: #0000d0; FONT-STYLE: italic; FONT-FAMILY: Arial
+}
+LI.kadov-H1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 11pt; COLOR: #0000d0; FONT-STYLE: italic; FONT-FAMILY: Arial
+}
+H2 {
+	MARGIN-TOP: 8pt; FONT-WEIGHT: bold; FONT-SIZE: 10pt; MARGIN-BOTTOM: 8pt; COLOR: #0000d0; FONT-FAMILY: Arial; TEXT-ALIGN: left
+}
+LI.kadov-H2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #0000d0; FONT-FAMILY: Arial; TEXT-ALIGN: left
+}
+H3 {
+	MARGIN-TOP: 8pt; FONT-WEIGHT: bold; FONT-SIZE: 8pt; MARGIN-BOTTOM: 8pt; COLOR: #0000d0; FONT-FAMILY: Verdana, Arial; LETTER-SPACING: normal
+}
+LI.kadov-H3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #0000d0; FONT-FAMILY: Verdana, Arial; LETTER-SPACING: normal
+}
+H4 {
+	MARGIN-TOP: 8pt; FONT-WEIGHT: bold; FONT-SIZE: 8pt; MARGIN-BOTTOM: 8pt; TEXT-TRANSFORM: none; FONT-STYLE: normal; FONT-FAMILY: Verdana, Arial; FONT-VARIANT: normal
+}
+LI.kadov-H4 {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; TEXT-TRANSFORM: none; FONT-STYLE: normal; FONT-FAMILY: Verdana, Arial; FONT-VARIANT: normal
+}
+A:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #0000d0; FONT-STYLE: normal; FONT-FAMILY: Verdana, Arial; TEXT-DECORATION: underline; x-text-underline: normal
+}
+A:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #0000d0; FONT-STYLE: normal; FONT-FAMILY: Verdana, Arial; TEXT-DECORATION: underline; x-text-underline: normal
+}
+P {
+	MARGIN-TOP: 8pt; FONT-SIZE: 8pt; MARGIN-BOTTOM: 8pt; COLOR: #000000; FONT-FAMILY: Verdana, Arial
+}
+LI.kadov-P {
+	FONT-SIZE: 8pt; COLOR: #000000; FONT-FAMILY: Verdana, Arial
+}
+P.instep {
+	FONT-WEIGHT: normal; FONT-SIZE: 8pt; FONT-FAMILY: Verdana, Arial; LIST-STYLE-TYPE: none
+}
+LI.kadov-P-Cinstep {
+	FONT-WEIGHT: normal; FONT-SIZE: 8pt; FONT-FAMILY: Verdana, Arial; LIST-STYLE-TYPE: none
+}
+P.BULLETS {
+	MARGIN-TOP: 8pt; FONT-WEIGHT: normal; LIST-STYLE-POSITION: outside; FONT-SIZE: 8pt; MARGIN-BOTTOM: 8pt; MARGIN-LEFT: 1pt; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: Verdana, Arial; LIST-STYLE-TYPE: square
+}
+LI.kadov-P-CBULLETS {
+	FONT-WEIGHT: normal; LIST-STYLE-POSITION: outside; FONT-SIZE: 8pt; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: Verdana, Arial; LIST-STYLE-TYPE: square
+}
+A:active {
+	FONT-WEIGHT: bold
+}
+P.note {
+	BORDER-RIGHT: #ccedff 4pt solid; BORDER-TOP: #ccedff 4pt solid; FONT-SIZE: 8pt; BORDER-LEFT: #ccedff 4pt solid; COLOR: #0000d0; LINE-HEIGHT: normal; MARGIN-RIGHT: 6pt; BORDER-BOTTOM: #ccedff 4pt solid; FONT-FAMILY: Verdana, Arial; BACKGROUND-COLOR: #ccedff; TEXT-ALIGN: left
+}
+LI.kadov-P-Cnote {
+	FONT-SIZE: 8pt; COLOR: #0000d0; LINE-HEIGHT: normal; FONT-FAMILY: Verdana, Arial; TEXT-ALIGN: left
+}
+P.warning {
+	BORDER-RIGHT: #e1e1e1 4pt solid; BORDER-TOP: #e1e1e1 4pt solid; FONT-WEIGHT: normal; FONT-SIZE: 8pt; BORDER-LEFT: #e1e1e1 4pt solid; COLOR: #0000a0; BORDER-BOTTOM: #e1e1e1 4pt solid; FONT-FAMILY: Verdana, Arial, "Times New 12"; BACKGROUND-COLOR: #e1e1e1
+}
+LI.kadov-P-Cwarning {
+	FONT-WEIGHT: normal; FONT-SIZE: 8pt; COLOR: #0000a0; FONT-FAMILY: Verdana, Arial, "Times New 12"
+}
+P.NUMBERS {
+	MARGIN-TOP: 8pt; FONT-WEIGHT: normal; LIST-STYLE-POSITION: outside; FONT-SIZE: 8pt; MARGIN-BOTTOM: 8pt; MARGIN-LEFT: 1pt; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: Verdana, Arial
+}
+LI.kadov-P-CNUMBERS {
+	FONT-WEIGHT: normal; LIST-STYLE-POSITION: outside; FONT-SIZE: 8pt; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: Verdana, Arial
+}
+P.BlueSky-Bullets {
+	MARGIN-TOP: 1pt; FONT-SIZE: 8pt; MARGIN-LEFT: 1pt; COLOR: #0093ff; FONT-FAMILY: Verdana, Arial; LIST-STYLE-TYPE: square
+}
+LI.kadov-P-CBlueSky-Bullets {
+	FONT-SIZE: 8pt; COLOR: #0093ff; FONT-FAMILY: Verdana, Arial; LIST-STYLE-TYPE: square
+}
+P.IndentedBullets {
+	MARGIN-TOP: 8pt; MARGIN-BOTTOM: 8pt; MARGIN-LEFT: 5pt; LIST-STYLE-TYPE: square
+}
+LI.kadov-P-CIndentedBullets {
+	LIST-STYLE-TYPE: square
+}
+P.Question {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #0000d0; FONT-FAMILY: Verdana, Arial
+}
+LI.kadov-P-CQuestion {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #0000d0; FONT-FAMILY: Verdana, Arial
+}
+H5 {
+	MARGIN-TOP: 8pt; FONT-WEIGHT: bold; FONT-SIZE: 8pt; MARGIN-BOTTOM: 8pt; COLOR: #0000d0; FONT-FAMILY: Verdana, Arial
+}
+LI.kadov-H5 {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #0000d0; FONT-FAMILY: Verdana, Arial
+}
+P.SAPHHIRE-BULLETS {
+	MARGIN-TOP: 1pt; FONT-WEIGHT: normal; MARGIN-BOTTOM: 10pt; MARGIN-LEFT: 1pt; COLOR: #0000d0; FONT-STYLE: normal; LIST-STYLE-TYPE: square
+}
+LI.kadov-P-CSAPHHIRE-BULLETS {
+	FONT-WEIGHT: normal; COLOR: #0000d0; FONT-STYLE: normal; LIST-STYLE-TYPE: square
+}
+P.NoteTip-Heading {
+	MARGIN-TOP: 1pt; FONT-WEIGHT: bold; FONT-SIZE: 8pt; MARGIN-BOTTOM: 4pt; COLOR: #0000ce; FONT-FAMILY: Verdana, Arial
+}
+LI.kadov-P-CNoteTip-Heading {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #0000ce; FONT-FAMILY: Verdana, Arial
+}
+P.tip {
+	BORDER-RIGHT: #ffffdf 4pt solid; BORDER-TOP: #ffffdf 4pt solid; MARGIN-TOP: 1pt; MARGIN-BOTTOM: 8pt; BORDER-LEFT: #ffffdf 4pt solid; COLOR: #0000d0; MARGIN-RIGHT: 1pt; BORDER-BOTTOM: #ffffdf 4pt solid; BACKGROUND-COLOR: #ffffdf
+}
+LI.kadov-P-Ctip {
+	COLOR: #0000d0
+}
+H6 {
+	MARGIN-TOP: 8pt; FONT-WEIGHT: bold; FONT-SIZE: 8pt; MARGIN-BOTTOM: 8pt; FONT-FAMILY: Verdana, Arial
+}
+LI.kadov-H6 {
+	
+}
+P.PopupHeading {
+	FONT-WEIGHT: bold; COLOR: #0000d0
+}
+LI.kadov-P-CPopupHeading {
+	FONT-WEIGHT: bold; COLOR: #0000d0
+}
+P.NumBul {
+	MARGIN-TOP: 8pt; FONT-SIZE: 8pt; MARGIN-BOTTOM: 8pt; MARGIN-LEFT: 8pt; FONT-FAMILY: Verdana, Arial; LIST-STYLE-TYPE: square
+}
+LI.kadov-P-CNumBul {
+	FONT-SIZE: 8pt; FONT-FAMILY: Verdana, Arial; LIST-STYLE-TYPE: square
+}
+P.DialBul {
+	MARGIN-TOP: 1pt; MARGIN-BOTTOM: 1pt; LIST-STYLE-TYPE: square
+}
+LI.kadov-P-CDialBul {
+	LIST-STYLE-TYPE: square
+}
+P.RHOffice {
+	BORDER-RIGHT: #e1e1e1 2pt solid; BORDER-TOP: #e1e1e1 2pt solid; MARGIN-TOP: 6pt; MARGIN-BOTTOM: 6pt; BORDER-LEFT: #e1e1e1 2pt solid; COLOR: #0093ff; BORDER-BOTTOM: #e1e1e1 2pt solid; BACKGROUND-COLOR: #e1e1e1
+}
+LI.kadov-P-CRHOffice {
+	COLOR: #0093ff
+}
+P.DropDownText {
+	MARGIN-TOP: 1pt; MARGIN-BOTTOM: 4pt; MARGIN-LEFT: 14pt
+}
+LI.kadov-P-CDropDownText {
+	
+}
+SPAN.Big {
+	FONT-WEIGHT: bolder; FONT-SIZE: larger; COLOR: #0093ff; FONT-FAMILY: Verdana, Arial
+}
+SPAN.Code {
+	FONT-WEIGHT: normal; FONT-SIZE: 8pt; COLOR: #000000; FONT-FAMILY: monospace
+}
+A.expandspot {
+	FONT-WEIGHT: normal; CURSOR: hand; COLOR: #0000d0; FONT-STYLE: normal; TEXT-DECORATION: underline; x-text-underline: normal
+}
+A.EXPANDSPOT:visited {
+	FONT-WEIGHT: normal; FONT-SIZE: 7pt; CURSOR: hand; COLOR: #0000d0; FONT-STYLE: normal; TEXT-DECORATION: underline; x-text-underline: normal
+}
+A.expandspot:hover {
+	FONT-WEIGHT: normal; CURSOR: hand; COLOR: #009933; FONT-STYLE: normal; TEXT-DECORATION: underline; x-text-underline: normal
+}
+SPAN.expandtext {
+	FONT-WEIGHT: normal; COLOR: #800000; FONT-STYLE: normal
+}
+A.dropspot {
+	FONT-WEIGHT: normal; CURSOR: hand; COLOR: #0000d0; FONT-STYLE: normal; TEXT-DECORATION: underline; x-text-underline: normal
+}
+A.dropspot:visited {
+	FONT-WEIGHT: normal; CURSOR: hand; COLOR: #0000d0; FONT-STYLE: normal; TEXT-DECORATION: underline; x-text-underline: normal
+}
+A.dropspot:hover {
+	FONT-WEIGHT: normal; CURSOR: hand; COLOR: #009933; FONT-STYLE: normal; TEXT-DECORATION: underline; x-text-underline: normal
+}
+A.glossterm {
+	CURSOR: hand; COLOR: #800000; FONT-STYLE: italic
+}
+SPAN.glosstext {
+	FONT-WEIGHT: normal; COLOR: #0000ff; FONT-STYLE: italic
+}
+TD OL {
+	MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px
+}
+TD UL {
+	MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px
+}
+P.Onestep {
+	
+}
+LI.kadov-P-COnestep {
+	
+}
+P.TableText {
+	MARGIN-TOP: 2pt; FONT-SIZE: 8pt; MARGIN-BOTTOM: 2pt; COLOR: #000000; FONT-FAMILY: Verdana, Arial
+}
+LI.kadov-p-CTableText {
+	FONT-SIZE: 8pt; COLOR: #000000; FONT-FAMILY: Verdana, Arial
+}
+P.note2 {
+	BORDER-RIGHT: #99cccc 4pt solid; BORDER-TOP: #99cccc 4pt solid; FONT-SIZE: 8pt; BORDER-LEFT: #99cccc 4pt solid; COLOR: #003333; LINE-HEIGHT: normal; MARGIN-RIGHT: 6pt; BORDER-BOTTOM: #99cccc 4pt solid; FONT-FAMILY: Verdana, Arial; BACKGROUND-COLOR: #99cccc; TEXT-ALIGN: left
+}
+LI.kadov-P-Cnote2 {
+	FONT-SIZE: 8pt; COLOR: #003333; LINE-HEIGHT: normal; FONT-FAMILY: Verdana, Arial; TEXT-ALIGN: left
+}
+P.Breadcrumbs {
+	BORDER-TOP: #0000cc 4px double; FONT-SIZE: 8pt; PADDING-BOTTOM: 4px; COLOR: #000000; PADDING-TOP: 4px; BORDER-BOTTOM: #0000cc 4px double; FONT-FAMILY: Verdana, Arial
+}
+LI.kadov-p-CBreadcrumbs {
+	FONT-SIZE: 8pt; COLOR: #000000; FONT-FAMILY: Verdana, Arial
+}
+OL {
+	MARGIN-TOP: 0pt; FONT-SIZE: 8pt; MARGIN-BOTTOM: 0pt; FONT-FAMILY: Verdana, Arial
+}
+UL {
+	MARGIN-TOP: 0pt; FONT-SIZE: 8pt; MARGIN-BOTTOM: 0pt; FONT-FAMILY: Verdana, Arial
+}
+A.PopupHotspot {
+	FONT-WEIGHT: normal; COLOR: #0000d0; FONT-STYLE: normal; TEXT-DECORATION: underline; x-text-underline: normal
+}
+A.POPUPHOTSPOT:visited {
+	FONT-WEIGHT: normal; COLOR: #0000d0; FONT-STYLE: normal; TEXT-DECORATION: underline; x-text-underline: normal
+}
+A.POPUPHOTSPOT:hover {
+	FONT-WEIGHT: normal; COLOR: #009933; FONT-STYLE: normal; TEXT-DECORATION: underline; x-text-underline: normal
+}
+A.popupspot {
+	FONT-WEIGHT: normal; COLOR: #0000d0; FONT-STYLE: normal; TEXT-DECORATION: underline; x-text-underline: normal
+}
+A.POPUPSPOT:visited {
+	FONT-WEIGHT: normal; COLOR: #0000d0; FONT-STYLE: normal; TEXT-DECORATION: underline; x-text-underline: normal
+}
+A.POPUPSPOT:hover {
+	FONT-WEIGHT: normal; COLOR: #009933; FONT-STYLE: normal; TEXT-DECORATION: underline; x-text-underline: normal
+}
+A:hover {
+	FONT-WEIGHT: bold; COLOR: #009933; FONT-STYLE: normal; TEXT-DECORATION: underline; x-text-underline: normal
+}
+P.Definition {
+	BORDER-RIGHT: #ccffcc 4px solid; BORDER-TOP: #ccffcc 4px solid; BORDER-LEFT: #ccffcc 4px solid; COLOR: #0000d0; BORDER-BOTTOM: #ccffcc 4px solid; BACKGROUND-COLOR: #ccffcc
+}
+LI.kadov-P-CDefinition {
+	COLOR: #0000d0
+}
+P.BULLETS-G {
+	LIST-STYLE-IMAGE: url(image10.gif); MARGIN: 6pt 1pt; TEXT-INDENT: 0px; x-next-class: BULLETS; x-next-type: P
+}
+LI.kadov-P-CBULLETS-G {
+	LIST-STYLE-IMAGE: url(image10.gif); TEXT-INDENT: 0px
+}
+SPAN.topicsanywhere {
+	FONT-SIZE: 7pt; COLOR: #003399; TEXT-DECORATION: none; x-text-underline: Off
+}
+P.filetype {
+	LIST-STYLE-IMAGE: url(image10.gif); MARGIN: 6pt 1pt; TEXT-INDENT: 0px
+}
+LI.kadov-p-Cfiletype {
+	LIST-STYLE-IMAGE: url(image10.gif); TEXT-INDENT: 0px
+}
+A.FORUMLINK {
+	FONT-WEIGHT: normal; FONT-SIZE: 8pt; COLOR: #0000d0; FONT-STYLE: normal; TEXT-DECORATION: none; x-text-underline: Off
+}
+A.FORUMLINK:visited {
+	FONT-WEIGHT: normal; FONT-SIZE: 8pt; COLOR: #0000d0; FONT-STYLE: normal; TEXT-DECORATION: none; x-text-underline: Off
+}
+A.FORUMLINK:hover {
+	FONT-WEIGHT: normal; FONT-SIZE: 8pt; COLOR: #009933; FONT-STYLE: normal; TEXT-DECORATION: none; x-text-underline: Off
+}
+OL OL {
+	MARGIN-TOP: 8px
+}
+OL UL {
+	MARGIN-TOP: 8px
+}
+UL UL {
+	MARGIN-TOP: 8px
+}
+UL OL {
+	MARGIN-TOP: 8px
+}

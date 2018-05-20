@@ -1,0 +1,51 @@
+.descriptions {
+	FONT: 10pt/11pt Verdana, Arial, Helvetica, sans-serif; TEXT-TRANSFORM: none; COLOR: #000000; TEXT-DECORATION: none
+}
+.copyright {
+	FONT: 8pt/8pt Verdana, Arial, Helvetica, sans-serif; COLOR: #6666ff
+}
+.itemdesc {
+	FONT: bold 8pt/15pt Verdana, Arial, Helvetica, sans-serif; TEXT-TRANSFORM: capitalize; COLOR: #0066ff; TEXT-DECORATION: none
+}
+.title {
+	FONT: bold 10pt/15pt Verdana, Arial, Helvetica, sans-serif; TEXT-TRANSFORM: capitalize; COLOR: #cc0033; TEXT-DECORATION: none
+}
+.subtitle {
+	BORDER-BOTTOM-WIDTH: thin; FONT: bold 10pt/25pt Verdana, Arial; TEXT-TRANSFORM: none; COLOR: #006666; BACKGROUND-COLOR: #ffffcc; TEXT-DECORATION: none
+}
+.bottomlinks {
+	FONT: small-caps 8pt/15pt Verdana, Arial, Helvetica, sans-serif; COLOR: #6666ff; TEXT-DECORATION: none
+}
+A {
+	TEXT-DECORATION: none
+}
+A:link {
+	COLOR: #3399cc
+}
+A:visited {
+	COLOR: #3399cc
+}
+A:hover {
+	COLOR: #cc0033
+}
+.lineItem {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: teal; FONT-STYLE: normal; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.newsheader {
+	FONT: bold 10pt/16pt Verdana, Arial, Helvetica, sans-serif; TEXT-TRANSFORM: capitalize; COLOR: teal; BACKGROUND-COLOR: transparent
+}
+.boldtext {
+	FONT: bold 10pt/16pt Verdana, Arial, Helvetica, sans-serif; TEXT-TRANSFORM: none; COLOR: #000000; TEXT-DECORATION: none
+}
+.subdesc {
+	FONT: 8pt/10pt Verdana, Arial, Helvetica, sans-serif; TEXT-TRANSFORM: none; COLOR: red; TEXT-DECORATION: none
+}
+.code {
+	FONT: 8pt/10pt Verdana, Arial, Helvetica, sans-serif; TEXT-TRANSFORM: none; COLOR: red; BACKGROUND-COLOR: silver; TEXT-DECORATION: none
+}
+.highlight {
+	FONT-WEIGHT: bold; FONT-SIZE: 11pt; COLOR: red; FONT-STYLE: normal; FONT-FAMILY: Verdana, Arial; BACKGROUND-COLOR: transparent; FONT-VARIANT: small-caps
+}
+.navigatemenu {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; TEXT-TRANSFORM: capitalize; COLOR: blue; FONT-FAMILY: Verdana, Arial; FONT-VARIANT: small-caps
+}

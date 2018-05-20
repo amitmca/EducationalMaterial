@@ -1,0 +1,41 @@
+[Main]
+SizeX=4800
+SizeY=2640
+[1]
+Name=label_1
+Type=JLabel
+X= 120
+Y= 720
+SizeX= 480
+SizeY= 480
+[2]
+Name=label_2
+Type=JLabel
+Value=Select User Name :
+X= 600
+Y= 840
+SizeX= 2040
+SizeY= 360
+[3]
+Name=usrcombo
+Type=JComboBox
+X= 2760
+Y= 840
+SizeX= 1920
+SizeY= 360
+[4]
+Name=button_1
+Type=JButton
+Value=button_1
+X= 600
+Y= 1800
+SizeX= 1680
+SizeY= 360
+[5]
+Name=button_2
+Type=JButton
+Value=button_2
+X= 2760
+Y= 1800
+SizeX= 1920
+SizeY= 360

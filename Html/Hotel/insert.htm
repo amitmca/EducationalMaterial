@@ -1,0 +1,254 @@
+<?php session_start(); ?>
+<html>
+<head>
+<title>Welcome To Aniket's Hotel</title>
+
+<script language="javascript">
+
+function checklogin()
+{
+  var err="";
+   var rno=document.form.rno.value;
+   var fname=document.form.fname.value;
+   var city=document.form.city.value;
+   var contact=document.form.contact.value;
+   var no=document.form.no.value;
+   var addr=document.form.addr.value;
+   
+
+    if(document.getElementById("rno").value=="")
+  { err +="\nRoom No field cannot be blank .\t\n";}
+  
+    if(isNaN(rno))
+  { err +="\nPlease enter valid Room number.\t\n";}
+   
+  if(document.getElementById("fname").value=="")
+  { err +="\nName field cannot be blank .\t\n";}
+  
+ if(fname.length<=5 || !isNaN(fname))
+  { err +="\nPlease enter a valid name .\t\n";}
+
+    if(document.getElementById("addr").value=="")
+  { err +="\nAddress field cannot be blank .\t\n";}
+  
+   if(addr.length<=5 || !isNaN(addr))
+  { err +="\nPlease enter a valid address .\t\n";}
+  
+    if(document.getElementById("city").value=="")
+  { err +="\nCity field cannot be blank .\t\n";}
+  
+   if(city.length<=1 || !isNaN(city))
+  { err +="\nPlease enter a valid city name .\t\n";}
+
+    if(document.getElementById("contact").value=="")
+  { err +="\nContact field cannot be blank .\t\n";}
+  
+    if(isNaN(contact)|| contact.length<6)
+  { err +="\nPlease enter valid Contact number.\t\n";}
+
+    if(document.getElementById("no").value=="")
+  { err +="\nMembers field cannot be blank .\t\n";}
+  
+   if(isNaN(no))
+  { err +="\nPlease enter a valid NO. Of memebers .\t\n";}
+
+    if(document.getElementById("month").value=="")
+  { err +="\nMonth field cannot be blank .\t\n";}
+  
+    if(document.getElementById("day").value=="")
+  { err +="\nDay field cannot be blank .\t\n";}
+  
+     if(document.getElementById("year").value=="")
+  { err +="\nYear field cannot be blank .\t\n";}
+  
+    if(document.getElementById("day1").value=="")
+  { err +="\nWeekday field cannot be blank .\t\n";}
+  
+   if(err=="")
+  { return true;}
+  else
+  { alert(err) 
+   return false;
+   }
+}
+</script>
+
+</head>
+<body >
+<FORM  name=form  action="http://localhost:8080/examples/servlet/insert" method="post">
+<table border="0" width="712" height="513" align="center">
+	<tr>
+		<td height="509" width="33" rowspan="4">
+		<img border="0" src="images/left.gif" width="42" height="509"></td>
+		<td height="30" width="627" colspan="3">
+		<img border="0" src="images/up.gif" width="705" height="42"></td>
+		<td height="509" width="38" rowspan="4">
+		<img border="0" src="images/right.gif" width="42" height="492"></td>
+	</tr>
+	
+	<tr bgcolor="skyblue">
+		<td height="25" width="150">
+		<h2>
+		<SCRIPT language=JavaScript1.2 src="usingitJSNeonLightsTextEffect10.js"></SCRIPT>		
+		<font color="red">to</font>
+		</h2>
+		<img border="0" src="images/header.gif" width="94" height="24">
+		<font color="purple"><b>Hotel</b></font></td>
+		<td height="25" width="272">
+		<script src="htemplate2js.js" type="text/javascript"></script><noscript><OBJECT id="htemplate2obj" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" WIDTH=530 HEIGHT=50> <PARAM NAME=movie VALUE="htemplate2.swf"> <PARAM NAME=menu VALUE=false> <PARAM NAME=quality VALUE=high> <PARAM NAME=bgcolor VALUE=#FFFFFF> <EMBED src="htemplate2.swf" menu=false quality=high bgcolor=#FFFFFF  WIDTH=530 HEIGHT=50 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></EMBED></OBJECT></noscript>
+		</td>
+	</tr>
+	
+	<tr>
+		<td height="356" width="627" colspan="3" align="center" valign="middle"> 
+		<center>
+		<table cellpadding="0" cellspacing="0" width="705" height="373">
+			<!-- MSTableType="layout" -->
+			<tr>
+				<td width="144" align="center">
+				<center><a href="http://localhost/hotel/all.php"><FONT face="Verdana, Arial, Helvetica" color="red"><b><img src="images/button_view.gif" border="0"> All Entries</b></a></center>
+				<script src="template6js.js" type="text/javascript"></script><noscript><OBJECT id="template6obj" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" WIDTH=226 HEIGHT=320> <PARAM NAME=movie VALUE="template6.swf"> <PARAM NAME=menu VALUE=false> <PARAM NAME=quality VALUE=high> <PARAM NAME=wmode VALUE=opaque> <PARAM NAME=bgcolor VALUE=#FFFFFF> <EMBED src="template6.swf" menu=false quality=high wmode=opaque bgcolor=#FFFFFF  WIDTH=226 HEIGHT=320 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></EMBED></OBJECT></noscript>
+				</td>
+				<td width="561" height="373" align="center">
+				<fieldset style="background-image:url('images/bg1.jpg')">
+				<table cellpadding="0" cellspacing="0" width="467" height="371">
+					<!-- MSTableType="layout" -->
+					<tr>
+					<td width="467" height="371" valign="top">
+					<table cellpadding="0" cellspacing="0" width="467" height="377">
+						<!-- MSTableType="layout" -->
+						<tr>
+							<td height="34" align="center" colspan="3">
+							<FONT face="Verdana, Arial, Helvetica" color="green"><b>Allocation Details<hr style="color:red"></b></FONT>
+							</td>
+						</tr>
+						<tr>
+							<td><FONT face="Verdana, Arial, Helvetica" size="-1" color="#0055bb">Room No</FONT></td>
+							<td align="center"><b>:</b></td>
+							<td height="33"><input type="text" size="15" name="rno" maxlength="20"></td>
+						</tr>
+						<tr>
+							<td><FONT face="Verdana, Arial, Helvetica" size="-1" color="#0055bb">Full Name</FONT></td>
+							<td align="center"><b>:</b></td>
+							<td height="33"><input type="text" size="50" name="fname"></td>
+						</tr>
+						<tr>
+							<td><FONT face="Verdana, Arial, Helvetica" size="-1" color="#0055bb">Address</FONT></td>
+							<td align="center"><b>:</b></td>
+							<td height="68"><textarea name="addr" rows="4" cols="30"></textarea></td>
+						</tr>
+						<tr>
+							<td><FONT face="Verdana, Arial, Helvetica" size="-1" color="#0055bb">City</FONT></td>
+							<td align="center"><b>:</b></td>
+							<td height="33"><input type="text" size="15" name="city" maxlength="20"></td>
+						</tr>
+						<tr>
+							<td><FONT face="Verdana, Arial, Helvetica" size="-1" color="#0055bb">Contact No</FONT></td>
+							<td align="center"><b>:</b></td>
+							<td height="34"><input type="text" size="10" name="contact" maxlength="10"></td>
+						</tr>
+						<tr>
+							<td><FONT face="Verdana, Arial, Helvetica" size="-2" color="#0055bb">
+							NO. Of Members</FONT></td>
+							<td align="center"><b>:</b></td>
+							<td height="36"><input type="text" size="10" name="no" maxlength="10"></td>
+						</tr>
+						<tr>
+							<td><FONT face="Verdana, Arial, Helvetica" size="-1" color="#0055bb">Date</FONT></td>
+							<td align="center"><b>:</b></td>
+							<td height="37">
+							 <select name="month" id="month" size="1">
+                   <OPTION value="" selected>Month</OPTION>
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                    <option value="3">March</option>
+                    <option value="4">April</option>
+                    <option value="5">May</option>
+                    <option value="6">June</option>
+                    <option value="7">July</option>
+                    <option value="8">August</option>
+                    <option value="9">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                  </select>
+				<select name="day" id="day" size="1">
+				  <OPTION value="" selected>Day</OPTION>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                  <option value="27">27</option>
+                  <option value="28">28</option>
+                  <option value="29">29</option>
+                  <option value="30">30</option>
+                  <option value="31">31</option>
+                </select>
+                 
+                  <select name="year" id="year" size="1">
+                   <OPTION value="" selected>Year</OPTION>
+					<option value="2009">2009</option>
+                  </select>
+
+							</td>
+						</tr>
+						<tr>
+							<td width="97"><FONT face="Verdana, Arial, Helvetica" size="-1" color="#0055bb">Day</FONT></td>
+							<td width="11" align="center"><b>:</b></td>
+							<td height="35" width="359">
+							<select name="day1" id="day1" size="1">
+		                    <OPTION value="" selected>Select</OPTION>
+		                    <option value="sunday">Sunday</option>
+		                    <option value="monday">Monday</option>
+		                    <option value="tuesday">Tuesday</option>
+   		                    <option value="wednesday">Wednesday</option>
+  		                    <option value="thursday">Thursday</option>
+  		                    <option value="friday">Friday</option>
+   		                    <option value="saturaday">Saturaday</option>
+			                </select>
+							</td>
+						</tr>
+						<tr>
+							<td height="34" colspan="3" align="center"><input type="image" src="images/Submit.gif" onclick="return checklogin();"></td>
+						</tr>
+					</table>
+					</td>
+					</tr>
+				</table>
+				</fieldset>
+				</td>
+			</tr>
+		</table>
+		</center>
+		</td>
+	</tr>
+	<tr>
+		<td height="44" width="627" colspan="3">
+		<img border="0" src="images/bttm.gif" width="704" height="42"></td>
+	</tr>
+</table>
+</FORM>
+</body>
+</html>

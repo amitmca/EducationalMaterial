@@ -1,0 +1,138 @@
+
+	
+		/*          Date :-21-2-2008	 Tables :- student,book,book_status       */ 
+
+create table student(mno number(3) primary key,sname varchar(20) not null,course varchar(20) not null);
+
+
+
+create table Book(bno number(3) primary key,title varchar(20) not null,category varchar(20),author varchar(20),price number(5),status varchar(20) constraint book_check check(status in('issued','available','lost')));
+
+
+
+create table book_status(mno number(3) references student(mno) on delete cascade,bno number(3) references book(bno) on delete cascade,idate date,rdate date,fcharged number(3),fpaid number(3),constraint pk_bs primary key(mno,bno));
+
+
+
+
+       select * from student;
+
+       MNO SNAME                COURSE
+---------- -------------------- --------------------
+        10 amit                 MCA
+        20 abhijit              MCA
+        30 yogesh               MCA
+        40 Hrushikesh           MCM
+        50 sachin               MCM
+        60 Rohit                MCM
+
+6 rows selected.
+
+ select * from book;
+ 
+       BNO TITLE                CATEGORY             AUTHOR
+---------- -------------------- -------------------- --------------------
+     PRICE STATUS
+---------- --------------------
+       101 Database             DBMS                 LEE
+       200 issued
+
+       102 System               Operating System     Galvin
+       450 issued
+
+       105 Linux                System               Morris Batch
+       250 available
+
+
+       BNO TITLE                CATEGORY             AUTHOR
+---------- -------------------- -------------------- --------------------
+     PRICE STATUS
+---------- --------------------
+       106 RDBMS                Database             abhijit
+       350 available
+
+
+  select * from book_status;
+
+       MNO        BNO IDATE     RDATE       FCHARGED      FPAID
+---------- ---------- --------- --------- ---------- ----------
+        10        102 01-FEB-06 08-FEB-06          0          0
+        10        101 01-FEB-06 08-FEB-06          0          0
+        20        105 12-MAR-05 19-MAR-05          0          0
+        40        101 17-JAN-05 15-FEB-05         60         60
+        50        102 12-MAR-05 17-MAR-05          0          0
+        60        106 21-FEB-08 28-FEB-08          0          0
+        40        105 01-FEB-08 08-FEB-08          0          0
+
+
+
+
+						QUERIES
+
+
+
+2)  select * from book where author='LEE';
+
+
+
+       BNO TITLE                CATEGORY             AUTHOR
+---------- -------------------- -------------------- --------------------
+     PRICE STATUS
+---------- --------------------
+       101 Database             DBMS                 LEE
+       200 issued
+
+
+
+
+3) select title,category,author,price,idate from student s,book b,book_status r where b.price>=150
+ and s.course='MCA' and s.mno=r.mno and b.bno=r.bno;
+
+
+TITLE                CATEGORY             AUTHOR                    PRICE
+-------------------- -------------------- -------------------- ----------
+IDATE
+---------
+System               Operating System     Galvin                      450
+01-FEB-06
+
+Database             DBMS                 LEE                         200
+01-FEB-06
+
+Linux                System               Morris Batch                250
+12-MAR-05
+
+
+
+4)
+
+ select title,category,author,price from student s,book b,book_status r where b.category='System' and s.course='MCM' and s.mno=r.mno and b.bno=r.bno;
+
+TITLE                CATEGORY             AUTHOR                    PRICE
+-------------------- -------------------- -------------------- ----------
+Linux                System               Morris Batch                250
+
+
+
+
+
+5)  select title,category,author,price,idate from student s,book b,book_status r where b.price>=250
+ and s.course='MCA' and r.idate='1 feb 2006' and s.mno=r.mno and b.bno=r.bno;
+
+TITLE                CATEGORY             AUTHOR                    PRICE
+-------------------- -------------------- -------------------- ----------
+IDATE
+---------
+System               Operating System     Galvin                      450
+01-FEB-06
+
+
+
+
+
+6) delete from book where status='lost';
+
+
+7)	create view view1 as select mno,sum(fpaid) sum1 from book_status group by mno;
+
+	select mno from view1 where sum1=(select max(sum1) from view1);	

@@ -1,0 +1,18 @@
+	CREATE FUNCTION PERNAME(text) RETURNS text AS'
+	DECLARE 
+	MYCURSOR CURSOR FOR
+	select pname from company as c,person as p,CP as r where c.cno=r.cno and p.pno=r.pno and 		cname=$1;
+	per_name person.pname%type;
+	BEGIN
+	OPEN MYCURSOR;
+	LOOP
+	FETCH MYCURSOR INTO per_name;
+	EXIT WHEN NOT FOUND;
+	RAISE NOTICE ''%  '',per_name;
+	END LOOP;
+	CLOSE MYCURSOR;
+	RETURN true;
+	END;
+	'LANGUAGE 'plpgsql';
+ 
+	

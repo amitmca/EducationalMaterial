@@ -1,0 +1,102 @@
+[Main]
+SizeX=5775
+SizeY=5775
+[1]
+Name=leno
+Type=JLabel
+Value=Employee Number
+X= 720
+Y= 960
+SizeX= 2400
+SizeY= 360
+[2]
+Name=label_2
+Type=JLabel
+Value=EMPLOYEE DETAILS
+X= 2040
+Y= 360
+SizeX= 2520
+SizeY= 360
+[3]
+Name=teno
+Type=JTextField
+X= 3840
+Y= 960
+SizeX= 1440
+SizeY= 360
+[4]
+Name=lename
+Type=JLabel
+Value=Employee Name
+X= 720
+Y= 1560
+SizeX= 2400
+SizeY= 360
+[5]
+Name=tname
+Type=JTextField
+X= 3840
+Y= 1560
+SizeX= 1440
+SizeY= 360
+[6]
+Name=lsalary
+Type=JLabel
+Value=Salary
+X= 720
+Y= 2160
+SizeX= 2400
+SizeY= 360
+[7]
+Name=tsal
+Type=JTextField
+X= 3840
+Y= 2160
+SizeX= 1440
+SizeY= 360
+[8]
+Name=ldesig
+Type=JLabel
+Value=Designation
+X= 720
+Y= 2760
+SizeX= 2400
+SizeY= 360
+[9]
+Name=tdesig
+Type=JTextField
+X= 3840
+Y= 2760
+SizeX= 1440
+SizeY= 360
+[10]
+Name=bsave
+Type=JButton
+Value=SAVE
+X= 720
+Y= 3360
+SizeX= 1080
+SizeY= 360
+[11]
+Name=bshow
+Type=JButton
+Value=SHOW
+X= 2640
+Y= 3360
+SizeX= 1080
+SizeY= 360
+[12]
+Name=bexit
+Type=JButton
+Value=EXIT
+X= 4560
+Y= 3360
+SizeX= 1080
+SizeY= 360
+[13]
+Name=ta
+Type=JTextArea
+X= 600
+Y= 3840
+SizeX= 5040
+SizeY= 1920

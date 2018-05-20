@@ -1,0 +1,93 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Menus", "Menus.vbproj", "{F2950A7E-27A0-4E0B-B871-D43B0DC41899}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ContextMenus", "..\ContextMenus\ContextMenus.vbproj", "{22908631-DF49-4690-A221-9C21382D9DBE}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "OpenFileDialog", "..\OpenFileDialog\OpenFileDialog.vbproj", "{F78B9B62-6084-430E-A870-F5542B5AB389}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SaveFileDialog", "..\SaveFileDialog\SaveFileDialog.vbproj", "{1AF53350-BD52-4A2D-9045-D939AFDDB94C}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FontDialog", "..\FontDialog\FontDialog.vbproj", "{84F05BA3-3569-4C9B-80D5-453DFBF2D59C}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Printing", "..\Printing\Printing.vbproj", "{8731D293-8836-4FC0-AD94-06351E8EB2FE}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DrawMenuItem", "..\DrawMenuItem\DrawMenuItem.vbproj", "{894BCBBA-D8C9-4D91-865C-887F13B1EFC1}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CreateMenus", "..\CreateMenus\CreateMenus.vbproj", "{3FDA9806-D08A-4406-A1AE-326A8EA63BF9}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MDIMenus", "..\MDIMenus\MDIMenus.vbproj", "{8535172D-83E0-4A05-A377-E20265935B56}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ColorDialog", "..\ColorDialog\ColorDialog.vbproj", "{0BF5AD26-4DE1-40B3-B4FA-C10DAFAF44AE}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{F2950A7E-27A0-4E0B-B871-D43B0DC41899}.Debug.ActiveCfg = Debug|.NET
+		{F2950A7E-27A0-4E0B-B871-D43B0DC41899}.Debug.Build.0 = Debug|.NET
+		{F2950A7E-27A0-4E0B-B871-D43B0DC41899}.Release.ActiveCfg = Release|.NET
+		{F2950A7E-27A0-4E0B-B871-D43B0DC41899}.Release.Build.0 = Release|.NET
+		{22908631-DF49-4690-A221-9C21382D9DBE}.Debug.ActiveCfg = Debug|.NET
+		{22908631-DF49-4690-A221-9C21382D9DBE}.Debug.Build.0 = Debug|.NET
+		{22908631-DF49-4690-A221-9C21382D9DBE}.Release.ActiveCfg = Release|.NET
+		{22908631-DF49-4690-A221-9C21382D9DBE}.Release.Build.0 = Release|.NET
+		{F78B9B62-6084-430E-A870-F5542B5AB389}.Debug.ActiveCfg = Debug|.NET
+		{F78B9B62-6084-430E-A870-F5542B5AB389}.Debug.Build.0 = Debug|.NET
+		{F78B9B62-6084-430E-A870-F5542B5AB389}.Release.ActiveCfg = Release|.NET
+		{F78B9B62-6084-430E-A870-F5542B5AB389}.Release.Build.0 = Release|.NET
+		{1AF53350-BD52-4A2D-9045-D939AFDDB94C}.Debug.ActiveCfg = Debug|.NET
+		{1AF53350-BD52-4A2D-9045-D939AFDDB94C}.Debug.Build.0 = Debug|.NET
+		{1AF53350-BD52-4A2D-9045-D939AFDDB94C}.Release.ActiveCfg = Release|.NET
+		{1AF53350-BD52-4A2D-9045-D939AFDDB94C}.Release.Build.0 = Release|.NET
+		{84F05BA3-3569-4C9B-80D5-453DFBF2D59C}.Debug.ActiveCfg = Debug|.NET
+		{84F05BA3-3569-4C9B-80D5-453DFBF2D59C}.Debug.Build.0 = Debug|.NET
+		{84F05BA3-3569-4C9B-80D5-453DFBF2D59C}.Release.ActiveCfg = Release|.NET
+		{84F05BA3-3569-4C9B-80D5-453DFBF2D59C}.Release.Build.0 = Release|.NET
+		{8731D293-8836-4FC0-AD94-06351E8EB2FE}.Debug.ActiveCfg = Debug|.NET
+		{8731D293-8836-4FC0-AD94-06351E8EB2FE}.Debug.Build.0 = Debug|.NET
+		{8731D293-8836-4FC0-AD94-06351E8EB2FE}.Release.ActiveCfg = Release|.NET
+		{8731D293-8836-4FC0-AD94-06351E8EB2FE}.Release.Build.0 = Release|.NET
+		{894BCBBA-D8C9-4D91-865C-887F13B1EFC1}.Debug.ActiveCfg = Debug|.NET
+		{894BCBBA-D8C9-4D91-865C-887F13B1EFC1}.Debug.Build.0 = Debug|.NET
+		{894BCBBA-D8C9-4D91-865C-887F13B1EFC1}.Release.ActiveCfg = Release|.NET
+		{894BCBBA-D8C9-4D91-865C-887F13B1EFC1}.Release.Build.0 = Release|.NET
+		{3FDA9806-D08A-4406-A1AE-326A8EA63BF9}.Debug.ActiveCfg = Debug|.NET
+		{3FDA9806-D08A-4406-A1AE-326A8EA63BF9}.Debug.Build.0 = Debug|.NET
+		{3FDA9806-D08A-4406-A1AE-326A8EA63BF9}.Release.ActiveCfg = Release|.NET
+		{3FDA9806-D08A-4406-A1AE-326A8EA63BF9}.Release.Build.0 = Release|.NET
+		{8535172D-83E0-4A05-A377-E20265935B56}.Debug.ActiveCfg = Debug|.NET
+		{8535172D-83E0-4A05-A377-E20265935B56}.Debug.Build.0 = Debug|.NET
+		{8535172D-83E0-4A05-A377-E20265935B56}.Release.ActiveCfg = Release|.NET
+		{8535172D-83E0-4A05-A377-E20265935B56}.Release.Build.0 = Release|.NET
+		{0BF5AD26-4DE1-40B3-B4FA-C10DAFAF44AE}.Debug.ActiveCfg = Debug|.NET
+		{0BF5AD26-4DE1-40B3-B4FA-C10DAFAF44AE}.Debug.Build.0 = Debug|.NET
+		{0BF5AD26-4DE1-40B3-B4FA-C10DAFAF44AE}.Release.ActiveCfg = Release|.NET
+		{0BF5AD26-4DE1-40B3-B4FA-C10DAFAF44AE}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

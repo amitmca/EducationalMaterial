@@ -1,0 +1,12 @@
+bin\Debug\Examination.exe
+bin\Debug\Examination.pdb
+bin\Debug\Examination.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Examination.Form1.resources
+obj\Debug\Examination.Resources.resources
+obj\Debug\Examination.vbproj.GenerateResource.Cache
+obj\Debug\Examination.exe
+obj\Debug\Examination.xml
+obj\Debug\Examination.pdb
+obj\Debug\Examination.Form2.resources
+obj\Debug\Examination.Form3.resources

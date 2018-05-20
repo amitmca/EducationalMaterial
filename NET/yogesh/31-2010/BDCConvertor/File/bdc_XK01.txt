@@ -1,0 +1,51 @@
+                                        	0000	T	XK01                                                                                                                                	
+SAPMF02K                                	0100	X	                                                                                                                                    	
+                                        	0000	 	BDC_CURSOR                                                                                                                          	RF02K-BUKRS
+                                        	0000	 	BDC_OKCODE                                                                                                                          	/00
+                                        	0000	 	RF02K-BUKRS                                                                                                                         	DV
+                                        	0000	 	RF02K-EKORG                                                                                                                         	DV2
+                                        	0000	 	RF02K-KTOKK                                                                                                                         	DDVG
+SAPMF02K                                	0110	X	                                                                                                                                    	
+                                        	0000	 	BDC_CURSOR                                                                                                                          	LFA1-TELFX
+                                        	0000	 	BDC_OKCODE                                                                                                                          	/00
+                                        	0000	 	LFA1-ANRED                                                                                                                          	M/s
+                                        	0000	 	LFA1-NAME1                                                                                                                          	XYZ LTD
+                                        	0000	 	LFA1-LAND1                                                                                                                          	in
+                                        	0000	 	LFA1-REGIO                                                                                                                          	13
+                                        	0000	 	LFA1-SPRAS                                                                                                                          	en
+SAPMF02K                                	0120	X	                                                                                                                                    	
+                                        	0000	 	BDC_CURSOR                                                                                                                          	LFA1-KUNNR
+                                        	0000	 	BDC_OKCODE                                                                                                                          	/00
+                                        	0000	 	BDC_SUBSCR                                                                                                                          	SAPMF02K                                1099ARI-ST
+                                        	0000	 	BDC_SUBSCR                                                                                                                          	SAPMF02K                                1099ARI-01
+                                        	0000	 	BDC_SUBSCR                                                                                                                          	SAPMF02K                                1099ARI-02
+                                        	0000	 	BDC_SUBSCR                                                                                                                          	SAPMF02K                                1099ARI-03
+                                        	0000	 	BDC_SUBSCR                                                                                                                          	SAPMF02K                                1099ARI-04
+                                        	0000	 	BDC_SUBSCR                                                                                                                          	SAPMF02K                                1099ARI-05
+                                        	0000	 	BDC_SUBSCR                                                                                                                          	SAPMF02K                                1099ARI-06
+SAPMF02K                                	0130	X	                                                                                                                                    	
+                                        	0000	 	BDC_CURSOR                                                                                                                          	LFBK-BANKS(01)
+                                        	0000	 	BDC_OKCODE                                                                                                                          	=ENTR
+SAPMF02K                                	0210	X	                                                                                                                                    	
+                                        	0000	 	BDC_CURSOR                                                                                                                          	LFB1-ZUAWA
+                                        	0000	 	BDC_OKCODE                                                                                                                          	/00
+                                        	0000	 	LFB1-AKONT                                                                                                                          	13110000
+                                        	0000	 	LFB1-ZUAWA                                                                                                                          	001
+SAPMF02K                                	0215	X	                                                                                                                                    	
+                                        	0000	 	BDC_CURSOR                                                                                                                          	LFB1-ZWELS
+                                        	0000	 	BDC_OKCODE                                                                                                                          	/00
+                                        	0000	 	LFB1-ZTERM                                                                                                                          	0002
+                                        	0000	 	LFB1-ZWELS                                                                                                                          	CET
+SAPMF02K                                	0220	X	                                                                                                                                    	
+                                        	0000	 	BDC_CURSOR                                                                                                                          	LFB5-MAHNA
+                                        	0000	 	BDC_OKCODE                                                                                                                          	/00
+SAPMF02K                                	0310	X	                                                                                                                                    	
+                                        	0000	 	BDC_CURSOR                                                                                                                          	LFM1-WEBRE
+                                        	0000	 	BDC_OKCODE                                                                                                                          	/00
+                                        	0000	 	LFM1-WAERS                                                                                                                          	inr
+                                        	0000	 	LFM1-WEBRE                                                                                                                          	X
+SAPMF02K                                	0320	X	                                                                                                                                    	
+                                        	0000	 	BDC_CURSOR                                                                                                                          	RF02K-LIFNR
+                                        	0000	 	BDC_OKCODE                                                                                                                          	=ENTR
+SAPLSPO1                                	0300	X	                                                                                                                                    	
+                                        	0000	 	BDC_OKCODE                                                                                                                          	=NO

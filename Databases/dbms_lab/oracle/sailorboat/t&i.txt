@@ -1,0 +1,32 @@
+
+create table sailor(sid number(3) primary key,sname varchar(20),age number(3),rating number(2));
+
+create table boat(bid number(3) primary key,bname varchar(20),color varchar(10));
+
+create table reserve(sid number(3),bid number(3),rdate date,constraint pk_reserve primary key(sid,bid),constraint fk1_reserve foreign key(sid) references sailor(sid),constraint fk2_reserve foreign key(bid) references boat(bid));
+
+
+insert into sailor values(10,'ajit',23,8);
+insert into sailor values(20,'abhijit',22,7);
+insert into sailor values(30,'amit',26,9);
+insert into sailor values(40,'bhushan',40,12);
+insert into sailor values(50,'yogesh',19,2);
+
+
+insert into boat values(101,'interleck','red');
+insert into boat values(102,'baba','black');
+insert into boat values(103,'zingaro','green');
+insert into boat values(104,'interleck','red');
+insert into boat values(105,'mumbai','black');
+
+
+insert into reserve values(10,101,'25 feb 1987');
+insert into reserve values(10,103,'4 oct 2007');
+insert into reserve values(20,102,'25 jan 2007');
+insert into reserve values(30,104,'10 feb 2007');
+insert into reserve values(40,105,'10 march 2007');
+
+
+select *from sailor;
+select *from boat;
+select *from reserve;

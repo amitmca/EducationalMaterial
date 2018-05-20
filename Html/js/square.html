@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>My Fact</title>
+<script language="JavaScript">
+function square(num)
+	{
+	var r=num*num;
+	return r;
+	}
+</script>
+<head>
+<body>
+<script language="JavaScript">
+document.write("<center><b>Factorial Of numbers</b></center>");
+document.write("<table border=\"2\" width=\"50%\" cellspacing=\"0\" cellpadding=\"1\" align=\"center\">");
+document.write("<tr><th>"+"Number"+"</th><th>" + " Factorial " + "</th></tr>");
+
+for(i=0;i<10;i++)
+	{
+	var a=square(i);
+	document.write("<tr><td>" + i +"</td><td>" + square(parseInt(i)) + "</td>");
+	}
+document.write("</table>");
+</script>
+</body>
+</html>

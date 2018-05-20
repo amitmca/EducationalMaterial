@@ -1,0 +1,17 @@
+bin\Debug\AllInOne.exe
+bin\Debug\AllInOne.pdb
+bin\Debug\AllInOne.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\AllInOne.Form1.resources
+obj\Debug\AllInOne.Resources.resources
+obj\Debug\AllInOne.vbproj.GenerateResource.Cache
+obj\Debug\AllInOne.exe
+obj\Debug\AllInOne.xml
+obj\Debug\AllInOne.pdb
+obj\Debug\AllInOne.Form2.resources
+obj\Debug\AllInOne.Form3.resources
+obj\Debug\AllInOne.Form4.resources
+obj\Debug\AllInOne.Form5.resources
+obj\Debug\AllInOne.Form6.resources
+obj\Debug\AllInOne.Form7.resources
+obj\Debug\AllInOne.Form8.resources

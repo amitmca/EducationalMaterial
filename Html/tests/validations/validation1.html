@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>Form Validations</title>
+<script langugae="JavaScript">
+	function chk(f1)
+	{
+	var result=f1.ename.value;
+	if(f1.sex[0].checked)
+		{
+		result=result+"\n" + f1.sex[0].value;
+		}	
+	else
+		{	
+		result=result+"\n" + f1.sex[1].value;		
+		}
+	
+	for(i=0;i<f1.dept.length;i++)
+		{
+		if(f1.dept.options[i].selected)
+			{
+			result=result+"\n" + f1.dept.value;
+			}	
+		}
+	for(j=0;j<f1.hobby.length;j++)
+		{
+		if(f1.hobby.options[j].checked)
+			{
+			result=result+"\n" + f1.hobby[j].value;
+			}	
+		}		
+	f1.info.value=result;
+	}
+</script>
+</head>
+<body bgcolor="skyblue">
+<h1 align="center" style="color:blue;">Registration Form</h1>
+<form name="f1">
+<p>Employee Name : <input type="text" name="ename" size="30"></p>
+
+<p>Sex : Male <input type="radio" name="sex" value="Male">Female<input type="radio" name="sex" value="Female"></p>
+
+<p> Department : <select name="dept">
+		<option value="A">A</option>
+		<option value="B">B</option>
+		<option value="C">C</option>
+		<option value="D">D</option>
+		</select>
+</p>
+<p>Hobbies : <input type="checkbox" name="hobby" value="Reading">Reading
+	     <input type="checkbox" name="hobby" value="Swimming">Swimming
+</p>
+
+<p><input type="button" name="b1" value="Show" onclick="chk(this.form);">
+<input type="reset" name="reset" value="Reset">
+</p>
+
+<p>Result :<br>
+<textarea name="info" rows="10" cols="50"></textarea>
+</p>
+		
+</form>
+</body>
+</html>	

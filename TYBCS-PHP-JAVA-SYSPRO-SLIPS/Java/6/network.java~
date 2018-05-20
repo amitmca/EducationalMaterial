@@ -1,0 +1,41 @@
+import java.net.*;
+import java.io.*;
+import java.util.*;
+
+class Server
+{
+	public static void main(String args[]) throws Exception
+	{
+		ServerSocket ss=new ServerSocket(9000);
+		System.out.println("Welcome to server...");
+		Socket sc=ss.accept();
+		DataInputStream dis=new DataInputStream(sc.getInputStream());
+		String text="";
+
+		while(!text.equals("end"))
+		{
+			text=dis.readUTF();
+			System.out.println(text);
+		}
+
+	}
+}
+class Client
+{
+	public static void main(String args[]) throws Exception
+	{
+		Socket ss=new Socket("localhost",9000);
+		System.out.println("Welcome to client...");
+		DataOutputStream dos=new DataOutputStream(ss.getOutputStream());
+
+		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+		String text="";
+
+		while(!text.equals("end"))
+		{
+			text=br.readLine();
+			dos.writeUTF(text);
+		}
+
+	}
+}

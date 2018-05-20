@@ -1,0 +1,38 @@
+create function plpgsql_call_handler()
+returns opaque as 'C:/Program Files/PostgreSQL/8.3/lib/plpgsql.dll'
+language 'C';
+
+create language 'plpgsql' handler
+plpgsql_call_handler
+lancompiler 'pl/pgsql';
+
+======================================================
+
+create function plperl_call_handler()
+returns opaque as 'C:/Program Files/PostgreSQL/8.3/lib/plperl.dll'
+language 'C';
+
+create language 'plperl' handler
+plperl_call_handler
+lancompiler 'pl/perl';
+
+======================================================
+
+create function plpython_call_handler()
+returns opaque as 'C:/Program Files/PostgreSQL/8.3/lib/plpython.dll'
+language 'C';
+
+create language 'plpythonu' handler
+plpgsql_call_handler
+lancompiler 'pl/python';
+
+======================================================
+
+
+create function pltcl_call_handler()
+returns opaque as 'C:/Program Files/PostgreSQL/8.3/lib/pltcl.dll'
+language 'C';
+
+create language 'pltcl' handler
+pltcl_call_handler
+lancompiler 'pl/tcl';

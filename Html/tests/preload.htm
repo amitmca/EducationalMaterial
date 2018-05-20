@@ -1,0 +1,33 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Loading</title>
+<SCRIPT LANGUAGE="JavaScript">
+
+<!-- Begin
+function clearPreloadPage() { //DOM
+if (document.getElementById){
+document.getElementById('prepage').style.visibility='hidden';
+}else{
+if (document.layers){ //NS4
+document.prepage.visibility = 'hidden';
+}
+else { //IE4
+document.all.prepage.style.visibility = 'hidden';
+}
+}
+}
+// End -->
+</SCRIPT>
+</head>
+
+<body  onLoad="clearPreloadPage();">
+<div id="prepage" style="position:absolute; font-family:arial; font-size:16; left:0px; 
+
+top:0px; background-color:white; layer-background-color:white; height:100%; width:100%;"> 
+<table width=100%><tr><td>Loading ... ... Please wait!</td></tr></table>
+</div>
+</body>
+
+</html>

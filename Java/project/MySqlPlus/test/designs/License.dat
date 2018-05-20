@@ -1,0 +1,51 @@
+[Main]
+SizeX=8115
+SizeY=4320
+[1]
+Name=textarea_1
+Type=JTextArea
+Value=
+X= 360
+Y= 120
+SizeX= 7440
+SizeY= 3120
+[2]
+Name=txtdays
+Type=JTextField
+Value=
+X= 1320
+Y= 3720
+SizeX= 480
+SizeY= 360
+[3]
+Name=label_1
+Type=JLabel
+Value=Days Remaining
+X= 2040
+Y= 3720
+SizeX= 1560
+SizeY= 360
+[4]
+Name=limage
+Type=JLabel
+Value=
+X= 360
+Y= 3480
+SizeX= 720
+SizeY= 600
+[5]
+Name=btnbuy
+Type=JButton
+Value=Buy Now
+X= 3720
+Y= 3720
+SizeX= 1440
+SizeY= 360
+[6]
+Name=btneval
+Type=JButton
+Value=Continue Evaluation
+X= 5280
+Y= 3720
+SizeX= 2400
+SizeY= 360

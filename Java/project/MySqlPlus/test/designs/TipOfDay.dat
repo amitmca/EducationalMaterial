@@ -1,0 +1,50 @@
+[Main]
+SizeX=8175
+SizeY=4155
+[1]
+Name=btnnext
+Type=JButton
+Value=Next Tip
+X= 5040
+Y= 3720
+SizeX= 1560
+SizeY= 360
+[2]
+Name=btnclose
+Type=JButton
+Value=Close
+X= 6720
+Y= 3720
+SizeX= 1320
+SizeY= 360
+[3]
+Name=txttip
+Type=JTextArea
+Value=
+X= 1200
+Y= 480
+SizeX= 6840
+SizeY= 3120
+[4]
+Name=limage
+Type=JLabel
+X= 240
+Y= 120
+SizeX= 840
+SizeY= 720
+[5]
+Name=label_2
+Type=JLabel
+Value=Did You Know...
+X= 1200
+Y= 120
+SizeX= 1800
+SizeY= 360
+[6]
+Name=hand
+Type=JLabel
+Value=
+X= 240
+Y= 960
+SizeX= 720
+SizeY= 360

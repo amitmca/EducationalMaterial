@@ -1,0 +1,24 @@
+//Program for Function Templates with 2 Generic Data Types
+
+#include<iostream.h>
+#include "conio.h"
+
+template<class T,class U>
+
+T getMin(T a,U b)		// Function Template
+	{	
+	T r;
+	r=(a<b)?a:b;
+	return r;
+	}	
+
+int main()
+	{
+	int i,j=6;
+	long l=10;
+	clrscr();
+	i=getMin(j,l);
+	cout<<"k="<<k<<endl;
+	getch();
+	return 0;
+	}

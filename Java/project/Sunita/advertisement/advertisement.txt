@@ -1,0 +1,38 @@
+--create database for advertisements as Ad_Database
+create database Ad_Database
+
+--create login table for the railway staff as Ad_Login_TB with User_Id 
+as Primary Key
+create table Ad_Login_TB(User_Id varchar(10) constraint 
+pk_Login_User_Id primary key,Passwd varchar(10))
+
+--create advertisements details table with Ad_Id as primary key
+create table Ad_AdvDetails_TB(Ad_Id varchar(10) constraint 
+pk_AdvDetails_Ad_Id primary key,Ad_Name varchar(20),Advertiser_Name 
+varchar(15),Start_Date smalldatetime,End_Date smalldatetime,Ad_Duration 
+smallint,No_Rotations smallint,Tot_Amount money,Amount_Paid money,Accpt_Cleared bit)
+
+--create acceptence table which holds accepted advertisements id's as 
+Ad_Acceptence_TB
+create table Ad_Acceptence_TB(Ad_Id varchar(10),Accepted 
+bit,Accpt_Reason varchar(25),constraint fk_Acceptence_AdvDetails foreign key (Ad_Id) 
+references Ad_AdvDetails_TB(Ad_Id) ) 
+
+--create dailydetails table which is used to update and to view daily 
+details by the railway staff as Ad_DailyDetails_TB
+create table Ad_DailyDetails_TB(Ad_Id varchar(10),Start_Time 
+datetime,End_Time datetime,Ad_Duration smallint,No_Rotations smallint,Tot_Amount 
+money,Which_Date smalldatetime,constraint fk_DailyDetails_AdvDetails 
+foreign key (Ad_Id) references Ad_AdvDetails_TB(Ad_Id))   
+
+
+--Inserting default users into Ad_Login_TB
+insert into Ad_Login_TB values('mahesh','mahi123')
+insert into Ad_Login_TB values('niharika','nihi123')
+  
+--creating index for Ad_AdvDetails_TB on Start_Date
+create index AdvDetails_Start_Date_IDX on Ad_AdvDetails_TB(Start_Date)
+
+--creating index for Ad_AdvDetails_TB on End_Date
+create index AdvDetails_End_Date_IDX on Ad_AdvDetails_TB(End_Date)
+

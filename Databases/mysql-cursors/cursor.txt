@@ -1,0 +1,23 @@
+DELIMITER //
+CREATE PROCEDURE employee()
+BEGIN
+
+   -- Declare local variables
+   DECLARE no INT;
+
+   -- Declare the cursor
+   DECLARE mycur CURSOR
+   FOR
+   SELECT eno FROM emp;
+
+   -- Open the cursor
+   OPEN mycur;
+
+   -- Get order number
+   FETCH mycur INTO no;
+
+  
+   -- Close the cursor
+   CLOSE mycur;
+
+END;

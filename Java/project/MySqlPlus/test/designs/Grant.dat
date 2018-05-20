@@ -1,0 +1,51 @@
+[Main]
+SizeX=3840
+SizeY=3705
+[1]
+Name=radglo
+Type=JRadioButton
+Value=Global Level
+X= 480
+Y= 480
+SizeX= 2880
+SizeY= 360
+[2]
+Name=raddb
+Type=JRadioButton
+Value=Database Level
+X= 480
+Y= 1080
+SizeX= 2880
+SizeY= 360
+[3]
+Name=radtb
+Type=JRadioButton
+Value=Table Level
+X= 480
+Y= 1680
+SizeX= 2880
+SizeY= 360
+[4]
+Name=tadcol
+Type=JRadioButton
+Value=Column Level
+X= 480
+Y= 2280
+SizeX= 2880
+SizeY= 360
+[5]
+Name=btncon
+Type=JButton
+Value=Continue
+X= 120
+Y= 3000
+SizeX= 1680
+SizeY= 360
+[6]
+Name=btncel
+Type=JButton
+Value=Cancel
+X= 2040
+Y= 3000
+SizeX= 1680
+SizeY= 360

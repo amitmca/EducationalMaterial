@@ -1,0 +1,133 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link rel="File-List" href="update_files/filelist.xml">
+
+<title>Updating Data Of Table Using ASP</title>
+
+
+<script language="javascript">
+
+function checklogin()
+{
+  var err="";
+  
+	var eno=document.insert.eno.value;
+      
+  if(document.getElementById("eno").value=="")
+  { err +="\nPlease enter employee number .\t\n";}
+  
+    if(document.getElementById("ename").value=="")
+  { err +="\nPlease enter employee name .\t\n";}
+  
+   if(isNaN(eno))
+  { err +="\nPlease enter valid employee number.\t\n";}
+
+  
+   if(err=="")
+  { return true;}
+  else
+  { alert(err) 
+   return false;
+   }
+}
+</script>
+
+
+<!--[if !mso]>
+<style>
+v\:*         { behavior: url(#default#VML) }
+o\:*         { behavior: url(#default#VML) }
+.shape       { behavior: url(#default#VML) }
+</style>
+<![endif]--><!--[if gte mso 9]>
+<xml><o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]-->
+</head>
+
+<body>
+<form name="insert" action="http://localhost/asp/Database/new/update.asp" method="post">
+<center>
+<div style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px">
+	<span style="background-color: #FFFF00"><b>
+	<font face="Verdana" color="#0000FF"><a href="http://localhost/asp/Database/new/menu.html">Home</a> |&nbsp;<a href="http://localhost/asp/Database/new/insert.html">Insert </a>|<a href="http://localhost/asp/Database/new/delete.html"> Delete </a>|<a href="http://localhost/asp/Database/new/update.html"> Update</a> | 
+	<a href="http://localhost/asp/Database/new/select.asp">Display</a>| 
+	</font></b></span><a href="http://localhost/asp/Database/new/search.html">
+	<span style="background-color: #FFFF00"><b><font face="Verdana">Search</font></b></span></a></div>
+</center>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--[if gte vml 1]><v:shapetype id="_x0000_t136"
+ coordsize="21600,21600" o:spt="136" adj="10800" path="m@7,l@8,m@5,21600l@6,21600e">
+ <v:formulas>
+  <v:f eqn="sum #0 0 10800"/>
+  <v:f eqn="prod #0 2 1"/>
+  <v:f eqn="sum 21600 0 @1"/>
+  <v:f eqn="sum 0 0 @2"/>
+  <v:f eqn="sum 21600 0 @3"/>
+  <v:f eqn="if @0 @3 0"/>
+  <v:f eqn="if @0 21600 @1"/>
+  <v:f eqn="if @0 0 @2"/>
+  <v:f eqn="if @0 @4 21600"/>
+  <v:f eqn="mid @5 @6"/>
+  <v:f eqn="mid @8 @5"/>
+  <v:f eqn="mid @7 @8"/>
+  <v:f eqn="mid @6 @7"/>
+  <v:f eqn="sum @6 0 @5"/>
+ </v:formulas>
+ <v:path textpathok="t" o:connecttype="custom" o:connectlocs="@9,0;@10,10800;@11,21600;@12,10800"
+  o:connectangles="270,180,90,0"/>
+ <v:textpath on="t" fitshape="t"/>
+ <v:handles>
+  <v:h position="#0,bottomRight" xrange="6629,14971"/>
+ </v:handles>
+ <o:lock v:ext="edit" text="t" shapetype="t"/>
+</v:shapetype><v:shape id="_x0000_s1025" type="#_x0000_t136" style='width:367.5pt;
+ height:27pt' fillcolor="#369" stroked="f">
+ <v:shadow on="t" color="#b2b2b2" opacity="52429f" offset="3pt"/>
+ <v:textpath style='font-family:"Times New Roman";font-size:24pt;v-text-kern:t'
+  trim="t" fitpath="t" string="Updating Data Of Database Using ASP"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=494 height=39
+src="update_files/image001.gif" alt="Updating Data Of Database Using ASP"
+v:shapes="_x0000_s1025"><![endif]>
+
+<br>
+
+</p>
+
+<table border="0" width="411" height="79" align="center">
+	<tr>
+		<td height="23" width="235" bgcolor="#FFFF00">
+		<font face="Verdana" color="#FF0000"><b>Employee No To Update</b></font></td>
+		<td height="23" width="8" bgcolor="#FFFF00"><b>:</b></td>
+		<td height="23" width="154" bgcolor="#FFFF00">
+		<input type="text" name="eno" align="center">
+		
+
+		</td>
+	</tr>
+	<tr>
+		<td height="23" width="235" bgcolor="#FFFF00">
+		<font face="Verdana" color="#FF0000"><b>New Employee Name</b></font></td>
+		<td height="23" width="8" bgcolor="#FFFF00"><b>:</b></td>
+		<td height="23" width="154" bgcolor="#FFFF00">
+		<input type="text" name="ename" align="center">
+		</td>
+	</tr>
+	<tr>
+		<td height="23" width="405" colspan="3" bgcolor="#FFFF00" align="center">
+		<input type="submit" name="submit" value="SUBMIT" onclick="return checklogin();">
+		 </td>
+	</tr>
+</table>
+<br><br><br><br><br><br><br><br><br><br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img border="0" src="ad.gif" width="728" height="90"></p>
+
+</form>
+</body>
+
+</html>

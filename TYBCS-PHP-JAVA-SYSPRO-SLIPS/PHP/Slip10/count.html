@@ -1,0 +1,16 @@
+<script type='text/javascript'>
+function count()
+{
+	var x=document.getElementById("email").value;
+	var dc=0,ac=0;
+	for(i=0;i<x.length;i++)
+	{
+		if(x.charAt(i)=='.')  dc++;
+		if(x.charAt(i)=='@') ac++;
+	}
+	alert("No.of dots::"+dc+"\nNo.of.@::"+ac);
+}
+</script>
+Email  Id::<input type=text id='email'><br>
+<input type='button' value='Count' onclick='count()'><br>
+<input type=reset>

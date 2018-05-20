@@ -1,0 +1,117 @@
+ty05=# create table book(bno integer primary key,bname varchar(20) not null,price integer);
+NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "book_pkey" for table "book"
+CREATE TABLE
+
+ty05=# select * from book;
+ bno | bname | price
+-----+-------+-------
+   1 | sql   |   110
+   2 | maths |   130
+   3 | elec  |    90
+   4 | stat  |   140
+   5 | comp  |    70
+(5 rows)
+ty05=# create table publisher(pno integer primary key,pname varchar(20),addr varchar(20));
+NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "publisher_pkey" for table "publisher"
+CREATE TABLE
+
+ty05=# select * from publisher;
+ pno |  pname  |  addr
+-----+---------+--------
+  10 | nirali  | pune
+  40 | pragati | pune
+  20 | vision  | satara
+  30 | manali  | nagar
+(4 rows)
+ty05=# create table BP(bno integer references book(bno),pno integer references publisher(pno));
+CREATE TABLE
+
+ty05=# select * from BP;
+ bno | pno
+-----+-----
+   1 |  30
+   1 |  40
+   2 |  30
+   2 |  10
+   3 |  20
+   3 |  30
+   3 |  40
+   4 |  10
+   4 |  20
+   5 |  10
+   5 |  30
+   5 |  40
+(12 rows)
+
+
+
+
+ CREATE FUNCTION PUBNAME(text) RETURNS text AS'
+ DECLARE
+ MYCURSOR CURSOR FOR
+ select bname from book as b,publisher as p, BP as r where b.bno=r.bno and p.pno=r.pno and pname=$1;
+ book_name book.bname%type;
+ BEGIN
+ OPEN MYCURSOR;
+ LOOP
+ FETCH MYCURSOR INTO book_name;
+ EXIT WHEN NOT FOUND;
+ RAISE NOTICE ''%  '',book_name;
+ END LOOP;
+ CLOSE MYCURSOR;
+ RETURN true;
+ END;
+'LANGUAGE 'plpgsql';
+
+
+ty05=# select bname from book as b,publisher as p, BP as r where(b.bno=r.bno and p.pno=r.pno) and pname='vision';
+ bname
+-------
+ elec
+ stat
+(2 rows)
+
+ty05=# CREATE FUNCTION plpgsql_call_handler()
+ty05-# RETURNS OPAQUE AS '/usr/lib/pgsql/plpgsql.so'
+ty05-# LANGUAGE 'C';
+CREATE FUNCTION
+ty05=# CREATE LANGUAGE 'plpgsql' HANDLER
+ty05-# plpgsql_call_handler
+ty05-# LANCOMPILER 'PL/PGSQL';
+WARNING:  changing return type of function plpgsql_call_handler from "opaque" to "language_handler"
+CREATE LANGUAGE
+ty05=#
+ty05=# CREATE FUNCTION PUBNAME(text) RETURNS text AS'
+ty05'# DECLARE
+ty05'# MYCURSOR CURSOR FOR
+ty05'# select bname from book as b,publisher as p, BP as r where b.bno=r.bno and p.pno=r.pno and
+
+ty05'# select bname from book as b,publisher as p, BP as r where b.bno=r.bno and p.pno=r.pno and pname=$1;
+ty05'# book_name book.bname%type;
+ty05'# BEGIN
+ty05'# OPEN MYCURSOR;
+ty05'# LOOP
+ty05'# FETCH MYCURSOR INTO book_name;
+ty05'# EXIT WHEN NOT FOUND;
+ty05'# RAISE NOTICE ''%  '',book_name;
+ty05'# END LOOP;
+ty05'# CLOSE MYCURSOR;
+ty05'# RETURN true;
+ty05'# END;
+ty05'# 'LANGUAGE 'plpgsql';
+CREATE FUNCTION
+ty05=#
+ty05=#
+ty05=# select pubname('vision');
+NOTICE:  elec
+NOTICE:  stat
+ pubname
+---------
+ t
+(1 row)
+
+ty05=#
+
+
+
+

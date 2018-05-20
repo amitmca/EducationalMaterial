@@ -1,0 +1,14 @@
+<%@ Page Language="C#" MasterPageFile="~/LoginMaster.master" AutoEventWireup="true" CodeFile="CreateGroup.aspx.cs" Inherits="CreateGroup" Title="BDC Converter - Create Group" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <asp:UpdatePanel id="UpdatePanel1" runat="server">
+        <contenttemplate>
+<TABLE style="BORDER-RIGHT: dodgerblue 1px solid; BORDER-TOP: dodgerblue 1px solid; FONT-SIZE: 10pt; BORDER-LEFT: dodgerblue 1px solid; WIDTH: 400px; BORDER-BOTTOM: dodgerblue 1px solid; FONT-FAMILY: Verdana; BACKGROUND-COLOR: #cddefc"><TBODY><TR><TD style="HEIGHT: 20px; BACKGROUND-COLOR: #1c84c5; TEXT-ALIGN: center" colSpan=3><STRONG><SPAN style="COLOR: white">Create New Group</SPAN></STRONG></TD></TR><TR><TD style="HEIGHT: 20px" colSpan=3></TD></TR><TR><TD style="TEXT-ALIGN: right"><asp:Label id="lblGroupId" runat="server" Text="Group Id:"></asp:Label></TD><TD style="WIDTH: 5%; TEXT-ALIGN: left"></TD><TD style="TEXT-ALIGN: left"><asp:TextBox id="txtGroupId" runat="server" BorderWidth="1px" BorderStyle="Solid" BorderColor="#1C84C5" BackColor="White" Width="150px" Enabled="False"></asp:TextBox></TD></TR><TR><TD style="TEXT-ALIGN: right"><asp:Label id="lblGroupName" runat="server" Text="Group Name:"></asp:Label></TD><TD style="TEXT-ALIGN: left"></TD><TD style="TEXT-ALIGN: left"><asp:TextBox id="txtGroupName" runat="server" BorderWidth="1px" BorderStyle="Solid" BorderColor="#1C84C5" Width="150px" MaxLength="30" ValidationGroup="Valid"></asp:TextBox><asp:RequiredFieldValidator id="RequiredFieldValidator1" runat="server" ControlToValidate="txtGroupName" Display="None" ErrorMessage="<b>Required field missing</b></br>Group Name should not be blank." ValidationGroup="Valid"></asp:RequiredFieldValidator><cc1:ValidatorCalloutExtender id="ValidatorCalloutExtender1" runat="server" TargetControlID="RequiredFieldValidator1">
+                        </cc1:ValidatorCalloutExtender> </TD></TR><TR><TD style="TEXT-ALIGN: right" colSpan=3 rowSpan=1><asp:Label id="lblError" runat="server" Font-Size="8pt" ForeColor="Red"></asp:Label> <asp:Label id="lblMsg" runat="server" Font-Size="8pt" ForeColor="Green"></asp:Label></TD></TR><TR><TD style="WIDTH: 100px; TEXT-ALIGN: right"></TD><TD></TD><TD style="WIDTH: 150px; TEXT-ALIGN: left"><asp:Button id="btnCreateGroup" onclick="btnCreateGroup_Click" runat="server" Text="Create Group" BorderWidth="1px" BorderStyle="Solid" BorderColor="#1C84C5" BackColor="White" ValidationGroup="Valid"></asp:Button></TD></TR><TR><TD style="TEXT-ALIGN: right"></TD><TD></TD><TD style="HEIGHT: 5px; TEXT-ALIGN: right"></TD></TR></TBODY></TABLE>
+</contenttemplate>
+    </asp:UpdatePanel>
+    <br />
+    <br />
+</asp:Content>
+

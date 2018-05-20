@@ -1,0 +1,103 @@
+.TableTitle {
+font-family:verdana,arial,tahoma;
+font-size:22px;
+font-weight:normal;
+text-indent:5px;
+color:#565656;
+text-decoration:none;
+}
+
+.TableHeader {
+font-family:verdana,arial,tahoma;
+font-size:12px;
+font-weight:none;
+background-color:#D5D3CC;
+text-indent:5px;
+color:black;
+text-decoration:none;
+}
+
+.TableHeader:hover {
+color:#A52A00;
+}
+
+.TableBody {
+font-family:verdana,arial,tahoma;
+font-size:12px;
+padding-left: 3px;
+color:black;
+background-color:#EEEEEB;
+}
+
+.TableBody:hover {
+color:red;
+}
+
+.TableBodyNumeric {
+font-family:verdana,arial,tahoma;
+font-size:12px;
+color:black;
+background-color:#EEEEEB;
+text-align:right;
+padding-right: 3px;
+}
+
+.TableBodyNumeric:hover {
+color:red;
+}
+
+.TableFooter {
+font-family:verdana,arial,tahoma;
+font-weight:bold;
+font-size:12px;
+background-color:#D5D3CC;
+text-align=center;
+}
+
+.TableBodySelected {
+font-family:verdana,arial,tahoma;
+font-size:12px;
+background-color:#E2DBC3;
+padding-left: 3px;
+color: #383881;
+}
+
+.TableBodySelectedNumeric {
+font-family:verdana,arial,tahoma;
+font-size:12px;
+background-color:#E2DBC3;
+padding-right: 3px;
+color: #383881;
+text-align: right;
+}
+
+.Error {
+font-family:verdana,arial,tahoma;
+font-size:12px;
+font-weight:bold;
+background-color:#EEEEEB;
+text-indent:5px;
+color:#282828;
+text-decoration:none;
+margin-bottom:10px;
+}
+
+.TextBox {
+font-family:verdana,arial,tahoma;
+font-size:12px;
+border-style:solid;
+border-width:1px;
+border-color:black;
+}
+
+.Option {
+font-family:verdana,arial,tahoma;
+font-size:12px;
+}
+
+.SelectedOption {
+font-family:verdana,arial,tahoma;
+font-size:12px;
+color:#888067;
+}
+

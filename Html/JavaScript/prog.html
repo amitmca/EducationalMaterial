@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Java Script</title>
+<script language="JavaScript">
+	function calc()
+	{
+	var v=parseInt(document.forms[0].x.value);
+
+	if(document.forms[0].rad[0].checked)
+		{
+		document.forms[0].r.value=v*2;
+		}
+	else if(document.forms[0].rad[1].checked)
+		{
+		document.forms[0].r.value=v*v;
+		}
+	}
+</script>
+</head>
+<body>
+	<div align="center">
+	<form name="form2">
+	<label>Enter a number:</label><br>
+	<input type="text" name="x"><br>
+
+	<label> Select Action :</label><br>
+	<input type="radio" name="rad" chekced="checked">
+	<label>Double</label>
+
+	<input type="radio" name="rad">
+	<label>Square</label><br>
+
+	<label>Result</label>
+	<input type="text" name="r"><br>
+
+	<input type="button" name="submit" value="Submit" onClick="calc();">
+	</form>
+	</div>
+</body>
+</html>

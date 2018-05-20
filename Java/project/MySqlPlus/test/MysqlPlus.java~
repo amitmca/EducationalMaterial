@@ -1,0 +1,874 @@
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+import java.sql.*;
+import java.util.*;
+import java.text.*;
+import java.io.*;
+import java.lang.*;
+
+public class MysqlPlus extends JFrame implements ActionListener
+
+{
+
+	//Main Place on Form where All Child Forms will Shown.
+
+	ImageIcon i;
+	TipOfDay tip;
+	QueryBrowser qb;
+
+	private java.util.Date currDate = new java.util.Date ();					//Creating Object.
+	private SimpleDateFormat sdf = new SimpleDateFormat ("dd MMMM yyyy", Locale.getDefault());	//Changing Format.
+	private String d = sdf.format (currDate);
+
+	public static JDesktopPane desktop = new JDesktopPane ();
+ 		
+	//For Program's MenuBar.
+
+	private JMenuBar bar;
+	private JMenu mnuDatabase, mnuTable, mnuEdit, mnuQuery,mnuTools,mnuHelp;
+	private JMenuItem newdb,dropdb,showdb,end;	//Database Menu Options.
+	private JMenuItem start,stop,objbro;		//Tools Menu Options
+	private JMenuItem create,drop,insert,show,showdata;		//Table Menu Options
+	private JMenuItem cut,copy,paste,undo,redo;		//Edit Menu Options
+	private JMenuItem about,keyHelp,myhelp,tips,lic;//Help Menu Options
+	public JMenuItem newquery,loadquery,savequery;//Query Menu Options
+
+	
+	private JPopupMenu popMenu = new JPopupMenu ();
+	
+	//For Program's ToolBar.
+
+	private	JToolBar toolBar;
+
+	//For ToolBar's Button.
+
+	private	JButton btndb,btnexit,btndrop,btnshow; //Buttons for Database menu
+	private JButton btnstart,btnstop;	       //Buttons for Tools Menu	
+	private JButton btncreate,btndropt,btninsert;	       //Buttons for Table Menu 
+
+	private JPanel statusBar = new JPanel ();
+	
+	public static JLabel lbusr,lbdb;	
+
+	
+	public MysqlPlus ()
+	{
+		super ("MysqlPlus");
+
+		//Setting the Main Window of Program.
+
+		setIconImage (getToolkit().getImage ("images/launcher.PNG"));	//Setting the Program's Icon.
+		setSize (750, 600);						//Setting Main Window Size.
+				
+		i=new ImageIcon("images/h.gif");
+		tip=new TipOfDay();
+		tip.setLocation(100,100);
+		tip.setVisible(true);
+		desktop.add(tip);
+			
+		ImageIcon icon = new ImageIcon(getClass().getResource("images/1152696940.jpg")); 
+	        JLabel label = new JLabel(icon);
+        	label.setBounds(0, 0, icon.getIconWidth(), icon.getIconHeight()); 
+	        desktop.add(label, new Integer(Integer.MIN_VALUE)); 
+
+			
+		//Setting the Location of Program on User's Computer Screen By Getting the Screen's Height & Width.
+		setLocation((Toolkit.getDefaultToolkit().getScreenSize().width  - getWidth()) / 2,(Toolkit.getDefaultToolkit().getScreenSize().height - getHeight()) / 2);
+		
+
+		//Closing Code of Main Window.
+
+		addWindowListener (new WindowAdapter () {		//Attaching the WindowListener to Program.
+			public void windowClosing (WindowEvent we) {	//Overriding the windowClosing Function.
+				System.exit(0);				//Call the Function to Perform the Closing Action.
+			}
+		}
+		);
+		bar = new JMenuBar ();		//Creating the MenuBar Object.
+		bar.setBackground(Color.white);
+		
+		setJMenuBar (bar);		//Setting Main Window MenuBar.
+		
+		//Creating the Menus of Program & Assigning the Key too to Open them.
+
+		mnuDatabase = new JMenu ("Database");
+		mnuDatabase.setMnemonic ((int)'D');
+
+		mnuTable = new JMenu ("Table");
+		mnuTable.setMnemonic ((int)'T');
+
+		mnuEdit = new JMenu ("Edit");
+		mnuEdit.setMnemonic ((int)'E');
+
+		mnuQuery = new JMenu("Query");
+		mnuQuery.setMnemonic ((int)'Q'); 
+
+		mnuTools = new JMenu ("Tools");
+		mnuTools.setMnemonic ((int)'L');
+
+		mnuHelp = new JMenu ("Help");
+		mnuHelp.setMnemonic ((int)'H');
+		
+
+		
+		//Creating All the MenuItems of Program.
+
+		//MenuItems for Database Menu.
+
+		newdb = new JMenuItem ("Create New Database",new ImageIcon(ClassLoader.getSystemResource("images\\database.PNG")));
+		newdb.setForeground(Color.magenta);
+		newdb.setBackground(Color.white);
+		newdb.setAccelerator (KeyStroke.getKeyStroke(KeyEvent.VK_N, Event.CTRL_MASK));
+		newdb.setMnemonic ((int)'N');
+		newdb.addActionListener (this);
+
+
+		dropdb = new JMenuItem (" Drop Database",new ImageIcon(ClassLoader.getSystemResource("images\\cancel.PNG")));
+		dropdb.setForeground(Color.magenta);
+		dropdb.setBackground(Color.white);
+		dropdb.setAccelerator (KeyStroke.getKeyStroke(KeyEvent.VK_R, Event.CTRL_MASK));
+		dropdb.setMnemonic ((int)'R');
+		dropdb.addActionListener (this);
+
+		showdb = new JMenuItem (" Show All Databases",new ImageIcon(ClassLoader.getSystemResource("images\\databases.PNG")));
+		showdb.setForeground(Color.magenta);
+		showdb.setBackground(Color.white);
+		showdb.setAccelerator (KeyStroke.getKeyStroke(KeyEvent.VK_U, Event.CTRL_MASK));
+		showdb.setMnemonic ((int)'U');
+		showdb.addActionListener (this);
+
+		end = new JMenuItem (" Quit",new ImageIcon(ClassLoader.getSystemResource("images\\quit.PNG")));
+		end.setForeground(Color.magenta);
+		end.setBackground(Color.white);
+		end.setAccelerator (KeyStroke.getKeyStroke(KeyEvent.VK_Q, Event.CTRL_MASK));
+		end.setMnemonic ((int)'Q');
+		end.addActionListener (this);
+
+		
+		//MenuItems for Table Menu.
+
+		create = new JMenuItem ("Create New Table",new ImageIcon(ClassLoader.getSystemResource("images\\table.PNG")));
+		create.setForeground(Color.magenta);
+		create.setBackground(Color.white);
+		create.setAccelerator (KeyStroke.getKeyStroke(KeyEvent.VK_T, Event.CTRL_MASK));
+		create.setMnemonic ((int)'T');
+		create.addActionListener (this);
+
+		insert = new JMenuItem ("Insert Into Table",new ImageIcon(ClassLoader.getSystemResource("images\\insert.PNG")));
+		insert.setForeground(Color.magenta);
+		insert.setBackground(Color.white);
+		insert.setAccelerator (KeyStroke.getKeyStroke(KeyEvent.VK_I, Event.CTRL_MASK));
+		insert.setMnemonic ((int)'I');
+		insert.addActionListener (this);
+
+		drop = new JMenuItem ("Drop Table",new ImageIcon(ClassLoader.getSystemResource("images\\droptable.PNG")));
+		drop.setForeground(Color.magenta);
+		drop.setBackground(Color.white);
+		drop.setAccelerator (KeyStroke.getKeyStroke(KeyEvent.VK_D, Event.CTRL_MASK));
+		drop.setMnemonic ((int)'D');
+		drop.addActionListener (this);	
+
+		show = new JMenuItem (" Show Tables",new ImageIcon(ClassLoader.getSystemResource("images\\tables.PNG")));
+		show.setForeground(Color.magenta);
+		show.setBackground(Color.white);
+		show.setAccelerator (KeyStroke.getKeyStroke(KeyEvent.VK_G, Event.CTRL_MASK));
+		show.setMnemonic ((int)'G');
+		show.addActionListener (this);	
+
+		showdata = new JMenuItem (" Show Tables",new ImageIcon(ClassLoader.getSystemResource("images\\odbc.PNG")));
+		showdata.setForeground(Color.magenta);
+		showdata.setBackground(Color.white);
+		showdata.setAccelerator (KeyStroke.getKeyStroke(KeyEvent.VK_G, Event.CTRL_MASK));
+		showdata.setMnemonic ((int)'F');
+		showdata.addActionListener (this);
+
+		//MenuItems for Edit Menu.
+
+		cut = new JMenuItem (" Cut",new ImageIcon(ClassLoader.getSystemResource("images\\editcut.png")));
+		cut.setForeground(Color.magenta);
+		cut.setBackground(Color.white);
+		cut.setAccelerator (KeyStroke.getKeyStroke(KeyEvent.VK_X, Event.CTRL_MASK));
+		cut.setMnemonic ((int)'X');
+		cut.addActionListener (this);
+
+
+		copy = new JMenuItem (" Copy",new ImageIcon(ClassLoader.getSystemResource("images\\editcopy.png")));
+		copy.setForeground(Color.magenta);
+		copy.setBackground(Color.white);
+		copy.setAccelerator (KeyStroke.getKeyStroke(KeyEvent.VK_C, Event.CTRL_MASK));
+		copy.setMnemonic ((int)'C');
+		copy.addActionListener (this);
+
+		paste= new JMenuItem (" Paste",new ImageIcon(ClassLoader.getSystemResource("images\\editpaste.png")));
+		paste.setForeground(Color.magenta);
+		paste.setBackground(Color.white);
+		paste.setAccelerator (KeyStroke.getKeyStroke(KeyEvent.VK_V, Event.CTRL_MASK));
+		paste.setMnemonic ((int)'V');
+		paste.addActionListener (this);	
+
+		undo= new JMenuItem (" Undo",new ImageIcon(ClassLoader.getSystemResource("images\\undo.PNG")));
+		undo.setForeground(Color.magenta);
+		undo.setBackground(Color.white);
+		undo.setAccelerator (KeyStroke.getKeyStroke(KeyEvent.VK_Z, Event.CTRL_MASK));
+		undo.setMnemonic ((int)'Z');
+		undo.addActionListener (this);	
+
+		redo= new JMenuItem (" Redo",new ImageIcon(ClassLoader.getSystemResource("images\\redo.PNG")));
+		redo.setForeground(Color.magenta);
+		redo.setBackground(Color.white);
+		redo.setAccelerator (KeyStroke.getKeyStroke(KeyEvent.VK_Y, Event.CTRL_MASK));
+		redo.setMnemonic ((int)'Y');
+		redo.addActionListener (this);
+
+		//MenuItems for Query Menu
+		
+		newquery= new JMenuItem (" New Query Window",new ImageIcon(ClassLoader.getSystemResource("images\\new.png")));
+		newquery.setForeground(Color.magenta);
+		newquery.setBackground(Color.white);
+		newquery.setAccelerator (KeyStroke.getKeyStroke(KeyEvent.VK_W, Event.CTRL_MASK));
+		newquery.setMnemonic ((int)'W');
+		newquery.addActionListener (this);
+
+		loadquery= new JMenuItem ("Load Saved Query",new ImageIcon(ClassLoader.getSystemResource("images\\fileopen.png")));
+		loadquery.setForeground(Color.magenta);
+		loadquery.setBackground(Color.white);
+		loadquery.setAccelerator (KeyStroke.getKeyStroke(KeyEvent.VK_L, Event.CTRL_MASK));
+		loadquery.setMnemonic ((int)'L');
+		loadquery.addActionListener (this);
+
+		savequery= new JMenuItem ("Save Query",new ImageIcon(ClassLoader.getSystemResource("images\\filesave.png")));
+		savequery.setForeground(Color.magenta);
+		savequery.setBackground(Color.white);
+		savequery.setAccelerator (KeyStroke.getKeyStroke(KeyEvent.VK_S, Event.CTRL_MASK));
+		savequery.setMnemonic ((int)'S');
+		savequery.addActionListener (this);
+		
+		//MenuItems for Tools Menu.
+
+		start = new JMenuItem ("Start Services",new ImageIcon(ClassLoader.getSystemResource("images\\start.jpg")));
+		start.setFont(new Font("Arial",Font.BOLD,12));
+		start.setForeground(Color.magenta);
+		start.setBackground(Color.white);
+		start.addActionListener (this);
+
+		stop = new JMenuItem ("Stop Services",new ImageIcon(ClassLoader.getSystemResource("images\\stop.jpg")));
+		stop.setFont(new Font("Arial",Font.BOLD,12));
+		stop.setForeground(Color.magenta);
+		stop.setBackground(Color.white);
+		stop.addActionListener (this);
+
+		objbro = new JMenuItem ("Object Browser",new ImageIcon(ClassLoader.getSystemResource("images\\display_field.PNG")));
+		objbro.setFont(new Font("Arial",Font.BOLD,12));
+		objbro.setForeground(Color.magenta);
+		objbro.setBackground(Color.white);
+		objbro.addActionListener (this);
+
+		//MenuItems for Help Menu.
+
+		about = new JMenuItem ("About MysqlPlus",new ImageIcon(ClassLoader.getSystemResource("images\\launcher1.PNG")));
+		about.setForeground(Color.magenta);
+		about.setBackground(Color.white);
+		about.addActionListener (this);
+
+		keyHelp = new JMenuItem ("Shortcut Keys",new ImageIcon(ClassLoader.getSystemResource("images\\password1.PNG")));
+		keyHelp.setForeground(Color.magenta);
+		keyHelp.setBackground(Color.white);
+		keyHelp.addActionListener (this);
+
+		myhelp = new JMenuItem ("Mysql Help",new ImageIcon(ClassLoader.getSystemResource("images\\pdf.gif")));
+		myhelp.setForeground(Color.magenta);
+		myhelp.setBackground(Color.white);
+		myhelp.addActionListener (this);
+
+		tips = new JMenuItem ("Show Tips Dialog",new ImageIcon(ClassLoader.getSystemResource("images\\tips1.gif")));
+		tips.setForeground(Color.magenta);
+		tips.setBackground(Color.white);
+		tips.addActionListener (this);
+
+		lic = new JMenuItem ("License",new ImageIcon(ClassLoader.getSystemResource("images\\alert.gif")));
+		lic.setForeground(Color.magenta);
+		lic.setBackground(Color.white);
+		lic.addActionListener (this);
+
+
+
+	//File Menu Items.
+	mnuDatabase.add (newdb);
+	mnuDatabase.add (dropdb);
+	mnuDatabase.add (showdb);
+	mnuDatabase.add (end);
+
+	//Table Menu Items
+	mnuTable.add(create);
+	mnuTable.add(insert);
+	mnuTable.add(drop);
+	mnuTable.add(show);
+	mnuTable.add(showdata);
+	
+	//Edit Menu Items
+	mnuEdit.add(cut);
+	mnuEdit.add(copy);
+	mnuEdit.add(paste);
+	mnuEdit.add(undo);
+	mnuEdit.add(redo);
+
+	//Query Menu Items
+	
+	mnuQuery.add(newquery);
+	mnuQuery.add(loadquery);
+	mnuQuery.add(savequery);
+	
+	//Tools Menu Items
+	mnuTools.add(start);
+	mnuTools.add(stop);
+	mnuTools.add(objbro);
+
+	//Help Menu Items
+	mnuHelp.add(about);
+	mnuHelp.add(keyHelp);
+	mnuHelp.add(myhelp);
+	mnuHelp.add(tips);
+	mnuHelp.add(lic);
+
+	//Adding All Menus to MenuBar.
+
+	bar.add (mnuDatabase);
+	bar.add (mnuTable);
+	bar.add (mnuEdit);
+	bar.add (mnuQuery);
+	bar.add (mnuTools);
+	bar.add (mnuHelp);
+	
+	//Following Procedure display the PopupMenu of Program Whenever User Right Click on Program By Mouse.
+
+	addMouseListener (new MouseAdapter () {
+		public void mousePressed (MouseEvent me) { checkMouseTrigger (me); }
+		public void mouseReleased (MouseEvent me) { checkMouseTrigger (me); }
+		private void checkMouseTrigger (MouseEvent me) {
+			if (me.isPopupTrigger ())
+				popMenu.show (me.getComponent (), me.getX (), me.getY ());
+		}
+	}
+	);
+	
+	//Tool Bar Buttons for Database menu
+	
+	btndb = new JButton (new ImageIcon ("images/database.PNG"));
+	btndb.setToolTipText ("Create New Database");
+	btndb.addActionListener (this);
+
+	btndrop = new JButton (new ImageIcon ("images/cancel.PNG"));
+	btndrop.setToolTipText ("Drop Database");
+	btndrop.addActionListener (this);
+
+	btnshow = new JButton (new ImageIcon ("images/databases.PNG"));
+	btnshow.setToolTipText ("Show All Databases");
+	btnshow.addActionListener (this);
+	
+	btnexit = new JButton (new ImageIcon ("images/quit.PNG"));
+	btnexit.setToolTipText ("Close the Application");
+	btnexit.addActionListener (this);
+
+	//Tool Bar Buttons for Table menu
+
+	btncreate = new JButton (new ImageIcon ("images/table.PNG"));
+	btncreate.setToolTipText ("Create New Table");
+	btncreate.addActionListener (this);
+
+	btninsert = new JButton (new ImageIcon ("images/insert.PNG"));
+	btninsert.setToolTipText ("Insert Into Table");
+	btninsert.addActionListener (this);
+
+	btndropt = new JButton (new ImageIcon ("images/droptable.PNG"));
+	btndropt.setToolTipText ("Drop Table");
+	btndropt.addActionListener (this);
+
+	//Tool Bar Buttons for Tools menu
+
+	btnstart = new JButton (new ImageIcon ("images/start.jpg"));
+	btnstart.setToolTipText ("Start Mysql Services");
+	btnstart.addActionListener (this);
+
+	btnstop = new JButton (new ImageIcon ("images/stop.jpg"));
+	btnstop.setToolTipText ("Stop Mysql Services");
+	btnstop.addActionListener (this);
+
+	//Creating the ToolBar of Program.
+	//ToolBar for Database Menu
+
+	toolBar = new JToolBar ();
+	toolBar.setBackground(Color.white);
+	toolBar.add (btndb);
+	toolBar.addSeparator ();
+	toolBar.add (btndrop);
+	toolBar.addSeparator ();
+	toolBar.add (btnshow);
+
+	//ToolBar for Table Menu
+
+	toolBar.addSeparator ();
+	toolBar.add (btncreate);
+	toolBar.addSeparator ();
+	toolBar.add (btninsert);
+	toolBar.addSeparator ();
+	toolBar.add (btndropt);
+	
+
+	//ToolBar for Tools Menu
+
+	toolBar.addSeparator ();
+	toolBar.add (btnstart);
+	toolBar.addSeparator ();
+	toolBar.add (btnstop);
+	toolBar.addSeparator ();	
+	toolBar.add (btnexit); // Quit Tool Bar option
+
+
+	lbusr = new JLabel ("Welcome To MysqlPlus "+d,JLabel.LEFT);
+	lbusr.setFont(new Font("Verdana, Arial, Helvetica",Font.BOLD,10));
+	lbusr.setForeground (Color.red);
+
+	
+
+	//statusBar.setLayout (new BorderLayout());
+
+	statusBar.setBackground(Color.white);
+	statusBar.add (lbusr,BorderLayout.SOUTH);
+   
+	//Setting the Contents of Programs.
+
+	getContentPane().add (toolBar, BorderLayout.NORTH);
+	getContentPane().add (desktop, BorderLayout.CENTER);
+	getContentPane().add (statusBar, BorderLayout.SOUTH);
+
+
+	
+	setVisible (true);
+	
+	}	
+	
+	public void actionPerformed (ActionEvent ae) 
+                 {
+		
+		Object obj = ae.getSource();
+
+		if (obj == newdb || obj == btndb)
+		        {
+			CreateDatabase cd=new CreateDatabase();
+			desktop.add (cd);
+			cd.show ();
+			cd.setBounds(300,150,300,175);	
+			}
+
+		else if (obj == dropdb || obj == btndrop)
+		        {
+			DropDatabase dd=new DropDatabase();
+			desktop.add (dd);
+			dd.show ();
+			dd.setBounds(300,150,300,175);	
+			}
+
+		else if (obj == showdb || obj == btnshow)
+		        {
+			ShowDatabases sd=new ShowDatabases();
+			desktop.add (sd);
+			sd.show ();
+			}
+
+		else if(obj == end || obj == btnexit)
+			{
+			quitApp();
+			}
+
+		else if(obj == start || obj == btnstart)
+			{
+				
+			try
+			  {
+			  Thread.sleep(1000); 
+			 	
+		          Runtime.getRuntime().exec("NET START MYSQL");
+   		  	  start s=new start();
+			  desktop.add(s);
+			  s.iterate(); 
+			  Toolkit.getDefaultToolkit().beep();	
+			  JOptionPane.showMessageDialog(null,"The MySQL service was started successfully","The MySQL service was started successfully",JOptionPane.INFORMATION_MESSAGE);
+			  s.setClosed(true);  
+			  }
+			catch(Exception e)
+			  {
+			  
+			  String str2=e.getMessage();		
+			  JOptionPane.showMessageDialog(null,str2,str2,JOptionPane.ERROR_MESSAGE);
+			  
+			  }
+					
+			}
+
+		else if(obj == stop || obj == btnstop)
+			{
+			try
+			  {
+			  Thread.sleep(1000); 
+		          Runtime.getRuntime().exec("NET STOP MYSQL");
+			  start s=new start();
+			  desktop.add(s);
+			  s.iterate(); 
+			  Toolkit.getDefaultToolkit().beep();	
+			  JOptionPane.showMessageDialog(null,"The MySQL service was stopped successfully","The MySQL service was stopped successfully",JOptionPane.INFORMATION_MESSAGE);
+			  s.setClosed(true);
+			  }
+			catch(Exception e)
+			  {
+			  String str2=e.getMessage();		
+			  JOptionPane.showMessageDialog(null,str2,str2,JOptionPane.ERROR_MESSAGE);
+			  }
+			}
+				
+		else if(obj==objbro)
+			{
+			try
+			  {
+			  JTreeStructure jt=new JTreeStructure();
+			  desktop.add(jt);
+			  }
+			catch(Exception e)
+			  {
+			  }
+			}
+
+		else if (obj == create || obj == btncreate)
+			{	
+			CreateTable ct = new CreateTable();
+			try
+			     {
+			     Class.forName("com.mysql.jdbc.Driver");
+
+  			     String url="jdbc:mysql://localhost:3306/";
+				
+			     Connection conn=DriverManager.getConnection(url,"root","amit12");				
+			
+			     Statement st=conn.createStatement();
+	
+	  		     String sql="show databases";
+
+   			     st.executeQuery(sql);
+
+ 			     ResultSet rs=st.executeQuery(sql);
+
+			     String text=" ";
+
+		             while(rs.next())
+			        {
+			        text=rs.getString(1);
+			        ct.combodb.addItem(text);
+			        }
+			     }
+			 catch(Exception e)
+			     {
+			     String str2=e.getMessage();
+			     JOptionPane.showMessageDialog(null,str2,str2,JOptionPane.ERROR_MESSAGE); 		
+			     }
+			ct.pack();
+			ct.setVisible(true);
+			desktop.add(ct);
+			}
+
+		else if (obj == insert || obj == btninsert)
+			{
+			Insert it = new Insert();
+			try
+			     {
+			     Class.forName("com.mysql.jdbc.Driver");
+
+  			     String url="jdbc:mysql://localhost:3306/";
+				
+			     Connection conn=DriverManager.getConnection(url,"root","amit12");		
+			
+			     Statement st=conn.createStatement();
+	
+	  		     String sql="show databases";
+
+   			     st.executeQuery(sql);
+
+ 			     ResultSet rs=st.executeQuery(sql);
+
+			     String text=" ";
+
+		             while(rs.next())
+			        {
+			        text=rs.getString(1);
+			        it.dbcombo.addItem(text);
+			        }
+			     }
+			 catch(Exception e)
+			     {
+			     String str2=e.getMessage();
+			     JOptionPane.showMessageDialog(null,str2,str2,JOptionPane.ERROR_MESSAGE); 		
+			     }	
+			it.pack();
+			it.setVisible(true);
+			desktop.add(it);
+			}
+
+		else if (obj == drop || obj == btndropt)
+			{
+			DropTable dt=new DropTable();
+			try
+			     {
+			     Class.forName("com.mysql.jdbc.Driver");
+
+  			     String url="jdbc:mysql://localhost:3306/";
+				
+			     Connection conn=DriverManager.getConnection(url,"root","amit12");		
+			
+			     Statement st=conn.createStatement();
+	
+	  		     String sql="show databases";
+
+   			     st.executeQuery(sql);
+
+ 			     ResultSet rs=st.executeQuery(sql);
+
+			     String text=" ";
+
+		             while(rs.next())
+			        {
+			        text=rs.getString(1);
+			        dt.dbcombo.addItem(text);
+			        }
+			     }
+			 catch(Exception e)
+			     {
+			     String str2=e.getMessage();
+			     JOptionPane.showMessageDialog(null,str2,str2,JOptionPane.ERROR_MESSAGE); 		
+			     }	
+			dt.pack();
+			dt.setVisible(true);
+			
+			desktop.add(dt);
+			}
+
+		else if(obj==show)
+			{
+			ShowTables st=new ShowTables();
+			try
+			     {
+			     Class.forName("com.mysql.jdbc.Driver");
+
+  			     String url="jdbc:mysql://localhost:3306/";
+				
+			     Connection conn=DriverManager.getConnection(url,"root","amit12");		
+			
+			     Statement stmt=conn.createStatement();
+	
+	  		     String sql="show databases";
+
+   			     stmt.executeQuery(sql);
+
+ 			     ResultSet rs=stmt.executeQuery(sql);
+
+			     String text=" ";
+
+		             while(rs.next())
+			        {
+			        text=rs.getString(1);
+			        st.dbcombo.addItem(text);
+			        }
+			     }
+			 catch(Exception e)
+			     {
+			     String str2=e.getMessage();
+			     JOptionPane.showMessageDialog(null,str2,str2,JOptionPane.ERROR_MESSAGE); 		
+			     }	
+			st.setVisible(true);
+			desktop.add(st);
+			}
+
+		else if (obj == showdata)
+			{
+			SelectFTable st1 = new SelectFTable();
+			try
+			     {
+			     Class.forName("com.mysql.jdbc.Driver");
+
+  			     String url="jdbc:mysql://localhost:3306/";
+				
+			     Connection conn=DriverManager.getConnection(url,"root","amit12");		
+			
+			     Statement st=conn.createStatement();
+	
+	  		     String sql="show databases";
+
+   			     st.executeQuery(sql);
+
+ 			     ResultSet rs=st.executeQuery(sql);
+
+			     String text=" ";
+
+		             while(rs.next())
+			        {
+			        text=rs.getString(1);
+			        st1.dbcombo.addItem(text);
+			        }
+			     }
+			 catch(Exception e)
+			     {
+			     String str2=e.getMessage();
+			     JOptionPane.showMessageDialog(null,str2,str2,JOptionPane.ERROR_MESSAGE); 		
+			     }	
+			st1.pack();
+			st1.setVisible(true);
+			desktop.add(st1);
+			}
+
+		else if(obj==newquery)
+			{
+			try
+			  {
+			  qb=new QueryBrowser();
+			  qb.setVisible(true);
+			  desktop.add(qb);
+			  }	
+			catch(Exception e) { }
+			}
+
+		else if(obj==loadquery)
+			{
+			if(qb!=null)
+			{
+			qb.query.setText("");
+			JFileChooser fc=new JFileChooser();
+			int returnval=fc.showOpenDialog(loadquery);
+			if(returnval==JFileChooser.APPROVE_OPTION)
+				{
+				try
+				   {
+				   File f1=fc.getSelectedFile();
+                                   FileInputStream fis = new FileInputStream(f1);
+                                   BufferedInputStream bis = new BufferedInputStream(fis); 
+				   DataInputStream dis = new DataInputStream(bis);
+				   String record=null;
+				   while((record=dis.readLine())!=null)
+					{
+					qb.query.append(record+"\n");
+					
+					}
+				   }
+				catch(IOException e)
+				   {
+				   e.printStackTrace();
+				   }
+				}
+			}
+			else
+				{
+				String str2="Please Open A Query Window First";
+				JOptionPane.showMessageDialog(null,str2,str2,JOptionPane.ERROR_MESSAGE); 		
+				}
+			
+			}
+
+		else if(obj==savequery)
+			{
+			if(qb!=null)
+			{
+			try
+			  {
+                          JFileChooser fc1=new JFileChooser();
+                          int returnval1=fc1.showSaveDialog(savequery);
+                          if(returnval1==JFileChooser.APPROVE_OPTION)
+                            {
+                            if(fc1.getSelectedFile() != null)
+                              {
+                              FileWriter fo = new FileWriter(fc1.getSelectedFile().getAbsolutePath()+".txt"); 
+                              fo.write(qb.query.getText()); 
+                              fo.close(); 
+			      JOptionPane.showMessageDialog(null,"File Saved","Save",JOptionPane.INFORMATION_MESSAGE); 			
+                              }  
+                            }
+                          }
+                        catch(Exception e2)
+			  {
+			  e2.printStackTrace();
+                          }
+			}
+			else
+			 {
+			 String str2="Please Open A Query Window First";
+			 JOptionPane.showMessageDialog(null,str2,str2,JOptionPane.ERROR_MESSAGE); 		
+			 }
+			
+			}
+
+
+		else if(obj==about)
+			{
+			About a=new About();
+			a.setVisible(true);
+			desktop.add(a);
+			}
+
+		else if (obj == keyHelp)
+			{
+			ShortCuts hlpKey = new ShortCuts ("MysqlPlus Keys", "Help/Keys.htm");
+			desktop.add (hlpKey);
+			hlpKey.show ();
+			} 
+
+		else if (obj == myhelp)
+			{
+			MysqlHelp hlpKey1 = new MysqlHelp ("Mysql Help", "Help/index.html");
+			desktop.add (hlpKey1);
+			hlpKey1.show ();
+			} 
+
+		else if (obj == tips)
+			{
+			TipOfDay tip=new TipOfDay();
+			tip=new TipOfDay();
+			tip.setLocation(250,125);
+			tip.setVisible(true);
+			desktop.add(tip);
+			}
+
+		else if(obj==lic)
+			{
+			License l=new License();
+			l.setLocation(250,125);
+			l.setVisible(true);
+			desktop.add(l);
+			} 
+		}
+
+		private void quitApp ()
+                {
+		try
+                  {
+		  int reply = JOptionPane.showConfirmDialog (this,"Do you really want to exit From MysqlPlus ?","MysqlPlus - Exit", JOptionPane.YES_NO_OPTION, JOptionPane.PLAIN_MESSAGE);
+		  
+			//Check the User Selection.
+			if (reply == JOptionPane.YES_OPTION)
+			 {				//If User's Choice Yes then.
+			  	
+			  setVisible (false);					//Hide the Frame.
+			  		
+			  dispose();            					//Free the System Resources.
+			  System.exit (0);        				//Close the Application.
+			  }
+			else if (reply == JOptionPane.NO_OPTION) {			//If User's Choice No then.
+				setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);	//Do Nothing Return to Program.
+			}
+		} 
+
+		catch (Exception e) {}
+
+	       }
+	public static void main(String args[])throws Exception
+	{	
+		new MysqlPlus();
+	
+	}
+		
+}

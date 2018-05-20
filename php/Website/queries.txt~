@@ -1,0 +1,22 @@
+
+//// create table
+
+create table stud_acc(fname varchar(15),lname varchar(15),class varchar(3),class1 int,gender varchar(6),rno int primary key,email varchar(50));
+
+
+
+
+///// List
+
+
+select fname,lname,class,class1,gender,rno,email from stud_acc order by rno asc;
+
+
+create table admin(examid varchar(7),pass varchar(15) not null);
+
+//////
+
+select examid from admin order by examid asc;
+
+
+create table stud_acc(fname varchar(15),lname varchar(15),class varchar(3),class1 int,gender varchar(6),rno int,pass varchar(15));

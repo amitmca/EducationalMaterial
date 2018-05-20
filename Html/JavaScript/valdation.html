@@ -1,0 +1,98 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>New Page 1</title>
+<script language="javascript">
+function chk(f1)
+	{
+	var result;
+	if(f1.media[0].checked)
+		{
+		result=f1.media[0].value;
+		}
+	else
+		{
+		result=f1.media[1].value;
+		}
+	if(f1.type[0].checked)
+		{
+		result=result+"\n"+f1.type[0].value;
+		}	
+	else if(f1.type[1].checked)
+		{
+		result=result+"\n"+f1.type[1].value;
+		}	
+	else
+		{
+		result=result+"\n"+f1.type[2].value;
+		}	
+	if(f1.lang[0].checked)
+		{
+		result=result+"\n"+f1.lang[0].value;
+		}	
+	else if(f1.lang[1].checked)
+		{
+		result=result+"\n"+f1.lang[1].value;
+		}	
+	else
+		{
+		result=result+"\n"+f1.lang[2].value;
+		}	
+	for(i=0;i<f1.album.length;i++)
+		{
+		if(f1.album.options[i].selected)
+			{
+			result=result+"\n"+f1.album.value;
+			}
+		}		
+	f1.info.value=result;		
+	}
+</script>
+</head>
+
+<body>
+<form method="post" name="form">
+<table border="1" width="539" height="205" bordercolor="red" align="center">
+	<tr>
+		<td height="43" width="170" style="border:thin solid black" align="center"><font color="blue" size="10">Media</font></td>
+		<td height="43" width="353" align="center"><font color="red">CD</font><input type="radio" name="media" value="cd">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="red">DVD</font><input type="radio" name="media" value="dvd">
+		</td>
+	</tr>
+	<tr>
+		<td height="43" width="170" style="border:thin solid black" align="center"><font color="blue" size="10">Type</font></td>
+		<td height="43" width="353" align="center"><font color="red">1</font><input type="radio" name="type" value="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="red">2</font><input type="radio" name="type" value="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="red">3</font><input type="radio" name="type" value="3">
+		</td>
+
+	</tr>
+	<tr>
+		<td height="43" width="170" style="border:thin solid black" align="center"><font color="blue" size="10">Language</font></td>
+		<td height="43" width="353" align="center"><font color="red">Marathi</font><input type="radio" name="lang" value="mar">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="red">English</font><input type="radio" name="lang" value="eng">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="red">Hindi</font><input type="radio" name="lang" value="hin">
+		</td>
+	</tr>
+	<tr>
+		<td height="43" width="170" style="border:thin solid black" align="center"><font color="blue" size="10">Albums</font></td>
+		<td height="35" width="353" align="center">
+		<select name="album">
+		<option value="jatra">Jatra</option>
+		<option value="fear">Fear</option>
+		<option value="kismat">Kismat</option>
+		</select>
+		</td>
+	</tr>
+	<tr>
+		<td height="40" width="523" colspan="2" align="center">
+		<input type="button" name="b" value="Display" onclick="chk(this.form);">
+		</td>
+	</tr>
+</table>
+
+<table border="1" width="539" height="201" bordercolor="green" align="center">
+	<tr>
+		<td height="195" width="529" align="center"><textarea name="info" rows="10" cols="50" style="font-size:10pt;color:green;font-weight:bold;text-align:center"></textarea></td>
+	</tr>
+</table>
+</form>
+</body>
+
+</html>

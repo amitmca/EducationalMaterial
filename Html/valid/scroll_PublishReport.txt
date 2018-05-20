@@ -1,0 +1,27 @@
+=============================================================================
+This file includes a list of filename and you need to upload them to Web server
+to get the script to work. All these files are saved into the same directory along
+with the project file (*.jisp) as well as this file.
+
+=============================================================================
+
+[Script file(s)]:
+  imageslider.js
+  imageslidercfg.js
+  imageslider.css
+  loading_w.gif
+
+[Image File(s)]: They should be copied along with script files!
+  slider0.jpg
+  slider1.jpg
+  slider2.jpg
+  slider3.jpg
+  slider4.jpg
+  slider5.jpg
+  slider6.jpg
+  loading_w.gif
+
+
+=============================================================================
+End of Publish Report
+=============================================================================

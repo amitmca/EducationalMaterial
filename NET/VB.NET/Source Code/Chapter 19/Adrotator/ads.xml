@@ -1,0 +1,26 @@
+<Advertisements>
+<Ad> 
+<ImageUrl>banner1.jpg</ImageUrl> 
+<NavigateUrl>http://www.google.com</NavigateUrl> 
+<AlternateText>Visit Google.com
+</AlternateText> 
+<Impressions>80</Impressions> 
+<Keyword>search</Keyword> 
+</Ad> 
+<Ad> 
+<ImageUrl>banner2.jpg</ImageUrl> 
+<NavigateUrl>http://www.msn.com</NavigateUrl> 
+<AlternateText>Visit MSN.com 
+</AlternateText> 
+<Impressions>80</Impressions> 
+<Keyword>MSN</Keyword> 
+</Ad> 
+<Ad> 
+<ImageUrl>banner3.jpg</ImageUrl> 
+<NavigateUrl>http://www.yahoo.com</NavigateUrl> 
+<AlternateText>Visit yahoo.com
+</AlternateText> 
+<Impressions>80</Impressions> 
+<Keyword>yahoo</Keyword> 
+</Ad> 
+</Advertisements> 

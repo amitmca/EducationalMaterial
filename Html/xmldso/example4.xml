@@ -1,0 +1,15 @@
+<?xml version="1.0" ?> 
+<myDB> 
+ <member> 
+   <name>Premshree Pillai</name> 
+     <sex>male</sex> 
+ </member> 
+ <member> 
+   <name>Vinod</name> 
+   <sex>male</sex> 
+ </member> 
+ <member> 
+   <name>Santhosh</name> 
+   <sex>male</sex> 
+ </member> 
+</myDB>

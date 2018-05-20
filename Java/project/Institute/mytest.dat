@@ -1,0 +1,96 @@
+[Main]
+SizeX=4785
+SizeY=6330
+[1]
+Name=lname
+Type=JLabel
+Value=NAME
+X= 360
+Y= 600
+SizeX= 1920
+SizeY= 360
+[2]
+Name=tname
+Type=JTextField
+X= 3000
+Y= 600
+SizeX= 1080
+SizeY= 360
+[3]
+Name=lage
+Type=JLabel
+Value=AGE
+X= 360
+Y= 1320
+SizeX= 1920
+SizeY= 360
+[4]
+Name=tage
+Type=JTextField
+X= 3000
+Y= 1320
+SizeX= 1080
+SizeY= 360
+[5]
+Name=bshow
+Type=JButton
+Value=SHOW
+X= 1800
+Y= 3120
+SizeX= 1200
+SizeY= 360
+[6]
+Name=bsave
+Type=JButton
+Value=SAVE
+X= 360
+Y= 3120
+SizeX= 1200
+SizeY= 360
+[7]
+Name=btech
+Type=JRadioButton
+Value=B.TECH
+X= 3000
+Y= 1920
+SizeX= 1080
+SizeY= 360
+[8]
+Name=mca
+Type=JRadioButton
+Value=MCA
+X= 3000
+Y= 2280
+SizeX= 1080
+SizeY= 360
+[9]
+Name=lquali
+Type=JLabel
+Value=Qualification
+X= 120
+Y= 2040
+SizeX= 2760
+SizeY= 360
+[10]
+Name=bexit
+Type=JButton
+Value=EXIT
+X= 3240
+Y= 3120
+SizeX= 1080
+SizeY= 360
+[11]
+Name=textarea_2
+Type=JTextArea
+X= 360
+Y= 3720
+SizeX= 4080
+SizeY= 2400
+[12]
+Name=label_2
+Type=JLabel
+Value=SAVING DATA INTO A FILE 
+X= 120
+Y= 120
+SizeX= 4680
+SizeY= 360

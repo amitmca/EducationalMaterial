@@ -1,0 +1,23 @@
+create or replace function emp_display() returns text as '
+
+	declare
+
+	cur cursor for
+
+		select eno,ename from employee;
+
+	eno employee.eno%type;
+	ename employee.ename%type;
+
+	begin
+		open cur;
+		loop
+		fetch cur into eno,ename;
+		exit when not found;
+		raise notice '' %  %'',eno,ename;
+		end loop;
+		close cur;
+		return true;
+	end;
+
+	'language 'plpgsql';	

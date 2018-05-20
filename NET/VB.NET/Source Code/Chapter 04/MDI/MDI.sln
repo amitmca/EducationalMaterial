@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MDI", "MDI.vbproj", "{D78F70A1-695C-45B0-89BF-151D3E14AB1E}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{D78F70A1-695C-45B0-89BF-151D3E14AB1E}.Debug.ActiveCfg = Debug|.NET
+		{D78F70A1-695C-45B0-89BF-151D3E14AB1E}.Debug.Build.0 = Debug|.NET
+		{D78F70A1-695C-45B0-89BF-151D3E14AB1E}.Release.ActiveCfg = Release|.NET
+		{D78F70A1-695C-45B0-89BF-151D3E14AB1E}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

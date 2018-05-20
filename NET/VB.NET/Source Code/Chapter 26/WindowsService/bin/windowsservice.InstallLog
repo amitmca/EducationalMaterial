@@ -1,0 +1,79 @@
+﻿Installing assembly 'c:\downloads\keerthi\from charul\chapter 25\code\windowsservice\bin\windowsservice.exe'.
+Affected parameters are:
+   assemblypath = c:\downloads\keerthi\from charul\chapter 25\code\windowsservice\bin\windowsservice.exe
+   logfile = c:\downloads\keerthi\from charul\chapter 25\code\windowsservice\bin\windowsservice.InstallLog
+Installing service Service1...
+Service Service1 has been successfully installed.
+Creating EventLog source Service1 in log Application...
+Committing assembly 'c:\downloads\keerthi\from charul\chapter 25\code\windowsservice\bin\windowsservice.exe'.
+Affected parameters are:
+   assemblypath = c:\downloads\keerthi\from charul\chapter 25\code\windowsservice\bin\windowsservice.exe
+   logfile = c:\downloads\keerthi\from charul\chapter 25\code\windowsservice\bin\windowsservice.InstallLog
+Installing assembly 'c:\downloads\keerthi\from charul\chapter 25\code\windowsservice\bin\windowsservice.exe'.
+Affected parameters are:
+   assemblypath = c:\downloads\keerthi\from charul\chapter 25\code\windowsservice\bin\windowsservice.exe
+   logfile = c:\downloads\keerthi\from charul\chapter 25\code\windowsservice\bin\windowsservice.InstallLog
+Installing service Service1...
+Creating EventLog source Service1 in log Application...
+Rolling back assembly 'c:\downloads\keerthi\from charul\chapter 25\code\windowsservice\bin\windowsservice.exe'.
+Affected parameters are:
+   assemblypath = c:\downloads\keerthi\from charul\chapter 25\code\windowsservice\bin\windowsservice.exe
+   logfile = c:\downloads\keerthi\from charul\chapter 25\code\windowsservice\bin\windowsservice.InstallLog
+Restoring event log to previous state for source Service1.
+Installing assembly 'c:\downloads\keerthi\from charul\chapter 25\code\windowsservice\bin\windowsservice.exe'.
+Affected parameters are:
+   assemblypath = c:\downloads\keerthi\from charul\chapter 25\code\windowsservice\bin\windowsservice.exe
+   logfile = c:\downloads\keerthi\from charul\chapter 25\code\windowsservice\bin\windowsservice.InstallLog
+Installing service MyService...
+Service MyService has been successfully installed.
+Creating EventLog source MyService in log Application...
+Committing assembly 'c:\downloads\keerthi\from charul\chapter 25\code\windowsservice\bin\windowsservice.exe'.
+Affected parameters are:
+   assemblypath = c:\downloads\keerthi\from charul\chapter 25\code\windowsservice\bin\windowsservice.exe
+   logfile = c:\downloads\keerthi\from charul\chapter 25\code\windowsservice\bin\windowsservice.InstallLog
+Uninstalling assembly 'c:\downloads\keerthi\from charul\chapter 25\code\windowsservice\bin\windowsservice.exe'.
+Affected parameters are:
+   assemblypath = c:\downloads\keerthi\from charul\chapter 25\code\windowsservice\bin\windowsservice.exe
+   logfile = c:\downloads\keerthi\from charul\chapter 25\code\windowsservice\bin\windowsservice.InstallLog
+Removing EventLog source MyService.
+Service MyService is being removed from the system...
+Service MyService was successfully removed from the system.
+Uninstalling assembly 'c:\downloads\keerthi\from charul\chapter 25\code\windowsservice\bin\windowsservice.exe'.
+Affected parameters are:
+   assemblypath = c:\downloads\keerthi\from charul\chapter 25\code\windowsservice\bin\windowsservice.exe
+   logfile = c:\downloads\keerthi\from charul\chapter 25\code\windowsservice\bin\windowsservice.InstallLog
+Removing EventLog source MyService.
+Warning: The source MyService is not registered on the local machine.
+Service MyService is being removed from the system...
+An exception occurred during the uninstallation of the System.ServiceProcess.ServiceInstaller installer.
+System.ComponentModel.Win32Exception: The specified service does not exist as an installed service
+An exception occurred while uninstalling. This exception will be ignored and the uninstall will continue. However, the application might not be fully uninstalled after the uninstall is complete.
+Installing assembly 'c:\downloads\keerthi\from charul\chapter 25\code\windowsservice\bin\windowsservice.exe'.
+Affected parameters are:
+   assemblypath = c:\downloads\keerthi\from charul\chapter 25\code\windowsservice\bin\windowsservice.exe
+   logfile = c:\downloads\keerthi\from charul\chapter 25\code\windowsservice\bin\windowsservice.InstallLog
+Installing service MyService...
+Service MyService has been successfully installed.
+Creating EventLog source MyService in log Application...
+Committing assembly 'c:\downloads\keerthi\from charul\chapter 25\code\windowsservice\bin\windowsservice.exe'.
+Affected parameters are:
+   assemblypath = c:\downloads\keerthi\from charul\chapter 25\code\windowsservice\bin\windowsservice.exe
+   logfile = c:\downloads\keerthi\from charul\chapter 25\code\windowsservice\bin\windowsservice.InstallLog
+Uninstalling assembly 'c:\downloads\keerthi\from charul\chapter 25\code\windowsservice\bin\windowsservice.exe'.
+Affected parameters are:
+   assemblypath = c:\downloads\keerthi\from charul\chapter 25\code\windowsservice\bin\windowsservice.exe
+   logfile = c:\downloads\keerthi\from charul\chapter 25\code\windowsservice\bin\windowsservice.InstallLog
+Removing EventLog source MyService.
+Service MyService is being removed from the system...
+Service MyService was successfully removed from the system.
+Installing assembly 'c:\readyprint\chapter 25\code\windowsservice\bin\windowsservice.exe'.
+Affected parameters are:
+   assemblypath = c:\readyprint\chapter 25\code\windowsservice\bin\windowsservice.exe
+   logfile = c:\readyprint\chapter 25\code\windowsservice\bin\windowsservice.InstallLog
+Installing service MyService...
+Service MyService has been successfully installed.
+Creating EventLog source MyService in log Application...
+Committing assembly 'c:\readyprint\chapter 25\code\windowsservice\bin\windowsservice.exe'.
+Affected parameters are:
+   assemblypath = c:\readyprint\chapter 25\code\windowsservice\bin\windowsservice.exe
+   logfile = c:\readyprint\chapter 25\code\windowsservice\bin\windowsservice.InstallLog

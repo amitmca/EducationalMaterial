@@ -1,0 +1,37 @@
+#include<iostream.h>
+#include "conio.h"
+
+class overload
+	{		
+	int a,b;
+	public:	
+		overload(int x,int y)
+		{
+		a=x;
+		b=y;
+		}
+		void display(void)
+		{
+		cout<<"a="<<a;
+		cout<<"\nb="<<b<<"\n";
+		}
+		overload operator +(overload);
+	};
+overload overload::operator +(overload obj) 
+	{
+	overload t;
+	t.a=a+obj.a;
+	t.b=b+obj.b;
+	return(t);
+	}
+
+int main()
+	{
+	overload o1,o2,o3;
+	clrscr();
+	o1=overload(1,2);
+	o2=overload(2,3);
+	o3=o1+o2;
+	getch();
+	return 0;
+	}

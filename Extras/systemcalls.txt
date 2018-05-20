@@ -1,0 +1,1488 @@
+Index for Section 2: System Calls
+
+
+ DC_CTX_new
+ 
+ distcache blocking client API
+
+
+ DC_PLUG_new
+ 
+ basic DC_PLUG functions
+
+
+ DC_PLUG_read
+ 
+ DC_PLUG read/write functions
+
+
+ DC_SERVER_new
+ 
+ distcache server API
+
+
+ NAL_ADDRESS_new
+ 
+ libnal addressing functions
+
+
+ NAL_BUFFER_new
+ 
+ libnal buffer functions
+
+
+ NAL_CONNECTION_new
+ 
+ libnal connection functions
+
+
+ NAL_LISTENER_new
+ 
+ libnal listener functions
+
+
+ NAL_SELECTOR_new
+ 
+ libnal selector functions
+
+
+ NAL_decode_uint32
+ 
+ libnal serialisation functions
+
+
+ _Exit
+ 
+
+
+ _exit
+ 
+ terminate the current process
+
+
+ _llseek
+ 
+
+
+ _newselect
+ 
+
+
+ _sysctl
+ 
+
+
+ accept
+ 
+ accept a connection on a socket
+
+
+ access
+ 
+ check user's permissions for a file
+
+
+ acct
+ 
+ switch process accounting on or off
+
+
+ adjtimex
+ 
+ tune kernel clock
+
+
+ afs_syscall
+ 
+
+
+ alarm
+ 
+ set an alarm clock for delivery of a signal
+
+
+ alloc_hugepages
+ 
+ allocate or free huge pages
+
+
+ arch_prctl
+ 
+ set architecture specific thread state
+
+
+ bdflush
+ 
+ start, flush, or tune buffer-dirty-flush daemon
+
+
+ bind
+ 
+ bind a name to a socket
+
+
+ break
+ 
+
+
+ brk
+ 
+ change data segment size
+
+
+ cacheflush
+ 
+ flush contents of instruction and/or data cache
+
+
+ capget
+ 
+ set/get process capabilities
+
+
+ capset
+ 
+
+
+ chdir
+ 
+ change working directory
+
+
+ chmod
+ 
+ change permissions of a file
+
+
+ chown
+ 
+ change ownership of a file
+
+
+ chroot
+ 
+ change root directory
+
+
+ clone
+ 
+ create a child process
+
+
+ close
+ 
+ close a file descriptor
+
+
+ connect
+ 
+ initiate a connection on a socket
+
+
+ creat
+ 
+
+
+ dup
+ 
+ duplicate a file descriptor
+
+
+ dup2
+ 
+
+
+ epoll_create
+ 
+ open an epoll file descriptor
+
+
+ epoll_ctl
+ 
+ control interface for an epoll descriptor
+
+
+ epoll_wait
+ 
+ wait for an I/O event on an epoll file descriptor
+
+
+ execve
+ 
+ execute program
+
+
+ exit
+ 
+
+
+ fchdir
+ 
+
+
+ fchmod
+ 
+
+
+ fchown
+ 
+
+
+ fcntl
+ 
+ manipulate file descriptor
+
+
+ fdatasync
+ 
+ synchronize a file's in-core data with that on disk
+
+
+ fgetxattr
+ 
+
+
+ flistxattr
+ 
+
+
+ flock
+ 
+ apply or remove an advisory lock on an open file
+
+
+ fork
+ 
+ create a child process
+
+
+ free_hugepages
+ 
+
+
+ fremovexattr
+ 
+
+
+ fsetxattr
+ 
+
+
+ fstat
+ 
+
+
+ fstatfs
+ 
+
+
+ fstatvfs
+ 
+
+
+ fsync
+ 
+ synchronize a file's complete in-core state with that on disk
+
+
+ ftruncate
+ 
+
+
+ futex
+ 
+ Fast Userspace Locking system call
+
+
+ get_thread_area
+ 
+ Get a Thread Local Storage (TLS) area
+
+
+ getcontext
+ 
+ get or set the user context
+
+
+ getdents
+ 
+ get directory entries
+
+
+ getdomainname
+ 
+ get/set domain name
+
+
+ getdtablesize
+ 
+ get descriptor table size
+
+
+ getegid
+ 
+
+
+ geteuid
+ 
+
+
+ getgid
+ 
+ get group identity
+
+
+ getgroups
+ 
+ get/set list of supplementary group IDs
+
+
+ gethostid
+ 
+ get or set the unique identifier of the current host
+
+
+ gethostname
+ 
+ get/set host name
+
+
+ getitimer
+ 
+ get or set value of an interval timer
+
+
+ getpagesize
+ 
+ get memory page size
+
+
+ getpeername
+ 
+ get name of connected peer socket
+
+
+ getpgid
+ 
+
+
+ getpgrp
+ 
+
+
+ getpid
+ 
+ get process identification
+
+
+ getpmsg
+ 
+
+
+ getppid
+ 
+
+
+ getpriority
+ 
+ get/set program scheduling priority
+
+
+ getresgid
+ 
+
+
+ getresuid
+ 
+ get real, effective and saved user or group ID
+
+
+ getrlimit
+ 
+ get/set resource limits and usage
+
+
+ getrusage
+ 
+
+
+ getsid
+ 
+ get session ID
+
+
+ getsockname
+ 
+ get socket name
+
+
+ getsockopt
+ 
+ get and set options on sockets
+
+
+ gettid
+ 
+ get thread identification
+
+
+ gettimeofday
+ 
+ get / set time
+
+
+ getuid
+ 
+ get user identity
+
+
+ getxattr
+ 
+ retrieve an extended attribute value
+
+
+ gtty
+ 
+
+
+ idle
+ 
+ make process 0 idle
+
+
+ inb
+ 
+
+
+ inb_p
+ 
+
+
+ inl
+ 
+
+
+ inl_p
+ 
+
+
+ insb
+ 
+
+
+ insl
+ 
+
+
+ insw
+ 
+
+
+ intro
+ 
+ Introduction to system calls
+
+
+ inw
+ 
+
+
+ inw_p
+ 
+
+
+ io_cancel
+ 
+ Cancel an outstanding asynchronous I/O operation
+
+
+ io_destroy
+ 
+ Destroy an asynchronous I/O context
+
+
+ io_getevents
+ 
+ Read asynchronous I/O events from the completion queue
+
+
+ io_setup
+ 
+ Create an asynchronous I/O context
+
+
+ io_submit
+ 
+ Submit asynchronous I/O blocks for processing
+
+
+ ioctl
+ 
+ control device
+
+
+ ioctl_list
+ 
+ list of ioctl calls in Linux/i386 kernel
+
+
+ ioperm
+ 
+ set port input/output permissions
+
+
+ iopl
+ 
+ change I/O privilege level
+
+
+ ipc
+ 
+ System V IPC system calls
+
+
+ kill
+ 
+ send signal to a process
+
+
+ killpg
+ 
+ send signal to a process group
+
+
+ lchown
+ 
+
+
+ lgetxattr
+ 
+
+
+ link
+ 
+ make a new name for a file
+
+
+ listen
+ 
+ listen for connections on a socket
+
+
+ listxattr
+ 
+ list extended attribute names
+
+
+ llistxattr
+ 
+
+
+ llseek
+ 
+
+
+ lock
+ 
+
+
+ lookup_dcookie
+ 
+ return a directory entry's path
+
+
+ lremovexattr
+ 
+
+
+ lseek
+ 
+ reposition read/write file offset
+
+
+ lsetxattr
+ 
+
+
+ lstat
+ 
+
+
+ madvise
+ 
+ give advice about use of memory
+
+
+ mbind
+ 
+ Set memory policy for an memory range
+
+
+ mincore
+ 
+ get information on whether pages are in core
+
+
+ mkdir
+ 
+ create a directory
+
+
+ mknod
+ 
+ create a special or ordinary file
+
+
+ mlock
+ 
+ disable paging for some parts of memory
+
+
+ mlock.2
+ 
+
+
+ mlockall
+ 
+ disable paging for calling process
+
+
+ mlockall.2
+ 
+
+
+ mmap
+ 
+ map or unmap files or devices into memory
+
+
+ mmap2
+ 
+ map files or devices into memory
+
+
+ modify_ldt
+ 
+ get or set ldt
+
+
+ mount
+ 
+ mount and unmount filesystems
+
+
+ mprotect
+ 
+ control allowable accesses to a region of memory
+
+
+ mpx
+ 
+
+
+ mremap
+ 
+ re-map a virtual memory address
+
+
+ msgctl
+ 
+ message control operations
+
+
+ msgget
+ 
+ get a message queue identifier
+
+
+ msgop
+ 
+ message operations
+
+
+ msgrcv
+ 
+
+
+ msgsnd
+ 
+
+
+ msync
+ 
+ synchronize a file with a memory map
+
+
+ munlock
+ 
+ reenable paging for some parts of memory
+
+
+ munlockall
+ 
+ reenable paging for calling process
+
+
+ munmap
+ 
+
+
+ nanosleep
+ 
+ pause execution for a specified time
+
+
+ nfsservctl
+ 
+ syscall interface to kernel nfs daemon
+
+
+ nice
+ 
+ change process priority
+
+
+ obsolete
+ 
+
+
+ oldfstat
+ 
+
+
+ oldlstat
+ 
+
+
+ oldolduname
+ 
+
+
+ oldstat
+ 
+
+
+ olduname
+ 
+
+
+ open
+ 
+ open and possibly create a file or device
+
+
+ outb
+ 
+ port I/O
+
+
+ outb_p
+ 
+
+
+ outl
+ 
+
+
+ outl_p
+ 
+
+
+ outsb
+ 
+
+
+ outsl
+ 
+
+
+ outsw
+ 
+
+
+ outw
+ 
+
+
+ outw_p
+ 
+
+
+ pause
+ 
+ wait for signal
+
+
+ pciconfig_iobase
+ 
+
+
+ pciconfig_read
+ 
+ pci device information handling
+
+
+ pciconfig_write
+ 
+
+
+ personality
+ 
+ set the process execution domain
+
+
+ pipe
+ 
+ create pipe
+
+
+ pivot_root
+ 
+ change the root file system
+
+
+ poll
+ 
+ wait for some event on a file descriptor
+
+
+ posix_fadvise
+ 
+ predeclare an access pattern for file data
+
+
+ prctl
+ 
+ operations on a process
+
+
+ pread
+ 
+ read from or write to a file descriptor at a given offset
+
+
+ prof
+ 
+
+
+ pselect
+ 
+
+
+ ptrace
+ 
+ process trace
+
+
+ putpmsg
+ 
+
+
+ pwrite
+ 
+
+
+ quotactl
+ 
+ manipulate disk quotas
+
+
+ read
+ 
+ read from a file descriptor
+
+
+ readahead
+ 
+ Read in advance one or more pages of a file within a page cache
+
+
+ readdir
+ 
+ read directory entry
+
+
+ readlink
+ 
+ read value of a symbolic link
+
+
+ readv
+ 
+ read or write data into multiple buffers
+
+
+ reboot
+ 
+ reboot or enable/disable Ctrl-Alt-Del
+
+
+ recv
+ 
+ receive a message from a socket
+
+
+ recvfrom
+ 
+
+
+ recvmsg
+ 
+
+
+ remap_file_pages
+ 
+ create a non-linear file mapping
+
+
+ removexattr
+ 
+ remove an extended attribute
+
+
+ rename
+ 
+ change the name or location of a file
+
+
+ rmdir
+ 
+ delete a directory
+
+
+ sbrk
+ 
+
+
+ sched_get_priority_max
+ 
+ get static priority range
+
+
+ sched_get_priority_min
+ 
+
+
+ sched_getaffinity
+ 
+
+
+ sched_getparam
+ 
+
+
+ sched_getscheduler
+ 
+
+
+ sched_rr_get_interval
+ 
+ get the SCHED_RR interval for the named process
+
+
+ sched_setaffinity
+ 
+ set and get a process's CPU affinity mask
+
+
+ sched_setparam
+ 
+ set and get scheduling parameters
+
+
+ sched_setscheduler
+ 
+ set and get scheduling algorithm/parameters
+
+
+ sched_yield
+ 
+ yield the processor
+
+
+ security
+ 
+
+
+ select
+ 
+ synchronous I/O multiplexing
+
+
+ select_tut
+ 
+
+
+ semctl
+ 
+ semaphore control operations
+
+
+ semget
+ 
+ get a semaphore set identifier
+
+
+ semop
+ 
+ semaphore operations
+
+
+ semtimedop
+ 
+
+
+ send
+ 
+ send a message from a socket
+
+
+ sendfile
+ 
+ transfer data between file descriptors
+
+
+ sendmsg
+ 
+
+
+ sendto
+ 
+
+
+ set_mempolicy
+ 
+
+
+ set_thread_area
+ 
+ Set a Thread Local Storage (TLS) area
+
+
+ setcontext
+ 
+
+
+ setdomainname
+ 
+
+
+ setegid
+ 
+
+
+ seteuid
+ 
+ set effective user or group ID
+
+
+ setfsgid
+ 
+ set group identity used for file system checks
+
+
+ setfsuid
+ 
+ set user identity used for file system checks
+
+
+ setgid
+ 
+ set group identity
+
+
+ setgroups
+ 
+
+
+ sethostid
+ 
+
+
+ sethostname
+ 
+
+
+ setitimer
+ 
+
+
+ setpgid
+ 
+ set/get process group
+
+
+ setpgrp
+ 
+
+
+ setpriority
+ 
+
+
+ setregid
+ 
+
+
+ setresgid
+ 
+
+
+ setresuid
+ 
+ set real, effective and saved user or group ID
+
+
+ setreuid
+ 
+ set real and/or effective user or group ID
+
+
+ setrlimit
+ 
+
+
+ setsid
+ 
+ creates a session and sets the process group ID
+
+
+ setsockopt
+ 
+
+
+ settimeofday
+ 
+
+
+ setuid
+ 
+ set user identity
+
+
+ setup
+ 
+ setup devices and file systems, mount root file system
+
+
+ setxattr
+ 
+ set an extended attribute value
+
+
+ sgetmask
+ 
+
+
+ shmat
+ 
+
+
+ shmctl
+ 
+ shared memory control
+
+
+ shmdt
+ 
+
+
+ shmget
+ 
+ allocates a shared memory segment
+
+
+ shmop
+ 
+ shared memory operations
+
+
+ shutdown
+ 
+ shut down part of a full-duplex connection
+
+
+ sigaction
+ 
+ POSIX signal handling functions
+
+
+ sigaltstack
+ 
+ get or set alternate signal stack content
+
+
+ sigblock
+ 
+ manipulate the signal mask
+
+
+ siggetmask
+ 
+
+
+ sigmask
+ 
+
+
+ signal
+ 
+ ANSI C signal handling
+
+
+ sigpause
+ 
+ atomically release blocked signals and wait for interrupt
+
+
+ sigpending
+ 
+
+
+ sigprocmask
+ 
+
+
+ sigqueue
+ 
+ queue a signal and data to a process
+
+
+ sigreturn
+ 
+ return from signal handler and cleanup stack frame
+
+
+ sigsetmask
+ 
+
+
+ sigsuspend
+ 
+
+
+ sigtimedwait
+ 
+
+
+ sigvec
+ 
+ BSD software signal facilities
+
+
+ sigwaitinfo
+ 
+ synchronously wait for queued signals
+
+
+ socket
+ 
+ create an endpoint for communication
+
+
+ socketcall
+ 
+ socket system calls
+
+
+ socketpair
+ 
+ create a pair of connected sockets
+
+
+ ssetmask
+ 
+
+
+ sstk
+ 
+ change stack size
+
+
+ stat
+ 
+ get file status
+
+
+ statfs
+ 
+ get file system statistics
+
+
+ statvfs
+ 
+ get file system statistics
+
+
+ stime
+ 
+ set time
+
+
+ stty
+ 
+
+
+ swapoff
+ 
+
+
+ swapon
+ 
+ start/stop swapping to file/device
+
+
+ symlink
+ 
+ make a new name for a file
+
+
+ sync
+ 
+ commit buffer cache to disk
+
+
+ syscall
+ 
+ indirect system call
+
+
+ syscalls
+ 
+
+
+ sysctl
+ 
+ read/write system parameters
+
+
+ sysfs
+ 
+ get file system type information
+
+
+ sysinfo
+ 
+ returns information on overall system statistics
+
+
+ syslog
+ 
+ read and/or clear kernel message ring buffer; set console_loglevel
+
+
+ time
+ 
+ get time in seconds
+
+
+ times
+ 
+ get process times
+
+
+ tkill
+ 
+ send a signal to a single process
+
+
+ truncate
+ 
+ truncate a file to a specified length
+
+
+ tux
+ 
+ interact with the TUX kernel subsystem
+
+
+ umask
+ 
+ set file creation mask
+
+
+ umount
+ 
+
+
+ umount2
+ 
+
+
+ uname
+ 
+ get name and information about current kernel
+
+
+ undocumented
+ 
+
+
+ unimplemented
+ 
+
+
+ unlink
+ 
+ delete a name and possibly the file it refers to
+
+
+ uselib
+ 
+ select shared library
+
+
+ ustat
+ 
+ get file system statistics
+
+
+ utime
+ 
+ change access and/or modification times of an inode
+
+
+ utimes
+ 
+
+
+ vfork
+ 
+ create a child process and block parent
+
+
+ vhangup
+ 
+ virtually hangup the current tty
+
+
+ vm86
+ 
+ enter virtual 8086 mode
+
+
+ wait
+ 
+ wait for process termination
+
+
+ wait3
+ 
+
+
+ wait4
+ 
+ wait for process termination, BSD style
+
+
+ waitpid
+ 
+
+
+ write
+ 
+ write to a file descriptor
+
+
+ writev
+ 

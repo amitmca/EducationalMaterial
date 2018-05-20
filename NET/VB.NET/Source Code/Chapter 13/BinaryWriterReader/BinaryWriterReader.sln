@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "BinaryWriterReader", "BinaryWriterReader.vbproj", "{2A0002B4-1454-4754-89C6-BD6C9744B5E9}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{2A0002B4-1454-4754-89C6-BD6C9744B5E9}.Debug.ActiveCfg = Debug|.NET
+		{2A0002B4-1454-4754-89C6-BD6C9744B5E9}.Debug.Build.0 = Debug|.NET
+		{2A0002B4-1454-4754-89C6-BD6C9744B5E9}.Release.ActiveCfg = Release|.NET
+		{2A0002B4-1454-4754-89C6-BD6C9744B5E9}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

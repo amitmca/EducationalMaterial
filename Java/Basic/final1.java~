@@ -1,0 +1,21 @@
+class myfinal
+	{
+	int a,b;
+	final void add()
+		{
+		int c=a+b;
+		}
+	}
+class final1 extends myfinal
+	{
+	int a=2,b=3;
+	void add()
+		{
+		int c=a+b;
+		}
+	public static void main(String args[])
+		{
+		
+		
+		}	
+	}

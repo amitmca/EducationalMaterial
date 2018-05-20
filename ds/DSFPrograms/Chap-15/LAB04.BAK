@@ -1,0 +1,142 @@
+/* Hashing *   /
+/* Program Details - Hashing , handle collision  using linear probing
+		     without chaining  */
+#include <stdio.h>
+#include <conio.h>
+#define SIZE 10              /* size of the hash table*/
+#define FALSE 0
+#define TRUE 1
+#define h(x) x%SIZE         /*hashing function */
+void insert( int data[],int flag[],int x);
+int search(int data[],int flag[],int x);
+void print(int data[],int flag[]);
+
+void main()
+ { int data[SIZE],flag[SIZE],i,j,x,op,loc;
+   /* array data[]  - is a hash table
+      array flag[]  - if flag[i] is 1 then the ith place of the hash
+		      table is filled */
+    for(i=0;i<SIZE;i++) /* initialize */
+     flag[i]=FALSE;
+   clrscr();
+    do
+      { flushall();
+	printf("\n\n1)Insert\n2)Search\n3)Print\n4)Quit");
+	printf("\nEnter Your Choice : ");
+	scanf("%d",&op);
+	switch(op)
+	 {  case 1: printf("\n Enter a number to be inserted:");
+		    scanf("%d",&x);
+		    insert(data,flag,x);
+		    break;
+	    case 2: printf("\n Enter a number to be searched :");
+		    scanf("%d",&x);
+		    if((loc=search(data,flag,x))==-1)
+		      printf("\n****Element not found****");
+		    else
+		      printf("\n***Found at the location=%d",loc);
+		    break;
+	   case 3:  print(data,flag);
+		    break;
+	}
+     }while(op!=4);
+  }
+void insert( int data[],int flag[],int x)
+{int i=0,j;
+ j=h(x); /*hashed location*/
+ do
+   { if(!flag[j])
+       { data[j]=x;
+	 flag[j]=TRUE;
+	 return;
+       }
+     else
+      { i++;
+	j=(h(x)+i)%SIZE;
+      }
+   }while(i<SIZE);
+printf("\n*****hash table is full");
+}
+int search(int data[],int flag[],int x)
+ {int i=0,j;
+ j=h(x); /*hashed location*/
+ do
+   { if(data[j]==x)
+       return(j);
+     i++;
+     j=(h(x)+i)%SIZE;
+   }while(i<SIZE && flag[j]);
+ return(-1);
+}
+
+void print(int data[],int flag[])
+ { int i;
+   for(i=0;i<SIZE;i++)
+    if(flag[i])
+     printf("\n(%d) %d",i,data[i]);
+    else
+     printf("\n(%d) ---",i);
+ }
+
+/*
+           *** OUTPUT ***
+1)Insert
+2)Search
+3)Print
+4)Quit
+Enter Your Choice : 1
+
+ Enter a number to be inserted:1
+
+
+1)Insert
+2)Search
+3)Print
+4)Quit
+Enter Your Choice : 1
+
+ Enter a number to be inserted:2
+
+1)Insert
+2)Search
+3)Print
+4)Quit
+Enter Your Choice : 2
+
+ Enter a number to be searched :1
+
+***Found at the location=1
+
+1)Insert
+2)Search
+3)Print
+4)Quit
+Enter Your Choice : 2
+
+ Enter a number to be searched :3
+
+****Element not found****
+
+1)Insert
+2)Search
+3)Print
+4)Quit
+Enter Your Choice : 3
+
+(0) ---
+(1) 1
+(2) 2
+(3) ---
+(4) ---
+(5) ---
+(6) ---
+(7) ---
+(8) ---
+(9) ---
+
+1)Insert
+2)Search
+3)Print
+4)Quit
+Enter Your Choice : 4
+*/

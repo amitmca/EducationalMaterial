@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>User Defined Functions</title>
+</head>
+<script language="JavaScript">
+var name=" ";
+function hello()
+	{
+	name=prompt("Enter your name:","name");
+	alert(" WELCOME TO THE USER DEFINED FUNCTIONS "+name);
+	}
+
+function goodbye()
+	{
+	alert("See you again " +name);	
+	}
+
+function square(form)
+	{
+	var sqr=form.num.value*form.num.value;
+	form.result.value=sqr;
+	}
+
+function cube(form)
+	{
+	var cub=form.num.value*form.num.value*form.num.value;
+	form.result.value=cub;				
+	}
+
+function factorial(number)
+	{
+	if(number>1)
+		{
+		return(number*factorial(number-1));
+		}
+	else
+		{
+		return(number);
+		}
+	}
+</script>
+</head>
+<body onLoad="hello();" onUnload="goodbye();">
+
+<h1 align="center">User Defined Functions</h1>
+
+<form name="form1">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<label>Enter Any Number:</label>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<input type="text" name="num"><br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+Square : <input type="radio" name="cal" value="square" onClick="square(this.form);">
+
+Cube : <input type="radio" name="cal" value="cube" onClick="cube(this.form);">
+
+Factorial : <input type="radio" name="cal" value="fact" onClick="result.value=factorial(num.value);"><br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Result:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="text" name="result"><br>
+
+</form>
+</body>
+</html>

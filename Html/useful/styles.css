@@ -1,0 +1,54 @@
+.bottomborder {
+	BORDER-BOTTOM: #000000; 2px: 
+}
+.mtext {
+	FONT-SIZE: 10pt; COLOR: #000000; FONT-FAMILY: Arial; TEXT-DECORATION: none
+}
+.menu {
+	FONT-SIZE: 9pt; COLOR: #456689; FONT-FAMILY: Arial; TEXT-DECORATION: none
+}
+.lmenu {
+	FONT-SIZE: 11px; COLOR: #bd3709; FONT-FAMILY: Arial; TEXT-DECORATION: none
+}
+.tlink {
+	FONT-SIZE: 10pt; COLOR: #000000; FONT-FAMILY: Arial; TEXT-DECORATION: none
+}
+.text {
+	FONT-SIZE: 9pt; COLOR: #000000; FONT-FAMILY: Arial; TEXT-DECORATION: none
+}
+.text A {
+	FONT-SIZE: 9pt; COLOR: #000000; FONT-FAMILY: Arial; TEXT-DECORATION: none
+}
+.text A:hover {
+	COLOR: gold; TEXT-DECORATION: none
+}
+.text A:active {
+	COLOR: gold; TEXT-DECORATION: none
+}
+.left {
+	FONT-SIZE: 11px; COLOR: black; FONT-FAMILY: Arial
+}
+.left A {
+	FONT-SIZE: 12px; COLOR: black; FONT-FAMILY: Arial; TEXT-DECORATION: underline
+}
+.band {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: #ffffff; FONT-FAMILY: Arial; BACKGROUND-COLOR: #5582ab
+}
+.top {
+	FONT-SIZE: 9pt; COLOR: #ffffff; FONT-FAMILY: Arial; TEXT-DECORATION: none
+}
+.top A {
+	FONT-SIZE: 9pt; COLOR: #ffffff; FONT-FAMILY: Arial; TEXT-DECORATION: none
+}
+.top A:hover {
+	COLOR: gold; TEXT-DECORATION: none
+}
+.top A:active {
+	COLOR: gold; TEXT-DECORATION: none
+}
+.left2 {
+	FONT-SIZE: 11px; COLOR: black; FONT-FAMILY: Arial; TEXT-DECORATION: underline
+}
+.left2 A {
+	FONT-SIZE: 11px; COLOR: black; FONT-FAMILY: Arial; TEXT-DECORATION: underline
+}

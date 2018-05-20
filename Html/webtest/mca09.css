@@ -1,0 +1,189 @@
+IMG.tcalIcon {
+	MARGIN-LEFT: 1px; VERTICAL-ALIGN: middle; CURSOR: pointer
+}
+DIV#tcal {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; Z-INDEX: 100; VISIBILITY: hidden; PADDING-BOTTOM: 0px; WIDTH: 158px; PADDING-TOP: 2px; POSITION: absolute
+}
+DIV#tcal TABLE {
+	BORDER-RIGHT: silver 1px solid; BORDER-TOP: silver 1px solid; BORDER-LEFT: silver 1px solid; WIDTH: 100%; BORDER-BOTTOM: silver 1px solid; BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: white
+}
+DIV#tcal TABLE.ctrl {
+	BORDER-BOTTOM: 0px
+}
+DIV#tcal TABLE.ctrl TD {
+	WIDTH: 15px; HEIGHT: 20px
+}
+DIV#tcal TABLE.ctrl TH {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; COLOR: black; BORDER-BOTTOM: 0px; BACKGROUND-COLOR: white
+}
+DIV#tcal TH {
+	BORDER-RIGHT: silver 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: silver 1px solid; PADDING-LEFT: 0px; FONT-SIZE: 10px; PADDING-BOTTOM: 3px; BORDER-LEFT: silver 1px solid; COLOR: white; PADDING-TOP: 3px; BORDER-BOTTOM: silver 1px solid; FONT-FAMILY: tahoma, verdana, arial; BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: gray; TEXT-ALIGN: center
+}
+DIV#tcal TD {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; PADDING-LEFT: 0px; FONT-SIZE: 11px; PADDING-BOTTOM: 2px; BORDER-LEFT: 0px; WIDTH: 22px; CURSOR: pointer; PADDING-TOP: 2px; BORDER-BOTTOM: 0px; FONT-FAMILY: tahoma, verdana, arial; BORDER-COLLAPSE: collapse; TEXT-ALIGN: center
+}
+DIV#tcal TD.othermonth {
+	COLOR: silver
+}
+DIV#tcal TD.weekend {
+	BACKGROUND-COLOR: #acd6f5
+}
+DIV#tcal TD.today {
+	BORDER-RIGHT: red 1px solid; BORDER-TOP: red 1px solid; BORDER-LEFT: red 1px solid; BORDER-BOTTOM: red 1px solid
+}
+DIV#tcal TD.selected {
+	BACKGROUND-COLOR: #ffb3be
+}
+IFRAME#tcalIF {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; Z-INDEX: 98; VISIBILITY: hidden; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px; POSITION: absolute
+}
+DIV#tcalShade {
+	Z-INDEX: 99; VISIBILITY: hidden; POSITION: absolute
+}
+DIV#tcalShade TABLE {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; WIDTH: 100%; BORDER-BOTTOM: 0px; BORDER-COLLAPSE: collapse
+}
+DIV#tcalShade TABLE TD {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; BORDER-LEFT: 0px; PADDING-TOP: 0px; BORDER-BOTTOM: 0px; BORDER-COLLAPSE: collapse
+}
+.Curved {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+.Curved .b1 {
+	DISPLAY: block; FONT-SIZE: 1px; OVERFLOW: hidden; HEIGHT: 1px
+}
+.Curved .b2 {
+	DISPLAY: block; FONT-SIZE: 1px; OVERFLOW: hidden; HEIGHT: 1px
+}
+.Curved .b3 {
+	DISPLAY: block; FONT-SIZE: 1px; OVERFLOW: hidden; HEIGHT: 1px
+}
+.Curved .b4 {
+	DISPLAY: block; FONT-SIZE: 1px; OVERFLOW: hidden; HEIGHT: 1px
+}
+.Curved .b5 {
+	DISPLAY: block; FONT-SIZE: 1px; OVERFLOW: hidden; HEIGHT: 1px
+}
+.Curved .b6 {
+	DISPLAY: block; FONT-SIZE: 1px; OVERFLOW: hidden; HEIGHT: 1px
+}
+.Curved .b7 {
+	DISPLAY: block; FONT-SIZE: 1px; OVERFLOW: hidden; HEIGHT: 1px
+}
+.Curved .b8 {
+	DISPLAY: block; FONT-SIZE: 1px; OVERFLOW: hidden; HEIGHT: 1px
+}
+.Curved .b2 {
+	BORDER-RIGHT: powderblue 1px solid; BORDER-TOP: powderblue 0px solid; FILTER: progid:DXImageTransform.Microsoft.Gradient(endColorstr='#e6dfdf', startColorstr='#c0c0c0', gradientType='1'); BORDER-LEFT: powderblue 1px solid; BORDER-BOTTOM: powderblue 0px solid
+}
+.Curved .b3 {
+	BORDER-RIGHT: powderblue 1px solid; BORDER-TOP: powderblue 0px solid; FILTER: progid:DXImageTransform.Microsoft.Gradient(endColorstr='#e6dfdf', startColorstr='#c0c0c0', gradientType='1'); BORDER-LEFT: powderblue 1px solid; BORDER-BOTTOM: powderblue 0px solid
+}
+.Curved .b4 {
+	BORDER-RIGHT: powderblue 1px solid; BORDER-TOP: powderblue 0px solid; FILTER: progid:DXImageTransform.Microsoft.Gradient(endColorstr='#e6dfdf', startColorstr='#c0c0c0', gradientType='1'); BORDER-LEFT: powderblue 1px solid; BORDER-BOTTOM: powderblue 0px solid
+}
+.Curved .b5 {
+	BORDER-RIGHT: powderblue 1px solid; BORDER-TOP: powderblue 0px solid; BORDER-LEFT: powderblue 1px solid; BORDER-BOTTOM: powderblue 0px solid
+}
+.Curved .b6 {
+	BORDER-RIGHT: powderblue 1px solid; BORDER-TOP: powderblue 0px solid; BORDER-LEFT: powderblue 1px solid; BORDER-BOTTOM: powderblue 0px solid
+}
+.Curved .b7 {
+	BORDER-RIGHT: powderblue 1px solid; BORDER-TOP: powderblue 0px solid; BORDER-LEFT: powderblue 1px solid; BORDER-BOTTOM: powderblue 0px solid
+}
+.Curved .b2 {
+	BACKGROUND: #cf0142
+}
+.Curved .b3 {
+	BACKGROUND: #cf0142
+}
+.Curved .b4 {
+	BACKGROUND: #cf0142
+}
+.Curved .b5 {
+	BACKGROUND: #ffffff
+}
+.Curved .b6 {
+	BACKGROUND: #ffffff
+}
+.Curved .b7 {
+	BACKGROUND: #ffffff
+}
+.Curved .b1 {
+	BACKGROUND: powderblue; MARGIN: 0px 5px
+}
+.Curved .b8 {
+	BACKGROUND: powderblue; MARGIN: 0px 5px
+}
+.Curved .b2 {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 2px; BORDER-BOTTOM-WIDTH: 0px; MARGIN: 0px 3px; HEIGHT: 1px; BORDER-RIGHT-WIDTH: 2px
+}
+.Curved .b7 {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 2px; BORDER-BOTTOM-WIDTH: 0px; MARGIN: 0px 3px; HEIGHT: 1px; BORDER-RIGHT-WIDTH: 2px
+}
+.Curved .b3 {
+	MARGIN: 0px 2px
+}
+.Curved .b6 {
+	MARGIN: 0px 2px
+}
+.Curved .b4 {
+	MARGIN: 0px 1px; HEIGHT: 2px
+}
+.Curved .b5 {
+	MARGIN: 0px 1px; HEIGHT: 2px
+}
+.Curved .HeaderBox {
+	BORDER-RIGHT: powderblue 1px solid; PADDING-RIGHT: 8px; BORDER-TOP: powderblue 0px solid; DISPLAY: block; PADDING-LEFT: 8px; FONT-WEIGHT: bold; FONT-SIZE: 15px; BACKGROUND: powderblue; FILTER: progid:DXImageTransform.Microsoft.Gradient(endColorstr='#e6dfdf', startColorstr='#c0c0c0', gradientType='1'); PADDING-BOTTOM: 2px; BORDER-LEFT: powderblue 1px solid; COLOR: #5a5a5a; PADDING-TOP: 0px; BORDER-BOTTOM: powderblue 1px solid; FONT-FAMILY: tahoma; HEIGHT: 14px
+}
+.HeaderBox A {
+	RIGHT: 10px; POSITION: absolute
+}
+.HeaderBox IMG {
+	BORDER-RIGHT: 1px; BORDER-TOP: 1px; BORDER-LEFT: 1px; BORDER-BOTTOM: 1px; size: 98
+}
+.Curved .ContentBox {
+	BORDER-RIGHT: powderblue 1px solid; BORDER-TOP: powderblue 0px solid; DISPLAY: block; BACKGROUND: #ffffff; BORDER-LEFT: powderblue 1px solid; BORDER-BOTTOM: powderblue 0px solid
+}
+.Curved .InnerContent {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 0px; PADDING-TOP: 4px
+}
+TH.tab {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; BORDER-LEFT-COLOR: #000000; BORDER-BOTTOM-COLOR: #000000; BORDER-TOP-STYLE: solid; BORDER-TOP-COLOR: #000000; FONT-FAMILY: tahoma; BORDER-RIGHT-STYLE: solid; BORDER-LEFT-STYLE: solid; BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: powderblue; TEXT-ALIGN: center; BORDER-RIGHT-COLOR: #000000; BORDER-BOTTOM-STYLE: solid
+}
+TD.tab {
+	FONT-SIZE: 11px; BORDER-LEFT-COLOR: #000000; BORDER-BOTTOM-COLOR: #000000; BORDER-TOP-STYLE: solid; BORDER-TOP-COLOR: #000000; FONT-FAMILY: tahoma; BORDER-RIGHT-STYLE: solid; BORDER-LEFT-STYLE: solid; BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: white; TEXT-ALIGN: center; BORDER-RIGHT-COLOR: #000000; BORDER-BOTTOM-STYLE: solid
+}
+TH.uptab {
+	BORDER-RIGHT: powderblue 1px solid; BORDER-TOP: powderblue 1px solid; FONT-WEIGHT: bold; FONT-SIZE: 13px; BORDER-LEFT: powderblue 1px solid; BORDER-BOTTOM: powderblue 1px solid; FONT-FAMILY: tahoma; BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: #efefef
+}
+TABLE.uptab {
+	BORDER-RIGHT: powderblue 1px solid; BORDER-TOP: powderblue 1px solid; BORDER-LEFT: powderblue 1px solid; BORDER-BOTTOM: powderblue 1px solid; BORDER-COLLAPSE: collapse
+}
+TD.uptab {
+	BORDER-RIGHT: powderblue 1px solid; BORDER-TOP: powderblue 1px solid; FONT-SIZE: 12px; BORDER-LEFT: powderblue 1px solid; TEXT-INDENT: 3px; BORDER-BOTTOM: powderblue 1px solid; FONT-FAMILY: tahoma; BORDER-COLLAPSE: collapse
+}
+DIV.uptab {
+	FONT-SIZE: 12px; FONT-FAMILY: tahoma
+}
+LI.uptab {
+	FONT-SIZE: 12px; FONT-FAMILY: "Tahoma","sans-serif"
+}
+STRONG.uptab {
+	FONT-SIZE: 12px; FONT-FAMILY: tahoma
+}
+TABLE.tab {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; BORDER-LEFT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-COLLAPSE: collapse
+}
+TD.tabfoot {
+	BORDER-RIGHT: powderblue 1px solid; BORDER-TOP: powderblue 1px solid; FONT-WEIGHT: bold; FONT-SIZE: 11px; BORDER-LEFT: powderblue 1px solid; BORDER-BOTTOM: powderblue 1px solid; FONT-FAMILY: "Tahoma","sans-serif"; BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: powderblue; TEXT-ALIGN: center
+}
+TD.tableft {
+	BORDER-RIGHT: powderblue 1px solid; BORDER-TOP: powderblue 1px solid; FONT-WEIGHT: bold; FONT-SIZE: 12px; BORDER-LEFT: powderblue 1px solid; BORDER-BOTTOM: powderblue 1px solid; FONT-FAMILY: "Tahoma","sans-serif"; BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: powderblue; TEXT-ALIGN: center
+}
+P.uptab {
+	FONT-SIZE: 12px; MARGIN: 0in 0in 12pt; TEXT-INDENT: 2.25pt; LINE-HEIGHT: normal; FONT-FAMILY: "Tahoma","sans-serif"; mso-margin-top-alt: auto
+}
+SPAN.uptab {
+	FONT-SIZE: 12px; FONT-STYLE: normal; FONT-FAMILY: "Tahoma","sans-serif"; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-size: 10.0pt; mso-bidi-language: AR-SA
+}

@@ -1,0 +1,26 @@
+[Main]
+SizeX=5025
+SizeY=4110
+[1]
+Name=l
+Type=JLabel
+Value=Enter Your Name
+X= 720
+Y= 840
+SizeX= 1080
+SizeY= 360
+[2]
+Name=b
+Type=JButton
+Value=SUBMIT
+X= 1680
+Y= 1800
+SizeX= 1080
+SizeY= 360
+[3]
+Name=t
+Type=JTextField
+X= 2520
+Y= 840
+SizeX= 1080
+SizeY= 360

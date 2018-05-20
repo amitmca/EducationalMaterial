@@ -1,0 +1,52 @@
+! ** JCreator Project File (C)2000
+! ********** DO NOT EDIT *********
+
+VERSION := "1.10"
+LABEL := "hostelon"
+JDKPROFILE := "JDK version 1.4"
+ACTIVE := "1"
+OUTPUTPATH := "..\\\\hostelon"
+COMPILER := "<Default>"
+
+! Start RunTime Configuration Structure
+#[BeginRunTime]LABEL := "<Default>" RUNAPPLIC := "" RUNAPPLET := "" PARAM := "" RUN := "loginframe" CHECK := "10" #[EndRunTime]
+! Start Required Libraries Structure
+
+! Start Project Folder Structure
+#[BeginFolder]
+LABEL := "Root"
+FILTER := ""
+
+#[BeginFile]SOURCE := "\\repcomp.java" #[EndFile]
+#[BeginFile]SOURCE := "\\reptotfee.java" #[EndFile]
+#[BeginFile]SOURCE := "\\repdues.java" #[EndFile]
+#[BeginFile]SOURCE := "\\reprec.java" #[EndFile]
+#[BeginFile]SOURCE := "\\repstudind.java" #[EndFile]
+#[BeginFile]SOURCE := "\\repstudcollege.java" #[EndFile]
+#[BeginFile]SOURCE := "\\repstudcourse.java" #[EndFile]
+#[BeginFile]SOURCE := "\\treeview.java" #[EndFile]
+#[BeginFile]SOURCE := "\\totalfeeframe.java" #[EndFile]
+#[BeginFile]SOURCE := "\\dfeedetailframe.java" #[EndFile]
+#[BeginFile]SOURCE := "\\feedetailframe.java" #[EndFile]
+#[BeginFile]SOURCE := "\\vfeeframe.java" #[EndFile]
+#[BeginFile]SOURCE := "\\vstudentframe.java" #[EndFile]
+#[BeginFile]SOURCE := "\\vhostelframe.java" #[EndFile]
+#[BeginFile]SOURCE := "\\vcomplaintframe.java" #[EndFile]
+#[BeginFile]SOURCE := "\\vcourseframe.java" #[EndFile]
+#[BeginFile]SOURCE := "\\mdhostelframe.java" #[EndFile]
+#[BeginFile]SOURCE := "\\mdcourseframe.java" #[EndFile]
+#[BeginFile]SOURCE := "\\mdcomplaintframe.java" #[EndFile]
+#[BeginFile]SOURCE := "\\mdstudentframe.java" #[EndFile]
+#[BeginFile]SOURCE := "\\removeuser.java" #[EndFile]
+#[BeginFile]SOURCE := "\\adduserframe.java" #[EndFile]
+#[BeginFile]SOURCE := "\\productframe.java" #[EndFile]
+#[BeginFile]SOURCE := "\\designerframe.java" #[EndFile]
+#[BeginFile]SOURCE := "\\complaintframe.java" #[EndFile]
+#[BeginFile]SOURCE := "\\courseframe.java" #[EndFile]
+#[BeginFile]SOURCE := "\\hostelframe.java" #[EndFile]
+#[BeginFile]SOURCE := "\\changepassframe.java" #[EndFile]
+#[BeginFile]SOURCE := "\\studentframe.java" #[EndFile]
+#[BeginFile]SOURCE := "\\mainframe.java" #[EndFile]
+#[BeginFile]SOURCE := "\\loginframe.java" #[EndFile]
+#[BeginFile]SOURCE := "\\servlet.java" #[EndFile]
+#[EndFolder]

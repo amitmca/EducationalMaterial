@@ -1,0 +1,154 @@
+import java.io.*;
+import java.util.*;
+import javax.servlet.*;
+import javax.servlet.http.*;
+import javax.servlet.*;
+import java.sql.*;
+ import javax.servlet.*;
+ 
+ public class hostelservelet extends HttpServlet
+{     
+
+     String ipaddress=new String();
+    
+    public void init(ServletConfig config) throws ServletException
+    {
+    	ipaddress=config.getInitParameter("ipaddr");
+        	
+    }
+    
+    
+    
+    	public void doGet(HttpServletRequest request, HttpServletResponse response)
+	throws ServletException, IOException 
+	{
+		PrintWriter out = response.getWriter();
+		try
+		{
+		
+		 		Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+        	String dsn="jdbc:odbc:hostel";
+        	Connection con=DriverManager.getConnection(dsn,null,null);
+            con.setAutoCommit(true);
+			ResultSet rs1;
+			Statement st1=con.createStatement();
+			int max2=0,max1=0,tot1=0,tot2=0,fee=0,tempmax1=0,tempmax2=0;
+			
+			rs1=st1.executeQuery("select * from hostel where hno = 1");
+			while (rs1.next())
+			{
+				 tot1 =rs1.getInt(4);
+			}
+			
+			ResultSet rs2;
+			Statement st2=con.createStatement();
+			
+			rs2=st2.executeQuery("select * from hostel where hno = 2");
+			while (rs2.next())
+			{
+				 tot2 =rs2.getInt(4);
+			}
+			
+			ResultSet rs3;
+			Statement st3=con.createStatement();
+			
+			rs3=st3.executeQuery("select * from totalfee ");
+			while (rs3.next())
+			{
+				 fee =rs3.getInt(1);
+			}
+			
+			ResultSet rs4;
+			Statement st4=con.createStatement();
+			
+			rs4=st4.executeQuery("select max(rno) from student where hno = 1");
+			
+			while (rs4.next())
+			{
+				 max1 =rs4.getInt(1);
+				 
+			}
+			 tempmax1 =tot1-max1;
+			
+			ResultSet rs5;
+			Statement st5=con.createStatement();
+			
+			rs5=st5.executeQuery("select max(rno) from student where hno = 2");
+			while (rs5.next())
+			{
+				 max2 =rs5.getInt(1);
+			}
+			 tempmax2 =tot2-max2;
+			
+		
+		
+			
+			
+			
+			
+			out.println("<html>");
+
+		out.println("<head>");
+		out.println("<meta http-equiv=\"Content-Language\" content=\"en-us\">");
+		out.println("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=windows-1252\">");
+		out.println("<meta name=\"GENERATOR\" content=\"Microsoft FrontPage 4.0\">");
+		out.println("<meta name=\"ProgId\" content=\"FrontPage.Editor.Document\">");
+		out.println("<title>HOSTELINFO</title>");
+		out.println("</head>");
+		
+		out.println("<body>");
+		
+		out.println("<form method=\"POST\" action=\"--WEBBOT-SELF--\">");
+		  out.println("<!--webbot bot=\"SaveResults\"");
+		  out.println("U-File=\"C:/hostelon/hostelon/_private/form_results.txt\" S-Format=\"TEXT/CSV\"");
+		  out.println("S-Label-Fields=\"TRUE\" -->");
+		  out.println("<p align=\"left\"><span style=\"text-transform: capitalize\"><b><font size=\"7\" color=\"#FF0000\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+		  out.println("<u>HOSTELINFO.COM</u></font></b></span></p>");
+		  out.println("<p align=\"left\">&nbsp;&nbsp; <b><font size=\"4\" color=\"#000000\"><span style=\"text-transform: capitalize\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+		  out.println("</span></font><span style=\"text-transform: capitalize\"><font size=\"4\" color=\"#000000\">");
+		  out.println("</font><font size=\"4\" color=\"#FF0000\">&nbsp;&nbsp; </font><font size=\"4\" color=\"#000000\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+		  out.println("</font><font size=\"4\" color=\"#FF0000\">tOTAL rOOM CAPACITY </font></span></b></p>");
+		  out.println("<p align=\"left\">&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; </p>");
+		  out.println("<blockquote>");
+		    out.println("<lockquote>");
+		      out.println("<p align=\"left\">&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <font color=\"#993300\"><b><span style=\"text-transform: capitalize\"><font size=\"4\">wADIA");
+		      out.println("bOYS hOSTEL&nbsp; :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font></span></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");		      out.println("<input type=\"text\" name=\"T1\" size=\"20\" value="+tot1+"></font></p");;
+		      out.println("<p align=\"left\"><font color=\"#993300\">&nbsp;&nbsp;");
+		      out.println("&nbsp;&nbsp;&nbsp;&nbsp; <b><font size=\"4\"><span style=\"text-transform: capitalize\">wADIA");
+		      out.println("gIRLS hOSTEL : </span></font></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+		      out.println("<input type=\"text\" name=\"T2\" size=\"20\" value="+tot2+"></font></p>");
+		      out.println("<p align=\"left\"><font color=\"#993300\">&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <font size=\"3\">");
+		      out.println("</font><font size=\"4\"><b>TOTAL FEE PER STUDENT </b></font><font size=\"3\">&nbsp;");
+		      out.println(":&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><input type=\"text\" name=\"T3\" size=\"20\" value="+fee+"></font></p>");
+		      out.println("<p align=\"left\"><font color=\"#993300\">&nbsp;&nbsp;");
+		      out.println("&nbsp;&nbsp;&nbsp;&nbsp; <b><font size=\"4\">Total Available rooms in boys");
+		      out.println("hostel&nbsp;&nbsp; </font></b><input type=\"text\" name=\"T4\" size=\"20\" value="+tempmax1+"></font></p>");
+		      out.println("<p align=\"left\">&nbsp;&nbsp; <font color=\"#993300\">&nbsp;&nbsp;&nbsp;&nbsp;");
+		      out.println("<b><font size=\"4\">Total Available rooms in Girls hostel&nbsp;&nbsp; </font></b><input type=\"text\" name=\"T5\" size=\"20\" value="+tempmax2+"></font></p>");
+		      out.println("<p align=\"left\">&nbsp;</p>");
+		    out.println("</blockquote>");
+		  out.println("</blockquote>");
+		  out.println("<p align=\"left\">&nbsp;</p>");
+		out.println("</form>");
+		
+		out.println("</body>");
+		
+		out.println("</html>");
+
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		}catch(Exception e)
+		{
+			PrintWriter t = response.getWriter();
+	        response.setContentType("text/html");
+	        t.println(e);
+		}
+	}
+}

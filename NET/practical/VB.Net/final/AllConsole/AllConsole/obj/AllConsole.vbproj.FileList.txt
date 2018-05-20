@@ -1,0 +1,10 @@
+bin\Debug\AllConsole.exe
+bin\Debug\AllConsole.pdb
+bin\Debug\AllConsole.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\AllConsole.Resources.resources
+obj\Debug\AllConsole.vbproj.GenerateResource.Cache
+obj\Debug\AllConsole.exe
+obj\Debug\AllConsole.xml
+obj\Debug\AllConsole.pdb
+obj\Debug\AllConsole.Form1.resources

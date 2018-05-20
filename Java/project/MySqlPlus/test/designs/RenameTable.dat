@@ -1,0 +1,64 @@
+[Main]
+SizeX=5985
+SizeY=3315
+[1]
+Name=ldb
+Type=JLabel
+Value=Select Database Name :
+X= 360
+Y= 480
+SizeX= 2760
+SizeY= 360
+[2]
+Name=dbcombo
+Type=JComboBox
+X= 3480
+Y= 480
+SizeX= 2160
+SizeY= 360
+[3]
+Name=ltable
+Type=JLabel
+Value=Select Table Name :
+X= 360
+Y= 1200
+SizeX= 2760
+SizeY= 360
+[4]
+Name=tablecombo
+Type=JComboBox
+X= 3480
+Y= 1200
+SizeX= 2160
+SizeY= 360
+[5]
+Name=newtable
+Type=JLabel
+Value=New Table Name :
+X= 360
+Y= 1920
+SizeX= 2760
+SizeY= 360
+[6]
+Name=ntable
+Type=JTextField
+X= 3480
+Y= 1920
+SizeX= 2160
+SizeY= 360
+[7]
+Name=btnren
+Type=JButton
+Value=Rename
+X= 1080
+Y= 2640
+SizeX= 1920
+SizeY= 360
+[8]
+Name=btncel
+Type=JButton
+Value=Cancel
+X= 3360
+Y= 2640
+SizeX= 1800
+SizeY= 360

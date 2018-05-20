@@ -1,0 +1,21 @@
+
+
+
+#
+# An unexpected error has been detected by HotSpot Virtual Machine:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x77f755e9, pid=3272, tid=3528
+#
+# Java VM: Java HotSpot(TM) Client VM (1.5.0-b64 mixed mode, sharing)
+# Problematic frame:
+# C  [ntdll.dll+0x255e9]
+#
+# An error report file with more information is saved as hs_err_pid3272.log
+#
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+Error in my_thread_global_end(): 1 threads didn't exit
+
+D:\Programs\Java\project\MySqlPlus\test>
+

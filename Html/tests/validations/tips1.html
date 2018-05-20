@@ -1,0 +1,86 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>New Page 1</title>
+<style type="text/css"> 
+
+.hint {
+	PADDING-RIGHT: 0px; MARGIN-TOP: -20px; DISPLAY: none; PADDING-LEFT: 0px; Z-INDEX: 100; LEFT: 54%; PADDING-BOTTOM: 0px; WIDTH: 200px; PADDING-TOP: 0px; POSITION: absolute
+}
+.error {
+	FONT: 11px/15px verdana; COLOR: #d55601
+}
+</style>
+<script language="javascript">
+
+function toggleHint_new (sMode, sElementName, sElement, sWidth)
+{
+	sLeftPos = 0;
+	while(sElement)
+	{
+		sLeftPos += sElement.offsetLeft;
+		sElement = sElement.offsetParent;
+	}
+	//alert(sLeftPos);
+	//alert(sWidth);
+	sLeftPos = sLeftPos + sWidth + 25 + "px";
+	sDisplay = (sMode == "show") ? "inline" : "none";
+
+	if(oElement = eval(document.getElementById('hint_' + sElementName)))
+	{
+		oElement.style.left = sLeftPos;
+		oElement.style.display = sDisplay;
+	}
+}
+
+</script>
+</head>
+
+<body>
+  <FORM name=login>
+ <TABLE cellSpacing=0 cellPadding=0 width=400 
+              border=0><TBODY>
+              <TR>
+                <TD style="PADDING-LEFT: 10px; HEIGHT: 28px" 
+                noWrap width=155><LABEL for=login>User Name</LABEL></TD>
+                <TD width=313><INPUT id=login 
+                  onkeydown="this.className='field'"  
+                  onfocus="toggleHint_new('show', this.name, this, this.offsetWidth)" 
+                  tabIndex=1 maxLength=20 name=login> 
+                  <!-- HINT STARTS HERE --><SPAN class=hint id=hint_login>
+                  <DIV>
+                 
+                  <DIV>Please enter a valid user name.<BR>Example amitp1</DIV>
+                  </DIV>
+                  </SPAN><!-- HINT ENDS HERE --><BR><SPAN 
+                  class=error id=errmsg_login></SPAN>
+                  </TD>
+                  </TR>
+                  
+                   <TR>
+                <TD style="PADDING-LEFT: 10px; HEIGHT: 28px" 
+                noWrap width=155><LABEL for=pass>Password</LABEL></TD>
+                <TD width=313><INPUT id=pass 
+                  onkeydown="this.className='field'"  
+                  onfocus="toggleHint_new('show', this.name, this, this.offsetWidth)" 
+                  tabIndex=1 maxLength=20 name=pass> 
+                  <!-- HINT STARTS HERE --><SPAN class=hint id=hint_pass>
+                  <DIV>
+                 
+                  <DIV>Please enter a valid Password</DIV>
+                 </DIV>
+                  </SPAN><!-- HINT ENDS HERE --><BR><SPAN 
+                  class=error id=errmsg_pass></SPAN>
+                  </TD>
+                  </TR>
+
+          
+	</TBODY>
+	</TABLE>                  
+
+</form>
+</body>
+
+</html>
+

@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Image</title>
+
+<script language="JavaScript">
+var imgs = new Array('images/cancel.gif','images/continue.gif','images/login.gif','images/new_user1.gif');
+// delay in milliseconds between image swaps 1000 = 1 second 
+var delay = 5000;
+var counter = 0;
+
+function preloadImgs(){
+  for(var i=0;i<imgs.length;i++){
+    preloadImages(imgs[i]);
+  }
+}
+
+function randomImages()
+{
+  if(counter == (imgs.length))
+	{
+    counter = 0;
+  }
+  MM_swapImage('rotator', '', imgs[counter++]);
+  setTimeout('randomImages()', delay);
+}
+</script>
+</head>
+<body onload="preloadImgs();randomImages();">
+</body>
+</html>

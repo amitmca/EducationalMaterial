@@ -1,0 +1,50 @@
+                                        	0000	T	MM01                                                                                                                                	BS AA X   F
+SAPLMGMM                                	0060	X	                                                                                                                                    	
+                                        	0000	 	BDC_CURSOR                                                                                                                          	RMMG1-MTART
+                                        	0000	 	BDC_OKCODE                                                                                                                          	AUSW
+                                        	0000	 	RMMG1-MATNR                                                                                                                         	SILK
+                                        	0000	 	RMMG1-MBRSH                                                                                                                         	A
+                                        	0000	 	RMMG1-MTART                                                                                                                         	ROH
+SAPLMGMM                                	0070	X	                                                                                                                                    	
+                                        	0000	 	BDC_CURSOR                                                                                                                          	MSICHTAUSW-DYTXT(02)
+                                        	0000	 	BDC_OKCODE                                                                                                                          	=ENTR
+                                        	0000	 	MSICHTAUSW-KZSEL(01)                                                                                                                	X
+                                        	0000	 	MSICHTAUSW-KZSEL(02)                                                                                                                	X
+SAPLMGMM                                	0060	X	                                                                                                                                    	
+                                        	0000	 	BDC_CURSOR                                                                                                                          	RMMG1-MTART
+                                        	0000	 	BDC_OKCODE                                                                                                                          	AUSW
+                                        	0000	 	RMMG1-MATNR                                                                                                                         	SILK
+                                        	0000	 	RMMG1-MBRSH                                                                                                                         	A
+                                        	0000	 	RMMG1-MTART                                                                                                                         	ROH
+SAPLMGMM                                	0070	X	                                                                                                                                    	
+                                        	0000	 	BDC_CURSOR                                                                                                                          	MSICHTAUSW-DYTXT(02)
+                                        	0000	 	BDC_OKCODE                                                                                                                          	=ENTR
+                                        	0000	 	MSICHTAUSW-KZSEL(01)                                                                                                                	X
+                                        	0000	 	MSICHTAUSW-KZSEL(02)                                                                                                                	X
+SAPLMGMM                                	0060	X	                                                                                                                                    	
+                                        	0000	 	BDC_CURSOR                                                                                                                          	RMMG1-MBRSH
+                                        	0000	 	BDC_OKCODE                                                                                                                          	=AUSW
+                                        	0000	 	RMMG1-MATNR                                                                                                                         	SILK1
+                                        	0000	 	RMMG1-MBRSH                                                                                                                         	1
+                                        	0000	 	RMMG1-MTART                                                                                                                         	ROH
+SAPLMGMM                                	0070	X	                                                                                                                                    	
+                                        	0000	 	BDC_CURSOR                                                                                                                          	MSICHTAUSW-DYTXT(02)
+                                        	0000	 	BDC_OKCODE                                                                                                                          	=ENTR
+                                        	0000	 	MSICHTAUSW-KZSEL(01)                                                                                                                	X
+                                        	0000	 	MSICHTAUSW-KZSEL(02)                                                                                                                	X
+SAPLMGMM                                	4004	X	                                                                                                                                    	
+                                        	0000	 	BDC_OKCODE                                                                                                                          	=BU
+                                        	0000	 	BDC_SUBSCR                                                                                                                          	SAPLMGMM                                2004TABFRA1
+                                        	0000	 	BDC_SUBSCR                                                                                                                          	SAPLMGD1                                1002SUB1
+                                        	0000	 	BDC_CURSOR                                                                                                                          	MAKT-MAKTX
+                                        	0000	 	MAKT-MAKTX                                                                                                                          	SILK MATERIAL
+                                        	0000	 	BDC_SUBSCR                                                                                                                          	SAPLMGD1                                2001SUB2
+                                        	0000	 	MARA-MEINS                                                                                                                          	TON
+                                        	0000	 	BDC_SUBSCR                                                                                                                          	SAPLMGD1                                2561SUB3
+                                        	0000	 	BDC_SUBSCR                                                                                                                          	SAPLMGD1                                2007SUB4
+                                        	0000	 	BDC_SUBSCR                                                                                                                          	SAPLMGD1                                2005SUB5
+                                        	0000	 	BDC_SUBSCR                                                                                                                          	SAPLMGD1                                2011SUB6
+                                        	0000	 	BDC_SUBSCR                                                                                                                          	SAPLMGD1                                2033SUB7
+                                        	0000	 	BDC_SUBSCR                                                                                                                          	SAPLMGD1                                0001SUB8
+                                        	0000	 	BDC_SUBSCR                                                                                                                          	SAPLMGD1                                0001SUB9
+                                        	0000	 	BDC_SUBSCR                                                                                                                          	SAPLMGD1                                0001SUB10

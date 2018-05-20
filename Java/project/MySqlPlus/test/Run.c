@@ -1,0 +1,52 @@
+#include<stdio.h>
+int main()
+	{
+		system("javac About.java");
+		system("javac AddColumn.java");
+		system("javac AddUser.java");
+		system("javac AlterTable.java");
+		system("javac AlterView.java");
+		system("javac Buy.java");
+		system("javac Change.java");
+		system("javac Change1.java");
+		system("javac CreateDatabase.java");
+		system("javac CreateTable.java");
+		system("javac CreateTrigger.java");
+		system("javac CreateView.java");
+		system("javac Delete.java");
+		system("javac Describe.java");
+		system("javac DropColumn.java");
+		system("javac DropDatabase.java");
+		system("javac DropTable.java");
+		system("javac DropTrigger.java");
+		system("javac DropUser.java");
+		system("javac DropView.java");
+		system("javac EditUser.java");
+		system("javac Engines.java");
+		system("javac ExecuteView.java");
+		system("javac frmSplash.java");
+		system("javac Insert.java");
+		system("javac JTreeStructure.java");
+		system("javac License.java");
+		system("javac Login.java");
+		system("javac Main.java");
+		system("javac MysqlHelp.java");
+		system("javac Note.java");
+		system("javac Note1.java");
+		system("javac QueryBrowser.java");
+		system("javac RenameTable.java");
+		system("javac Select.java");
+		system("javac ShortCuts.java");
+		system("javac ShowDatabases.java");
+		system("javac ShowTables.java");
+		system("javac ShowUsers.java");
+		system("javac start.java");
+		system("javac Triggers.java");
+		system("javac TipOfDay.java");
+		system("javac Update.java");
+		system("javac Views.java");
+		system("javac MysqlPlus.java");			
+		system("javac MysqlPlus1.java");			
+		printf("\n\nCongrats !!!!!! Files Compiled Successfully \n\n");
+		return 0;
+	}

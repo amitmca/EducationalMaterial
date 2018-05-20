@@ -1,0 +1,33 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Finding Maximum</title>
+<script language="vbscript">
+Sub chk_onclick()
+	dim n,i,f
+	f=1
+	i=1
+	n=Eval(document.form.txt.value)
+	do until i<=n 
+	f=f*i
+	i=i+1
+	Loop
+	document.write("<font color='green' size='15'>Factorial Is:"&f)
+End Sub
+
+
+</script>
+</head>
+
+<body>
+<form name="form" method="post">
+<center>
+<label><font color="red">Enter Your Number</font></label>
+<input type="text" name="txt"><br>
+<br><center><input type="button" name="chk" value="Get Factorial">
+</center>
+</form>
+</body>
+
+</html>

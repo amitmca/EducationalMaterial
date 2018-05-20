@@ -1,0 +1,19 @@
+[Main]
+SizeX=5250
+SizeY=2835
+[1]
+Name=list
+Type=JList
+Value=item1|item2|item3|item4|item5|item6
+X= 1200
+Y= 0
+SizeX= 1680
+SizeY= 2520
+[2]
+Name=label_1
+Type=JLabel
+Value=label_1
+X= 0
+Y= 2520
+SizeX= 5280
+SizeY= 360

@@ -1,0 +1,91 @@
+[Main]
+SizeX=7830
+SizeY=8130
+[1]
+Name=l
+Type=JLabel
+Value=Select Database Name :
+X= 240
+Y= 360
+SizeX= 2400
+SizeY= 240
+[2]
+Name=l1
+Type=JLabel
+Value=Select Table Name :
+X= 5400
+Y= 360
+SizeX= 2400
+SizeY= 240
+[3]
+Name=label_2
+Type=JLabel
+Value=
+X= 3720
+Y= 360
+SizeX= 1080
+SizeY= 240
+[4]
+Name=dbcombo
+Type=JComboBox
+Value=
+X= 240
+Y= 720
+SizeX= 2400
+SizeY= 360
+[5]
+Name=tablecombo
+Type=JComboBox
+Value=
+X= 5400
+Y= 720
+SizeX= 2400
+SizeY= 360
+[6]
+Name=btnfirst
+Type=JButton
+Value=First
+X= 240
+Y= 7560
+SizeX= 1080
+SizeY= 360
+[7]
+Name=btnnext
+Type=JButton
+Value=>> Next
+X= 2160
+Y= 7560
+SizeX= 1440
+SizeY= 360
+[8]
+Name=btnprev
+Type=JButton
+Value=<< Prev
+X= 4320
+Y= 7560
+SizeX= 1560
+SizeY= 360
+[9]
+Name=btnlast
+Type=JButton
+Value=Last
+X= 6600
+Y= 7560
+SizeX= 1080
+SizeY= 360
+[10]
+Name=panel
+Type=JPanel
+Value=
+X= 240
+Y= 1560
+SizeX= 7440
+SizeY= 5760
+[11]
+Name=btnexit
+Type=JButton
+Value=
+X= 7200
+Y= 0
+SizeX= 600
+SizeY= 360

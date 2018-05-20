@@ -1,0 +1,35 @@
+DELIMITER //
+CREATE PROCEDURE employees1()
+BEGIN
+SELECT ename FROM emp;
+END //
+DELIMITER ;
+
+
+Procedure with Parameter
+
+DELIMITER //
+CREATE PROCEDURE employee2(IN eName VARCHAR(255))
+BEGIN
+SELECT eno FROM emp WHERE ename = eName;
+END //
+DELIMITER ;
+
+
+DELIMITER //
+CREATE PROCEDURE myproc()
+
+BEGIN
+DECLARE total_emp INT DEFAULT 0;
+SELECT COUNT(*) INTO total_emp FROM emp;
+END //
+DELIMITER ;
+
+ 
+
+
+
+
+calling a procedure
+
+call procedure_name(parameters);

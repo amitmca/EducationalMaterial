@@ -1,0 +1,9 @@
+bin\Debug\string.exe
+bin\Debug\string.pdb
+bin\Debug\string.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\string.Resources.resources
+obj\Debug\string.vbproj.GenerateResource.Cache
+obj\Debug\string.exe
+obj\Debug\string.xml
+obj\Debug\string.pdb

@@ -1,0 +1,89 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>Working With VBScript: Example 5a</TITLE>
+
+<SCRIPT LANGUAGE="VBScript">
+
+<!-- Instruct non-IE browsers to skip over VBScript modules.
+
+Option Explicit
+
+Sub cmdSubmit_OnClick
+
+' Check to see if the user entered anything.
+
+  If (Len(document.frmExample5a.txtAge.value) = 0) Then
+
+    MsgBox "You must enter your age before submitting."
+
+    Exit Sub
+
+  End If
+
+' Check to see if the user entered a number.
+
+  If (Not(IsNumeric(document.frmExample5a.txtAge.value))) Then
+
+    MsgBox "You must enter a number for your age."
+
+    Exit Sub
+
+  End If
+
+' Check to see if the age entered is valid.
+
+  If (document.frmExample5a.txtAge.value < 0) Or (document.frmExample5a.txtAge.value > 100) Then
+
+    MsgBox "The age you entered is invalid."
+
+    Exit Sub
+
+  End If
+
+' Data looks okay so submit it.
+
+  MsgBox "Thanks for providing your age."
+
+  document.frmExample5a.submit
+
+End Sub
+
+-->
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY>
+
+<H1>A VBScript Example on Variables</H1>
+
+<P> This example demonstrates validation techniques in VBScript. </P>
+
+<FORM NAME="frmExample5a">
+
+  <TABLE>
+
+    <TR>
+
+      <TD>Enter your age:</TD>
+
+      <TD><INPUT TYPE="Text" NAME="txtAge" SIZE="2">
+
+    <TR>
+
+      <TD><INPUT TYPE="Button" NAME="cmdSubmit" VALUE="Submit"></TD>
+
+      <TD></TD>
+
+    </TR>
+
+  </TABLE>
+
+</FORM>
+
+</BODY>
+
+</HTML>

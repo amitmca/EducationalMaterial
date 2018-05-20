@@ -1,0 +1,18 @@
+<INPUT id="Button1" type="button" value="Call Add" name="Button1" onclick="return Button1_onclick()">
+<script id="clientEventHandlersJS" language="VBScript">
+<!--
+Sub Button1_onclick()
+
+
+	Set c = CreateObject("MSSOAP.SOAPClient")
+	c.mssoapinit("http://localhost/RemotingHost/hiserverapp.soap?wsdl")
+
+	MsgBox c.Greeting("Ankur")
+
+	for i = 1 To 10
+		MsgBox c.GetCount
+	next
+End Sub
+
+//-->
+</script>

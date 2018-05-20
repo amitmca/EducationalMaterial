@@ -1,0 +1,39 @@
+Taking Backup Of single database
+
+C:\Program Files\MySQL\MySQL Server 5.0\bin>mysqldump -u root -p123456 MysqlPlus > C:/a.sql
+
+Taking Backup Of All databases
+
+C:\Program Files\MySQL\MySQL Server 5.0\bin>mysqldump -u root -p123456 --all-databases > C:/b.sql
+
+Restoring Backup Of single database
+
+C:\Program Files\MySQL\MySQL Server 5.0\bin>mysqldump -u root -p123456 MysqlPlus > C:/a.sql
+
+Restoring Backup Of All databases
+
+C:\Program Files\MySQL\MySQL Server 5.0\bin>mysqldump -u root -p123456 --all-databases > C:/b.sql
+
+Loading data from file
+
+
+mysql>LOAD DATA LOCAL INFILE 'C:/save.txt' INTO TABLE emp;
+Query OK, 1 row affected (0.00 sec)
+Records: 1  Deleted: 0  Skipped: 0  Warnings: 0
+
+Saving data into file
+
+
+mysql> select * from emp;
++-----+-------+
+| eno | ename |
++-----+-------+
+|  10 | amit  |
+|  20 | ajit  |
+|  30 | rohit |
++-----+-------+
+3 rows in set (0.00 sec)
+
+mysql> select * INTO OUTFILE 'C:/open.txt' FROM emp;
+Query OK, 3 rows affected (0.00 sec)
+

@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>Js</title>
+
+<SCRIPT language=javascript>
+
+		function displayWaitMessage()
+
+		{
+
+		document.all.displayMessage.style.pixelTop = (document.body.scrollTop + 50);
+
+		document.all.displayMessage.style.visibility="visible";
+
+		window.setTimeout('displayWaitMessageMain()',1);
+
+		}
+
+
+
+		function displayWaitMessageMain()
+
+		{
+
+		wait_seconds();
+
+		document.all.displayMessage.style.visibility="hidden";
+
+		}
+
+
+
+		function wait_seconds()
+
+		{
+
+		var x,y
+
+
+
+		for(x=0;x<1000000;x++)
+
+			{
+
+			y += (x * y) / (y - x);
+
+			}
+
+		}
+
+		</SCRIPT>
+</head>
+<body onload="displayWaitMessage();">
+</body>
+</html>

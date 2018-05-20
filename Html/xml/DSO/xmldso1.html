@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>XML DSO Example</title>
+</head>
+<body bgcolor="#FFFFFFF">
+<xml id="xmldb">
+	<db>
+		<player>
+			<name>Sachin Tendulkar</name>
+			<game>Cricket</game>
+			<sex>Male</sex>
+		</player>
+		<player>
+			<name>Saniya Mirza</name>
+			<game>Tennis</game>
+			<sex>Female</sex>
+		</player>
+		<player>
+			<name>A.R.Rahman</name>
+			<game>Music</game>
+			<sex>Male</sex>
+		</player>
+	</db>
+</xml>
+<table datasrc="#xmldb" border="1">
+<thead>
+	<th>Name</th>
+	<th>Game</th>
+	<th>Sex</th>
+</thead>
+<tr>
+	<td><div datasrc="#xmldb" datafld="name"></td></div>
+	<td><div datasrc="#xmldb" datafld="game"></td></div>
+	<td><div datasrc="#xmldb" datafld="sex"></td></div>
+</tr>
+</table>
+</body>
+</html>

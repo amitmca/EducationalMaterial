@@ -1,0 +1,59 @@
+[Main]
+SizeX=4200
+SizeY=3600
+[1]
+Name=create
+Type=JRadioButton
+Value=Create  View
+X= 600
+Y= 600
+SizeX= 3000
+SizeY= 360
+[2]
+Name=drop
+Type=JRadioButton
+Value=Drop View
+X= 600
+Y= 1200
+SizeX= 3000
+SizeY= 360
+[3]
+Name=alter
+Type=JRadioButton
+Value=Alter View
+X= 600
+Y= 1800
+SizeX= 3000
+SizeY= 360
+[4]
+Name=list
+Type=JRadioButton
+Value=List  Views
+X= 600
+Y= 2400
+SizeX= 3000
+SizeY= 360
+[5]
+Name=btnpro
+Type=JButton
+Value=Continue
+X= 120
+Y= 3000
+SizeX= 2160
+SizeY= 360
+[6]
+Name=btncel
+Type=JButton
+Value=Cancel
+X= 2400
+Y= 3000
+SizeX= 1560
+SizeY= 360
+[7]
+Name=label_3
+Type=JLabel
+Value=VIEW
+X= 600
+Y= 120
+SizeX= 3120
+SizeY= 360

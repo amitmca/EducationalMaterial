@@ -1,0 +1,9 @@
+<script language="vbscript" runat="server">
+
+Sub Application_OnStart
+application("vartime")=""
+application("users")=1
+End Sub
+
+document.write("done")
+</script>

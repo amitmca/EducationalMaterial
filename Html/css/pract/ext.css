@@ -1,0 +1,14 @@
+body {
+     color:navy;
+     font-size:13pt;
+     font-family:comic sans ms;
+     font-style:italic;	
+     }
+
+a:link{color:maroon}
+a:visited{color:red}
+a:active{color:blue}
+
+p{
+ border:thick dotted magenta;
+ }	

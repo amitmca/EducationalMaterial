@@ -1,0 +1,102 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>New Page 1</title>
+<STYLE type=text/css>.err_txt {
+	FONT: 9px Verdana, Arial, Helvetica, sans-serif; COLOR: #ce0606
+}
+.err_txt1 {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; FONT: 9px Verdana, Arial, Helvetica, sans-serif; COLOR: #ffffff; BACKGROUND-COLOR: red
+}
+.err_txt2 {
+	PADDING-LEFT: 2px; FONT: 11px Verdana, Arial, Helvetica, sans-serif; WIDTH: 568px; COLOR: #ffffff; BACKGROUND-COLOR: red
+}
+</STYLE>
+<SCRIPT language=javascript type=text/javascript>
+function uservalidate()
+{
+	if(document.login.UserName.value=="")
+	{
+		alert("Please Enter a valid E-mail Address");
+		document.login.UserName.focus();
+		return false;
+	}
+	//E-mail field should accept valid characters only.
+	if (document.login.UserName.value != " ")
+	{
+		var checkOK="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-@._";
+		var checkStr = document.login.UserName.value;
+		var allValid = 'true';
+		for (i = 0;  i < checkStr.length+1;  i++)
+		{
+
+		ch = checkStr.charAt(i);
+			for (j = 0;  j < checkOK.length+1;  j++)
+			{
+				if (ch == checkOK.charAt(j))
+				break;
+				if (j == checkOK.length)
+				{
+					allValid = 'false';
+					break;
+				}
+			}
+		}
+	}
+	//E-mail id must have '@'
+	if(document.login.UserName.value != "")
+	{
+		var val=document.login.UserName.value ;
+		var pass1=val.indexOf('@',0);
+		if(pass1==-1)
+		{
+			alert("Not a valid E-Mail Address");
+			document.login.UserName.value="";
+			document.login.UserName.focus();
+			return false;
+		}
+	}
+	//E-mail id must have '.'
+	if(document.login.UserName.value != "")
+	{
+		var val=document.login.UserName.value ;
+		var pass2=val.indexOf('.',0);
+		if(pass2==-1)
+		{
+			alert("Not a valid E-Mail Address");
+			document.login.UserName.value="";
+			document.login.UserName.focus();
+			return false;
+		}
+		if((pass2 - pass1)== 1)
+		{
+			alert("Not a valid E-Mail Address");
+			document.login.UserName.value="";
+			document.login.UserName.focus();
+			return false;
+		}
+	}
+	//E-mail id should have only @,.,_ and - with the letters and digits
+	if (!allValid)
+	{
+		alert("Please enter only letters, digits,and \"@\"  \"_\"  \".\"  \"-\"  characters in the \"EMail\" field.");
+		document.login.UserName.focus();
+		return false;
+	}
+	
+}
+
+</SCRIPT>
+
+</head>
+
+<body>
+  <FORM name=login onsubmit="return uservalidate();" >
+<label>Enter Email Address: </label>
+<input type="text" name="UserName">
+<input type="submit" name="submit" value="Check">
+</form>
+</body>
+
+</html>

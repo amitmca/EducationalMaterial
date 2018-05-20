@@ -1,0 +1,160 @@
+/*Heading : Program to Create,Display and Add two Polynomials */
+
+#include<math.h>
+#include<stdio.h>
+#include<conio.h>
+typedef struct term
+{  	int power;
+	float coeff;
+}term;
+typedef struct polynomial
+{  	term a[20];
+	int n;
+}polynomial;
+void init(polynomial *ptr);
+void read(polynomial *ptr);
+void print(polynomial *ptr);
+polynomial add(polynomial *p1,polynomial *p2);
+void insert(polynomial *,term);
+void main()
+{  	polynomial P1,P2,P3;
+
+	int option;
+	float x,value;
+	clrscr();
+	do
+	{ 	printf("\n1 : create 1'st polynomial");
+		printf("\n2 : create 2'nd polynomial");
+		printf("\n3 : Add polynomials");
+		printf("\n4 : Quit");
+		printf("\nEnter your choice :");
+		scanf("%d",&option);
+		switch(option)
+		{ 	case 1:read(&P1);break;
+			case 2:read(&P2);break;
+			case 3:P3=add(&P1,&P2);
+			       printf("\n1'st polynomial ->  ");
+			       print(&P1);
+			       printf("\n2'nd polynomial ->  ");
+			       print(&P2);
+			       printf("\n\nSum =              ");
+			       print(&P3);
+			       break;
+		}
+	}while(option!=4);
+}
+
+void read(polynomial *Ptr)
+{   	int n, i, power;
+	float coeff;
+	term t;
+	init(Ptr);
+	printf("\n Enter number of terms :");
+	scanf("%d",&n);
+	/* read n terms */
+	for (i=0;i<n;i++)
+	{       printf("\nenter a term(power  coeff.)");
+		scanf("%d%f",&power,&coeff);
+		t.power=power;
+		t.coeff=coeff;
+		insert(Ptr,t);
+	}
+}
+
+void print(polynomial *Ptr)
+{   	int i;
+	for(i=0;i<Ptr->n;i++)
+	printf("%5.2fX^%d  ",(Ptr->a[i]).coeff,(Ptr->a[i]).power);
+}
+
+polynomial add(polynomial *P1, polynomial *P2)
+{   	polynomial P3;
+	term t;
+	int i,j;
+	i=j=0;
+	init(&P3);
+	while(i<P1->n && j<P2->n)
+	{   if(P1->a[i].power==P2->a[j].power)
+		{  	t.power=P1->a[i].power;
+			t.coeff=P1->a[i].coeff+P2->a[j].coeff;
+			insert(&P3,t);
+			i++;j++;
+		}
+		else
+			if(P1->a[i].power < P2->a[j].power)
+			  {   	insert(&P3,P1->a[i]);
+				i++;
+			  }
+			else
+			  {     insert(&P3,P2->a[j]);
+				j++;
+			  }
+	}
+	while(i<P1->n)
+	{   	 insert(&P3,P1->a[i]);
+		 i++;
+	}
+	while(j<P2->n)
+	{   	 insert(&P3,P2->a[j]);
+		 j++;
+	}
+	return(P3);
+}
+
+void init(polynomial *Ptr)
+{    	Ptr->n=0;
+}
+
+void insert(polynomial *Ptr,term t)
+{ 	int i;
+	/* move all higher power term by 1 place.movement
+	   should start with the last term */
+	for(i=Ptr->n-1; (Ptr->a[i]).power > t.power && i>=0;i--)
+		Ptr->a[i+1]=Ptr->a[i];
+	/* insert the term t */
+	Ptr->a[i+1]=t;
+	(Ptr->n)++;
+}
+
+/*
+             *** OUTPUT ***
+1 : create 1'st polynomial                                                      
+2 : create 2'nd polynomial                                                      
+3 : Add polynomials                                                             
+4 : Quit                                                                        
+Enter your choice :1                                                            
+                                                                                
+ Enter number of terms :2                                                       
+                                                                                
+enter a term(power  coeff.)2 2                                                  
+                                                                                
+enter a term(power  coeff.)1 1                                                  
+
+1 : create 1'st polynomial                                                      
+2 : create 2'nd polynomial                                                      
+3 : Add polynomials                                                             
+4 : Quit                                                                        
+Enter your choice :2                                                           
+                                                                                
+ Enter number of terms :2                                                      
+                                                                                
+enter a term(power  coeff.)2 2                                                  
+                                                                                
+enter a term(power  coeff.)1 1 
+
+1 : create 1'st polynomial                                                      
+2 : create 2'nd polynomial                                                      
+3 : Add polynomials                                                             
+4 : Quit                                                                        
+Enter your choice :3                                                            
+                                                                                
+1'st polynomial ->   1.00X^1   2.00X^2                                          
+2'nd polynomial ->   1.00X^1   2.00X^2                                          
+                                                                                
+Sum =               2.00X^1   4.00X^2                                           
+1 : create 1'st polynomial                                                      
+2 : create 2'nd polynomial                                                      
+3 : Add polynomials                                                             
+4 : Quit                                                                        
+Enter your choice :4                                                            
+*/

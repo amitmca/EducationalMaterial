@@ -1,0 +1,317 @@
+<html>
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<title>How To Create a Right Synopsis</title>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+startday = new Date();
+clockStart = startday.getTime();
+function initStopwatch() { 
+var myTime = new Date(); 
+return((myTime.getTime() - clockStart)/1000); 
+}
+function getSecs() { 
+var tSecs = Math.round(initStopwatch()); 
+var iSecs = tSecs % 60;
+var iMins = Math.round((tSecs-30)/60);   
+var sSecs ="" + ((iSecs > 9) ? iSecs : "0" + iSecs);
+var sMins ="" + ((iMins > 9) ? iMins : "0" + iMins);
+document.forms[0].timespent.value = sMins+":"+sSecs;
+window.setTimeout('getSecs()',1000); 
+}
+// End -->
+</script>
+<LINK href="./Blue_NavBar.css" type="text/css" rel="stylesheet" />
+ <STYLE>
+
+ BODY
+  {
+SCROLLBAR-FACE-COLOR: red; SCROLLBAR-HIGHLIGHT-COLOR: gray; 
+
+SCROLLBAR-SHADOW-COLOR: black; SCROLLBAR-ARROW-COLOR: gray; 
+
+SCROLLBAR-TRACK-COLOR: black; SCROLLBAR-DARKSHADOW-COLOR: red
+}
+font{text-decoration:None;}
+</STYLE>
+</head>
+<BODY onLoad="window.setTimeout('getSecs()',1)">
+
+
+<table border="0" width="977" height="89">
+	<tr>
+		<td height="83" width="971" valign="middle" background="images/stylusstudio_02.gif">
+		<img border="0" src="images/logosmall_free.gif" width="271" height="59">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<img border="0" src="images/employee.jpg" width="275" height="75"></td>
+	</tr>
+
+</table>
+
+<table border="0" width="976" height="23">
+	<tr>
+		<td height="23" width="125" align="center" bgcolor="red"><a href="index.htm"><font color="white"><b><FONT face="Verdana, Arial, Helvetica" size=-1>Home</FONT></b></font></a></td>
+		<td height="23" width="125" align="center" bgcolor="red"><a href="aboutus.htm"><font color="white"><b><FONT face="Verdana, Arial, Helvetica" size=-1>About Us</FONT></b></font></a></td>
+		<td height="23" width="125" align="center" bgcolor="red"><a href="search.htm"><font color="white"><b><FONT face="Verdana, Arial, Helvetica" size=-1>Search</FONT></b></font></a></td>
+		<td height="23" width="125" align="center" bgcolor="red"><a href="features.htm"><font color="white"><b><FONT face="Verdana, Arial, Helvetica" size=-1>Features</FONT></b></font></a></td>
+		<td height="23" width="125" align="center" bgcolor="red"><a href="contactus.htm"><font color="white"><b><FONT face="Verdana, Arial, Helvetica" size=-1>Contact Us</FONT></b></font></a></td>
+		<td height="23" width="125" align="center" bgcolor="red"><a href="feedback.htm"><font color="white"><b><FONT face="Verdana, Arial, Helvetica" size=-1>Feedback</FONT></b></font></a></td>
+		<td height="23" width="125" align="center" bgcolor="red"><a href="help.htm"><font color="white"><b><FONT face="Verdana, Arial, Helvetica" size=-1>Help</FONT></b></font></a></td>
+	</tr>
+</table>
+<br>
+<table border="0" width="978" height="78" >
+	<tr>
+		<td height="24" width="125" valign="top">
+		
+		<a href="index.htm"><img border="0" src="images/login.gif" width="82" height="27" border="0"></a></td>
+		
+		<td height="24" width="682" valign="top" align="center">
+		
+		<script language="JavaScript1.2">
+//configure message
+message="Free Online Project Management"
+//animate text in NS6? (0 will turn it off)
+ns6switch=1
+
+var ns6=document.getElementById&&!document.all
+mes=new Array();
+mes[0]=-1;
+mes[1]=-4;
+mes[2]=-7;mes[3]=-10;
+mes[4]=-7;
+mes[5]=-4;
+mes[6]=-1;
+num=0;
+num2=0;
+txt="";
+function jump0(){
+if (ns6&&!ns6switch){
+jump.innerHTML=message
+return
+}
+if(message.length > 6){
+for(i=0; i != message.length;i++){
+txt=txt+"<span style='position:relative;' id='n"+i+"'>"+message.charAt(i)+"</span>"};
+jump.innerHTML=txt;
+txt="";
+jump1a()
+}
+else{
+alert("Your message is to short")
+}
+}
+
+function jump1a(){
+nfinal=(document.getElementById)? document.getElementById("n0") : document.all.n0
+nfinal.style.left=-num2;
+if(num2 != 9){
+num2=num2+3;
+setTimeout("jump1a()",50)
+}
+else{
+jump1b()
+}
+}
+
+function jump1b(){
+nfinal.style.left=-num2;
+if(num2 != 0){num2=num2-3;
+setTimeout("jump1b()",50)
+}
+else{
+jump2()
+}
+}
+
+function jump2(){
+txt="";
+for(i=0;i != message.length;i++){
+if(i+num > -1 && i+num < 7){
+txt=txt+"<span style='position:relative;top:"+mes[i+num]+"'>"+message.charAt(i)+"</span>"
+}
+else{txt=txt+"<span>"+message.charAt(i)+"</span>"}
+}
+jump.innerHTML=txt;
+txt="";
+if(num != (-message.length)){
+num--;
+setTimeout("jump2()",50)}
+else{num=0;
+setTimeout("jump0()",50)}}
+</script>
+
+</head>
+<body>
+
+<h2><div id="jumpx" style="color:green"></div></h2>
+<script>
+if (document.all||document.getElementById){
+jump=(document.getElementById)? document.getElementById("jumpx") : document.all.jumpx
+jump0()
+}
+else
+document.write(message)
+</script>
+		</td>
+		<td height="24" width="157" valign="top">
+		
+		<a href="register.htm">
+		<img border="0" src="images/register_now.gif" width="129" height="27" border="0" align="right"></a></td>
+	</tr>
+	<tr>
+		<td height="41" width="978" valign="top" colspan="3">
+		<center><img src="images/free_prices.gif"></center>
+		
+ 		</td>
+	</tr>
+</table>
+	
+
+
+	<table border="0" width="980" height="363">
+		<tr>
+		<td width="194" height="129" valign="top" align="center">
+		<SCRIPT language="javascript" type="text/javascript" src="./navbar0.js"></SCRIPT>
+		<SCRIPT language="javascript" type="text/javascript" src="./Blue_NavBarcfg.js"></SCRIPT>		
+		<DIV class="Blue_NavBarPlaceHolder" id="Blue_NavBarDiv" style="width: 156px; height: 127px; "></DIV>
+		</td>
+
+			<td height="363" width="783" valign="top" rowspan="4">
+			<fieldset>
+			<center><h3><u><FONT face="Verdana, Arial, Helvetica" color="#9966FF">Synopsis Format</font></u></h3>
+			<table cellpadding="0" cellspacing="0" width="500" height="308">
+				<!-- MSTableType="layout" -->
+				<tr>
+					<td width="500" height="28">
+					<ul type="circle"><li>
+					<b><FONT face="Verdana, Arial, Helvetica" color=#000000 size=2>Title of Project :</FONT></b></li>				
+					</ul>
+					</td>
+				</tr>
+				<tr>
+					<td width="500" height="26">
+					<ul type="circle"><li>
+
+					<b><FONT face="Verdana, Arial, Helvetica" color=#000000 size=2>Scope Of Project :</FONT></b>
+					</li>				
+					</ul>
+	
+					</td>
+				</tr>
+				<tr>
+					<td width="500" height="25">
+					<ul type="circle"><li>
+
+					<b><FONT face="Verdana, Arial, Helvetica" color=#000000 size=2>Introduction :</FONT></b>
+					</li>				
+					</ul>
+	
+					</td>
+				</tr>
+				<tr>
+					<td width="500" height="26">
+					<ul type="circle"><li>
+
+					<b><FONT face="Verdana, Arial, Helvetica" color=#000000 size=2>User Requirements :</FONT></b></li>				
+					</ul>
+	
+					</td>
+				</tr>
+				<tr>
+					<td width="500" height="20">
+					<ul type="circle"><li>
+
+					<b><FONT face="Verdana, Arial, Helvetica" color=#000000 size=2>Software Requirements :</FONT></b>
+					</li>				
+					</ul>
+
+					</td>
+				</tr>
+				
+				<tr>
+					<td width="500" height="22">
+					
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<FONT face="Verdana, Arial, Helvetica" color=#000000 size=2>
+					Operating System
+					</FONT>
+					</td>
+				</tr>
+				<tr>
+					<td width="500" height="19">
+
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<FONT face="Verdana, Arial, Helvetica" color=#000000 size=2>
+					Languages Used
+					</FONT>
+
+					</td>
+				</tr>
+				<tr>
+					<td width="500" height="18">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<FONT face="Verdana, Arial, Helvetica" color=#000000 size=2>
+					Softwares Used
+					</FONT>
+					</td>
+				</tr>
+				<tr>
+					<td width="500" height="19">
+
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<FONT face="Verdana, Arial, Helvetica" color=#000000 size=2>
+					Backend Database
+					</FONT>		
+
+					</td>
+				</tr>
+				
+				<tr>
+					<td><br>
+					<ul type="circle"><li>
+					
+					<b><FONT face="Verdana, Arial, Helvetica" color=#000000 size=2>Acceptance Criteria :</FONT></b></li>				
+					</ul>
+				
+					</td>
+				</tr>
+				<tr>
+					<td width="500" height="19">&nbsp;</td>
+				</tr>
+			</table>
+			</center>
+			
+			</fieldset>
+			</td>
+		</tr>
+	
+
+		<tr>
+			<td height="320" width="201" valign="top" align="center">
+			<FORM>
+			<FONT SIZE="2" FACE="Arial" color="red"><b>Time spent here: </b></FONT><input size=5 name=timespent><p>&nbsp;
+			<object classid="clsid:D27CDB6E-AE6D-11CF-96B8-444553540000" id="obj1" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" border="0" width="186" height="193">
+				<param name="movie" value="bigtv_customer_care_185x260.swf">
+				<param name="quality" value="High">
+				<embed src="bigtv_customer_care_185x260.swf" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" name="obj1" width="186" height="193"></object>
+			</p>
+			<p>&nbsp;</p>
+			</FORM>
+			</td>
+			</tr>
+
+		
+
+	</table>
+	<table border="0" width="974" height="30">
+		<tr>
+			<td height="30" width="974">
+			<center><img src="images/logo-banner.gif" width="352" height="40"></center>
+			</td>
+		</tr>
+	</table>
+	
+
+
+</body>
+</html>

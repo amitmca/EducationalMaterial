@@ -1,0 +1,16 @@
+#include<iostream.h>
+#include<conio.h>
+/*class room
+{
+			int width,height;
+			void setvalue(int w,int h)
+			{
+					width=w;
+					height=h;
+			}
+
+};*/
+void main()
+{
+		int public=100;
+}

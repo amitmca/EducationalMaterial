@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Messages</title>
+<style type="text/css">
+
+/* All form elements are within the definition list for this example */
+
+
+
+/* The hint to Hide and Show */
+.hint {
+   	display: none;
+    position: absolute;
+    right: -250px;
+    width: 200px;
+    margin-top: -4px;
+    border: 1px solid #c93;
+    padding: 10px 12px;
+    background: #ffc url(pointer.gif) no-repeat -10px 5px;
+}
+
+/* The pointer image is hadded by using another span */
+.hint .hint-pointer {
+    position: absolute;
+    left: -10px;
+    top: 5px;
+    width: 10px;
+    height: 19px;
+    background: url(pointer.gif) left top no-repeat;
+}
+</style>
+<script type="text/javascript">
+function addLoadEvent(func) {
+  var oldonload = window.onload;
+  if (typeof window.onload != 'function') {
+    window.onload = func;
+  } else {
+    window.onload = function() {
+      oldonload();
+      func();
+    }
+  }
+}
+
+function prepareInputsForHints() {
+	var inputs = document.getElementsByTagName("input");
+	for (var i=0; i<inputs.length; i++){
+		// test to see if the hint span exists first
+		if (inputs[i].parentNode.getElementsByTagName("span")[0]) {
+			// the span exists!  on focus, show the hint
+			inputs[i].onfocus = function () {
+				this.parentNode.getElementsByTagName("span")[0].style.display = "inline";
+			}
+			// when the cursor moves away from the field, hide the hint
+			inputs[i].onblur = function () {
+				this.parentNode.getElementsByTagName("span")[0].style.display = "none";
+			}
+		}
+	}
+	// repeat the same tests as above for selects
+	var selects = document.getElementsByTagName("select");
+	for (var k=0; k<selects.length; k++){
+		if (selects[k].parentNode.getElementsByTagName("span")[0]) {
+			selects[k].onfocus = function () {
+				this.parentNode.getElementsByTagName("span")[0].style.display = "inline";
+			}
+			selects[k].onblur = function () {
+				this.parentNode.getElementsByTagName("span")[0].style.display = "none";
+			}
+		}
+	}
+}
+addLoadEvent(prepareInputsForHints);
+</script>
+</head>
+<body>
+<h1>Form field hints</h1>
+<form>
+<p>Tab or click through the fields to reveal the hints. <span style="padding:2px;border:1px solid red;background:#ffffcc;">Only <strong>Username</strong> and <strong>Password</strong> show hints in this example!</span></p>
+
+<dl>
+	<dt>
+
+		<label for="firstname">First Name:</label>
+	</dt>
+	<dd>
+		<input
+			name="firstname"
+			id="firstname"
+			type="text" />
+	</dd>
+	<dt>
+		<label for="lastname">Last Name:</label>
+	</dt>
+
+	<dd>
+		<input
+			name="lastname"
+			id="lastname"
+			type="text" />
+	</dd>
+
+	<dt><label for="year">Birth Year:</label></dt>
+	<dd>
+		<select id="year" name="year">
+			<option value="">YYYY</option>
+			<option value="1066">1066</option>
+			<option value="1492">1492</option>
+
+			<option value="1776">1776</option>
+			<option value="1812">1812</option>
+			<option value="1917">1917</option>
+			<option value="1942">1942</option>
+			<option value="1999">1999</option>
+		</select>
+
+	</dd>
+	<dt>
+		<label for="username">Username:</label>
+	</dt>
+	<dd>
+		<input
+			name="username"
+			id="username"
+			type="text" />
+		<span class="hint"><b>Between 4-12 characters.</b><span class="hint-pointer"> </span></span>
+	</dd>
+
+	<dt>
+		<label for="password">Password:</label>
+	</dt>
+	<dd>
+		<input
+			name="password"
+			id="password"
+			type="password" />
+		<span class="hint"><b>Between 5-13 characters, but not 7.  Never 7.</b><span class="hint-pointer"> </span></span>
+	</dd>
+	<dt class="button"> </dt>
+
+	<dd class="button">
+		<input
+			type="submit"
+			class="button"
+			value="Submit" />
+	</dd>
+</dl>
+</form>
+
+<br style="clear: left" />
+</body>
+</html>

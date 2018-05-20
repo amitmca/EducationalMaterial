@@ -1,0 +1,255 @@
+<html>
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<title>Manage Your Projects Online</title>
+<link rel="stylesheet"
+      style="text/css"
+      href="ext.css">
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+
+function setColor(el, bg) 
+{
+  if (el.style) el.style.backgroundColor = bg;
+}
+
+function checkInput(form) 
+{
+  var bgBad = "lightyellow";
+  var bgGood = "white";
+  var valid = true;
+  if (form.txtusr.value == "") {
+    valid = false;
+    setColor(form.txtusr, bgBad);
+  
+  } else {
+    setColor(form.txtusr, bgGood);
+  }
+  if (form.txtpass.value == "") {
+    valid = false;
+    setColor(form.txtpass, bgBad);
+  
+  } else {
+    setColor(form.txtpass, bgGood);
+  }
+  if (!valid) alert("Please fill out both the fields.");
+  return valid;
+}
+// -->
+</SCRIPT>
+
+
+      
+<script language="javascript">
+	
+var startMsg = "WELCOME TO WORLD OF PROJECTS"; 
+var str = ""; 
+var msg = ""; 
+var leftMsg = ""; 
+
+function setMessage() 
+{ 
+if (msg == "") 
+{ 
+str = " "; 
+msg = startMsg; 
+leftMsg = ""; 
+} 
+if (str.length == 1) 
+{ 
+while (msg.substring(0, 1) == " ") 
+{ 
+leftMsg = leftMsg + str; 
+str = msg.substring(0, 1); 
+msg = msg.substring(1, msg.length); 
+} 
+leftMsg = leftMsg + str; 
+str = msg.substring(0, 1); 
+msg = msg.substring(1, msg.length); 
+for (var ii = 0; ii < 120; ii++) 
+{ 
+str = " " + str; 
+} 
+} 
+else 
+str = str.substring(10, str.length); 
+window.status = leftMsg + str; 
+
+timeout = window.setTimeout('setMessage()',5); 
+} 
+
+
+</script>
+     <STYLE>
+    
+     BODY {
+SCROLLBAR-FACE-COLOR: red; SCROLLBAR-HIGHLIGHT-COLOR: gray; 
+
+SCROLLBAR-SHADOW-COLOR: black; SCROLLBAR-ARROW-COLOR: gray; 
+
+SCROLLBAR-TRACK-COLOR: black; SCROLLBAR-DARKSHADOW-COLOR: red
+}
+font{text-decoration:None;}
+</STYLE>
+</head>
+<BODY onload="timeout = window.setTimeout('setMessage()',500);"> 
+
+<FORM  name=form onSubmit="return checkInput(this)" action="http://localhost/project/signin.php" method="post">
+
+<table border="0" width="977" height="89">
+	<tr>
+		<td height="83" width="971" valign="middle" background="images/stylusstudio_02.gif">
+		<img border="0" src="images/logosmall_free.gif" width="271" height="60">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<img border="0" src="images/employee.jpg" width="275" height="75"></td>
+	</tr>
+
+</table>
+<table border="0" width="976" height="23">
+	<tr>
+		<td height="23" width="125" align="center" bgcolor="red"><a href="index.htm"><font color="white"><b><FONT face="Verdana, Arial, Helvetica" size=-1>Home</FONT></b></font></a></td>
+		<td height="23" width="125" align="center" bgcolor="red"><a href="aboutus.htm"><font color="white"><b><FONT face="Verdana, Arial, Helvetica" size=-1>About Us</FONT></b></font></a></td>
+		<td height="23" width="125" align="center" bgcolor="red"><a href="search.htm"><font color="white"><b><FONT face="Verdana, Arial, Helvetica" size=-1>Search</FONT></b></font></a></td>
+		<td height="23" width="125" align="center" bgcolor="red"><a href="features.htm"><font color="white"><b><FONT face="Verdana, Arial, Helvetica" size=-1>Features</FONT></b></font></a></td>
+		<td height="23" width="125" align="center" bgcolor="red"><a href="contactus.htm"><font color="white"><b><FONT face="Verdana, Arial, Helvetica" size=-1>Contact Us</FONT></b></font></a></td>
+		<td height="23" width="125" align="center" bgcolor="red"><a href="feedback.htm"><font color="white"><b><FONT face="Verdana, Arial, Helvetica" size=-1>Feedback</FONT></b></font></a></td>
+		<td height="23" width="125" align="center" bgcolor="red"><a href="help.htm"><font color="white"><b><FONT face="Verdana, Arial, Helvetica" size=-1>Help</FONT></b></font></a></td>
+	</tr>
+</table>
+
+
+
+
+	<table border="0" width="977" height="413">
+		
+	<tr>
+		<td height="409" width="166" valign="top" align="center" background="images/add.jpg" rowspan="6">
+
+		<img src="images/landmark-cyberpark-logo.jpg"><br><br>
+		<img src="images/assotech-crossing-republik-greater-noida-logo1.jpg"><br><br>
+ 	    <img src="images/amarpali-platinum-noida-logo1.jpg"><br><br>
+  	    <img src="images/klj-la-vista-logo-r.jpg"><br><br>
+		</td>
+		
+		
+		
+		<td height="57" width="316" valign="top" align="center" valign="bottom" style="border-style: solid; border-width: 1px;border-color:#0055bb" bgcolor="#FFFFFF">
+		<br>
+		<img border="0" src="images/already_member.gif" width="206" height="19"></td>
+
+		
+		
+		<td height="74" width="301" valign="top" align="center" valign="bottom" style="border-style: solid; border-width: 1px ;border-color:#0055bb" bgcolor="#FFFFFF">
+		<br>
+		<img src="images/new_user.gif">
+	
+		</td>
+		
+		
+		
+		<td height="409" width="180" valign="top" background="images/add.jpg" rowspan="6">
+
+		<img src="images/logg-mapsko-casa-bela-r.jpg"><br><br>
+		<img src="images/parsvnath-exotica-gurgaon-logo1.jpg"><br><br>
+		<img src="images/star-infinity-kaushambi-logo1.jpg"><br><br>
+		<img src="images/logo-ramprasthacity-r.jpg">
+		</td>
+		
+		
+		
+	</tr>
+	
+	<tr>
+		
+		
+		
+		<td height="-1" width="316" valign="middle" align="left" style="border-style: solid; border-width: 1px ;border-color:#0055bb" bgcolor="#FFFFFF">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<b><FONT face="Verdana, Arial, Helvetica" size=-1>Username : </FONT></b>
+		<input type="text" name="txtusr" size="20" maxlength="25">
+		</td>
+		
+		
+		
+		<td height="43" width="301" valign="top" align="center" style="border-style: solid; border-width: 1px;border-color:#0055bb" bgcolor="#FFFFFF">
+		&nbsp;</td>
+		
+		
+		
+		</tr>
+	<tr>
+		
+		
+		
+		<td height="41" width="316" valign="middle" align="left" style="border-style: solid; border-width: 1px;border-color:#0055bb" bgcolor="#FFFFFF">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<b><FONT face="Verdana, Arial, Helvetica" size=-1>Password&nbsp; :</FONT> </b><input type="password" name="txtpass" size="20" maxlength="25">
+
+		</td>
+		
+		
+		
+		<td height="73" width="301" valign="top" align="left" rowspan="2" style="border-style: solid; border-width: 1px;border-color:#0055bb" bgcolor="#FFFFFF">
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+		<FONT face="Verdana, Arial, Helvetica" size=-1>Hurry Up !!!!!</FONT><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="register.htm"><img src="images/register_now.gif" border="0"></a>&nbsp;&nbsp; </td>
+		
+		
+		
+		</tr>
+	<tr>
+		
+		
+		
+		<td height="33" width="316" valign="top" align="left" style="border-left-style: solid; border-left-width: 1px; border-top-style: solid; border-top-width: 1px; border-bottom-style: solid; border-bottom-width: 1px;border-color:#0055bb" bgcolor="#FFFFFF">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+		<input type="image" src="images/login.gif" name="I1"></td>
+		
+		
+		
+		</tr>
+	<tr>
+		
+		
+		
+		<td height="34" width="316" valign="top" align="center" style="border-top-style: solid; border-top-width: 1px;border-color:#0055bb">
+		<a href="forget.htm">
+		<font color="black" size="-1"><b><FONT face="Verdana, Arial, Helvetica" size=-1>Forgot Password</FONT></b></font></a>
+
+		
+		</td>
+		
+		
+		
+		<td height="34" width="301" valign="top" align="left" style="border-top-style: solid; border-top-width: 1px;border-color:#0055bb">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+		
+		
+		
+		</tr>
+	<tr>
+		
+		
+		
+		<td height="168" width="603" valign="bottom" align="left" colspan="2" bgcolor="black">
+		<object classid="clsid:D27CDB6E-AE6D-11CF-96B8-444553540000" id="obj1" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" border="0" width="598" height="160">
+			<param name="movie" value="almighty_new_756x252.swf">
+			<param name="quality" value="High">
+			<embed src="almighty_new_756x252.swf" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" name="obj1" width="598" height="160"></object>
+		</td>
+		
+		
+		
+		</tr>
+	
+	</table>
+
+</form>
+<table border="0" width="987" height="31">
+	<tr>
+		<td height="31" width="987">
+		<center> <img src="images/logo-banner.gif" width="352" height="63"></center>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

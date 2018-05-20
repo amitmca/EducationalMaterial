@@ -1,0 +1,36 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>New Page 1</title>
+
+<SCRIPT language=JavaScript>
+var counter=1;
+function addWidget(){
+	var ref=document.getElementById("widget1");		//find the place to add widget to
+	var wid="id"+counter;		//create a unique ID for the widget
+	counter++;
+	var wstr="<div id='"+wid+"' class='widget' style='top: 130; left: 300; width: 245;'>"+
+		"<div id='wdrag' style='cursor: move; width: 100%; height: 16; background-color: #A83737; border-bottom: 1px solid #CACACA; '>"+
+		"<table id='d' style='font-family: arial; font-size: 10pt;color: white' width=100% cellpadding=0 cellspacing=0 border=0>"+
+		"<tr><td ALIGN=left><span id='id1_title' style='padding-left: 5px;'>Member Login	</span>"+
+		"</td><td align=right> <span style='padding-right: 5px;'><a href=javascript:closeWidget('"+wid+"') style='text-decoration: none;'>"+
+		"<font color=white><b>X</b></font></a></span></td></tr></table></div>"+
+		"<div id='id1_content' style='padding: 5px;background-color: #E5E5E5; font-family: arial; font-size: 10pt; width: 100%'>"+
+		"<form name=frmLogin action='verify.php' method=post  onSubmit='return chk_data()'><table><tr><td>User ID:</td><td><input type=text name='userid'></td></tr><tr><td>Password: </td><td><input type=password name='pwd'><br/></td></tr><tr><td><input  style='ORDER-RIGHT: #999999 2px solid; BORDER-TOP: #999999 2px solid; FONT-WEIGHT: bold; FONT-SIZE: 9pt; BORDER-LEFT: #999999 2px solid; COLOR: midnightblue; BORDER-BOTTOM: #999999 2px solid; FONT-FAMILY: Verdana; BACKGROUND-COLOR: #CCCCCC' type=submit value='Log In' name=submit></td></tr></table></form></div></div>";
+	ref.innerHTML+=wstr;	//place the widget on screen
+}
+
+function closeWidget(id){	
+	var widget1=document.getElementById('widget1');
+	var node=document.getElementById(id);
+	widget1.removeChild(node);
+}
+</SCRIPT>
+</head>
+
+<body>
+<IMG onclick=addWidget() height=30 src="nokia/nokia.gif" width=245>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+bin\Debug\prime.exe
+bin\Debug\prime.pdb
+bin\Debug\prime.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\prime.Resources.resources
+obj\Debug\prime.vbproj.GenerateResource.Cache
+obj\Debug\prime.exe
+obj\Debug\prime.xml
+obj\Debug\prime.pdb

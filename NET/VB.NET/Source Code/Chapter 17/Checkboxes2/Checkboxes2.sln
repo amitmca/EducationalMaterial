@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Checkboxes2", "http://localhost/Checkboxes2/Checkboxes2.vbproj", "{9E53FD5F-EFF3-4DF7-B8EF-8BA188757F37}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{9E53FD5F-EFF3-4DF7-B8EF-8BA188757F37}.Debug.ActiveCfg = Debug|.NET
+		{9E53FD5F-EFF3-4DF7-B8EF-8BA188757F37}.Debug.Build.0 = Debug|.NET
+		{9E53FD5F-EFF3-4DF7-B8EF-8BA188757F37}.Release.ActiveCfg = Release|.NET
+		{9E53FD5F-EFF3-4DF7-B8EF-8BA188757F37}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

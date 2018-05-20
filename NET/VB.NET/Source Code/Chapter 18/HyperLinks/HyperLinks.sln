@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "HyperLinks", "http://localhost/HyperLinks/HyperLinks.vbproj", "{AF99FFA5-C737-4312-9C0B-F9E01D0554B6}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{AF99FFA5-C737-4312-9C0B-F9E01D0554B6}.Debug.ActiveCfg = Debug|.NET
+		{AF99FFA5-C737-4312-9C0B-F9E01D0554B6}.Debug.Build.0 = Debug|.NET
+		{AF99FFA5-C737-4312-9C0B-F9E01D0554B6}.Release.ActiveCfg = Release|.NET
+		{AF99FFA5-C737-4312-9C0B-F9E01D0554B6}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

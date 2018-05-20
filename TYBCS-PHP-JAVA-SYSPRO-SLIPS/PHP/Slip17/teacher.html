@@ -1,0 +1,28 @@
+<script type="text/javascript">
+function show_teacher(tno)
+{
+	xmlhttp=new XMLHttpRequest();
+	xmlhttp.onreadystatechange=function()
+	{
+		if (xmlhttp.readyState==4 && xmlhttp.status==200)
+		{
+			document.getElementById("info").innerHTML=xmlhttp.responseText;
+		}
+	}
+	xmlhttp.open("GET","getteacher.php?tno="+tno,true);
+	xmlhttp.send();
+}
+</script>
+<b>Select Teacher:</b>
+<select onchange='show_teacher(this.value)'>
+<option value=0>---</option>
+<option value=1>Ram Kale</option>
+<option value=2>Seeta Gore</option>
+<option value=3>Krishna Yadav</option>
+<option value=4>Radha Kumari</option>
+</select><br>
+<div id="info">
+Teacher information will be displayed here.
+</div>
+
+

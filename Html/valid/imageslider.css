@@ -1,0 +1,23 @@
+/*
+JavaScript Image Slider Platinum 2.0
+(C)1999-2008 Usingit.com, All rights reserved!
+http://www.usingit.com/products/webtoolkit
+http://www.usingit.com/support
+*/
+.slidercontainer{
+BORDER:#FFFF00 0px none;
+}
+.sliderimages{
+BORDER:#DBEAF5 4px dashed;
+}
+.Slider1_Loading{
+position: relative;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background-repeat: no-repeat;
+background-position: center center;
+background-color: #FFFFFF;
+background-image: url(./loading_w.gif);
+}

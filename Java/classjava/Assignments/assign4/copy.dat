@@ -1,0 +1,65 @@
+[Main]
+SizeX=8130
+SizeY=2760
+[1]
+Name=ta1
+Type=JTextArea
+X= 120
+Y= 360
+SizeX= 3720
+SizeY= 1560
+[2]
+Name=cut1
+Type=JButton
+Value=CUT
+X= 240
+Y= 2160
+SizeX= 1080
+SizeY= 360
+[3]
+Name=paste1
+Type=JButton
+Value=PASTE
+X= 2640
+Y= 2160
+SizeX= 1080
+SizeY= 360
+[4]
+Name=ta2
+Type=JTextArea
+X= 4080
+Y= 360
+SizeX= 3960
+SizeY= 1560
+[5]
+Name=copy1
+Type=JButton
+Value=COPY
+X= 1440
+Y= 2160
+SizeX= 1080
+SizeY= 360
+[6]
+Name=cut2
+Type=JButton
+Value=CUT
+X= 4440
+Y= 2160
+SizeX= 1080
+SizeY= 360
+[7]
+Name=copy2
+Type=JButton
+Value=COPY
+X= 5640
+Y= 2160
+SizeX= 1080
+SizeY= 360
+[8]
+Name=paste2
+Type=JButton
+Value=PASTE
+X= 6840
+Y= 2160
+SizeX= 1080
+SizeY= 360

@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>VB Script</title>
+<script language="VBScript">
+Sub chk_onclick()
+	dim y
+	y=Eval(document.f1.txtyr.value)
+	If((y Mod 4=0) and (y Mod 400=0) or (y Mod 100 <> 0)) Then
+	document.f1.result.value="Leap Year"
+	else
+	document.f1.result.value="Not Leap Year"
+	End if
+End Sub
+</script>
+</head>
+<body>
+<form name="f1">
+<p>Enter Year:<input type="text" name="txtyr"></p>	
+<p>Result:<input type="text" name="result" size="30"></p>	
+<p><input type="button" name="chk" value="Check Year"></p>
+</form>
+</body>
+</html>

@@ -1,0 +1,85 @@
+ty05=# create table company(cno integer primary key,cname varchar(20) not null,addr varchar(20),city varchar(20),svalues integer);
+NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "company_pkey" for table "company"
+CREATE TABLE
+
+ty05=# select * from company;
+ cno | cname |     addr      |   city   | svalues
+-----+-------+---------------+----------+---------
+  10 | abc   | midc          | baramati |    1000
+  20 | pqr   | ashoknagar    | pune     |    1500
+  30 | lmn   | khandobanagar | nagar    |    2000
+  40 | xyz   | kasaba        | satara   |    1300
+(4 rows)
+
+ty05=# create table person(pno integer primary key,pname varchar(20),paddr varchar(20),pcity varchar(20),phoneno integer);
+NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "person_pkey" for table "person"
+CREATE TABLE
+
+ty05=# select * from person;
+ pno | pname  |    paddr    |  pcity   | phoneno
+-----+--------+-------------+----------+---------
+ 101 | amit   | ashoknagar  | baramati |  225209
+ 102 | ajit   | ramnagar    | nagpur   |  225210
+ 103 | sachin | sainagar    | nashik   |  225211
+ 104 | satish | ganeshnagar | pune     |  225212
+ 105 | rohit  | kasaba      | baramati |  225213
+(5 rows)
+
+ty05=# create table CP(cno integer references company(cno),pno integer references person(pno),n integer);
+CREATE TABLE
+
+ty05=# select * from CP;
+ cno | pno | n
+-----+-----+---
+  10 | 101 | 2
+  10 | 104 | 1
+  10 | 103 | 3
+  20 | 104 | 3
+  20 | 105 | 2
+  30 | 102 | 4
+  30 | 101 | 2
+  40 | 103 | 2
+  40 | 104 | 3
+  40 | 105 | 1
+(10 rows)
+
+ty05=# select pname from company as c,person as p,CP as r where(c.cno=r.cno and p.pno=r.pno)and cname='abc';
+ pname
+--------
+ amit
+ sachin
+ satish
+(3 rows)
+
+ty05=# CREATE FUNCTION PERNAME(text) RETURNS text AS'
+ty05'# DECLARE
+ty05'# MYCURSOR CURSOR FOR
+ty05'# select pname from company as c,person as p,CP as r where c.cno=r.cno and p.pno=r.pno and
+
+ty05'# select pname from company as c,person as p,CP as r where c.cno=r.cno and p.pno=r.pno and cname=$1;
+ty05'# per_name person.pname%type;
+ty05'# BEGIN
+ty05'# OPEN MYCURSOR;
+ty05'# LOOP
+ty05'# FETCH MYCURSOR INTO per_name;
+ty05'# EXIT WHEN NOT FOUND;
+ty05'# RAISE NOTICE ''%  '',per_name;
+ty05'# END LOOP;
+ty05'# CLOSE MYCURSOR;
+ty05'# RETURN true;
+ty05'# END;
+ty05'# 'LANGUAGE 'plpgsql';
+CREATE FUNCTION
+ty05=#
+ty05=#
+ty05=#
+ty05=# select pername('abc');
+NOTICE:  amit
+NOTICE:  sachin
+NOTICE:  satish
+ pername
+---------
+ t
+(1 row)
+
+

@@ -1,0 +1,77 @@
+<html>
+	<head>
+		<title>
+			Decimal to Binary And Binary to Decimal
+		</title>
+	<script language="VBScript">
+	
+Sub bin_onclick()
+ 	dim no,intNumber
+	
+	no=Eval(document.f1.txtno.value)
+	document.f1.conv.value=DecToBin(no)
+End Sub
+
+Sub oct_onclick()
+
+	dim no
+	no=Eval(document.f1.txtno.value)
+	document.f1.conv.value=oct(no)
+End Sub
+
+Function DecToBin(intNumber)
+	
+	Dim strBin,intTemp,dblBin
+	
+	if intNumber > 32767 Then
+	DecToBin="Error"
+	Exit Function 
+	End if
+
+While intNumber > 0
+	strBin=strBin & intNumber mod 2
+	intNumber=(intNumber/2)-0.1
+wend
+
+for intTemp=Len(strbin) To 1 step -1
+dblBin=dblBin & Mid(strBin,intTemp,1)
+Next
+DecToBin=dblBin
+end Function 
+</script>
+</head>
+<body bgcolor="#000000">
+<form name="f1">
+
+<p align="center">
+	<b><font color="#FF0000" size="5">NUMBER CONVERSION FORM&nbsp; DECIMAL&nbsp; 
+	TO BINARY AND DECIMAL TO OCTAL</font></b></p>
+<p align="center">
+	&nbsp;</p>
+<p align="center">
+	&nbsp;</p>
+<p align="center">
+	&nbsp;</p>
+<p align="center">
+	<font color="#FF0000"><b><font size="4">Enter Number&nbsp; </font></b>&nbsp;&nbsp;&nbsp;
+	</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="txtno"></p>
+<p align="center">
+	&nbsp;</p>
+<p align="center">
+	&nbsp;</p>
+<p align="center">
+	<b><font color="#FF0000" size="4">Converted Number&nbsp;&nbsp; </font></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="conv"></p>
+<p align="center">
+	&nbsp;</p>
+<p align="center">
+	&nbsp;</p>
+<p align="center">
+	&nbsp;</p>
+<p align="center">
+	<input type="button" name="bin" value="binary" oct_onclick() style="font-style: italic; font-size: 14pt; color: #0000FF; font-variant: small-caps; text-transform: capitalize; border-style: solid; border-width: 1px; padding-top: 2px; padding-bottom: 2px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="button" name="oct" value="octal" style="font-size: 14pt; font-style: italic; color: #0000FF; text-decoration: blink; font-variant: small-caps; text-transform: uppercase; border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 2px; padding-bottom: 2px">
+</p>
+</form>
+
+</body>
+</html>

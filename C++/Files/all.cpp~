@@ -1,0 +1,78 @@
+#include<fstream.h>
+#include<iostream.h>
+#include "conio.h"
+#include<stdlib.h>
+#include<string.h>
+#include<iomanip.h>
+
+class employee
+	{
+	private:
+		struct person
+		{
+		int empno;
+		char empname[40];
+		float empsalary;
+		}p;
+	fstream file;
+	public:	
+		employee();
+		void add();
+		void display();
+		void modify();
+		void search();
+		void exit();
+	};
+ employee::employee()
+	{
+	file.open("EMP.DAT",ios::binary|ios::in|ios::out);
+		if(!file)
+		{
+		cout<<"Unable to open file\n";
+		}	
+	}
+void employee::add()
+	{
+	char ch;
+	file.seekp(0,ios::end);
+	do
+		{
+		cout<<"\nEnter Employee Number:";
+		cin>>p.empno;
+		cout<<"\nEnter Employee Name:";
+		cin>>p.empname;
+		cout<<"\nEnter Employee Salary:";
+		cin>>p.empsalary;
+		file.write((char *)&p,sizeof(p));
+		cout<<"\n Add Another record(y/n):";
+		cin>>ch;
+		}while(ch=='y' || ch=='Y');	
+	}
+int main()
+	{
+	char choice;
+	employee e;
+	do
+		{
+		
+		cout<<"1.Add\n";
+		cout<<"2.Display\n";
+		cout<<"3.Modify\n";
+		cout<<"4.Search\n";
+		cout<<"Your Choice:";
+		cin>>choice;
+		switch(choice)
+			{
+			case 1:
+				e.add();
+				break;
+			/*case 2:
+				e.display();
+				break;*/
+			case 3:
+				exit(0);
+			}
+		}while(choice!=3);
+	getch();
+	return 0;
+	}

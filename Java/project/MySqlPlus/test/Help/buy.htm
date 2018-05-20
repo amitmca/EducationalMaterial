@@ -1,0 +1,396 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0039)http://www.commodityindia.com/training/ -->
+<HTML xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="http://www.w3.org/TR/REC-html40"><HEAD><TITLE>MysqlPlus-A tool to access and manipulate your Databases </TITLE>
+
+
+
+<SCRIPT TYPE="text/javascript">
+<!--
+function popup(mylink, windowname)
+{
+if (! window.focus)return true;
+var href;
+if (typeof(mylink) == 'string')
+   href=mylink;
+else
+   href=mylink.href;
+window.open(href, windowname, 'width=400,height=200,scrollbars=yes');
+return false;
+}
+//
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+-->
+</SCRIPT>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+
+function setColor(el, bg) 
+{
+  if (el.style) el.style.backgroundColor = bg;
+}
+
+function checkInput(form) 
+{
+  var bgBad = "pink";
+  var bgGood = "white";
+  var valid = true;
+  if (form.name.value == "") {
+    valid = false;
+    setColor(form.name, bgBad);
+  
+  } else {
+    setColor(form.name, bgGood);
+  }
+  if (form.UserName.value == "") {
+    valid = false;
+    setColor(form.UserName, bgBad);
+  
+  } else {
+    setColor(form.UserName, bgGood);
+  }
+  
+    if (form.pass.value == "") {
+    valid = false;
+    setColor(form.pass, bgBad);
+  
+  } else {
+    setColor(form.pass, bgGood);
+  }
+  
+  
+    if (form.cpass.value == "") {
+    valid = false;
+    setColor(form.cpass, bgBad);
+  
+  } else {
+    setColor(form.cpass, bgGood);
+  }
+  
+  
+    if (form.country.value == "") {
+    valid = false;
+    setColor(form.country, bgBad);
+  
+  } else {
+    setColor(form.country, bgGood);
+  }
+  
+  if(document.login.UserName.value=="")
+	{
+		alert("Please Enter a valid E-mail Address");
+		document.login.UserName.focus();
+		return false;
+	}
+	//E-mail field should accept valid characters only.
+	if (document.login.UserName.value != " ")
+	{
+		var checkOK="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-@._";
+		var checkStr = document.login.UserName.value;
+		var allValid = 'true';
+		for (i = 0;  i < checkStr.length+1;  i++)
+		{
+
+		ch = checkStr.charAt(i);
+			for (j = 0;  j < checkOK.length+1;  j++)
+			{
+				if (ch == checkOK.charAt(j))
+				break;
+				if (j == checkOK.length)
+				{
+					allValid = 'false';
+					break;
+				}
+			}
+		}
+	}
+	//E-mail id must have '@'
+	if(document.login.UserName.value != "")
+	{
+		var val=document.login.UserName.value ;
+		var pass1=val.indexOf('@',0);
+		if(pass1==-1)
+		{
+			alert("Not a valid E-Mail Address");
+			document.login.UserName.value="";
+			document.login.UserName.focus();
+			return false;
+		}
+	}
+	//E-mail id must have '.'
+	if(document.login.UserName.value != "")
+	{
+		var val=document.login.UserName.value ;
+		var pass2=val.indexOf('.',0);
+		if(pass2==-1)
+		{
+			alert("Not a valid E-Mail Address");
+			document.login.UserName.value="";
+			document.login.UserName.focus();
+			return false;
+		}
+		if((pass2 - pass1)== 1)
+		{
+			alert("Not a valid E-Mail Address");
+			document.login.UserName.value="";
+			document.login.UserName.focus();
+			return false;
+		}
+	}
+	//E-mail id should have only @,.,_ and - with the letters and digits
+	if (!allValid)
+	{
+		alert("Please enter only letters, digits,and \"@\"  \"_\"  \".\"  \"-\"  characters in the \"EMail\" field.");
+		document.login.UserName.focus();
+		return false;
+	}
+
+  
+  
+  if (!valid) alert("Please fill out both the fields.");
+  return valid;
+}
+// -->
+</SCRIPT>
+
+<SCRIPT language=javascript 
+      src="ToolTip.js" 
+      type=text/javascript></SCRIPT>
+
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="MysqlPlus-A tool to access and manipulate your Databases" name=description>
+<META content="MysqlPlus-A tool to access and manipulate your Databases " name=keywords>
+<META content=OLp4w4Eqk+qk8dQbpvgxPuncoBFFovA5bBH/5ATvQ0s= name=verify-v1><LINK 
+href="http://localhost:8080/examples/jsp/MysqlPlus/style.css" 
+rel=stylesheet>
+<META content="MSHTML 6.00.2900.2180" name=GENERATOR>
+<link rel="File-List" href="buy_files/filelist.xml">
+
+<!--[if !mso]>
+<style>
+v\:*         { behavior: url(#default#VML) }
+o\:*         { behavior: url(#default#VML) }
+.shape       { behavior: url(#default#VML) }
+</style>
+<![endif]-->
+
+
+
+
+
+
+<!--[if gte mso 9]>
+<xml><o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]-->
+
+
+
+
+</HEAD>
+<BODY  leftMargin=110 topMargin=0 rightmargin=0 bottommargin=0 >
+<script language="JavaScript1.2" src="js_disable_right_click_cfg.js"></script>
+<script language="JavaScript1.2" src="js_disable_right_click.js"></script>
+<link href="g/fadeinslideshow.css" type=text/css rel=stylesheet>
+<script language="javascript" src="g/fadeinslideshow.js"></script>
+<script language="javascript" src="g/fadeinslideshowcfg.js"></script>
+<FORM  name=login onSubmit="return checkInput(this)" action="http://localhost:8080/examples/jsp/MysqlPlus/register1.jsp" method="post">
+<TABLE borderColor=#fc9b01 cellSpacing=0 cellPadding=0 width=774 align=center>
+  <TBODY align="center">
+  <TR>
+  <SCRIPT language=JavaScript1.2 src="usingitJSWipeOutTextEffect10.js"></SCRIPT>
+<TABLE cellSpacing=0 cellPadding=0 width=788 align=center>
+  <TBODY>
+  <TR>
+    <TD align=center width=222><!--[if gte vml 1]><v:shapetype id="_x0000_t136"
+ coordsize="21600,21600" o:spt="136" adj="10800" path="m@7,l@8,m@5,21600l@6,21600e">
+ <v:formulas>
+  <v:f eqn="sum #0 0 10800"/>
+  <v:f eqn="prod #0 2 1"/>
+  <v:f eqn="sum 21600 0 @1"/>
+  <v:f eqn="sum 0 0 @2"/>
+  <v:f eqn="sum 21600 0 @3"/>
+  <v:f eqn="if @0 @3 0"/>
+  <v:f eqn="if @0 21600 @1"/>
+  <v:f eqn="if @0 0 @2"/>
+  <v:f eqn="if @0 @4 21600"/>
+  <v:f eqn="mid @5 @6"/>
+  <v:f eqn="mid @8 @5"/>
+  <v:f eqn="mid @7 @8"/>
+  <v:f eqn="mid @6 @7"/>
+  <v:f eqn="sum @6 0 @5"/>
+ </v:formulas>
+ <v:path textpathok="t" o:connecttype="custom" o:connectlocs="@9,0;@10,10800;@11,21600;@12,10800"
+  o:connectangles="270,180,90,0"/>
+ <v:textpath on="t" fitshape="t"/>
+ <v:handles>
+  <v:h position="#0,bottomRight" xrange="6629,14971"/>
+ </v:handles>
+ <o:lock v:ext="edit" text="t" shapetype="t"/>
+</v:shapetype><v:shape id="_x0000_s1025" type="#_x0000_t136" style='width:126pt;
+ height:41.25pt' fillcolor="#369" stroked="f">
+ <v:shadow on="t" color="#b2b2b2" opacity="52429f" offset="3pt"/>
+ <v:textpath style='font-family:"Times New Roman";v-text-kern:t' trim="t"
+  fitpath="t" string="@mi$oft"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=172 height=58
+src="buy_files/image001.gif" alt="@mi$oft" v:shapes="_x0000_s1025"><![endif]></TD>
+    <TD align=left width=323>
+   &nbsp;</TD>
+    <TD align=left width=33>
+   &nbsp;</TD></TR>
+  <TR>
+    <TD width=788 style="background-image:url('TopBand.jpg');background-repeat:No-repeat" height=27 colspan="3">
+      <TABLE cellSpacing=0 cellPadding=0 align=center width="787">
+       <TBODY>
+        <TR>
+          <TD class=menu><font color="#6600CC">&nbsp;&nbsp;&nbsp;&nbsp;</font><A class=menu href="http://localhost:8080/examples/jsp/MysqlPlus/index.jsp"><B><FONT color=#6600CC>Home</FONT></B></A><font color="#6600CC">&nbsp;&nbsp;&nbsp;&nbsp;</font></TD>
+          <TD class=menu width="94"><font color="#6600CC">&nbsp;&nbsp;&nbsp;&nbsp;</font><A class=menu href="http://localhost:8080/examples/jsp/MysqlPlus/aboutus.jsp"> <B><FONT color=#6600CC>About Us</FONT></B></A><font color="#6600CC">&nbsp;</font></TD>
+          <TD class=menu width="96"><font color="#6600CC">&nbsp;&nbsp;&nbsp;&nbsp;</font><A class=menu href="http://localhost:8080/examples/jsp/MysqlPlus/products.jsp"><B><FONT color=#6600CC>Products</FONT></B></A><font color="#6600CC">&nbsp;&nbsp;&nbsp;&nbsp;</font></TD>
+           <TD class=menu width="93"><font color="#6600CC">&nbsp;&nbsp;&nbsp;&nbsp;</font><A class=menu href="http://localhost:8080/examples/jsp/MysqlPlus/register.jsp"><B><FONT color=#6600CC>Register</FONT></B></A><font color="#6600CC">&nbsp;&nbsp;&nbsp;&nbsp;</font></TD>
+          <TD class=menu><font color="#6600CC">&nbsp;&nbsp;&nbsp;&nbsp;</font><A class=menu href="http://localhost:8080/examples/jsp/MysqlPlus/screens.jsp"><B><FONT color=#6600CC>Screenshots</FONT></B></A><font color="#6600CC">&nbsp;&nbsp;&nbsp;&nbsp;</font></TD>
+          <TD class=menu><font color="#6600CC">&nbsp;&nbsp;&nbsp;&nbsp;</font><A class=menu href="http://localhost:8080/examples/jsp/MysqlPlus/contact.jsp"><B><FONT color=#6600CC>Contact Us</FONT></B></A><font color="#6600CC">&nbsp;&nbsp;&nbsp;&nbsp;</font></TD>
+          <TD class=menu width="101"><font color="#6600CC">&nbsp;&nbsp;&nbsp;&nbsp;</font><A class=menu href="http://localhost:8080/examples/jsp/MysqlPlus/feedback.jsp"><B><FONT color=#6600CC>Feedback</FONT></B></A><font color="#6600CC">&nbsp;&nbsp;&nbsp;&nbsp;</font></TD>
+          <TD class=menu width="65"><font color="#6600CC">&nbsp;&nbsp;&nbsp;&nbsp;</font><A class=menu href="http://localhost:8080/examples/jsp/MysqlPlus/help.jsp"><B><FONT color=#6600CC>Help</FONT></B></A><font color="#6600CC">&nbsp;&nbsp;&nbsp;&nbsp;</font></TD>
+          <TD class=menu><font color="#6600CC">&nbsp;&nbsp;&nbsp;</font></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+    </TR>
+    
+  <TR>
+    <TD style="BORDER-RIGHT: 2px solid; BORDER-TOP: 2px solid; BORDER-LEFT: 2px solid; BORDER-BOTTOM: 2px solid" 
+    borderColor=#fad687 align=middle width=751 colSpan=2 height=118> 
+	<img border="0" src="home.jpg" width="754" height="112"></TD></TR>
+  <TR>
+    <TD style="BORDER-LEFT: 2px solid" vAlign=top borderColor=#fad687 align=middle width=753 colspan="2">
+      <TABLE cellSpacing=0 cellPadding=0 width="99%" align=center height="324">
+        <TBODY>
+        <TR>
+         <TD class=mtext style="BORDER-RIGHT: 2px solid" vAlign=top borderColor=#fad687 width=773 height=324 bgcolor="lightyellow">
+        
+    		<table cellpadding="0" cellspacing="0" width="758" height="343">
+				<!-- MSTableType="layout" -->
+				<tr>
+					<td width="300" valign="middle">
+					<p align="center">
+		<br><br><font face="Verdana"><b><a href="http://localhost:8080/examples/jsp/MysqlPlus/livedemo.jsp">Video Demo</a></b></font>
+		</p>
+					<img border="0" src="iddddmgad.jpg" width="300" height="239"></td>
+					<td width="458" height="343">
+						<fieldset style="width: 397px; height: 280px">
+					<table cellpadding="0" cellspacing="0" width="454" height="322">
+		<!-- MSTableType="nolayout" -->
+		<tr>
+			<td width="454" height="41" colspan="3"><b>
+			<font color="#008080" size="2">
+			Please fill the following details</font></b>&nbsp;
+			<a href="http://localhost:8080/examples/jsp/MysqlPlus/login.jsp" border="0">
+			&nbsp;</a></td>
+		</tr>
+		<tr>
+			<td width="133" height="36">
+			<FONT face="Verdana, Arial, Helvetica" size=-1>
+			Name</FONT>
+			</td>
+			<td width="37" height="36" align="center"><b>:</b></td>
+			<td width="284" height="36">
+			<DIV id=ToolTip style="Z-INDEX: 1000; VISIBILITY: hidden; POSITION: absolute"></DIV>
+			<input type="text" name="name" onmouseover="tip_it('ToolTip','Tip','Your Name Here'); " onmouseout="hideIt('ToolTip')">
+			</td>
+		</tr>
+		<tr>
+			<td width="133" height="37">
+			<FONT face="Verdana, Arial, Helvetica" size=-1>
+			User Name</FONT>
+			</td>
+			<td width="37" height="37" align="center"><b>:</b></td>
+			<td width="284" height="37">
+			<DIV id=ToolTip style="Z-INDEX: 1000; VISIBILITY: hidden; POSITION: absolute"></DIV>
+			<input type="text" name="UserName" onmouseover="tip_it('ToolTip','Tip','Your User Name Here'); " onmouseout="hideIt('ToolTip')">
+			<a href="availability.jsp" onClick="return popup(this, 'availability')">
+			&nbsp;</a></td>
+		</tr>
+		<tr>
+			<td width="133" height="40">
+			<FONT face="Verdana, Arial, Helvetica" size=-1>
+			Password</FONT>
+			</td>
+			<td width="37" height="40" align="center"><b>:</b></td>
+			<td width="284" height="40">
+			<DIV id=ToolTip style="Z-INDEX: 1000; VISIBILITY: hidden; POSITION: absolute;font-family:verdana"></DIV>
+			<input type="password" name="pass" onmouseover="tip_it('ToolTip','Tip','Your Password Here'); " onmouseout="hideIt('ToolTip')">
+			</td>
+		</tr>
+		<tr>
+			<td width="133" height="39">
+			<FONT face="Verdana, Arial, Helvetica" size=-1>
+			Confirm Password</FONT>
+			</td>
+			<td width="37" height="39" align="center"><b>:</b></td>
+			<td width="284" height="39">
+			<DIV id=ToolTip style="Z-INDEX: 1000; VISIBILITY: hidden; POSITION: absolute"></DIV>
+			<input type="password" name="cpass" onmouseover="tip_it('ToolTip','Tip','This must match the above entered'); " onmouseout="hideIt('ToolTip')">
+			</td>
+		</tr>
+		<tr>
+			<td width="133" height="39">
+			<FONT face="Verdana, Arial, Helvetica" size=-1>
+			Country</FONT>
+			</td>
+			<td width="37" height="39" align="center"><b>:</b></td>
+			<td width="284" height="39">
+			<DIV id=ToolTip style="Z-INDEX: 1000; VISIBILITY: hidden; POSITION: absolute"></DIV>
+			<select name="country" size="1" onmouseover="tip_it('ToolTip','Tip','Select Your Country'); " onmouseout="hideIt('ToolTip')">
+				<OPTION value="" selected>Select</OPTION>
+				<option value="India">India</option>
+				<option value="United States">United States</option>
+				<option value="United Kingdom">United Kingdom</option>
+				<option value="Canada">Canada</option>
+				<option value="Singapore">Singapore</option>
+				<option value="Malaysia">Malaysia</option>
+				<option value="Australia">Australia</option>
+				<option value="South Africa">South Africa</option>
+				</select>			
+			</td>
+		</tr>
+		<tr>
+			<td width="454" height="39" colspan="3" align="center">
+			<input type="submit" name="submit" value="SUBMIT">
+			</td>
+		</tr>
+		
+		</table>
+		</fieldset>
+					</td>
+				</tr>
+			</table>
+    	</TD>
+    	</TR>
+        </TBODY></TABLE></TD>
+    </TR>
+  <TR>
+    <TD width=755 colSpan=2><IFRAME 
+      src="footer.htm" 
+      frameBorder=0 width=774 scrolling=no 
+height=52></IFRAME></TD></TR></TBODY></TABLE>
+</FORM> 
+</BODY></HTML>

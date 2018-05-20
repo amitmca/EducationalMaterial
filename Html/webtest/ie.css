@@ -1,0 +1,54 @@
+DIV.module DIV DIV {
+	HEIGHT: 1%
+}
+DIV.moduleS1 DIV DIV {
+	HEIGHT: 1%
+}
+DIV.moduleS2 DIV DIV {
+	HEIGHT: 1%
+}
+DIV.moduleS3 DIV DIV {
+	HEIGHT: 1%
+}
+DIV.modulebdr DIV DIV {
+	HEIGHT: 1%
+}
+SPAN.pathway {
+	MARGIN-TOP: 10px
+}
+#footer P {
+	LINE-HEIGHT: 12px
+}
+#nav A {
+	FLOAT: left; MARGIN-LEFT: 4px; LINE-HEIGHT: 40px
+}
+#nav LI:hover {
+	POSITION: relative
+}
+#nav LI.iehover {
+	POSITION: relative
+}
+#nav {
+	POSITION: relative
+}
+#nav LI UL {
+	POSITION: absolute; TOP: 42px
+}
+#nav LI LI:hover UL {
+	LEFT: 0px
+}
+#nav LI.iehover UL {
+	LEFT: 0px
+}
+#nav LI LI.iehover UL {
+	LEFT: 0px
+}
+#nav LI LI LI.iehover UL {
+	LEFT: 0px
+}
+#nav LI LI LI LI.iehover UL {
+	LEFT: 0px
+}
+#nav LI UL UL {
+	MARGIN: -42px 0px 0px 173px
+}

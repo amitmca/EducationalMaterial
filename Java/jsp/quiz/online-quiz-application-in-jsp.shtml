@@ -1,0 +1,327 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Online Quiz Application in JSP</title>
+</head>
+
+<body>
+
+<h1><font color="#000080">Online Quiz Application in JSP</font></h1>
+<font color="#000080">
+<br>
+In this section, we are going to implement of Online quiz application using of JSP.</font>
+<p><font color="#000080">
+Step 1: Create Question and answer insert form (questForm.jsp) .<br>
+<br>
+In this step first of all create quiz question and answer form using with JSP or JDBC database.&nbsp;<br>
+<br>
+<b>
+Here is the code.</b><br>
+<br>
+</font></p>
+<table border="0" cellpadding="0" cellspacing="1" width="300" bgcolor="#FFFFE6">
+  <tr>
+    <td><font color="#000080">&lt;%@page language="java" import="java.sql.*" %><br>
+      <br>
+      &lt;%<br>
+      if(request.getParameter("submit")!=null)<br>
+      {<br>
+ Connection con = null;<br>
+    String url = "jdbc:mysql://192.168.10.211:3306/";<br>
+    String db = "amar";<br>
+    String driver = "com.mysql.jdbc.Driver";<br>
+    String userName ="amar";<br>
+    String pass="amar123";<br>
+      <br>
+      try{<br>
+	Class.forName(driver);<br>
+	con = DriverManager.getConnection(url+db,userName,pass);<br>
+      <br>
+      try{<br>
+	Statement st = con.createStatement();<br>
+	String quest = request.getParameter("quest").toString();<br>
+	String QA = request.getParameter("QA").toString();<br>
+	String QB = request.getParameter("QB").toString();<br>
+	String QC = request.getParameter("QC").toString();<br>
+	String QD = request.getParameter("QD").toString();<br>
+	String correctAns = request.getParameter("correctAns").toString();<br>
+           out.println("quest : " + quest);<br>
+      <br>
+       String qry = "insert into question_deatil(quest,QA,QB,QC,QD,correctAns) values('"+quest+"','"+QA+"','"+QB+"','"+QC+"','"+QD+"','"+correctAns+"')";<br>
+      <br>
+         out.println("qry : " + qry);<br>
+      <br>
+	int val = st.executeUpdate(qry);<br>
+      <br>
+	con.close();<br>
+        if(val>0)<br>
+        {<br>
+          response.sendRedirect("quizeApplication.jsp");<br>
+        }<br>
+      <br>
+      }<br>
+      <br>
+      catch(SQLException ex){<br>
+	System.out.println("SQL satatment not found");<br>
+      }<br>
+      }<br>
+      catch(Exception e){<br>
+	e.printStackTrace();<br>
+      }<br>
+      }<br>
+      <br>
+      %><br>
+      <br>
+      &lt;html><br>
+      &lt;title>Quize application in jsp&lt;/title><br>
+      &lt;head><br>
+      <br>
+      &lt;script><br>
+      <br>
+      function validateForm(theForm){<br>
+      <br>
+	if(theForm.quest.value==""){<br>
+			//Please enter username<br>
+			alert("Please enter Question.");<br>
+			theForm.quest.focus();<br>
+			return false;<br>
+	}<br>
+      <br>
+      return true;<br>
+     }&nbsp;<br>
+ &lt;/script><br>
+      &lt;/head><br>
+      <br>
+      &lt;body><br>
+      &lt;br><br>
+      &lt;br/><br>
+      &lt;center><br>
+      <br>
+      &lt;table border="1" width="450px" bgcolor="pink" cellspacing="0" cellpadding="0"><br>
+  &lt;tr><br>
+    &lt;td width="100%"><br>
+      &lt;form method="POST" action="" onsubmit="return validateForm(this);"><br>
+      <br>
+        &lt;h2 align="center">&lt;font color="red">Quize Application in JSP&lt;/font>&lt;/h2><br>
+        &lt;table border="0" width="400px" cellspacing="2" cellpadding="4"><br>
+          &lt;tr><br>
+            &lt;td width="50%">&lt;b>Enter Question:&lt;/b>&lt;/td><br>
+            &lt;td width="50%">&lt;input type="text" name="quest" size="40"/> &lt;/td><br>
+          &lt;/tr><br>
+	&lt;tr><br>
+            &lt;td width="50%">&lt;b>Enter Answer(A.):&lt;/b>&lt;/td><br>
+            &lt;td width="50%">&lt;input type="text" name="QA" size="40"/> &lt;/td><br>
+          &lt;/tr><br>
+	 &lt;tr><br>
+            &lt;td width="50%">&lt;b>Enter Answer(B.):&lt;/b>&lt;/td><br>
+            &lt;td width="50%">&lt;input type="text" name="QB" size="40"/> &lt;/td><br>
+          &lt;/tr><br>
+      <br>
+          &lt;tr><br>
+            &lt;td width="50%">&lt;b>Enter Answer(C.):&lt;/b>&lt;/td><br>
+            &lt;td width="50%">&lt;input type="text" name="QC" size="40"/> &lt;/td><br>
+          &lt;/tr><br>
+      <br>
+	&lt;tr><br>
+            &lt;td width="50%">&lt;b>Enter Answer(D.):&lt;/b>&lt;/td><br>
+            &lt;td width="50%">&lt;input type="text" name="QD" size="40"/> &lt;/td><br>
+          &lt;/tr><br>
+      <br>
+	&lt;tr><br>
+            &lt;td width="50%">&lt;b>Correct Answer:&lt;/b>&lt;/td><br>
+            &lt;td width="50%">&lt;input type="text" name="correctAns" size="10"/> &lt;/td><br>
+          &lt;/tr>&nbsp;<br>
+      <br>
+        &lt;/table><br>
+	&lt;center><br>
+        &lt;p>&lt;input type="submit" value="Submit" name="submit"><br>
+          &lt;input type="reset" value="Reset" name="reset">&lt;/p><br>
+        &lt;/center>&nbsp;<br>
+      &lt;/form><br>
+    &lt;/td><br>
+  &lt;/tr><br>
+      &lt;/table><br>
+      &lt;/center><br>
+      &lt;/body><br>
+      &lt;/html></font></td>
+  </tr>
+</table>
+<p><font color="#000080">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+Step 2 : Create "quizeApplication.jsp"  for Process the Data and retrive the data from database and show th all data on browser.<br>
+<br>
+<b>Here is the code:<br>
+</b></font></p>
+<table border="0" cellpadding="0" cellspacing="1" width="538" bgcolor="#FFFFE6">
+  <tr>
+    <td width="532"><font color="#000080">&lt;%@ page import="java.sql.*" %><br>
+      <br>
+      &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"<br>
+      "http://www.w3.org/TR/html4/loose.dtd"><br>
+      <br>
+      &lt;html><br>
+      &lt;head><br>
+      &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><br>
+      &lt;title>JSP Page&lt;/title><br>
+      &lt;/head><br>
+      &lt;body><br>
+      &lt;%&nbsp;<br>
+      String ans=" ";<br>
+      if(request.getParameter("correctAns")!=null)<br>
+      {<br>
+    ans=request.getParameter("correctAns").toString();<br>
+      }<br>
+      </font>
+      <p><font color="#000080">Connection conn = null;<br>
+      String driver = "com.mysql.jdbc.Driver";<br>
+      String url = "jdbc:mysql://192.168.10.211:3306/";<br>
+      String db = "amar";<br>
+      String user = "amar";<br>
+      String pass = "amar123";<br>
+      Statement st = null;<br>
+      ResultSet qrst;<br>
+      ResultSet rs = null;<br>
+      <br>
+      String id=request.getParameter("id");<br>
+      System.out.println("id:"+id);<br>
+      <br>
+      int i=1;<br>
+      <br>
+      String s,g;<br>
+      <br>
+      int count=0;<br>
+      <br>
+      try {<br>
+      <br>
+      Class.forName(driver);<br>
+      conn = DriverManager.getConnection(url+db,user,pass);<br>
+      <br>
+      st = conn.createStatement();<br>
+      rs = st.executeQuery("select * from question_deatil&quot;);</font></p>
+      <p><font color="#000080">while(rs.next()) {<br>
+      %><br>
+      &lt;br&gt;<br>
+      &lt;br/><br>
+      &lt;center><br>
+      <br>
+      &lt;table border="1" width="500px" bgcolor="pink" cellspacing="0" cellpadding="0"><br>
+  &lt;tr><br>
+    &lt;td width="100%"><br>
+      <br>
+      &lt;form name="form1"><br>
+      <br>
+ &lt;h2 align="center">&lt;font color="red">Online Quize Application&lt;/font>&lt;/h2><br>
+      <br>
+      &lt;b>Select Correct Answer&lt;/b><br>
+        &lt;table border="0" width="500px" cellspacing="2" cellpadding="4"><br>
+ &lt;tr><br>
+      <br>
+      &lt;td width="50%"> Question:&lt;/td><br>
+      &lt;input type="hidden" name="correctAns" value="&lt;%=rs.getString(7)%>" /><br>
+      &lt;tr><br>
+      &lt;td>&lt;%= rs.getString("quest") %>&lt;/td>&lt;/tr><br>
+      &lt;tr><br>
+      &lt;td><br>
+      <br>
+      1: &lt;input type="radio" name="a" value= "QA" />&lt;/td><br>
+    &lt;td>&lt;%= rs.getString("QA") %>&lt;/td>&lt;/tr>&nbsp;<br>
+      &lt;tr><br>
+      &lt;td><br>
+      2: &lt;input type="radio" name="a" value="QB" />&lt;/td><br>
+      &lt;td>&lt;%= rs.getString("QB") %>&lt;/td>&lt;/tr><br>
+      <br>
+      &lt;tr><br>
+      &lt;td><br>
+      3: &lt;input type="radio" name="a" value="QC" />&lt;/td><br>
+      &lt;td>&lt;%= rs.getString("QC") %> &lt;/td>&lt;/tr><br>
+      <br>
+      &lt;tr><br>
+      &lt;td><br>
+      4: &lt;input type="radio" name="a" value="QD" /> &lt;/td><br>
+      &lt;td> &lt;%= rs.getString("QD") %> &lt;/td>&lt;/tr><br>
+      <br>
+      &lt;tr><br>
+      &lt;td><br>
+      &lt;center><br>
+   &lt;input type="submit" value="Submit" name="submit">&lt;/center>&lt;/td>&lt;/tr><br>
+      &lt;/table><br>
+      <br>
+      &lt;/form><br>
+ &lt;/td><br>
+  &lt;/tr><br>
+      &lt;/table><br>
+      &lt;/center><br>
+      &lt;/body><br>
+      &lt;% g=request.getParameter("a");<br>
+      %><br>
+      &lt;%&nbsp;<br>
+      if(g.equals(ans)){<br>
+      <br>
+      count++;<br>
+      out.println("Correct");<br>
+      <br>
+      }<br>
+      else<br>
+      out.println("false");<br>
+      %><br>
+      <br>
+      &lt;%<br>
+      }}<br>
+      <br>
+      catch (Exception ex) {<br>
+      ex.printStackTrace();<br>
+      <br>
+      %><br>
+      <br>
+      &lt;%<br>
+      } finally {<br>
+      if (rs != null) rs.close();<br>
+      if (st != null) st.close();<br>
+      if (conn != null) conn.close();<br>
+      }<br>
+      out.println("Score="+count);<br>
+      %><br>
+      &lt;/html></font></td>
+  </tr>
+</table>
+<p><font color="#000080">
+<br>
+<br>
+<br>
+<b>
+Output of this Application:</b></font></p>
+<p><font color="#000080"><br>
+<br>
+<img border="0" src="quizeInsert.gif" width="408" height="390">
+<br>
+<br>
+<br>
+<br>
+<br>
+<img border="0" src="questioninsert.gif" width="407" height="391">
+<br>
+<br>
+</font></p>
+<p>&nbsp;</p>
+<p><img border="0" src="questionPage.gif" width="460" height="322"><font color="#000080">
+<br>
+<br>
+<br>
+<br>
+Download of this application.<br>
+
+
+</font></p>
+
+
+</body>
+
+</html>

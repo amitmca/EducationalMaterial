@@ -1,0 +1,123 @@
+[Main]
+SizeX=9345
+SizeY=6195
+[1]
+Name=ldatabase
+Type=JLabel
+Value=Select Database Name :
+X= 120
+Y= 120
+SizeX= 3480
+SizeY= 360
+[2]
+Name=combodb
+Type=JComboBox
+Value=item1|item2
+X= 120
+Y= 600
+SizeX= 2880
+SizeY= 360
+[3]
+Name=ltable
+Type=JLabel
+Value=Table Name :
+X= 5400
+Y= 120
+SizeX= 3240
+SizeY= 360
+[4]
+Name=txttable
+Type=JTextField
+Value=
+X= 5400
+Y= 600
+SizeX= 2400
+SizeY= 360
+[5]
+Name=panel
+Type=JPanel
+Value=
+X= 240
+Y= 1800
+SizeX= 9000
+SizeY= 3600
+[6]
+Name=lcolname
+Type=JLabel
+Value=Column Name
+X= 240
+Y= 1200
+SizeX= 1680
+SizeY= 360
+[7]
+Name=btnAdd
+Type=JButton
+Value=Add
+X= 120
+Y= 5640
+SizeX= 2040
+SizeY= 360
+[8]
+Name=btnDel
+Type=JButton
+Value=Delete
+X= 2400
+Y= 5640
+SizeX= 2040
+SizeY= 360
+[9]
+Name=btnSave
+Type=JButton
+Value=Save
+X= 4680
+Y= 5640
+SizeX= 2160
+SizeY= 360
+[10]
+Name=btnCel
+Type=JButton
+Value=Cancel
+X= 7080
+Y= 5640
+SizeX= 2160
+SizeY= 360
+[11]
+Name=lcoltype
+Type=JLabel
+Value=Column Type
+X= 1920
+Y= 1200
+SizeX= 1680
+SizeY= 360
+[12]
+Name=lsize
+Type=JLabel
+Value=Size
+X= 3600
+Y= 1200
+SizeX= 1560
+SizeY= 360
+[13]
+Name=lnull
+Type=JLabel
+Value=Nullable
+X= 5160
+Y= 1200
+SizeX= 1320
+SizeY= 360
+[14]
+Name=lpk
+Type=JLabel
+Value=Primary Key
+X= 6480
+Y= 1200
+SizeX= 1320
+SizeY= 360
+[15]
+Name=lfk
+Type=JLabel
+Value=Foreign Key
+X= 7800
+Y= 1200
+SizeX= 1440
+SizeY= 360

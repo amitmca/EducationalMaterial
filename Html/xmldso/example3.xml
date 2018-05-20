@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<ticker>
+	<item>
+		<message>JavaScript Ticker using XML DSO</message>
+		<URL>http://someURL.com</URL>
+	</item>
+</ticker>

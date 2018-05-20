@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AddControls", "AddControls.vbproj", "{E6AD1B87-D0BB-4864-AE84-659CEE0A842C}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{E6AD1B87-D0BB-4864-AE84-659CEE0A842C}.Debug.ActiveCfg = Debug|.NET
+		{E6AD1B87-D0BB-4864-AE84-659CEE0A842C}.Debug.Build.0 = Debug|.NET
+		{E6AD1B87-D0BB-4864-AE84-659CEE0A842C}.Release.ActiveCfg = Release|.NET
+		{E6AD1B87-D0BB-4864-AE84-659CEE0A842C}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

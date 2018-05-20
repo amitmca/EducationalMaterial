@@ -1,0 +1,11 @@
+
+#wrapper {
+	MARGIN: 50px auto; WIDTH: 300px
+}
+
+#msg {
+	DISPLAY: none; PADDING-LEFT: 7px; Z-INDEX: 200; BACKGROUND: url(images/msg_arrow.gif) no-repeat left center; POSITION: absolute
+}
+#msgcontent {
+	BORDER-RIGHT: #924949 2px solid; PADDING-RIGHT: 5px; BORDER-TOP: #924949 2px solid; DISPLAY: block; PADDING-LEFT: 5px; BACKGROUND: #f3e6e6; PADDING-BOTTOM: 5px; BORDER-LEFT: #924949 2px; PADDING-TOP: 5px; BORDER-BOTTOM: #924949 2px solid; min-width: 150px; max-width: 250px
+}

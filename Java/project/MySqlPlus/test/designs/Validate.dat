@@ -1,0 +1,18 @@
+[Main]
+SizeX=4635
+SizeY=2925
+[1]
+Name=label_1
+Type=JLabel
+Value=Validating Please Wait....
+X= 720
+Y= 600
+SizeX= 3120
+SizeY= 360
+[2]
+Name=label_2
+Type=JLabel
+X= 1080
+Y= 1200
+SizeX= 2160
+SizeY= 1200

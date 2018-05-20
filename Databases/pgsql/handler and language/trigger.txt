@@ -1,0 +1,10 @@
+create trigger emptrigger1 after insert on emp for each row execute procedure myfun();
+
+create or replace function myfun() returns opaque as'
+declare 
+	c numeric;
+begin
+	c++;
+	raise notice ''%'',c;
+end;
+	'LANGUAGE 'plpgsql';

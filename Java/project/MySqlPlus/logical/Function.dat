@@ -1,0 +1,18 @@
+[Main]
+SizeX=6990
+SizeY=4905
+[1]
+Name=data
+Type=JTextArea
+X= 1080
+Y= 720
+SizeX= 4920
+SizeY= 3000
+[2]
+Name=btnchk
+Type=JButton
+Value=Check It
+X= 2640
+Y= 4080
+SizeX= 1320
+SizeY= 360

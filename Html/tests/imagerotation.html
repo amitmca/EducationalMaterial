@@ -1,0 +1,39 @@
+<html> 
+<head> 
+<script language="JavaScript"> 
+<!-- 
+function InitializeImages() { 
+ this.src = InitializeImages.arguments[0]; 
+ } 
+var ImageArray = new Object(); 
+ImageArray[0] = new InitializeImages("D:\Programs\Html\tests\images\cancel.gif"); 
+ImageArray[1] = new InitializeImages("image2.jpg"); 
+ImageArray[2] = new InitializeImages("image3.jpg"); 
+ImageArray[3] = new InitializeImages("image4.jpg"); 
+
+ImageArray.length=4; 
+
+//--> 
+</script> 
+</head> 
+<body> 
+<img src="cancel.gif" name="slide" width=100 height=56> 
+
+<script> 
+<!-- 
+//variable that will increment through the images 
+var num=0 
+function RotateImages(){ 
+
+document.images.slide.src=ImageArray[num].src 
+
+if (num<ImageArray.length-1) {num++} 
+else {num=1} 
+setTimeout("RotateImages()",2500) 
+} 
+RotateImages() 
+//--> 
+</script> 
+</body> 
+</html> 
+

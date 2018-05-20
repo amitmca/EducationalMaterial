@@ -1,0 +1,58 @@
+[Main]
+SizeX=7485
+SizeY=4260
+[1]
+Name=label_1
+Type=JLabel
+Value=Select User Name :
+X= 960
+Y= 720
+SizeX= 2640
+SizeY= 360
+[2]
+Name=usrcombo
+Type=JComboBox
+X= 4080
+Y= 720
+SizeX= 2280
+SizeY= 360
+[3]
+Name=label_2
+Type=JLabel
+Value=label_2
+X= 480
+Y= 600
+SizeX= 480
+SizeY= 480
+[4]
+Name=label_3
+Type=JLabel
+Value=Privilege Statement :
+X= 480
+Y= 2280
+SizeX= 2520
+SizeY= 360
+[5]
+Name=prev
+Type=JTextArea
+Value=
+X= 3120
+Y= 2160
+SizeX= 4320
+SizeY= 840
+[6]
+Name=button_2
+Type=JButton
+Value=Grant
+X= 1200
+Y= 3480
+SizeX= 1800
+SizeY= 360
+[7]
+Name=button_3
+Type=JButton
+Value=Cancel
+X= 3480
+Y= 3480
+SizeX= 1920
+SizeY= 360

@@ -1,0 +1,10 @@
+<script type="text/javascript">
+function change()
+{
+	var d=new Date();
+	var s=d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+	document.getElementById("clock").value=s;
+}
+setInterval("change()",1000);
+</script>
+<b> Clock ::<input type=text id=clock>

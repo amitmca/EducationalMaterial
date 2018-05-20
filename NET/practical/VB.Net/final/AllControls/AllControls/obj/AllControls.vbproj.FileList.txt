@@ -1,0 +1,11 @@
+bin\Debug\AllControls.exe
+bin\Debug\AllControls.pdb
+bin\Debug\AllControls.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\AllControls.Form1.resources
+obj\Debug\AllControls.Resources.resources
+obj\Debug\AllControls.vbproj.GenerateResource.Cache
+obj\Debug\AllControls.exe
+obj\Debug\AllControls.xml
+obj\Debug\AllControls.pdb
+obj\Debug\AllControls.Form2.resources

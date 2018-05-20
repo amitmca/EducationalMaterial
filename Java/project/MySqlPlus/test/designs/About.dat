@@ -1,0 +1,35 @@
+[Main]
+SizeX=5835
+SizeY=1155
+[1]
+Name=limage
+Type=JLabel
+Value=
+X= 120
+Y= 480
+SizeX= 720
+SizeY= 480
+[2]
+Name=lfirst
+Type=JLabel
+Value=MysqlPlus Version 1.0
+X= 960
+Y= 120
+SizeX= 3240
+SizeY= 360
+[3]
+Name=btnok
+Type=JButton
+Value=OK
+X= 4560
+Y= 0
+SizeX= 1080
+SizeY= 480
+[4]
+Name=label_3
+Type=JLabel
+Value=Copyright (C) AmiSoft Software Corporation
+X= 960
+Y= 600
+SizeX= 3720
+SizeY= 360

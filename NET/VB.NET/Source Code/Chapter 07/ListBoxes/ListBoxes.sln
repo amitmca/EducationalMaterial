@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ListBoxes", "ListBoxes.vbproj", "{07D68521-E97A-4D49-A634-AF9E3A6A7E4A}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{07D68521-E97A-4D49-A634-AF9E3A6A7E4A}.Debug.ActiveCfg = Debug|.NET
+		{07D68521-E97A-4D49-A634-AF9E3A6A7E4A}.Debug.Build.0 = Debug|.NET
+		{07D68521-E97A-4D49-A634-AF9E3A6A7E4A}.Release.ActiveCfg = Release|.NET
+		{07D68521-E97A-4D49-A634-AF9E3A6A7E4A}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

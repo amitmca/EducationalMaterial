@@ -1,0 +1,24 @@
+=============================================================================
+This file includes a list of filename and you need to upload them to Web server
+to get the script to work. All these files are saved into the same directory along
+with the project file (*.jfs) as well as this file.
+
+=============================================================================
+
+[Script file(s)]:
+  fadeinslideshow.js
+  fadeinslideshowcfg.js
+  fadeinslideshow.css
+
+[Image File(s)]: They should be copied along with script files!
+  slider0.jpg
+  slider1.jpg
+  slider2.jpg
+  slider3.jpg
+  slider4.jpg
+  slider5.jpg
+
+
+=============================================================================
+End of Publish Report
+=============================================================================

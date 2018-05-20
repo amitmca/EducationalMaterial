@@ -1,0 +1,26 @@
+[Main]
+SizeX=4800
+SizeY=3600
+[1]
+Name=mess
+Type=JLabel
+Value=Record Saved Successfully
+X= 720
+Y= 360
+SizeX= 3480
+SizeY= 360
+[2]
+Name=ta
+Type=JTextArea
+X= 240
+Y= 1440
+SizeX= 4320
+SizeY= 2040
+[3]
+Name=bshow
+Type=JButton
+Value=SHOW
+X= 1800
+Y= 960
+SizeX= 1080
+SizeY= 360

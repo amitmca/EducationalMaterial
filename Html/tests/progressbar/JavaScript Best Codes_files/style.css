@@ -1,0 +1,45 @@
+BODY {
+	SCROLLBAR-FACE-COLOR: #dbf1ff; SCROLLBAR-HIGHLIGHT-COLOR: #ffffff; SCROLLBAR-SHADOW-COLOR: #e2edc2; SCROLLBAR-3DLIGHT-COLOR: #ffffff; SCROLLBAR-ARROW-COLOR: #000000; SCROLLBAR-TRACK-COLOR: #ffffff; SCROLLBAR-DARKSHADOW-COLOR: #ffffff; BACKGROUND-COLOR: #ffffff
+}
+TD {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: verdana,  Arial, Helvetica, sans-serif
+}
+.navlink {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; PADDING-BOTTOM: 5px; COLOR: #ffffff; LINE-HEIGHT: 15px; FONT-FAMILY: Arial,  verdana, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.navlink:hover {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; PADDING-BOTTOM: 5px; COLOR: #000000; LINE-HEIGHT: 15px; FONT-FAMILY: Arial,  verdana, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.copyright {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #000000; LINE-HEIGHT: 15px; FONT-FAMILY: Arial, verdana, Helvetica, sans-serif; TEXT-ALIGN: center
+}
+.leftbox {
+	PADDING-RIGHT: 18px; PADDING-LEFT: 10px; FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #000000; LINE-HEIGHT: 16px; FONT-FAMILY: Arial, verdana,  Helvetica, sans-serif; TEXT-ALIGN: justify
+}
+.punchline {
+	PADDING-LEFT: 0px; FONT-WEIGHT: normal; FONT-SIZE: 18px; COLOR: #74dbff; LINE-HEIGHT: 20px; FONT-FAMILY: Arial, verdana, Helvetica, sans-serif; TEXT-ALIGN: center
+}
+.rightbox {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #fff600; LINE-HEIGHT: 16px; FONT-FAMILY: Arial, verdana,  Helvetica, sans-serif
+}
+.welcome {
+	PADDING-LEFT: 26px; FONT-SIZE: 20px; COLOR: #114aa9; LINE-HEIGHT: 16px; FONT-FAMILY: Arial, verdana,  Helvetica, sans-serif
+}
+.mid1 {
+	PADDING-RIGHT: 20px; PADDING-LEFT: 16px; FONT-SIZE: 12px; COLOR: #ff5f00; LINE-HEIGHT: 16px; FONT-FAMILY: Arial, verdana,  Helvetica, sans-serif
+}
+.mid2 {
+	PADDING-RIGHT: 20px; PADDING-LEFT: 16px; FONT-SIZE: 12px; COLOR: #0066cc; LINE-HEIGHT: 16px; FONT-FAMILY: Arial, verdana,  Helvetica, sans-serif
+}
+.codelink {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; PADDING-BOTTOM: 5px; COLOR: #1800ff; LINE-HEIGHT: 15px; FONT-FAMILY: Arial,  verdana, Helvetica, sans-serif
+}
+.codelink:hover {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; PADDING-BOTTOM: 5px; COLOR: #000000; LINE-HEIGHT: 15px; FONT-FAMILY: Arial,  verdana, Helvetica, sans-serif
+}
+.TextBox {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; FONT-SIZE: 11px; BACKGROUND-IMAGE: url(images/txtbg.gif); BORDER-LEFT: #000000 1px solid; COLOR: #000000; BORDER-BOTTOM: #000000 1px solid; FONT-FAMILY: tahoma, Arial; BACKGROUND-COLOR: #f1f1f1
+}
+.bor {
+	BORDER-RIGHT: #000000 1px dashed; BORDER-TOP: #000000 1px dashed; FONT-SIZE: 11px; BACKGROUND-IMAGE: url(txtbg.gif); BORDER-LEFT: #000000 1px dashed; COLOR: #000000; BORDER-BOTTOM: #000000 1px dashed; FONT-FAMILY: tahoma, Arial; BACKGROUND-COLOR: #ffffff
+}

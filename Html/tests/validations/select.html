@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Select Box</title>
+<script language="JavaScript1.2">
+
+<!--
+
+
+function check()
+	{
+	if([document.form.amit.selectedIndex].value="0")
+		{
+		alert("Failed");
+		}
+	}
+
+//-->
+</script>
+
+</head>
+<body>
+<form onsubmit="check()" name="form">
+
+<select name="amit" >
+
+<option value="">Choose One:</option>
+<option value="local.htm">Local Page</option>
+<option value="http://www.itechies.net/">Remote Page</option>
+</select>
+<input type="submit" name="submit" value="submit">
+</form>
+</body>
+</html>

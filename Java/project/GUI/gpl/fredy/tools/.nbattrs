@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE attributes PUBLIC "-//NetBeans//DTD DefaultAttributes 1.0//EN" "http://www.netbeans.org/dtds/attributes-1_0.dtd">
+<attributes version="1.0">
+    <fileobject name="TextViewer.java">
+        <attr name="class_dependency_javax.swing.JDialog" stringvalue="TextViewer"/>
+    </fileobject>
+    <fileobject name="SLStableModel.java">
+        <attr name="class_dependency_javax.swing.table.AbstractTableModel" stringvalue="SLStableModel"/>
+    </fileobject>
+    <fileobject name="LogMsgHandler.java">
+        <attr name="class_dependency_org.xml.sax.helpers.DefaultHandler" stringvalue="LogMsgHandler"/>
+    </fileobject>
+    <fileobject name="README">
+        <attr name="org.netbeans.modules.text.IsTextFile" boolvalue="true"/>
+    </fileobject>
+    <fileobject name="SimpleXMLConverter.java">
+        <attr name="class_dependency_org.xml.sax.helpers.DefaultHandler" stringvalue="SimpleXMLConverter"/>
+    </fileobject>
+</attributes>

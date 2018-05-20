@@ -1,0 +1,106 @@
+<html>
+<head>
+<title>Register</title>
+</head>
+<body>
+<fieldset>
+<table border=0 cellspacing=1 cellpadding=3 bgcolor="white" align="center">
+<h1><center>Registration Form</center>
+<form method="POST" action="register.php">
+<tr>
+	<td bgbolor="#ffffff" width="50%">
+	<form method="POST" action="avai.php">
+<tr>
+	<td bgbolor="#ffffff" width="50%">
+	<font size=04><center>First Name</center></font>
+	</td>
+	<td bgbolor="#ffffff" width="50%">
+	    <input type='text' name='fname' tabindex=1 size="25" maxlength="15"> 
+	</td>
+</tr>	
+
+<tr>
+	<td bgbolor="#ffffff" width="50%">
+	  <font size=04><center>Last Name</center></font>
+	</td>
+	<td bgbolor="#ffffff" width="50%">
+	   <input type='text' name='lname' tabindex=2 size="25" maxlength="15">
+	</td>
+</tr>
+<tr>
+	
+	<td bgbolor="#ffffff" width="50%">
+	   <font size=04><center>Class</center></font>
+	</td>
+	<td bgbolor="#ffffff" width="50%">
+        <select name="class">
+	<option>MCA</option> 
+	<option>MCM</option>
+	<option>MBA</option>
+	<option>BCA</option>
+	</select>
+	<select name="class1">
+	<option>01</option> 
+	<option>02</option>
+	<option>03</option>
+	</select>
+	</td>
+</tr>
+<tr>
+	<td bgbolor="#ffffff" width="50%">
+	  <font size=04><center>Gender</center></font>
+	</td>
+	<td bgbolor="#ffffff" width="50%">
+	  <input name="q" type="radio" value="Male">Male
+	  <input name="q" type="radio" value="Female">Female
+	</td>
+</tr>
+
+<tr>
+	<td bgbolor="#ffffff" width="50%">
+	  <font size=04><center>Roll No</center></font>
+	</td>
+	<td bgbolor="#ffffff" width="50%">
+	   <input type='text' name='rno' tabindex=2 size="5" maxlength="15">
+	</td>
+</tr>
+<tr>
+	<td bgbolor="#ffffff" width="50%">
+	  <font size=04><center>Password</center></font>
+	</td>
+	<td bgbolor="#ffffff" width="50%">
+	<input type='password' name='pass' tabindex=2 size="25" maxlength="40">
+	</td>
+</tr>
+<tr>
+	<td bgbolor="#ffffff" width="50%">
+	  <font size=04><center>Retype Password</center></font>
+	</td>
+	<td bgbolor="#ffffff" width="50%">
+	<input type='password' name='pass' tabindex=2 size="25" maxlength="40">
+	</td>
+</tr>
+<table align="center">
+<tr>
+	<td bgbolor="#ffffff" width="50%">
+	 <br><center><input type='submit' value='Create My Account'></center>
+	</td>
+</tr>
+</table>
+<table align="center">
+<tr>
+	<td bgbolor="#ffffff" width="50%">
+	   <a href="login.php"><img src="prev.gif"></a>
+	</td>
+</tr>
+</table>
+</form>
+</fieldset>
+</body>
+</html>
+
+
+
+
+
+<! --Comment -->

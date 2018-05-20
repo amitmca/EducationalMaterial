@@ -1,0 +1,40 @@
+[Main]
+SizeX=7290
+SizeY=5085
+[1]
+Name=textarea_1
+Type=JTextArea
+X= 360
+Y= 1440
+SizeX= 2760
+SizeY= 2400
+[2]
+Name=label_1
+Type=JLabel
+X= 3480
+Y= 120
+SizeX= 240
+SizeY= 4800
+[3]
+Name=textarea_2
+Type=JTextArea
+X= 4080
+Y= 1440
+SizeX= 2880
+SizeY= 2400
+[4]
+Name=label_2
+Type=JLabel
+Value=Client Interface
+X= 600
+Y= 480
+SizeX= 2160
+SizeY= 360
+[5]
+Name=button_1
+Type=JButton
+Value=SEND
+X= 1080
+Y= 4200
+SizeX= 1080
+SizeY= 360

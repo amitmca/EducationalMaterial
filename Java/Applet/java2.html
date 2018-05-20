@@ -1,0 +1,54 @@
+<HTML>
+<HEAD>
+<TITLE>Control a Java Applet</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function setfont() {
+   x = document.form1.font.selectedIndex;
+   font = document.form1.font.options[x].value;
+   x = document.form1.fontsize.selectedIndex;
+   size = document.form1.fontsize.options[x].value;
+   document.applet1.SetFont(font,parseInt(size));
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<H1>Control a Java Applet</H1>
+<HR>
+The Java applet below displays text in a large font. You can enter
+new text to display in the form below, and JavaScript will call the
+Java applet to change the text. You can also change the font and size.
+<HR>
+<FORM NAME="form1">
+<INPUT TYPE="TEXT" NAME="text1">
+<INPUT TYPE="BUTTON" VALUE="Change Text"
+onClick="document.applet1.SetMessage(document.form1.text1.value);">
+<BR>
+<b>Font:</b>
+<SELECT NAME="font">
+<OPTION VALUE="TimesRoman">Times New Roman
+<OPTION VALUE="Arial">Arial
+<OPTION VALUE="Wingdings">WingDings
+<OPTION VALUE="Courier">Courier New
+<OPTION VALUE="Terminal">Terminal font
+</SELECT>
+ <b>Size:</b>
+<SELECT NAME="fontsize">
+<OPTION VALUE="10">10
+<OPTION VALUE="15">15
+<OPTION VALUE="20">20
+<OPTION VALUE="25">25
+<OPTION VALUE="30">30
+<OPTION VALUE="48">48
+<OPTION VALUE="60">60
+</SELECT>
+<INPUT TYPE="BUTTON" VALUE="Change Font"
+onClick="setfont();">
+</FORM>
+<HR>
+<APPLET NAME="applet1" CODE="ControlJava2.class" WIDTH=450 HEIGHT=125>
+</APPLET>
+<HR>
+End of page.
+</BODY>
+</HTML>
+

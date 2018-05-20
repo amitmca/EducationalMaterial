@@ -1,0 +1,26 @@
+Name of the project :  TOURS AND TRAVELS
+
+Project Partners :
+	1. Priyadarshini  R. Kolwalkar (34)
+	 email : kpriya0109@rediffmail.com
+	 Phone# (020) 4007898
+
+	2.Richa D. Kulkarni (36)
+	 email : richk@rediffmail.com
+	 Phone# (020) 4225764
+
+	3. Ipsita S. Sen (67)
+	 email : ipsitasen@yahoo.com
+	 Phone# (020) 2951090 
+
+Project Description :
+		The main aim of the project is to create packages and facilitate the booking of 		these packages. Apart from this the project also expedites the storage of 		places, hotels and transport details, which is used in package creation. 
+		While creating a package the details of places, hotels in those places and the 		transport details pertaining to those places are displayed to the user who can 		use these details to create a package. 
+		The customer is also allowed to cancel a booking and the payment done by 		him is refunded if the transport reservations have not already been done. 		After which a refund slip is issued to the customer.
+		The user also has access to various user-friendly reports .The reports 			generated are listings about places, hotels, and transport modes, packages, 		customers and members. Daily reports like the listings of customers who have 		booked for a Package on a given date. Along with this appropriate facilities 		have been provided for printing receipts and refund slips.
+		A Help sub system has been provided for beginning end-users who might find 		the system a bit too complex to comprehend .The Help subsystem is designed 		using HTML. 
+
+
+
+
+	

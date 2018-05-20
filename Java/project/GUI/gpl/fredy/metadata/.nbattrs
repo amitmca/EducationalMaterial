@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE attributes PUBLIC "-//NetBeans//DTD DefaultAttributes 1.0//EN" "http://www.netbeans.org/dtds/attributes-1_0.dtd">
+<attributes version="1.0">
+    <fileobject name="TableMetaData.java">
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="TableMetaData"/>
+    </fileobject>
+    <fileobject name="TableRows.java">
+        <attr name="class_dependency_javax.swing.JList" stringvalue="TableRows"/>
+    </fileobject>
+    <fileobject name="RdbmsTable.java">
+        <attr name="class_dependency_javax.swing.table.AbstractTableModel" stringvalue="RdbmsTable"/>
+    </fileobject>
+    <fileobject name="TableInfo.java">
+        <attr name="class_dependency_javax.swing.table.AbstractTableModel" stringvalue="TableInfo"/>
+    </fileobject>
+    <fileobject name="DbInfo.java">
+        <attr name="class_dependency_gpl.fredy.share.BasicAdmin" stringvalue="DbInfo"/>
+    </fileobject>
+    <fileobject name="ForeignKeys.java">
+        <attr name="NetBeansAttrArguments" serialvalue="aced0005757200135b4c6a6176612e6c616e672e537472696e673badd256e7e91d7b4702000078700000000c7400022d687400096c6f63616c686f73747400022d757400036166737400022d7074000863686572306b65657400022d6474000566726564797400022d74740007616472657373657400022d7374000125"/>
+    </fileobject>
+    <fileobject name="DBTree.java">
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="DBTree"/>
+    </fileobject>
+    <fileobject name="Catalog.java">
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="Catalog"/>
+    </fileobject>
+</attributes>

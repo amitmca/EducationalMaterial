@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>Registration Form</title>
+<script language="JavaScript">
+function validate()
+	{
+	var name=document.forms[0].name.value;
+	var email=document.forms[0].email.value;
+	var mno=document.forms[0].mno.value;
+
+	if(name=" ")
+		{
+		alert("Please enter your name");
+		}
+	else if(email=" ")
+		{
+		alert("Please enter your email-id");
+		}
+	else if(mno=" ")
+		{
+		alert("Please enter your mobile no");
+		}
+	if(!(isNan(name)))
+		{
+		alert("Please enter only characters");
+		}
+	}
+</script>
+</head>
+<body bgcolor="lightyellow">
+<form name="form1">
+
+<fieldset style="color:red" align="center">
+<legend align="center" style="color:green"><h2>Registration Form</h2>
+<table border="1" width="954" height="7">
+<br>
+	<tr>
+		<td height="7" width="944">&nbsp;</td>
+	</tr>
+</table>
+</legend>
+
+</fieldset>
+
+</form>
+</body>
+</html>

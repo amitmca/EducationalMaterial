@@ -1,0 +1,43 @@
+[Main]
+SizeX=4260
+SizeY=3510
+[1]
+Name=ldb
+Type=JLabel
+Value=Select Database Name :
+X= 480
+Y= 360
+SizeX= 3240
+SizeY= 360
+[2]
+Name=dbcombo
+Type=JComboBox
+Value=
+X= 480
+Y= 960
+SizeX= 2520
+SizeY= 360
+[3]
+Name=ltable
+Type=JLabel
+Value=Select Table Name :
+X= 480
+Y= 1560
+SizeX= 3240
+SizeY= 360
+[4]
+Name=tablecombo
+Type=JComboBox
+Value=
+X= 480
+Y= 2160
+SizeX= 2520
+SizeY= 360
+[5]
+Name=btnok
+Type=JButton
+Value=OK
+X= 1080
+Y= 2880
+SizeX= 1680
+SizeY= 360

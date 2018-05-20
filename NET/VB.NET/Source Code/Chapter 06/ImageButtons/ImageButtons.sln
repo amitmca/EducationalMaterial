@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ImageButtons", "ImageButtons.vbproj", "{D8B47429-89E3-43BA-B95B-DAD670ABE06F}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{D8B47429-89E3-43BA-B95B-DAD670ABE06F}.Debug.ActiveCfg = Debug|.NET
+		{D8B47429-89E3-43BA-B95B-DAD670ABE06F}.Debug.Build.0 = Debug|.NET
+		{D8B47429-89E3-43BA-B95B-DAD670ABE06F}.Release.ActiveCfg = Release|.NET
+		{D8B47429-89E3-43BA-B95B-DAD670ABE06F}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

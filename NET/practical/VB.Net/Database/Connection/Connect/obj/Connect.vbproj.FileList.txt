@@ -1,0 +1,11 @@
+bin\Debug\Connect.exe
+bin\Debug\Connect.pdb
+bin\Debug\Connect.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Connect.Resources.resources
+obj\Debug\Connect.vbproj.GenerateResource.Cache
+obj\Debug\Connect.exe
+obj\Debug\Connect.xml
+obj\Debug\Connect.pdb
+bin\Debug\Connect.exe.config
+obj\Debug\Connect.Form1.resources

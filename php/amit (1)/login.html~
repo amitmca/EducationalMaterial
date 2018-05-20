@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>login</title>
+</head>
+<body bgcolor="black">
+<form action="validation.php" method="POST" name="frmLogin">
+	<center><img src="sun.jpg" align="center"width="80" height="80" >	</center>
+<b><br><center><img src="gy.jpg" width="100" height="30" border="0"></center>
+<table>
+   <tr>
+	<td align="center">
+	     <img src="security.jpg" width="64" height="64" border="0">
+	<br><font color="green">
+	    <b>Welcome To VIIT's Appititute Test!<br>
+	     <b>Use a valid UserName and Password<br>
+	     <b>Best Luck For TEST</font>
+	</td>
+	
+	<td bordercolor="#DEEFF9">
+	    <table width="25%" border="1" align="center" cellpadding="3" cellspacing="1"  BORDERCOLOR="#000000">	
+	     <tr bordercolor"#92CAEB" bgcolor="yellow">
+		<td colspan="2"><b><font color="red">Member Login</font></td>
+	     </tr>
+	     <tr bordercolor"#E6F3FB"> 
+ 		<td align="right"><b><img src="uname.png" width="35" height="35" border="0"><font color="magenta">Username:</font></td>
+		<td>
+<input name="usr" type="text" tabindex=2 size="35" maxlength="35">
+		</td>
+	     </tr>
+	     <tr bordercolor"#E6F3FB"> 
+ 		<td align="right"><b><img src="password.png" width="35" height="35" border="0"><font color="magenta">Password:</font></td>
+		<td>
+<input name="pass" type="password" tabindex=1 size="35" maxlength="15">
+		</td>
+	     </tr>
+	     <tr bordercolor="#E0EEF7">
+		<td>&nbsp;</td>
+		<td align="right">
+		  <b><input name="submit" type="submit" value="Sign In" tabindex=3>		 
+		</td>
+	     </tr>
+	</center>
+	</table>
+	</td>		
+	</table>
+	<table align="right">
+	<tr>
+	<td>
+	<center><a href="help.html"><font color="red" size=04>Help ?</font></a></center>
+	</td>
+	</tr>
+	</table>
+	</form>
+	<table>
+	<tr>
+ 	<td>
+	<a href="register.html"><font color="red" size=04>Sign here</font></a></td>
+	</tr>
+	</body>
+	</html>

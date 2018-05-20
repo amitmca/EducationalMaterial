@@ -1,0 +1,576 @@
+BODY {
+	FONT-SIZE: 80%; BACKGROUND: url(../images/style1/body_bg.png) #dce9f7 repeat-x 0px top; COLOR: #515151; FONT-FAMILY: Tahoma, "Tahoma", Tahoma, serif
+}
+#header {
+	BACKGROUND: url(../images/style1/header_main.png) #f2f2f2 repeat-x 0px top
+}
+#logo-graphic H1 A {
+	BACKGROUND: url(../images/mca_image.jpg) no-repeat
+}
+#logo-text H1 A {
+	MARGIN-TOP: 20px; FONT-WEIGHT: bold; FONT-SIZE: 34px; MARGIN-LEFT: 10px; COLOR: #222; LETTER-SPACING: -2px
+}
+#logo-text H2 {
+	FONT-SIZE: 22px; MARGIN-LEFT: 14px; COLOR: #4081b2
+}
+A {
+	COLOR: #246da5; TEXT-DECORATION: underline
+}
+A:hover {
+	COLOR: #2b84c8; TEXT-DECORATION: none
+}
+A.readon {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 17px; FONT-SIZE: 14px; BACKGROUND: url(../images/readon.png) no-repeat 0px 2px; PADDING-BOTTOM: 0px; LINE-HEIGHT: 18px; PADDING-TOP: 0px; TEXT-DECORATION: none
+}
+A.readon:hover {
+	TEXT-DECORATION: underline
+}
+.componentheading {
+	FONT-WEIGHT: bold; FONT-SIZE: 2.56em; COLOR: #4a4a4a; LINE-HEIGHT: 1.35em; BORDER-BOTTOM: #eee 1px solid; FONT-FAMILY: Tahoma, Tahoma, Tahoma, Tahoma, serif; LETTER-SPACING: -2px
+}
+TABLE.blog TD.contentheading {
+	FONT-SIZE: 1.86em; COLOR: #444; LINE-HEIGHT: 1.1em; BORDER-BOTTOM: #f5f5f5 1px solid; LETTER-SPACING: -1px
+}
+TD.contentheading {
+	FONT-SIZE: 2.1em; COLOR: #444; LINE-HEIGHT: 1.1em; LETTER-SPACING: -2px
+}
+A.contentpagetitle {
+	COLOR: #246da5; LINE-HEIGHT: 1.1em; TEXT-DECORATION: none
+}
+A.contentpagetitle:hover {
+	COLOR: #121517
+}
+#newsflash TD.contentheading {
+	FONT-SIZE: 1.3em; LINE-HEIGHT: 1.5em; LETTER-SPACING: normal
+}
+#newsflash A.contentpagetitle {
+	FONT-SIZE: 1.3em; LINE-HEIGHT: 1.5em; LETTER-SPACING: normal
+}
+#newsflash A {
+	COLOR: #1e69a3
+}
+#newsflash A:hover {
+	COLOR: #000
+}
+#newsflash P {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #6e6e6e; PADDING-TOP: 0px
+}
+#newsflash TD {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #6e6e6e; PADDING-TOP: 0px
+}
+H1 {
+	FONT-WEIGHT: normal; FONT-SIZE: 2.3em; COLOR: #3a3a3a; LINE-HEIGHT: 1em; FONT-STYLE: normal; LETTER-SPACING: -1px
+}
+H2 {
+	FONT-WEIGHT: normal; FONT-SIZE: 2em; COLOR: #1b5e92; LINE-HEIGHT: 1em; FONT-STYLE: normal; LETTER-SPACING: -1px
+}
+H3 {
+	FONT-WEIGHT: normal; FONT-SIZE: 1.7em; COLOR: #787878; LINE-HEIGHT: 1em; FONT-STYLE: normal; LETTER-SPACING: -1px
+}
+H4 {
+	FONT-WEIGHT: normal; FONT-SIZE: 1.4em; COLOR: #666; LINE-HEIGHT: 1em; FONT-STYLE: normal; LETTER-SPACING: -1px
+}
+P.info {
+	PADDING-RIGHT: 20px; BORDER-TOP: #b5d4fe 2px solid; PADDING-LEFT: 45px; BACKGROUND: url(../images/info.png) #f8fafc no-repeat 15px 50%; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; BORDER-BOTTOM: #b5d4fe 2px solid; TEXT-ALIGN: left
+}
+P.warn {
+	PADDING-RIGHT: 20px; BORDER-TOP: #f7d229 2px solid; PADDING-LEFT: 45px; BACKGROUND: url(../images/warn.png) #fff7c0 no-repeat 15px 50%; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; BORDER-BOTTOM: #f7d229 2px solid; TEXT-ALIGN: left
+}
+P.alert {
+	PADDING-RIGHT: 20px; BORDER-TOP: #feabb9 2px solid; PADDING-LEFT: 45px; BACKGROUND: url(../images/exc.png) #fbeef1 no-repeat 15px 50%; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; BORDER-BOTTOM: #feabb9 2px solid; TEXT-ALIGN: left
+}
+SPAN.arrow {
+	PADDING-LEFT: 14px; BACKGROUND: url(../images/list-arrow.png) no-repeat 0px 4px
+}
+PRE {
+	BORDER-RIGHT: #c4c4c4 1px dotted; PADDING-RIGHT: 5px; BORDER-TOP: #c4c4c4 1px dotted; DISPLAY: block; PADDING-LEFT: 5px; BACKGROUND: #f6f6f6; PADDING-BOTTOM: 5px; FONT: 1em "Courier New", Courier, monospace; BORDER-LEFT: #c4c4c4 1px dotted; COLOR: #000; PADDING-TOP: 5px; BORDER-BOTTOM: #c4c4c4 1px dotted; WHITE-SPACE: normal
+}
+P.quote:first-letter {
+	TEXT-TRANSFORM: uppercase
+}
+P.quote {
+	PADDING-RIGHT: 5px; BORDER-TOP: #eee 4px solid; PADDING-LEFT: 5px; FONT-SIZE: 1.26em; PADDING-BOTTOM: 5px; MARGIN: 24px auto; TEXT-TRANSFORM: lowercase; COLOR: #424242; LINE-HEIGHT: 125%; PADDING-TOP: 5px; BORDER-BOTTOM: #eee 4px solid; FONT-FAMILY: "Tahoma", "Tahoma", Tahoma, Tahoma, Tahoma, serif; LETTER-SPACING: 0.1em; TEXT-ALIGN: center; FONT-VARIANT: small-caps
+}
+UL LI SPAN.small {
+	FONT-SIZE: 0.8em; TEXT-TRANSFORM: none; LINE-HEIGHT: 0.5em; FONT-VARIANT: normal
+}
+#wrap {
+	BACKGROUND: #fff
+}
+DIV.moduleS1 {
+	COLOR: #51504a
+}
+DIV.moduleS1 A {
+	COLOR: #1e69a3
+}
+DIV.moduleS1 A:hover {
+	COLOR: #1e69a3
+}
+DIV.moduleS1 A.latestnewsS1 {
+	COLOR: #1e69a3
+}
+DIV.moduleS1 A.latestnewsS1:hover {
+	COLOR: #1e69a3
+}
+DIV.moduleS1 A.mostreadS1 {
+	COLOR: #1e69a3
+}
+DIV.moduleS1 A.mostreadS1:hover {
+	COLOR: #1e69a3
+}
+DIV.moduleS1 H3 {
+	FONT-SIZE: 1.2em; COLOR: #fff; LINE-HEIGHT: 0.75em; LETTER-SPACING: normal
+}
+DIV.moduleS2 {
+	COLOR: #51504a
+}
+DIV.moduleS2 A {
+	COLOR: #1e69a3
+}
+DIV.moduleS2 A:hover {
+	COLOR: #1e69a3
+}
+DIV.moduleS2 A.latestnewsS2 {
+	COLOR: #1e69a3
+}
+DIV.moduleS2 A.latestnewsS2:hover {
+	COLOR: #1e69a3
+}
+DIV.moduleS2 A.mostreadS2 {
+	COLOR: #1e69a3
+}
+DIV.moduleS2 A.mostreadS2:hover {
+	COLOR: #1e69a3
+}
+DIV.moduleS2 H3 {
+	FONT-SIZE: 1.2em; COLOR: #fdfeff; LINE-HEIGHT: 0.75em; LETTER-SPACING: normal
+}
+DIV.moduleS3 {
+	COLOR: #51504a
+}
+DIV.moduleS3 A {
+	COLOR: #1e69a3
+}
+DIV.moduleS3 A:hover {
+	COLOR: #1e69a3
+}
+DIV.moduleS3 A.latestnewsS3 {
+	COLOR: #1e69a3
+}
+DIV.moduleS3 A.latestnewsS3:hover {
+	COLOR: #1e69a3
+}
+DIV.moduleS3 A.mostreadS3 {
+	COLOR: #1e69a3
+}
+DIV.moduleS3 A.mostreadS3:hover {
+	COLOR: #1e69a3
+}
+DIV.moduleS3 H3 {
+	FONT-SIZE: 1.2em; COLOR: #fff; LINE-HEIGHT: 0.75em; LETTER-SPACING: normal
+}
+DIV.module {
+	COLOR: #333
+}
+DIV.modulebdr {
+	COLOR: #333
+}
+DIV.module A {
+	COLOR: #246da5
+}
+DIV.modulebdr A {
+	COLOR: #246da5
+}
+DIV.module A:hover {
+	COLOR: #246da5
+}
+DIV.modulebdr A:hover {
+	COLOR: #246da5
+}
+DIV.module A.latestnews {
+	COLOR: #246da5
+}
+DIV.modulebdr A.latestnewsbdr {
+	COLOR: #246da5
+}
+DIV.module A.latestnews:hover {
+	COLOR: #246da5
+}
+DIV.modulebdr A.latestnewsbdr:hover {
+	COLOR: #246da5
+}
+DIV.module A.mostread {
+	COLOR: #246da5
+}
+DIV.modulebdr A.mostreadbdr {
+	COLOR: #246da5
+}
+DIV.module A.mostread:hover {
+	COLOR: #246da5
+}
+DIV.modulebdr A.mostreadbdr:hover {
+	COLOR: #246da5
+}
+DIV.module H3 {
+	FONT-SIZE: 1.2em; COLOR: #242b30; LETTER-SPACING: normal
+}
+DIV.modulebdr H3 {
+	FONT-SIZE: 1.2em; COLOR: #242b30; LETTER-SPACING: normal
+}
+.path {
+	BORDER-RIGHT: #ddf1ff 1px solid; PADDING-RIGHT: 8px; BORDER-TOP: #ddf1ff 1px solid; PADDING-LEFT: 8px; FONT-SIZE: 1.13em; PADDING-BOTTOM: 8px; MARGIN: 8px; BORDER-LEFT: #ddf1ff 1px solid; PADDING-TOP: 8px; BORDER-BOTTOM: #ddf1ff 1px solid; BACKGROUND-COLOR: #f5fbff
+}
+#footer {
+	COLOR: #fff; BACKGROUND-COLOR: #1e69a3
+}
+#footer A {
+	COLOR: #efefef
+}
+#footer #mainlevel LI A {
+	COLOR: #efefef
+}
+#footer A:hover {
+	COLOR: #ccc; TEXT-DECORATION: underline
+}
+#footer #mainlevel LI A:hover {
+	COLOR: #ccc; TEXT-DECORATION: underline
+}
+#footer #mainlevel LI A#active_menu {
+	COLOR: #ccc; TEXT-DECORATION: underline
+}
+IMG.left {
+	BORDER-RIGHT: #eaeaea 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #eaeaea 1px solid; MARGIN-TOP: 5px; PADDING-LEFT: 4px; FLOAT: left; PADDING-BOTTOM: 4px; BORDER-LEFT: #eaeaea 1px solid; MARGIN-RIGHT: 5px; PADDING-TOP: 4px; BORDER-BOTTOM: #eaeaea 1px solid; BACKGROUND-COLOR: #f4f4f4
+}
+IMG.right {
+	BORDER-RIGHT: #eaeaea 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #eaeaea 1px solid; MARGIN-TOP: 5px; PADDING-LEFT: 4px; FLOAT: right; PADDING-BOTTOM: 4px; MARGIN-LEFT: 5px; BORDER-LEFT: #eaeaea 1px solid; PADDING-TOP: 4px; BORDER-BOTTOM: #eaeaea 1px solid; BACKGROUND-COLOR: #f4f4f4
+}
+IMG.pad {
+	BORDER-RIGHT: #eaeaea 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #eaeaea 1px solid; PADDING-LEFT: 4px; FLOAT: none; PADDING-BOTTOM: 4px; MARGIN: 5px auto 0px; BORDER-LEFT: #eaeaea 1px solid; PADDING-TOP: 4px; BORDER-BOTTOM: #eaeaea 1px solid; BACKGROUND-COLOR: #f4f4f4
+}
+LI.latestnews {
+	BACKGROUND: url(../images/style1/bullet.gif) no-repeat 0em 0.35em
+}
+LI.latestnewsS1 {
+	BACKGROUND: url(../images/style1/bullet.gif) no-repeat 0em 0.35em
+}
+LI.latestnewsS2 {
+	BACKGROUND: url(../images/style1/bullet.gif) no-repeat 0em 0.35em
+}
+LI.latestnewsS3 {
+	BACKGROUND: url(../images/style1/bullet.gif) no-repeat 0em 0.35em
+}
+LI.latestnewsbdr {
+	BACKGROUND: url(../images/style1/bullet.gif) no-repeat 0em 0.35em
+}
+LI.mostread {
+	BACKGROUND: url(../images/style1/bullet.gif) no-repeat 0em 0.35em
+}
+LI.mostreadS3 {
+	BACKGROUND: url(../images/style1/bullet.gif) no-repeat 0em 0.35em
+}
+LI.mostreadS1 {
+	BACKGROUND: url(../images/style1/bullet.gif) no-repeat 0em 0.35em
+}
+LI.mostreadS2 {
+	BACKGROUND: url(../images/style1/bullet.gif) no-repeat 0em 0.35em
+}
+LI.mostreadbdr {
+	BACKGROUND: url(../images/style1/bullet.gif) no-repeat 0em 0.35em
+}
+UL.menu-sidenav LI {
+	PADDING-LEFT: 14px; BACKGROUND: url(../images/style1/bullet.gif) no-repeat 0px 0.15em
+}
+A.mainlevel-sidenav {
+	PADDING-LEFT: 14px; BACKGROUND: url(../images/style1/bullet.gif) no-repeat 0px 0.15em
+}
+.createdate {
+	FONT-SIZE: 1em; TEXT-TRANSFORM: lowercase; COLOR: #99a1a7; LINE-HEIGHT: 1em
+}
+.modifydate {
+	FONT-SIZE: 1em; TEXT-TRANSFORM: lowercase; COLOR: #99a1a7; LINE-HEIGHT: 1em
+}
+.small {
+	FONT-SIZE: 1em; TEXT-TRANSFORM: lowercase; COLOR: #99a1a7; LINE-HEIGHT: 1em
+}
+TD.sectiontableheader {
+	BACKGROUND: #222; COLOR: #fff; LINE-HEIGHT: 100%
+}
+TR.sectiontableentry1 TD {
+	BORDER-BOTTOM: #f4f4f4 1px solid; BACKGROUND-COLOR: #fff
+}
+TD.sectiontableentry1 {
+	BORDER-BOTTOM: #f4f4f4 1px solid; BACKGROUND-COLOR: #fff
+}
+TR.sectiontableentry2 TD {
+	BORDER-BOTTOM: #f4f4f4 1px solid; BACKGROUND-COLOR: #fff
+}
+TD.sectiontableentry2 {
+	BORDER-BOTTOM: #f4f4f4 1px solid; BACKGROUND-COLOR: #fff
+}
+DIV.blog_more {
+	BORDER-TOP: #e6e6d4 1px solid
+}
+DIV.blog_more UL LI A {
+	BACKGROUND: url(../images/style1/list-arrow.png) no-repeat 4px 10px; TEXT-INDENT: 14px; BORDER-BOTTOM: #eee 1px solid
+}
+DIV.blog_more UL LI A:hover {
+	BACKGROUND-COLOR: #f4f4f4
+}
+TABLE.contenttoc {
+	BORDER-RIGHT: #d6d6d6 1px solid; BORDER-TOP: #d6d6d6 1px solid; BORDER-LEFT: #d6d6d6 1px solid; COLOR: #330; BORDER-BOTTOM: #d6d6d6 1px solid
+}
+TABLE.contenttoc TH {
+	COLOR: #4f4f4f; BACKGROUND-COLOR: #ececec
+}
+DIV.mosimage_caption {
+	FONT-SIZE: 0.9em; COLOR: #666
+}
+.pagenav {
+	FONT-SIZE: 1em; COLOR: #cad7a0
+}
+.menuleft {
+	BACKGROUND: url(../images/style1/menuleft.png) no-repeat left top
+}
+.menuright {
+	BACKGROUND: url(../images/style1/menuright.png) no-repeat left top
+}
+.ftr-left {
+	BACKGROUND: url(../images/style1/ftr-left.png) no-repeat left bottom
+}
+.ftr-right {
+	BACKGROUND: url(../images/style1/ftr-right.png) no-repeat left bottom
+}
+DIV.module {
+	BACKGROUND: url(../images/style1/topright_bdr.png) no-repeat 100% 0px
+}
+DIV.modulebdr {
+	BACKGROUND: url(../images/style1/topright_bdr.png) no-repeat 100% 0px
+}
+DIV.module DIV {
+	BACKGROUND: url(../images/style1/topleft_bdr.png) no-repeat 0px 0px
+}
+DIV.modulebdr DIV {
+	BACKGROUND: url(../images/style1/topleft_bdr.png) no-repeat 0px 0px
+}
+DIV.module DIV DIV {
+	BACKGROUND: url(../images/style1/botright_bdr.png) no-repeat 100% 100%
+}
+DIV.modulebdr DIV DIV {
+	BACKGROUND: url(../images/style1/botright_bdr.png) no-repeat 100% 100%
+}
+DIV.module DIV DIV DIV {
+	BACKGROUND: url(../images/style1/botleft_bdr.png) no-repeat 0px 100%
+}
+DIV.modulebdr DIV DIV DIV {
+	BACKGROUND: url(../images/style1/botleft_bdr.png) no-repeat 0px 100%
+}
+DIV.moduleS1 {
+	BACKGROUND: url(../images/style1/topright_light.png) no-repeat 100% 0px
+}
+DIV.moduleS1 DIV {
+	BACKGROUND: url(../images/style1/topleft_light.png) no-repeat 0px 0px
+}
+DIV.moduleS1 DIV DIV {
+	BACKGROUND: url(../images/style1/botright_light.png) no-repeat 100% 100%
+}
+DIV.moduleS1 DIV DIV DIV {
+	BACKGROUND: url(../images/style1/botleft_light.png) no-repeat 0px 100%
+}
+DIV.moduleS2 {
+	BACKGROUND: url(../images/style1/topright_mid.png) no-repeat 100% 0px
+}
+DIV.moduleS2 DIV {
+	BACKGROUND: url(../images/style1/topleft_mid.png) no-repeat 0px 0px
+}
+DIV.moduleS2 DIV DIV {
+	BACKGROUND: url(../images/style1/botright_mid.png) no-repeat 100% 100%
+}
+DIV.moduleS2 DIV DIV DIV {
+	BACKGROUND: url(../images/style1/botleft_mid.png) no-repeat 0px 100%
+}
+DIV.moduleS3 {
+	BACKGROUND: url(../images/style1/topright_dark.png) no-repeat 100% 0px
+}
+DIV.moduleS3 DIV {
+	BACKGROUND: url(../images/style1/topleft_dark.png) no-repeat 0px 0px
+}
+DIV.moduleS3 DIV DIV {
+	BACKGROUND: url(../images/style1/botright_dark.png) no-repeat 100% 100%
+}
+DIV.moduleS3 DIV DIV DIV {
+	BACKGROUND: url(../images/style1/botleft_dark.png) no-repeat 0px 100%
+}
+#nav UL LI A {
+	BACKGROUND: url(../images/style1/nav_left_up.png) no-repeat left center; COLOR: #fff
+}
+#nav UL LI A:hover {
+	BACKGROUND: url(../images/style1/nav_left_over.png) no-repeat left center; COLOR: #044c84
+}
+#nav UL LI:hover A {
+	BACKGROUND: url(../images/style1/nav_left_over.png) no-repeat left center; COLOR: #044c84
+}
+#nav UL LI.iehover A {
+	BACKGROUND: url(../images/style1/nav_left_over.png) no-repeat left center; COLOR: #044c84
+}
+#nav LI#current A {
+	BACKGROUND: url(../images/style1/nav_left_active.png) no-repeat left center; COLOR: #303030
+}
+#nav LI#current A:hover {
+	BACKGROUND: url(../images/style1/nav_left_active.png) no-repeat left center; COLOR: #303030
+}
+#nav LI#current:hover A {
+	BACKGROUND: url(../images/style1/nav_left_active.png) no-repeat left center; COLOR: #303030
+}
+#nav LI.iehover#current A {
+	BACKGROUND: url(../images/style1/nav_left_active.png) no-repeat left center; COLOR: #303030
+}
+#nav LI#current {
+	BACKGROUND: url(../images/style1/nav_right_active.png) no-repeat right center
+}
+#nav LI#current:hover {
+	BACKGROUND: url(../images/style1/nav_right_active.png) no-repeat right center
+}
+#nav LI.iehover#current {
+	BACKGROUND: url(../images/style1/nav_right_active.png) no-repeat right center
+}
+#nav UL LI:hover LI A {
+	BACKGROUND-IMAGE: none; COLOR: #fff
+}
+#nav UL LI.iehover LI A {
+	BACKGROUND-IMAGE: none; COLOR: #fff
+}
+#nav UL LI#current:hover LI A {
+	BACKGROUND-IMAGE: none; COLOR: #fff
+}
+#nav UL LI.iehover#current LI A {
+	BACKGROUND-IMAGE: none; COLOR: #fff
+}
+#nav UL LI:hover UL UL LI A {
+	BACKGROUND-IMAGE: none; COLOR: #fff
+}
+#nav LI:hover UL {
+	BACKGROUND-COLOR: #2b72a9
+}
+#nav LI LI:hover UL {
+	BACKGROUND-COLOR: #2b72a9
+}
+#nav LI LI LI:hover UL {
+	BACKGROUND-COLOR: #2b72a9
+}
+#nav LI LI LI LI:hover UL {
+	BACKGROUND-COLOR: #2b72a9
+}
+#nav LI.iehover UL {
+	BACKGROUND-COLOR: #2b72a9
+}
+#nav LI LI.iehover UL {
+	BACKGROUND-COLOR: #2b72a9
+}
+#nav LI LI LI.iehover UL {
+	BACKGROUND-COLOR: #2b72a9
+}
+#nav LI LI LI LI.iehover UL {
+	BACKGROUND-COLOR: #2b72a9
+}
+#nav UL LI:hover LI A {
+	BACKGROUND-COLOR: #2b72a9
+}
+#nav UL LI.iehover LI A {
+	BACKGROUND-COLOR: #2b72a9
+}
+#nav UL LI:hover UL UL LI A {
+	BACKGROUND-COLOR: #2b72a9
+}
+#nav UL LI.iehover UL UL LI A {
+	BACKGROUND-COLOR: #2b72a9
+}
+#nav LI UL LI A:hover {
+	BACKGROUND-IMAGE: none; COLOR: #ffffff; BACKGROUND-COLOR: #0a5c99
+}
+#nav LI UL LI UL LI A:hover {
+	BACKGROUND-IMAGE: none; COLOR: #ffffff; BACKGROUND-COLOR: #0a5c99
+}
+#nav LI LI:hover {
+	BACKGROUND-IMAGE: none; COLOR: #ffffff; BACKGROUND-COLOR: #0a5c99
+}
+#nav UL LI LI.iehover {
+	BACKGROUND-IMAGE: none; COLOR: #ffffff; BACKGROUND-COLOR: #0a5c99
+}
+#nav LI LI.iehover A {
+	BACKGROUND-IMAGE: none; COLOR: #ffffff; BACKGROUND-COLOR: #0a5c99
+}
+#nav UL LI LI:hover A {
+	BACKGROUND-IMAGE: none; COLOR: #ffffff; BACKGROUND-COLOR: #0a5c99
+}
+#nav UL LI LI:hover {
+	BACKGROUND-IMAGE: none; COLOR: #ffffff; BACKGROUND-COLOR: #0a5c99
+}
+#nav UL LI LI.iehover {
+	BACKGROUND-IMAGE: none; COLOR: #ffffff; BACKGROUND-COLOR: #0a5c99
+}
+#nav UL LI LI#current A:hover {
+	BACKGROUND-IMAGE: none; COLOR: #ffffff; BACKGROUND-COLOR: #0a5c99
+}
+#nav LI.haschild UL LI.iehover#current {
+	BACKGROUND-IMAGE: none; COLOR: #ffffff; BACKGROUND-COLOR: #0a5c99
+}
+#nav LI.haschild UL LI#current:hover {
+	BACKGROUND-IMAGE: none; COLOR: #ffffff; BACKGROUND-COLOR: #0a5c99
+}
+#nav UL LI.haschild LI#current A:hover {
+	BACKGROUND-IMAGE: none; COLOR: #ffffff; BACKGROUND-COLOR: #0a5c99
+}
+#nav UL LI#current UL LI A {
+	COLOR: #ffffff
+}
+#nav UL LI#current UL LI {
+	COLOR: #ffffff
+}
+#nav UL LI#current UL LI A:hover {
+	COLOR: #ffffff
+}
+#nav UL LI#current UL LI.hover #nav UL LI#current UL LI.iehover {
+	COLOR: #ffffff
+}
+#nav UL LI.haschild LI#current A {
+	COLOR: #ffffff
+}
+#nav LI LI {
+	BORDER-BOTTOM: #3080be 1px solid
+}
+#nav LI UL {
+	BORDER-RIGHT: #266597 1px solid; BORDER-TOP: medium none; BORDER-LEFT: #266597 1px solid; WIDTH: 173px
+}
+#nav LI {
+	FONT-WEIGHT: bold; BACKGROUND: url(../images/style1/nav_bg.png) repeat-x 0px bottom
+}
+#nav {
+	FONT-WEIGHT: bold; BACKGROUND: url(../images/style1/nav_bg.png) repeat-x 0px bottom
+}
+#nav LI {
+	BACKGROUND: url(../images/style1/nav_right_up.png) no-repeat right center
+}
+#nav UL LI:hover {
+	BACKGROUND: url(../images/style1/nav_right_over.png) no-repeat right center
+}
+#nav UL LI.iehover {
+	BACKGROUND: url(../images/style1/nav_right_over.png) no-repeat right center
+}
+#nav UL LI:hover LI A {
+	BACKGROUND-IMAGE: none
+}
+#nav UL LI.iehover LI A {
+	BACKGROUND-IMAGE: none
+}
+#nav UL UL A {
+	WIDTH: 170px
+}
+#nav LI LI {
+	WIDTH: 173px
+}
+#nav LI.haschild UL LI#current:hover {
+	WIDTH: 173px
+}
+#nav LI.haschild UL LI.iehover#current {
+	WIDTH: 173px
+}

@@ -1,0 +1,15 @@
+<html>
+
+
+<head>mitacsc</head>
+<body>
+
+<h1>WELCOME TO THE COLLEGE</h1>
+<form action="xyz.com" method="get">
+Headphone<input type="checkbox" name="t1" value="2000">
+bulb<input type="checkbox" name="t2" value="200">
+<input type="submit" value="OK">
+
+</form>
+</body>
+</html>

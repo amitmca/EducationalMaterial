@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE attributes PUBLIC "-//NetBeans//DTD DefaultAttributes 1.0//EN" "http://www.netbeans.org/dtds/attributes-1_0.dtd">
+<attributes version="1.0">
+    <fileobject name="AutoForm.java">
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="AutoForm"/>
+    </fileobject>
+    <fileobject name="ChangeTable.java">
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="ChangeTable"/>
+    </fileobject>
+    <fileobject name="ChangeTableModel.java">
+        <attr name="class_dependency_javax.swing.table.AbstractTableModel" stringvalue="ChangeTableModel"/>
+    </fileobject>
+    <fileobject name="CrTable.java">
+        <attr name="class_dependency_javax.swing.table.AbstractTableModel" stringvalue="CrTable"/>
+    </fileobject>
+    <fileobject name="CreateIndex.java">
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="CreateIndex"/>
+    </fileobject>
+    <fileobject name="CreateTable.java">
+        <attr name="NetBeansAttrArguments" serialvalue="aced0005757200135b4c6a6176612e6c616e672e537472696e673badd256e7e91d7b470200007870000000047400096c6f63616c686f737474000361667374000863686572306b6565740003616673"/>
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="CreateTable"/>
+    </fileobject>
+    <fileobject name="CreateTable2.java">
+        <attr name="NetBeansAttrArguments" serialvalue="aced0005757200135b4c6a6176612e6c616e672e537472696e673badd256e7e91d7b4702000078700000000a7400022d757400036166737400022d707400037878787400022d687400096c6f63616c686f73747400022d647400036166737400022d73740003616673"/>
+        <attr name="class_dependency_java.awt.event.ActionListener" stringvalue="CreateTable2"/>
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="CreateTable2"/>
+    </fileobject>
+    <fileobject name="CreateTable2Splash.java">
+        <attr name="class_dependency_java.awt.Window" stringvalue="CreateTable2Splash"/>
+    </fileobject>
+    <fileobject name="CreateTableModel.java">
+        <attr name="class_dependency_javax.swing.table.AbstractTableModel" stringvalue="CreateTableModel"/>
+    </fileobject>
+    <fileobject name="CreateTableRowObject.java">
+        <attr name="class_dependency_java.lang.Object" stringvalue="CreateTableRowObject"/>
+    </fileobject>
+    <fileobject name="DataExportGui.java">
+        <attr name="class_dependency_javax.swing.JFrame" stringvalue="DataExportGui"/>
+    </fileobject>
+    <fileobject name="DropTable.java">
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="DropTable"/>
+    </fileobject>
+    <fileobject name="ExportQuery.java">
+        <attr name="class_dependency_java.lang.Thread" stringvalue="ExportQuery"/>
+    </fileobject>
+    <fileobject name="Import.java">
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="Import"/>
+    </fileobject>
+    <fileobject name="LengthTableCellEditor.java">
+        <attr name="class_dependency_java.awt.event.ActionListener" stringvalue="LengthTableCellEditor"/>
+        <attr name="class_dependency_javax.swing.AbstractCellEditor" stringvalue="LengthTableCellEditor"/>
+        <attr name="class_dependency_javax.swing.table.TableCellEditor" stringvalue="LengthTableCellEditor"/>
+    </fileobject>
+    <fileobject name="PickListItem.java">
+        <attr name="EA-OpenIDE-Connection" serialvalue="aced0005737200146a6176612e7574696c2e4c696e6b65644c6973740c29535d4a60882203000078707704000000017372002a6f72672e6f70656e6964652e6c6f61646572732e436f6e6e656374696f6e537570706f72742450616972055f8af6f04a3bd80200024c00047479706574002b4c6f72672f6f70656e6964652f636f6f6b6965732f436f6e6e656374696f6e436f6f6b696524547970653b4c000576616c75657400124c6a6176612f6c616e672f4f626a6563743b78707372002e6f72672e6e65746265616e732e6d6f64756c65732e6a6176612e4a617661436f6e6e656374696f6e732454797065a83dd01001306d7402000149000666696c746572787000000050737200436f72672e6e65746265616e732e6d6f64756c65732e6a6176612e4a617661446174614f626a6563742450657273697374656e74436f6e6e656374696f6e48616e646c65ba16f1d2dd4c1cb60200014c000e646174614e6f646548616e646c6574001f4c6f72672f6f70656e6964652f6e6f6465732f4e6f64652448616e646c653b7870737200296f72672e6f70656e6964652e6c6f61646572732e446174614e6f6465244f626a65637448616e646c655bd0f82e01811d2e0200025a0005636c6f6e654c00036f626a7400244c6f72672f6f70656e6964652f66696c6573797374656d732f46696c654f626a6563743b787000737200326f72672e6f70656e6964652e66696c6573797374656d732e416273747261637446696c654f626a656374245265706c616365896fa1bce4b5219f0200024c000866696c654e616d657400124c6a6176612f6c616e672f537472696e673b4c000666734e616d6571007e000f787074002367706c2f66726564792f73716c746f6f6c732f53716c5069636b4c6973742e6a6176617400142f686f6d652f6166732f6a6176612f667265647978"/>
+    </fileobject>
+    <fileobject name="Qbe.java">
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="Qbe"/>
+    </fileobject>
+    <fileobject name="ReferencesTableCellEditor.java">
+        <attr name="class_dependency_java.awt.event.ActionListener" stringvalue="ReferencesTableCellEditor"/>
+        <attr name="class_dependency_javax.swing.AbstractCellEditor" stringvalue="ReferencesTableCellEditor"/>
+        <attr name="class_dependency_javax.swing.table.TableCellEditor" stringvalue="ReferencesTableCellEditor"/>
+    </fileobject>
+    <fileobject name="SqlMonitor.java">
+        <attr name="class_dependency_javax.swing.JDialog" stringvalue="SqlMonitor.SqlPrefForm"/>
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="SqlMonitor"/>
+    </fileobject>
+    <fileobject name="SqlPanel.java">
+        <attr name="class_dependency_gpl.fredy.sqltools.SqlTab" stringvalue="SqlPanel"/>
+        <attr name="class_dependency_java.awt.event.ActionListener" stringvalue="SqlPanel"/>
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="SqlPanel"/>
+        <attr name="class_dependency_javax.swing.event.ListSelectionListener" stringvalue="SqlPanel"/>
+    </fileobject>
+    <fileobject name="SqlParser.java">
+        <attr name="class_dependency_javax.swing.JFrame" stringvalue="SqlParser"/>
+    </fileobject>
+    <fileobject name="SqlPickList.java">
+        <attr name="class_dependency_gpl.fredy.sqltools.PickListItem" stringvalue="SqlPickList.ColumnList;SqlPickList.ColumnList.Column"/>
+        <attr name="class_dependency_java.util.Vector" stringvalue="SqlPickList.ColumnList"/>
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="SqlPickList"/>
+    </fileobject>
+    <fileobject name="SqlTab.java">
+        <attr name="EA-OpenIDE-Connection" serialvalue="aced0005737200146a6176612e7574696c2e4c696e6b65644c6973740c29535d4a60882203000078707704000000037372002a6f72672e6f70656e6964652e6c6f61646572732e436f6e6e656374696f6e537570706f72742450616972055f8af6f04a3bd80200024c00047479706574002b4c6f72672f6f70656e6964652f636f6f6b6965732f436f6e6e656374696f6e436f6f6b696524547970653b4c000576616c75657400124c6a6176612f6c616e672f4f626a6563743b78707372002e6f72672e6e65746265616e732e6d6f64756c65732e6a6176612e4a617661436f6e6e656374696f6e732454797065a83dd01001306d7402000149000666696c746572787000000050737200436f72672e6e65746265616e732e6d6f64756c65732e6a6176612e4a617661446174614f626a6563742450657273697374656e74436f6e6e656374696f6e48616e646c65ba16f1d2dd4c1cb60200014c000e646174614e6f646548616e646c6574001f4c6f72672f6f70656e6964652f6e6f6465732f4e6f64652448616e646c653b7870737200296f72672e6f70656e6964652e6c6f61646572732e446174614e6f6465244f626a65637448616e646c655bd0f82e01811d2e0200025a0005636c6f6e654c00036f626a7400244c6f72672f6f70656e6964652f66696c6573797374656d732f46696c654f626a6563743b787000737200326f72672e6f70656e6964652e66696c6573797374656d732e416273747261637446696c654f626a656374245265706c616365896fa1bce4b5219f0200024c000866696c654e616d657400124c6a6176612f6c616e672f537472696e673b4c000666734e616d6571007e000f787074002067706c2f66726564792f73716c746f6f6c732f53716c50616e656c2e6a6176617400142f686f6d652f6166732f6a6176612f66726564797371007e00027371007e0006000000507371007e00087371007e000b007371007e000e74001f67706c2f66726564792f73716c746f6f6c732f53716c546578742e6a61766171007e00127371007e00027371007e0006000000507371007e00087371007e000b007371007e000e74002367706c2f66726564792f73716c746f6f6c732f53716c54657874417265612e6a61766171007e001278"/>
+    </fileobject>
+    <fileobject name="SqlText.java">
+        <attr name="class_dependency_gpl.fredy.sqltools.SqlTab" stringvalue="SqlText"/>
+        <attr name="class_dependency_java.util.LinkedList" stringvalue="SqlText.SqlColumn"/>
+        <attr name="class_dependency_java.util.Vector" stringvalue="SqlText.SqlResults"/>
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="SqlText"/>
+    </fileobject>
+    <fileobject name="SqlTextArea.java">
+        <attr name="class_dependency_gpl.fredy.sqltools.SqlTab" stringvalue="SqlTextArea"/>
+        <attr name="class_dependency_java.util.LinkedList" stringvalue="SqlTextArea.SqlColumn"/>
+        <attr name="class_dependency_java.util.Vector" stringvalue="SqlTextArea.SqlResults"/>
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="SqlTextArea"/>
+    </fileobject>
+    <fileobject name="TableAreaEditor.java">
+        <attr name="class_dependency_javax.swing.AbstractCellEditor" stringvalue="TableAreaEditor"/>
+        <attr name="class_dependency_javax.swing.table.TableCellEditor" stringvalue="TableAreaEditor"/>
+    </fileobject>
+    <fileobject name="TableAreaRenderer.java">
+        <attr name="class_dependency_javax.swing.JTextArea" stringvalue="TableAreaRenderer"/>
+        <attr name="class_dependency_javax.swing.table.TableCellRenderer" stringvalue="TableAreaRenderer"/>
+    </fileobject>
+    <fileobject name="TableSpinnerEditor.java">
+        <attr name="class_dependency_javax.swing.AbstractCellEditor" stringvalue="TableSpinnerEditor"/>
+        <attr name="class_dependency_javax.swing.table.TableCellEditor" stringvalue="TableSpinnerEditor"/>
+    </fileobject>
+    <fileobject name="TextTableCellEditor.java">
+        <attr name="class_dependency_java.awt.event.ActionListener" stringvalue="TextTableCellEditor"/>
+        <attr name="class_dependency_javax.swing.AbstractCellEditor" stringvalue="TextTableCellEditor"/>
+        <attr name="class_dependency_javax.swing.table.TableCellEditor" stringvalue="TextTableCellEditor"/>
+    </fileobject>
+    <fileobject name="sqlTable.java">
+        <attr name="class_dependency_java.awt.event.ActionListener" stringvalue="sqlTable"/>
+        <attr name="class_dependency_java.awt.event.WindowListener" stringvalue="sqlTable"/>
+        <attr name="class_dependency_javax.swing.JPanel" stringvalue="sqlTable"/>
+        <attr name="class_dependency_javax.swing.event.ListSelectionListener" stringvalue="sqlTable"/>
+    </fileobject>
+</attributes>

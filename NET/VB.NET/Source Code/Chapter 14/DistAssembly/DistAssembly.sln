@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DistAssembly", "DistAssembly.vbproj", "{045C22C3-D66E-43D8-820D-CE77DDC8C277}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{045C22C3-D66E-43D8-820D-CE77DDC8C277}.Debug.ActiveCfg = Debug|.NET
+		{045C22C3-D66E-43D8-820D-CE77DDC8C277}.Debug.Build.0 = Debug|.NET
+		{045C22C3-D66E-43D8-820D-CE77DDC8C277}.Release.ActiveCfg = Release|.NET
+		{045C22C3-D66E-43D8-820D-CE77DDC8C277}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

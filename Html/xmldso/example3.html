@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>XML DSO-example3.htm</title>
+<script language="JavaScript">
+function load() {
+	var xmlDso=myXML.XMLDocument;
+	xmlDso.load("example3.xml");
+}
+</script>
+</head>
+<body bgcolor="#FFFFFF" onLoad="load()">
+
+<object id="myXML" CLASSID="clsid:550dda30-0541-11d2-9ca9-0060b0ec3d39" 
+width="0" height="0"></object>
+
+<table datasrc="#myXML" border="1">
+	<thead>
+		<th>Message</th>
+		<th>URL</th>
+	</thead>
+	<tr>
+		<td><div datafld="message"></div></td>
+		<td><div datafld="URL"></div></td>
+	</tr>
+</table>
+
+</body>
+</html>

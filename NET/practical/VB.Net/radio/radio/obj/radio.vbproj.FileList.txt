@@ -1,0 +1,12 @@
+bin\Debug\radio.exe
+bin\Debug\radio.pdb
+bin\Debug\radio.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\radio.Form1.resources
+obj\Debug\radio.Resources.resources
+obj\Debug\radio.vbproj.GenerateResource.Cache
+obj\Debug\radio.exe
+obj\Debug\radio.xml
+obj\Debug\radio.pdb
+obj\Debug\radio.Form2.resources
+obj\Debug\radio.Form3.resources

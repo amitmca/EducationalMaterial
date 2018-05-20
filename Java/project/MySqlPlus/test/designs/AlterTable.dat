@@ -1,0 +1,51 @@
+[Main]
+SizeX=4050
+SizeY=3465
+[1]
+Name=radd
+Type=JRadioButton
+Value=Add a New Column
+X= 360
+Y= 240
+SizeX= 3360
+SizeY= 360
+[2]
+Name=rdrop
+Type=JRadioButton
+Value=Drop a Column
+X= 360
+Y= 840
+SizeX= 3360
+SizeY= 360
+[3]
+Name=rchange
+Type=JRadioButton
+Value=Change Column Name
+X= 360
+Y= 1440
+SizeX= 3360
+SizeY= 360
+[4]
+Name=rchange1
+Type=JRadioButton
+Value=Change Column Type
+X= 360
+Y= 2040
+SizeX= 3360
+SizeY= 360
+[5]
+Name=btnpro
+Type=JButton
+Value=Proceed
+X= 360
+Y= 2880
+SizeX= 1680
+SizeY= 360
+[6]
+Name=btncel
+Type=JButton
+Value=Cancel
+X= 2160
+Y= 2880
+SizeX= 1560
+SizeY= 360

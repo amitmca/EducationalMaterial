@@ -1,0 +1,43 @@
+
+SQL> create table student(rno number(2),name varchar(20));
+
+Table created.
+
+SQL> alter table student add(course varchr(20),grade varchar(20),perc number(2));
+alter table student add(course varchr(20),grade varchar(20),perc number(2))
+                                     *
+ERROR at line 1:
+ORA-00907: missing right parenthesis
+
+
+SQL> alter table student add(course varchar(20),grade varchar(1),perc number(2));
+
+Table altered.
+
+SQL> alter table student modify(perc number(2,2));
+
+Table altered.
+
+SQL> alter table student modify(course varchar(15),name varchar(25));
+
+Table altered.
+
+SQL> alter table student add(constraint pk_student primary key(rno),constraint unique_student unique
+(name),constraint ch_student check(perc>35));
+
+Table altered.
+
+SQL> commit;
+
+Commit complete.
+
+SQL> select * from tab;
+
+TNAME                          TABTYPE  CLUSTERID
+------------------------------ ------- ----------
+DUTY_ALLOC                     TABLE
+EMP                            TABLE
+POS                            TABLE
+STUDENT                        TABLE
+
+SQL> 

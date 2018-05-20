@@ -1,0 +1,7 @@
+/* AUTOMATICALLY GENERATED ON Thu Apr 16 18:21:34 IST 2009*/
+/* DO NOT EDIT */
+
+grant codeBase "file:///D:/Programs/Java/amit/Ajdbc.class" {
+  permission java.sql.SQLPermission "setLog";
+};
+

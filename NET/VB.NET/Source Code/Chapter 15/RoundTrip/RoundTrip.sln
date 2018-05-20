@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "RoundTrip", "http://localhost/RoundTrip/RoundTrip.vbproj", "{54C317F3-2EA6-4DA9-AA33-A3E108701756}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{54C317F3-2EA6-4DA9-AA33-A3E108701756}.Debug.ActiveCfg = Debug|.NET
+		{54C317F3-2EA6-4DA9-AA33-A3E108701756}.Debug.Build.0 = Debug|.NET
+		{54C317F3-2EA6-4DA9-AA33-A3E108701756}.Release.ActiveCfg = Release|.NET
+		{54C317F3-2EA6-4DA9-AA33-A3E108701756}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

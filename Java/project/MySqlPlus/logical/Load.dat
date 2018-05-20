@@ -1,0 +1,41 @@
+[Main]
+SizeX=5355
+SizeY=4110
+[1]
+Name=combobox_1
+Type=JComboBox
+X= 2400
+Y= 1440
+SizeX= 2520
+SizeY= 360
+[2]
+Name=l2
+Type=JLabel
+Value=Databases
+X= 360
+Y= 1440
+SizeX= 1680
+SizeY= 360
+[3]
+Name=btnshow
+Type=JButton
+Value=Show It
+X= 1800
+Y= 2280
+SizeX= 1680
+SizeY= 360
+[4]
+Name=txtshow
+Type=JTextField
+X= 960
+Y= 3000
+SizeX= 3000
+SizeY= 360
+[5]
+Name=l1
+Type=JLabel
+Value=Loading Database Names In ComboBox
+X= 960
+Y= 480
+SizeX= 4200
+SizeY= 360

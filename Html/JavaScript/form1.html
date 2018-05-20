@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>Starting Java Script</title>
+<script language="JavaScript">
+	function validate()
+	{
+	var x=parseInt(document.forms[0].r.value);
+	if(!(x>0 && x<255))
+		{
+		alert("Plase enter number berween 0 to 255");
+		return(false);
+		}
+	var y=parseInt(document.forms[0].g.value);
+	if(!(y>0 && y<255))
+		{
+		alert("Plase enter number berween 0 to 255");
+		return(false);
+		}
+	var z=parseInt(document.forms[0].b.value);
+	if(!(z>0 && z<255))
+		{
+		alert("Plase enter number berween 0 to 255");
+		return(false);
+		}
+	changeColor(x,y,z);
+	}
+	function changeColor(r,g,b)
+		{
+		document.bgcolor="#"+r+g+b;
+		window.status="#"+r+g+b;
+		}
+</script>
+</head>
+<body>
+<fieldset>
+<div align="center">
+	
+	<form name="forms">	
+	<label>Red : </label>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="text" name="r"><br>
+
+	<label>Green : </label>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="text" name="g"><br>
+
+	<label>Blue : </label>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="text" name="b"><br>
+
+	<input type="button" name="okButton" value="Ok" onClick="validate();">
+	</form>
+	
+</div>
+
+</fieldset>
+</body>
+</html>

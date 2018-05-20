@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>External XML DSO Example<title>
+<script language="JavaScript">
+function load()
+	{
+	var xmlDso=myXML.XMLDocument;
+	xmlDso.load("ext.xml");
+	}
+</script>
+</head>
+<body bgcolor="#FFFFFF" onLoad="load();">
+<object id="myXML" CLASSID="clsid:550dda30-0541-11d2-9ca9-0060b0ec3d39" width="0" height="0">
+</object>
+<table datasrc="#myXML" border="1">
+<thead>
+	<th>Name</th>
+	<th>Game</th>
+	<th>Sex</th>
+</thead>
+<tr>
+	<td><div datafld="name"></div></td>
+	<td><div datafld="game"></div></td>
+	<td><div datafld="sex"></div></td>
+</tr>
+</table>
+</body>
+</html>
+

@@ -1,0 +1,54 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>New Page 1</title>
+<script language="vbscript">
+Sub b_onclick()
+
+	dim dec
+	dec=Eval(document.form.dec.value)
+	dim i
+	dim j
+	dim r(20)
+	dim n
+	n=1
+	i=0
+	do while dec>0
+		
+		r(i)=dec mod 2
+		i=i+n
+		dec=dec/2
+		
+	loop
+	
+	for j=i-1 to 0 step -1
+		document.write(r(j))
+	next
+	
+End Sub	
+</script>
+</head>
+<body>
+<form name="form">
+<table border="0" width="309" height="171" align="center">
+	<tr>
+		<td height="27" width="114"><label>Decimal Number</label></td>
+		<td height="27" width="24" align="center"><b>:</b></td>
+		<td height="27" width="148"><input type="text" name="dec"></td>
+	</tr>
+	<tr>
+		<td height="33" width="114">Binary Number</td>
+		<td height="33" width="24" align="center"><b>:</b></td>
+		<td height="33" width="148"><input type="text" name="bin"></td>
+	</tr>
+	<tr>
+		<td height="37" width="299" colspan="3" align="center">
+		<input type="button" name="b" value="Convert">
+		</td>
+	</tr>
+	
+</table>
+</form>
+</body>
+</html>

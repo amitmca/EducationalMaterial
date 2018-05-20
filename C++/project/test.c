@@ -1,0 +1,21 @@
+#include<stdio.h>
+main()
+	{
+		int a[2][2][2][2],*p,i,j,k,l;
+		//p=&a;
+		for(i=0;i<2;i++)
+			{
+			for(j=0;j<2;j++)	
+				{
+				for(k=0;k<2;k++)
+					{
+					for(l=0;l<2;l++)	
+						{	
+						printf("\t%d",*(*(a+i)+j+k+l));
+						}
+					}
+				}
+				printf("\n");
+			}
+			printf("\n");
+	}

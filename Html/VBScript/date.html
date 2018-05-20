@@ -1,0 +1,50 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>VB Script Date Function</title>
+<script type="text/vbscript">
+Dim myDateString
+myDateString = Date()
+document.write(myDateString)
+
+
+</script>
+<script type="text/vbscript">
+Dim myDateString0, myDateString1, myDateString2
+myDateString0 = FormatDateTime(Date(), 0)
+myDateString1 = FormatDateTime(Date(), 1)
+myDateString2 = FormatDateTime(Date(), 2)
+
+break = "<br />"
+
+document.write(myDateString0 & break)
+document.write(myDateString1 & break)
+document.write(myDateString2 & break)
+
+dim d
+d=Date()
+document.write(d)
+
+	dim t
+	t=Time()
+
+</script>
+<script language="javascript">
+function utime()
+	{
+	document.f1.time.value=t
+	setInterval("utime()",1000)
+	}
+</script>
+
+</head>
+
+<body onload=utime()>
+<h1>VB Script Date Function</h1>
+<form name="f1">
+<input type="text" name="time">
+</form>
+</body>
+
+</html>

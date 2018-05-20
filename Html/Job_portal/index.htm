@@ -1,0 +1,79 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<script language="JavaScript" type="text/javascript"> 
+<!-- 
+
+var startMsg = "WELCOME TO DELTA INDIA JOB SEARCH"; 
+var str = ""; 
+var msg = ""; 
+var leftMsg = ""; 
+
+function setMessage() 
+{ 
+if (msg == "") 
+{ 
+str = " "; 
+msg = startMsg; 
+leftMsg = ""; 
+} 
+if (str.length == 1) 
+{ 
+while (msg.substring(0, 1) == " ") 
+{ 
+leftMsg = leftMsg + str; 
+str = msg.substring(0, 1); 
+msg = msg.substring(1, msg.length); 
+} 
+leftMsg = leftMsg + str; 
+str = msg.substring(0, 1); 
+msg = msg.substring(1, msg.length); 
+for (var ii = 0; ii < 120; ii++) 
+{ 
+str = " " + str; 
+} 
+} 
+else 
+str = str.substring(10, str.length); 
+window.status = leftMsg + str; 
+
+timeout = window.setTimeout('setMessage()',5); 
+} 
+
+</script> 
+</head>
+
+<BODY bgcolor="ffffff" onload="timeout = window.setTimeout('setMessage()',500);"> 
+
+<table border="0" width="980" height="581">
+	<tr>
+		<td height="67" width="970" valign="top" colspan="2">
+		<img border="0" src="images/coolclips_wb024789.gif" width="120" height="76"><img border="0" src="login_files/image001.gif" width="111" height="60"><img border="0" src="login_files/image002.gif" width="46" height="17"><img border="0" src="images/devarticles.jpg" width="681" height="70"></td>
+	</tr>
+	<tr>
+		<td height="506" width="564" rowspan="2">&nbsp;</td>
+		<td height="202" width="400" valign="middle" background="images/bottom.jpg"><br><br>
+		<h3 align="center"><font color="#9900FF">Job Seekers</font></h3>	
+		<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Registered ? &nbsp;&nbsp;<a href="login.htm"><font color="#0055bb">Login</font></a></b>
+		<p>
+		<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Double your chances of getting the right job</b>
+		<br><br>
+		<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; New User ? &nbsp;&nbsp;<a href="register.htm"><font color="#0055bb">Regsiter Now</font></a></b>
+		</p>
+		</p>
+		
+		</td>
+	</tr>
+	<tr>
+		<td height="302" width="400" valign="top">
+		<img border="0" src="images/homepage1.jpg" width="402" height="216"><p>
+		<img border="0" src="images/France-3.gif" width="68" height="45">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<img border="0" src="images/Germany-3.gif" width="68" height="50">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<img border="0" src="images/Greatbr-3.gif" width="68" height="50"></td>
+	</tr>
+</table>
+
+</body>
+
+</html>

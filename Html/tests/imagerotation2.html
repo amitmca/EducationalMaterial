@@ -1,0 +1,40 @@
+<head>
+<title>Web Page with Rotating Photo</title>
+
+<script>
+function nextrandom() {
+var hi = this.seed/this.Q;
+var lo = this.seed % this.Q;
+var test= this.A * lo - this.R * hi;
+if (test>0)
+  this.seed=test;
+else
+  this.seed = test+this.M;
+return (this.seed*this.oneOverM);
+}
+function randomgenerator() {
+var d =new Date();
+this.seed = 2345678901 + (d.getSeconds() *
+0xFFFFFF)+(d.getMinutes()+0xffff);
+this.A = 48271;
+this.M = 2147483647;
+this.Q = this.M / this.A;
+this.R  = this.M % this.A;
+this.oneOverM = 1.0/this.M;
+this.next = nextrandom;
+return this;
+}
+function random(n) {
+var rand= new randomgenerator();
+return Math.round(n*rand.next()) ;
+}
+//the next function calls a random feature and link
+function getpic() {
+var index=random(3)+1;
+var picurl="";
+picurl="<IMG width=480 SRC=images/"+cancel+".gif align=top >";
+return picurl;
+}
+//end of random stuff
+</script> 
+</head>
